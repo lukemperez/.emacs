@@ -1,0 +1,251 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/lmp/documents/Dissertation/prospectus/Tex Files/" . "Feb_2017_Revisions/")
+ ("/Users/lmp/documents/Dissertation/prospectus/" . "Tex Files/")
+ ("/Users/lmp/documents/Dissertation/" . "prospectus/")
+ ("/Users/lmp/documents/" . "Dissertation/")
+ ("/Users/lmp/Documents/Dissertation/prospectus/Tex Files/" . "Feb_2017_Revisions/")
+ ("/Users/lmp/Documents/Dissertation/prospectus/md_files/" . "Committee_Notes/")
+ ("/Users/lmp/Documents/Work/APD/" . "React_papers/")
+ ("/Users/lmp/Dropbox/zArchived/Leo's Lounge/" . "City of God Reading Group/")
+ ("/Users/lmp/Dropbox/zArchived/" . "Leo's Lounge/")
+ ("/Users/lmp/Desktop/" . "Prospectus_Org_Mode/")
+ ("/Users/lmp/Documents/Work/GOV_314/" . "Notes/")
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/CVs-Latex/" . "KJHealy/")
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/" . "CVs-Latex/")
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/" . "LaTeX/")
+ ("/Users/lmp/Documents/Work/Rel_Free_Sum/" . "Statement/")
+ ("/Users/lmp/Documents/Work/Rel_Free_Summ/" . "Cover/")
+ ("/Users/lmp/Documents/Inbox/" . "2010_Docs_Archive/")
+ ("/Users/lmp/Dropbox/_AcademicWork/" . "Citation_notes/")
+ ("/Users/lmp/Dropbox/" . "_AcademicWork/")
+ ("/Users/lmp/Documents/Work/Writing/" . "Readings/")
+ ("/Users/lmp/Documents/Work/PMF/" . "PMF_Res/")
+ ("/Users/lmp/Documents/Work/" . "APD/")
+ ("/Users/lmp/Documents/Dissertation/Thrash/" . "Bell/")
+ ("/Users/lmp/Documents/Personal/Letters/" . "St_Davids_Appeal_Nov_2016/")
+ ("/Users/lmp/Documents/Personal/" . "Letters/")
+ ("/Users/" . "lmp/")
+ ("/Users/lmp/Documents/Dissertation/prospectus/" . "md_files/")
+ ("/Users/lmp/Documents/Dissertation/" . "prospectus/")
+ ("/Users/lmp/Documents/" . "Dissertation/")
+ ("/Users/lmp/" . "Documents/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/lmp/Documents/Work/APD/"
+ "/Users/lmp/Documents/Work/GOV_314/"
+ "/Users/lmp/documents/Dissertation/prospectus/Tex Files/Feb_2017_Revisions/"
+ "/Users/lmp/Documents/Dissertation/prospectus/md_files/"
+ "/Users/lmp/Documents/Dissertation/prospectus/Defense/"
+ "/Users/lmp/Dropbox/_AcademicWork/Citation_notes/"
+ "/Users/lmp/Documents/Dissertation/prospectus/Tex Files/Feb_2017_Revisions/"
+ "/Users/lmp/Documents/Dissertation/prospectus/Committee_Notes/"
+ "/Users/lmp/.emacs.d/"
+ "/Users/lmp/Documents/writing/"
+ "/Users/lmp/Dropbox/_AcademicWork/_notes/"
+ "/Users/lmp/Documents/Work/APD/React_papers/"
+ "/Users/lmp/Dropbox/_AcademicWork/_Bibs/"
+ "/Users/lmp/Documents/Work/GOV_314/Notes/"
+ "/Users/lmp/Documents/Dissertation/prospectus/md_files/Committee_Notes/"
+ "/Users/lmp/Desktop/Prospectus_Org_Mode/"
+ "/Users/lmp/Documents/Dissertation/prospectus/Tex Files/"
+ "/Users/lmp/Documents/Dissertation/prospectus/Org Files/"
+ "/Users/lmp/Documents/Dissertation/"
+ "/Users/lmp/Documents/Work/"
+ "/Users/lmp/Documents/Test_Prosp/"
+ "/Users/lmp/Documents/Work/Writing/"
+ "/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/CVs-Latex/KJHealy/"
+ "/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/CVs-Latex/lmPerez-cv/"
+ "/Users/lmp/Documents/Work/Rel_Free_Sum/Statement/"
+ "/Users/lmp/Documents/Work/Rel_Free_Sum/Cover/"
+ "/Users/lmp/Documents/Personal/Letters/St_Davids_Appeal_Nov_2016/"
+ "/Users/lmp/Documents/Personal/Fitness/"
+ "/Users/lmp/Documents/Work/Rel_Free_Summ/Cover/"
+ "/Users/lmp/Documents/Work/Rel_Free_Summ/"
+ "/Users/lmp/Documents/Work/Writing/Readings/"
+ "/Users/lmp/Documents/Work/Writing/GOV_3012/"
+ "/Users/lmp/Documents/Inbox/"
+ "/Users/lmp/Documents/Work/SPURS_WORKSHOP/"
+ "/Users/lmp/Documents/Work/Writing/Rumsfeld/"
+ "/Users/lmp/Documents/Work/PMF/PMF_Res/"
+ "/Users/lmp/Documents/Work/PMF/"
+ "/Users/lmp/Documents/Dissertation/Thrash/Bell/"
+ "/Users/lmp/Documents/Dissertation/Thrash/Bambrick/"
+ "/Users/lmp/Documents/Personal/Christmas_Labels/"
+ "/Users/lmp/Documents/Family/"
+ "/Users/lmp/Documents/Personal/Letters/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "APD.org"
+ "Class_Notes.org"
+ "intro.tex"
+ "intro.md"
+ "options.sty"
+ "Defense_Prep.md"
+ "Schickler_2001.md"
+ "method.tex"
+ "refs.bib"
+ "Prospectus.tex"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/lmp/Documents/Inbox/" (22694 6817 0 0) "West_1979_Commentary_Apology_Socrates.pdf" "Turek_RR Conference Draft.pdf" "Tretten_Fenn_Essential_LaTeX_useage.pdf" "Toulmin.png" "Student Y American Politics Exam.pdf" "SPURS_Fall_2016/" "Spring_2017_Income.soulver" "Smith_1993_beyond_Tocqueville.pdf" "Simboli_2017_SSRN-id2711887.pdf" "Silverman_2007_philosopher_regret..pdf" "Sebell_2016_AJPS_Aristol_PoliSci.pdf" "Sebell_2016.md" "Salkever_1981_Aristotle_SocSci.pdf" "Religion and Political Theory (Stanford Encyclopedia of Philosophy).pdf" "Receipt | Alamo Drafthouse Cinema.pdf" "Plato-Republic.pdf" "Pierson_2000_apsr.pdf" "Philpot_2014_Relig_Free_SSRN-id2451897.pdf" "Perez_Resume_2016.pdf" "Perez_Oct_2016_Paystub.pdf" "Perez_MidtermReport_Signed.pdf" "Perez_2017_FinAid_Rec_Form.pdf" "Perez_2017_FinAid_Rec_Form.docx" "Olson_2013_dac_pt2.pdf" "Olson_2013_dac_pt1.pdf" "Novak_2008.pdf" "Nacho_Oct_2016.jpg" "Nach_Birth_Announce.jpg" "Mom_Nacho_JUN_2016.jpg" "Luke_Nacho_Oct_2016.jpg" "Lucia_Nacho_June_2016.jpg" "lmPerez-cv/" "liberalism.pages" "Knoll_2009_.pdf" "King_Smith_2005_racial_orders_APD.pdf" "Kengor_RelFree_Reagan.pdf" "Katznelson_2006_Congress_APD.pdf" "IRFA_1998.pdf" "Holmes_2007_Clausewitz_Chaos.pdf" "Hefferon (2005) TeX Sytles.pdf" "Guth_nd_Religion_Foreign_Policy_Attitudes.pdf" "Gov314SYLLABUSspring2017.pdf" "GlobeMail_2017_climate_scandal_data.pdf" "Gerring_2007_CaseSelection.pdf" "Gerring_2003_sapd.pdf alias" "Gerring_2003_sapd.pdf" "Ferrari_1956_Plato_state_formation.pdf" "essaysonthedissertationmessagetophdstudentscandid/" "emacs_2010_mbp/" "doyle_1986_liberalism.pdf" "Discourses on Augustine.docx" "Digital_Yardsale.soulver" "Dad_Nacho_June_2016.jpg" "Dad_Nacho_APR_2016.jpg" "cornelllined.pdf" "cornelllined-3.pdf" "cornelllined-2.pdf" "Cook_2016_Environ._Res._Lett._11_048002.pdf" "Clements_Testamonal.md" "Cioffi-Revilla_2014_css.pdf" "Christmas Cards 2016.numbers/" "candidacy_statement.md" "Bloomstedt_Amazon_Return.pdf" "Bevo's Rules.tex" "Bevo's Rules.pdf" "Bevo's Rules.org" "auto/" "application-for-graduate-student-professional-development-award.pdf" "APD.Course.Syl.S17.pdf" "Alvin Ford.vcf" "6 Reiss Reagan Final.pdf" "2017_RFP_GradSummerResearchFellowship.pdf" "201702161247_UT_Gov_Oral_Exam.pdf" "201702161100_Copyright_Tutorial_Results.pdf" "201702151430_Letter_Brinks.md" "20170210_Leal.md" "2016_12_1_Invoice_lukeperez.pdf" "20161208133707_Rumsfeld_Tuition_Spring_2017.pdf" "201612051131_Toyota_Diagnostic_Summary.pdf" "201612051127_Seton_ER_Bill.pdf" "201612051123_Toyota_Diagnostic_Steering.pdf" "201612020821_Toyota_MX_Appt_Confirm.pdf" "201611301359_Spring_Tuition_Bill.pdf.pdf" "20161118_USPS_Transaction.pdf" "20160506_UT_Notice_Income_Withholding.pdf" "2014_06_Marriage_License.pdf" "2010_Docs_Archive alias" "2010_Docs_Archive/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/Org Files/" (22694 7284 0 0) "Outline_Prospect.tex" "Outline_Prospect.pdf" "Outline_Prospect.org" "auto/" "2017_Perez_Pros.toc" "2017_Perez_Pros.tex" "2017_Perez_Pros.out" "2017_Perez_Pros.org" "2017_Perez_Pros.log" "2017_Perez_Pros.aux" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/Tex Files/" (22694 7284 0 0) "Theory.tex" "Prospectus.tex" "prospectus.bib" "Perez_2017_Prospectus.pdf" "Method.tex" "Method.rel" "Intro.tex" "Feb_2017_Revisions/" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/Committee_Notes/" (22694 7284 0 0) "Prospect_Notes_Sparrow_Feb_2017.pdf" "Prospect_Notes_McDaniel_Feb_2017.pdf" "Pros_Notes_Sparrow.tex" "Pros_Notes_Sparrow.org" "McDaniel_Feb_2017.pdf" "McDaniel_Feb_2017.md" "201702_Revised_Letter.md" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/Tex Files/Feb_2017_Revisions/" (22694 7284 0 0) "theory.tex" "refs.bib" "Prospectus.tex" "Perez_Prospectus_2017_02_13.pdf" "method.tex" "intro.tex" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/Defense/" (22694 7284 0 0) "prep.pdf" "options.sty" "Defense_Prep.md" "auto/" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/md_files/" (22694 7284 0 0) "theory.tex" "theory.pdf" "theory.md" "refs.bib" "prospectus.yml" "Prospectus.pdf" "method.tex" "method.pdf" "method.md" "makefile" "lmp.bib" "intro.tex" "intro.pdf" "intro.md" "default.latex" "chicago-fullnote-bibliography.csl" "chicago-author-date.csl" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/documents/Dissertation/prospectus/Tex Files/Feb_2017_Revisions/" (22694 7284 0 0) "theory.tex" "refs.bib" "Prospectus.tex" "Perez_Prospectus_2017_02_13.pdf" "method.tex" "intro.tex" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/GOV_314/" (22694 7702 0 0) "Notes/" "Class_Notes.tex" "Class_Notes.pdf" "Class_Notes.org" "auto/" "2017_GOV314_PhotoRoster.pdf" "../" "./")
+
+ ("/Users/lmp/.emacs.d/" (22694 3848 0 0) "init.el" "ido.last" "elpa/" "custom.el" "config.org" "config.el" "bookmarks" "backups/" "auto-save-list/" "../" "./")
+
+ ("/Users/lmp/" (22694 4569 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Creative Cloud Files/" "Applications/" "ABBYY/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-LUKE’s MacBook Pro-5.2" ".zcompdump-lmp_mbp-5.2" ".z" ".Trash/" ".subversion/" ".rstudio-desktop/" ".Rhistory" ".RData" ".oh-my-zsh/" ".ispell_english" ".gitignore_global" ".gitconfig" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_history" ".atom/" "../" "./")
+
+ ("/Users/lmp/documents/Dissertation/prospectus/Tex Files/" (22688 49061 0 0) "Theory.tex" "Prospectus.tex" "prospectus.bib" "Perez_2017_Prospectus.pdf" "Method.tex" "Method.rel" "Intro.tex" "Feb_2017_Revisions/" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/documents/Dissertation/prospectus/" (22692 26651 0 0) "Tex Files/" "readme.md" "Org Files/" "md_files/" "makefile" "Defense/" "Committee_Notes/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/documents/Dissertation/" (22682 23603 0 0) "Thrash/" "prospectus/" "Primary_Sources/" "PLAW-105publ292.pdf" "ERLC_Frank_Wolf_Act.pdf" "Bessner_Guilhot_2015_realism.pdf" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/documents/" (22682 23419 0 0) "writing/" "Work/" "Personal/" "Inbox/" "Dissertation/" "Adobe/" "2016_W2.pdf" ".localized" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/documents/inbox/" (22694 2512 0 0) "West_1979_Commentary_Apology_Socrates.pdf" "Tretten_Fenn_Essential_LaTeX_useage.pdf" "Toulmin.png" "Student Y American Politics Exam.pdf" "SPURS_Fall_2016/" "Spring_2017_Income.soulver" "Smith_1993_beyond_Tocqueville.pdf" "Simboli_2017_SSRN-id2711887.pdf" "Silverman_2007_philosopher_regret..pdf" "Sebell_2016_AJPS_Aristol_PoliSci.pdf" "Sebell_2016.md" "Salkever_1981_Aristotle_SocSci.pdf" "Religion and Political Theory (Stanford Encyclopedia of Philosophy).pdf" "Receipt | Alamo Drafthouse Cinema.pdf" "Plato-Republic.pdf" "Pierson_2000_apsr.pdf" "Philpot_2014_Relig_Free_SSRN-id2451897.pdf" "Perez_Resume_2016.pdf" "Perez_Oct_2016_Paystub.pdf" "Perez_MidtermReport_Signed.pdf" "Perez_2017_FinAid_Rec_Form.pdf" "Perez_2017_FinAid_Rec_Form.docx" "Olson_2013_dac_pt2.pdf" "Olson_2013_dac_pt1.pdf" "Novak_2008.pdf" "Nacho_Oct_2016.jpg" "Nach_Birth_Announce.jpg" "Mom_Nacho_JUN_2016.jpg" "Luke_Nacho_Oct_2016.jpg" "Lucia_Nacho_June_2016.jpg" "lmPerez-cv/" "liberalism.pages" "Knoll_2009_.pdf" "King_Smith_2005_racial_orders_APD.pdf" "Kengor_RelFree_Reagan.pdf" "Katznelson_2006_Congress_APD.pdf" "IRFA_1998.pdf" "Holmes_2007_Clausewitz_Chaos.pdf" "Hefferon (2005) TeX Sytles.pdf" "Guth_nd_Religion_Foreign_Policy_Attitudes.pdf" "Gov314SYLLABUSspring2017.pdf" "GlobeMail_2017_climate_scandal_data.pdf" "Gerring_2007_CaseSelection.pdf" "Gerring_2003_sapd.pdf alias" "Gerring_2003_sapd.pdf" "Ferrari_1956_Plato_state_formation.pdf" "essaysonthedissertationmessagetophdstudentscandid/" "emacs_2010_mbp/" "doyle_1986_liberalism.pdf" "Discourses on Augustine.docx" "Digital_Yardsale.soulver" "Dad_Nacho_June_2016.jpg" "Dad_Nacho_APR_2016.jpg" "cornelllined.pdf" "cornelllined-3.pdf" "cornelllined-2.pdf" "Cook_2016_Environ._Res._Lett._11_048002.pdf" "Clements_Testamonal.md" "Cioffi-Revilla_2014_css.pdf" "Christmas Cards 2016.numbers/" "candidacy_statement.md" "Bloomstedt_Amazon_Return.pdf" "Bevo's Rules.tex" "Bevo's Rules.pdf" "Bevo's Rules.org" "auto/" "application-for-graduate-student-professional-development-award.pdf" "APD.Course.Syl.S17.pdf" "Alvin Ford.vcf" "6 Reiss Reagan Final.pdf" "2017_RFP_GradSummerResearchFellowship.pdf" "201702161247_UT_Gov_Oral_Exam.pdf" "201702161100_Copyright_Tutorial_Results.pdf" "201702151430_Letter_Brinks.md" "20170210_Leal.md" "2016_12_1_Invoice_lukeperez.pdf" "20161208133707_Rumsfeld_Tuition_Spring_2017.pdf" "201612051131_Toyota_Diagnostic_Summary.pdf" "201612051127_Seton_ER_Bill.pdf" "201612051123_Toyota_Diagnostic_Steering.pdf" "201612020821_Toyota_MX_Appt_Confirm.pdf" "201611301359_Spring_Tuition_Bill.pdf.pdf" "20161118_USPS_Transaction.pdf" "20160506_UT_Notice_Income_Withholding.pdf" "2014_06_Marriage_License.pdf" "2010_Docs_Archive alias" "2010_Docs_Archive/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/APD/" (22692 38072 0 0) "React_papers/" "Orren_Skrowonek_1998.pdf" "Orren_Skrowonek_1998.md" "Carpenter_2000.tex" "Carpenter_2000.pdf" "Carpenter_2000.md" "Carpenter_2000.hs" "auto/" "APD.tex" "APD.pdf" "APD.org" "2003_Morone.md" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/" (22692 26651 0 0) "Tex Files/" "readme.md" "Org Files/" "md_files/" "makefile" "Defense/" "Committee_Notes/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/_AcademicWork/Citation_notes/" (22692 26513 0 0) "Waltz_1979.md" "Waltz_1959.md" "Waltz_1919.pdf" "Wagner_2010.md" "Su_2016.md" "Schickler_2001.pdf" "Schickler_2001.md" "Maier_2011.md" "George_2005_Bennett.md" "deMarchi_2005.md" "Braumoeller_2012.md" "Blainey_1988.md" "Bennett_2013.md" "Bennett_2012.md" ".git/" "../" "./")
+
+ ("/Users/lmp/Dropbox/" (22690 17870 0 0) "zArchived/" "Writing_in_Progress/" "Writing_Archived/" "Whiteboard-2016-07-26-10-40-50.pdf" "Teller_Logic_Primer/" "Screenshots/" "ScanSnap/" "receipts/" "Public/" "Prayer & Discernment/" "Photos/" "Outliner/" "Nacho_birth_cert.pdf" "Nacho Laugh 7 Mo.m4a" "Nacho Laugh 7 Mo (1).m4a" "lmp_dot_com/" "Icon
+" "DraftsExport.json" "DraftsExport.csv" "DMG Files/" "Chess PDFs/" "Camera Uploads/" "_text_mdown_files/" "_AcademicWork/" "201612301127_Texas_Tag_Toll.pdf" "1Password.agilekeychain/" ".ws.agile.1Password.settings" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/lmp/Documents/writing/" (22685 62219 0 0) "Trump_2016.md" "SPURS_Workshop.tex" "SPURS_Workshop.pdf" "SPURS_Workshop.org" "Notes_Civ_Dei.tex" "Notes_Civ_Dei.pdf" "Notes_Civ_Dei.org" "Notes_Apology_Socrates.org" "Haley_Letter_UN.md" "Fiction_Better_Scholarship.md" "2017_Journal.org" "201702101035_Becoming_Audiophile.md" "2000_2006_Journal_Archive.org" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/_AcademicWork/_notes/" (22684 53073 0 0) "Notes & Settings" "201702091341_UT_Gov_Nifty_Fifty_Politics.md" "201701061551_Mike_Nataro_Deployment_Address.md" "201612050935_Jackson_Library_Items.md" "201612011355_Noguchi_Filing_System.md" "201611070746_Mel_Blount_Rule.md" "201611031433 - student quote.md" "201611011744 - student quote.md" "201610232250 - Open vs Closed lacing.md" "201609300949 - conn - international religious status quo.md" "201609292245 - 7 core competencies for PMF.md" "201609211008 - States as case study?.md" "201609122125 - Memorandum of talking to points to Vatican.md" "201609122120 - Ambassador to Vietnam to Kissinger.md" "201609122057 - idea - Nixon religion policy as non-comprehensvie.md" "201609121253 - qt - free security and republican.md" "201608111710 - Nixon is the hard case -- Dissertation.md" "201607260819 - Bruce Stubbs strategy.md" "201607111537 - scratch - religion foreign policy assistance .md" "201606240842 - quote - Case defined [case studies].md" "201605302107 - qt - Shakespeare_pride_m4measure.md" "201605031940 - qt - Augustine_Writing.md" "201603222011 - qt - UN Special Raporteurs.md" "201603181047 - qt - Writer as Gunman.md" "201603172007 - workout log.md" "201602170713 - gnucash.md" "201512202030 - Christmas Oratorio.md" "201512202029 - The Mystical Nativity (Painting).md" "201511302005 - IR Prelim Books (Law Library).md" "201511030805 - Learning Record.md" "201511011344 -  priority of check.md" "201510280641 - AcWriMo - Edit response link for PhD-2-Published.md" "201510261124 - notes why no healthcare reform.md" "201510252106 - music - 3 Gymnopedies (arr. A. Miolin) .md" "201510241404 - reference - Extraordinary Responsibility.md" "201510241027 - qt - Walk to heaven backward.md" "201510240912 - term - Augustinian Thomism.md" "201510240911 - Morality, Politics, Augustine.txt" "201510240815 - five programing languages.txt" "201510210822 - idea - mini prospectus 3d ques.md" "201510210815 - idea - mini propspectus - 2d ques.md" "201510210803 - idea - mini prospectus - 1st ques.md" "201510201351 - Conn - non nombis domine.txt" "201510191948 - letter - St David North.md" "201510191124 -  Conn - political motivations.md" "201510191041 - Campell, A.L. - 2003.md" "201510190922 - Campell, A.L. - 2002.md" "201510190659 - Diss - Prelim Bibliography.md" "201510081618 - idea - Morality and Foreign Policy.md" "201510081618 - conn - idea decline of religion as FP influence.md" "201510081617 - idea -Congress as foreign policy actor.md" "2015100815 - idea - Congress as moral agent.md" "201509231806 – qt - logic and what we say of the world.txt" "201509210921 - idea - prospectus iterations.md" "201509191600 - idea - religious policy motivation.md" "201509011929 – Pig, Pie, Po.md" "201404010838 - Granger Causality.md" "201404010837 - Puritans and Just War.md" "201403251800 - reading - Obama at Oslo.md" "201403251800 - reading - Cater Violence of Peace.md" "201311170929 - qt - Americans discuss not converse.md" "201309211521 - Federalist reading list.txt" "201309211521 - Federalist reading list.md" "201308131112 - Religion Politics Reading List.md" "201308021608 - APD_Reading_List.md" "201307232151- nonTheory_Diss_Ideas.md" "201304132339 - qt - Roger Eberts Rules of Twitter.md" "20130413 - Niebuhrian.Realism.md" "201303101314 - Experience philosophy theology.md" "201207061628 - Civ Dei IV.md" "201201061538 - qt - Wisdom's Permanence.md" "201111221310 - qt - Cupidity's Terror.md" "201105191400 - qt - A Promise To California.md" "201003201300 - qt - Friend of Truth.md" "../" "./")
+
+ ("/Users/lmp/Documents/Work/APD/React_papers/" (22684 33885 0 0) "Scratch.md.pdf" "Scratch.md" "Perez_2017_what_kind_liberalism.md.pdf" "Perez_2017_what_kind_liberalism.md" "makefile" "chicago-author-date.csl" "auto/" "apd.bib" "../" "./")
+
+ ("/Users/lmp/Documents/" (22682 23419 0 0) "writing/" "Work/" "Personal/" "Inbox/" "Dissertation/" "Adobe/" "2016_W2.pdf" ".localized" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/" (22682 23386 0 0) "SPURS_WORKSHOP/" "Rumsfeld_Mid_Report/" "Rel_Free_Sum/" "Programing/" "PMF/" "GOV_314/" "auto/" "APD/" "2017_Spr_Rel_Free_AI.tex" "2017_Spr_Rel_Free_AI.pdf" "2017_Spr_Rel_Free_AI.org" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/" (22682 23603 0 0) "Thrash/" "prospectus/" "Primary_Sources/" "PLAW-105publ292.pdf" "ERLC_Frank_Wolf_Act.pdf" "Bessner_Guilhot_2015_realism.pdf" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/GOV_314/Notes/" (22682 20607 0 0) "Republic.tex" "Republic.pdf" "Republic.org" "auto/" "../" "./")
+
+ ("/Users/lmp/Dropbox/_AcademicWork/_Bibs/" (22682 18550 0 0) "prospectus.bib" "lmp_poliSci.bib" "lmp_poliSci-1.bib" "auto/" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/prospectus/md_files/Committee_Notes/" (22680 44160 0 0) "McDaniel_Feb_2017.pdf" "McDaniel_Feb_2017.md" "../" "./")
+
+ ("/Users/lmp/Desktop/Prospectus_Org_Mode/" (22677 63797 0 0) "Theory.tex" "test.tex" "test.org" "Prospectus.tex" "Prospectus.org" "prospectus.bib" "Method.tex" "Intro.tex" "Intro.run.xml" "Intro.pdf" "Intro.org" "Intro.fdb_latexmk" "Intro.bcf" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Desktop/" (22675 34447 0 0) "Prospectus_Org_Mode/" "Notes_Civ_Dei.md" "Discourses on Augustine.docx" "BW_Second_Set/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/Leo's Lounge/City of God Reading Group/" (22558 25088 0 0) "Discourses on Augustine.doc" "Discourses on Augustine, Vol I.pdf" "Discourses on Augustine II.doc" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/Leo's Lounge/" (22675 34193 0 0) "Thucydides/" "The Guide/" "Republic/" "Platon_Cave_Sanraedam_1604.jpg" "OrwinOnBGE.pdf" "Natural Right and History/" "IV. Who is the Friend-Lysis.pdf" "Icon
+" "dominicana_winter2011_08monitoringmodernity.pdf" "City of God Reading Group/" "Augustine Studies/" "Alexander Pope.doc" "2013-03-18-Condi_Rice.m4a" ".DS_Store" ".dropbox" "../" "./")
+
+ ("/Users/lmp/Documents/Test_Prosp/" (22672 50321 0 0) "Prospectus.org" "prospectus.bib" "makefile" "2017_Prosp.pdf" "2017_Prosp.md" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Rel_Free_Sum/Statement/" (22659 34595 0 0) "prospectus.bib" "GT_Rel_Statement.tex" "GT_Rel_Statement.pdf" "GT_Rel_Statement.fdb_latexmk" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Writing/" (22664 44214 0 0) "SPURS_Workshop.tex" "SPURS_Workshop.pdf" "SPURS_Workshop.org" "Rumsfeld/" "Readings/" "Notes_Apology_Socrates.org" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/CVs-Latex/KJHealy/" (21996 63011 0 0) "soul.sty" "org-preamble-xelatex.synctex.gz" "org-preamble-xelatex.sty" "org-preamble-xelatex.pdf" "org-preamble-xelatex.log" "memoir-article-styles.sty" "logreq.sty" "logreq.def" "kjh-vita.tex" "kjh-vita.log" "csquotes.sty" "csquotes.def" "biblatex2.sty" "biblatex.sty" ".org-preamble-xelatex.lb" ".kjh-vita.lb" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/CVs-Latex/lmPerez-cv/" (22659 35846 0 0) "xunicode.sty" "memoir-article-styles.sty" "lmperez-vita.tex" "lmperez-vita.synctex.gz(busy)" "lmperez-vita.pdf" "lmperez-vita.out" "lmperez-vita.log" "lmperez-vita.fls" "lmperez-vita.aux" "fontawesomesymbols-generic.tex" "fontawesome.sty" "auto/" ".lmperez-vita.lb" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/CVs-Latex/" (22248 16192 0 0) "lmPerez-cv/" "KJHealy/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/LaTeX/" (22510 48339 0 0) "Vtnm.jpg" "vc-manual.pdf" "UTseal_White.png" "UTex-Seal.png" "utdiss2-05/" "Using-R-Effectively-master/" "Tikz_Tutorials/" "tex-ref.pdf" "TeX-programming-notes.pdf" "Testmakefile.md" "Templates/" "tb40bennett.pdf" "Screen Shot 2016-03-31 at 4.50.10 PM.png" "Revised Syllabus/" "Resume (LaTeX)/" "refcard.pdf" "pgfplots.pdf" "Packages/" "orgcard.pdf" "Make_File_Training/" "Lucia_Resume/" "lawtex-doc.pdf" "jbendoc.pdf" "gitinfo.pdf" "Game Theory LaTeX/" "fenn.pdf" "decap-slides.tex" "CVs-Latex/" "chicago-author-date.csl" "biblatex.pdf" "Beamer_Custom/" "Ante Studium/" "annotations.tex" "Annotate Bib/" "[gitLaTeX]" "201601140935 - fontspec.pdf" "201002081742 - ANG Grizzly Badge.jpeg" ".Third Test.lb" ".memoir class basics.lb" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Inbox/2010_Docs_Archive/" (22659 34668 0 0) "Writing/" "vukovic_vladimir-art_of_attack.pdf" "snippet 2.mid" "SNAP_NOV/" "Smith (2016) TeachYourselfLogic.pdf" "Smith (2015–2016) Logic Symbols.pdf" "site_lmp/" "SAIS Summer Study 2016.pdf" "SAIS Summer Study/" "Rumsfeld 2016 Conference/" "RHE 309 - just war.dtBase2/" "Prospectus/" "PMF Guide.pdf" "pandoc guide.pdf" "Pacuit (2014) Logic_Games.pdf" "Notes.dtBase2/" "Lightroom Export/" "library.bib" "Letters/" "LaTeX/" "Kaiser-Cross (2015) thesis.pdf" "IRSE Conference/" "IO-1992-Haas.pdf" "Fitness/" "Ferejohn Hills (2016) SSRN-id2712933.pdf" "Fall 2016/" "Emacs_Help_setup.md" "Emacs_Archive/" "dissnotes/" "Camden Lamar/" "BusyCal Backups/" "Bonanno (nd) Logic_Game-Theory.pdf" "bibs/" "Barr (1968) {Notes Dialogue}.pdf" "Barney (2016) Aristotle_Trolling.pdf" "Adobe/" "A-Thousand-Plateaus.pdf" "_emacs_commands.md" "@statements/" "311_Just_War_Criteria.pdf" "201606010934 - Job_workshop.pdf" "20160427_Rumfeld_Fellowship_Award.pdf" "2016-08-12-Art_Writing_Proposals.pdf" "2010_Inbox/" "151013_001.MP3" ".West_Cover.lb" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Rel_Free_Sum/Cover/" (22658 32260 0 0) "Perez_2017_Rel_Free_CoverLetter.tex" "Perez_2017_Rel_Free_CoverLetter.pdf" "Perez_2017_Rel_Free_CoverLetter.fdb_latexmk" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Personal/" (22618 40191 0 0) "Statements/" "Letters/" "Fitness/" "Family/" "Christmas_Labels/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Rel_Free_Sum/" (22656 52001 0 0) "Summer_Rel_Free.md" "Statement/" "Cover/" "auto/" "201701100000_Archived_Draft_Rel_Statement.pdf" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Rel_Free_Summ/Cover/" (22656 56605 0 0) "Perez_2017_Rel_Free_CoverLetter.md" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Rel_Free_Summ/" (22656 53745 0 0) "Cover/" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Writing/Readings/" (22655 33980 0 0) "Sebell_2016.md" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Writing/GOV_3012/" (22654 39606 0 0) "Class_Notes.org" "../" "./")
+
+ ("/Users/lmp/Documents/Work/SPURS_WORKSHOP/" (22650 30647 0 0) "Notes_winter_workshop.org" "../" "./")
+
+ ("/Users/lmp/Documents/Personal/Fitness/" (22647 58324 0 0) "Fitness_Tracking.tex" "Fitness_Tracking.pdf" "Fitness_Tracking.org" "auto/" "../" "./")
+
+ ("/Users/lmp/Documents/Inbox/SPURS_Fall_2016/" (22630 37174 0 0) "Sanchez_example.pdf" "Prebula_Formatted_Commented.pdf" "Carbajal_Formatted_Commented.pdf" "../" "./")
+
+ ("/Users/lmp/Dropbox/_AcademicWork/" (22560 34348 0 0) "Syllabi (collected)/" "Scrivener Projects/" "resume _ CV/" "Online_Clippings/" "LaTeX Training/" "iThoughts/" "Dissertation/" "Datasets/" "CV-Examples/" "Cites_Web/" "Citation_notes/" "Articles_etc/" "_notes/" "_Bibs/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/PMF/" (22629 15638 0 0) "Vets_Benefits_orders/" "PMF_Transcript/" "PMF_Res/" "essay.md" "Essay" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/" (22558 43186 0 0) "WR3 License OK.png" "Word/" "Wedding/" "website archived/" "Virtual APSA/" "Villanova/" "ThankYoufromLelia!/" "Texas/" "Teaching Archive/" "Stuarts Rules for Writing.pdf" "SPURS_AI_APPLICATION/" "Soulver Files/" "PhD-Applications/" "OmniFocus.ofocus/" "Ohio State/" "Luke and Lucia/" "Luke & Carolyn/" "Lucia's Phone View Archive/" "Longboard Habit Main Feature/" "Leo's Lounge/" "Leahy/" "JenMatthews(Resume)/" "IR prelim {DRAFT}/" "FSI Spanish/" "Fr_Martin_Augustine_Book/" "Fall 2013 _ RTF Writing/" "Elshtain/" "Elements/" "Confirmation — I Love Lucy.pdf" "Conejo Family.oo3/" "Cicero Rep-laws/" "carmenOHIO.mp3" "BusyCal Backups/" "Art of Photography selections.pdf" "Apps/" "Anki/" "ANG/" "@ 23 October 2014/" "5509 Link/" "2016-10-05-Website_Archive/" "201408240933 - Mac_Nuke_Pave.pdf" "201307131240 - Quick Conejo Family outline.md" "201304012359 - Airforce Leadership Thoughts.doc" "201206131512 - DCSS Account Info.md" "2010/" "200806171400 Confidential_Event Planning.docx" ".DS_Store" "(TextExpand) Backup for Transfer.textexpander" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/Teaching Archive/" (22628 28092 0 0) "RHE 398T/" "RHE 306/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/Teaching Archive/RHE 306/" (22628 28092 0 0) "2016Spring/" "2015Fall/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/Teaching Archive/RHE 306/2015Fall/" (22628 28204 0 0) "Toulmin.pdf" "Rhet-analysis/" "Rhet-Anal-Questions.md" "RHE306-presentation_peer-grades.soulver" "RHE306-Fall15_syllabus.pdf" "RHE306-Fall15_syllabus.mellel" "RHE306 - class prep.txt" "RHE306 (Perez) Syllabus.pdf" "RHE-staffmeeting-notes.txt" "Presentations (beamer)/" "Presentation Rubric.mellel" "Presentation dates.md" "Presentation/" "perez.GradesRHE_306.pdf" "Outline-StarWars.odt" "Notes-StarWars.odt" "Lesson Plans/" "handouts/" "essay 1.1/" "Class proposal/" "201512121441 - Student Loan.md" "201512111257 - Final Grade Submission.pdf" "201511302014 - Posse Retreat.md" "201511292238 - Presentation dates.md" "201511251000 - Presentation dates.md" "201511182356 - Five Books.mellel" "201510240833 - Outline-StarWars.pdf" "201510121344 - lesson plan for Caroline.rtf" "201510121344 - lesson plan for Caroline.md" "1.2 revision confirmations.md" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/Teaching Archive/RHE 306/2015Fall/handouts/" (22558 24904 0 0) "Writing Well/" "SampleRS-1.pdf" "SampleRS-1.mmd" "SampleRS-1.mellel" "../" "./")
+
+ ("/Users/lmp/Dropbox/zArchived/Teaching Archive/RHE 306/2015Fall/handouts/Writing Well/" (22628 28422 0 0) "Neibuhr-revised.tex" "memoir-article-styles.sty" "Bevo's Rules.tex" "Bevo's Rules.synctex.gz" "Bevo's Rules.pdf" "Bevo's Rules.log" "Bevo's Rules.aux" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Personal/Letters/" (22618 40154 0 0) "St_Davids_Appeal_Nov_2016/" "Seton_Fin_Aid/" "Brandon/" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Writing/Rumsfeld/" (22617 28834 0 0) "Perez_Luke_MidTerm_Report.tex" "Perez_Luke_MidTerm_Report.pdf" "Perez_Luke_MidTerm_Report.fdb_latexmk" "auto/" "../" "./")
+
+ ("/Users/lmp/Documents/Family/" (22598 63301 0 0) "ST_Davids.tex" "ST_Davids.pdf" "ST_Davids.org" "Jan_Bills_Est.soulver" "Dec_Cash_on_hand.soulver" "Dec_bills_paid.soulver" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/PMF/PMF_Res/" (22591 32218 0 0) "res.cls" "Perez_Resume_2016.tex" "Perez_Resume_2016.pdf" "Perez_Resume_2016.fdb_latexmk" "auto/" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/Thrash/Bambrick/" (22589 58304 0 0) "Bambrick_Nov2016.tex" "Bambrick_Nov2016.pdf" "Bambrick_Nov2016.fdb_latexmk" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/Thrash/Bell/" (22589 42870 0 0) "Bell_Prospectus_Commented.pages" "Bell_Prospectus_Commented.docx" "Bell_November2016.tex" "Bell_November2016.pdf" "Bell_November2016.fdb_latexmk" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Dissertation/Thrash/" (22589 36976 0 0) "Bell/" "Bambrick/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Personal/Christmas_Labels/" (22588 30925 0 0) "Return_Labels.pages" "Return_Label.tex" "Labels_Christmas.pages" "../" "./")
+
+ ("/Users/lmp/Documents/Personal/Letters/St_Davids_Appeal_Nov_2016/" (22588 27722 0 0) "St_David_Env.tex" "St_David_Env.pdf" "St_David_Env.fdb_latexmk" "St_David_Appeal.tex" "St_David_Appeal.pdf" "St_David_Appeal.fdb_latexmk" "auto/" "28_Nov_2016_Notarized/" ".DS_Store" "../" "./")
+
+ ("/Users/" (22558 17417 0 0) "Shared/" "lmp/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/lmp/Documents/2010_Docs_Archive/" (22556 45780 0 0) "Writing/" "vukovic_vladimir-art_of_attack.pdf" "snippet 2.mid" "SNAP_NOV/" "Smith (2016) TeachYourselfLogic.pdf" "Smith (2015–2016) Logic Symbols.pdf" "site_lmp/" "SAIS Summer Study 2016.pdf" "SAIS Summer Study/" "Rumsfeld 2016 Conference/" "RHE 309 - just war.dtBase2/" "Prospectus/" "PMF Guide.pdf" "pandoc guide.pdf" "Pacuit (2014) Logic_Games.pdf" "Notes.dtBase2/" "Lightroom Export/" "library.bib" "Letters/" "LaTeX/" "Kaiser-Cross (2015) thesis.pdf" "IRSE Conference/" "IO-1992-Haas.pdf" "Fitness/" "Ferejohn Hills (2016) SSRN-id2712933.pdf" "Fall 2016/" "Emacs_Help_setup.md" "Emacs_Archive/" "dissnotes/" "Camden Lamar/" "BusyCal Backups/" "Bonanno (nd) Logic_Game-Theory.pdf" "bibs/" "Barr (1968) {Notes Dialogue}.pdf" "Barney (2016) Aristotle_Trolling.pdf" "Adobe/" "A-Thousand-Plateaus.pdf" "_Inbox/" "_emacs_commands.md" "@statements/" "311_Just_War_Criteria.pdf" "201606010934 - Job_workshop.pdf" "20160427_Rumfeld_Fellowship_Award.pdf" "2016-08-12-Art_Writing_Proposals.pdf" "151013_001.MP3" ".West_Cover.lb" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/2010_Docs_Archive/_Inbox/" (22551 24010 0 0) "WlezienCVAugust2015.pdf" "WirelessDiagnostics_W8035YMTATM_2016-10-05_10.45.21.tar.gz" "Vinnie611_vs_lukemperez_2015_11_28.pgn" "UT Loans/" "UT (2015) Insurance Benefits.pdf" "UT (2015) Grad MPN - [62610184].pdf" "Using-R-Effectively-master-46e6a401e37ab554c7da6635df22ec920c61b4d6/" "uhri-results.csv" "UES - TSA Pre✓® Pre-Enroll.pdf" "turabian_instructor_guide.pdf" "turabian-formatting-doc.tex" "Tufte-LaTeX-tufte-latex-85b49a3/" "transactions.csv" "TODO_Finals.md" "The Search for American Political Development.pdf" "TextbooksOnLogic.pdf" "Texas_Gas_Error.pdf" "test.tex" "Syllabus (Research Design).pdf" "SSRN-id1968579.pdf" "Squarespace-Wordpress-Export-05-24-2016.xml" "SocSci_Compute.md" "simplenote/" "Simple_Note_Archive/" "Screen Shot 2016-10-04 at 3.05.45 PM.png" "Screen Shot 2016-07-01 at 5.33.10 PM.png" "Screen Shot 2016-07-01 at 5.32.59 PM.png" "Rumsfeld Foundation.md" "Robert's Rules January 2013.pdf" "Ricoh 17 December/" "RHE 306 Instructor Guide 2015-16.pdf" "Reimbursement Forms/" "Public Opinion and Voting Behavior_2015.doc" "Proj_Mgt_Short_ORG/" "Proj_Mgt.org" "progit-en.1084.epub" "prelim exams/" "pg2701-images.epub" "Personal_Bio.md" "Perez_Tuition_Bill.pdf" "Perez_Official_Tuition_Bill_Fall_2016.pdf" "Perez_Final.tex" "Perez_Fall_2016_Tuition.pdf" "Perez_2006_Primary_Resume.pdf" "Perez.nonlawApproval.pdf" "Perez on 8x10/" "Pay Grade at ANG Full Time.txt" "Org-mode.md" "On Writing Well (Ref copy).pdf" "OmniPresence/" "Old citation notes/" "nvAlt Notes/" "Notes_Oct_2016" "Nielsen (2016) unpub_decap.pdf" "Nacho_Smile_May_2016.jpg" "Nacho_Batts.jpg" "Nacho_Bananas.jpg" "Nacho_after-bath_May_2016.jpg" "My UT Benefits Online - Personal Information.pdf" "My UT Benefits - Benefits Summary.pdf" "My Clippings.txt" "Moving_Ohio.tex" "Moving_Ohio.org" "moving costs.soulver" "Mommy_Nacho_Splash.jpg" "Meier_et_al-2001-Journal_of_Politics.pdf" "Medicare_application/" "Medical Bill Relief/" "Magnus (2012).pdf" "LinuxBox.soulver" "library.bib" "Lease_lakeline-east.pdf" "lawtex/" "ksawritingworkshop2009.pdf" "June_Bills.soulver" "July_bills.soulver" "irony.tex" "irony.pdf" "irony.md" "IR Prelim.scriv/" "IR Prelim Backup.scriv/" "IR Exam Score – Spring 2016.pdf" "Intro_Regression/" "Insurance_Cards/" "IMG_5009.MOV.mov" "IMG_2088.MOV.mov" "IMG_0122.mov" "Ideas/" "GTD_Projects.png" "GTD_Context.png" "Gov_365_SuTerror_Sum2016_Final.pdf" "Gobet Jansen (2005) Chess.PDF" "GitHub/" "Gerring (nd) Christenson {Advice-on-Writing}.pdf" "Gentleman Ihaka (nd) lexical scoping.pdf" "Gantt_Example.png" "G0343255.pdf" "FranzeseKam.Interactions.pdf" "FEModels.pdf" "Federalism-shortpaper.mellel" "Exam4/" "emacs-ess.pdf" "Economics_2016-9.pdf" "DraftsExport.csv" "Drafts-export.md" "diss.dtBase2/" "Digital Editions/" "December CoH.soulver" "Data Science/" "Credit report.md" "Compute.pdf" "command line tips.md" "ColombiaAIMS_GeocodedResearchRelease_Level1_v1.1/" "CoH end of April.soulver" "COA Utilities - My Services.pdf" "Christmas 2015/" "cemd-aal-handout.pdf" "Camden_Savings.soulver" "BussGuide2.pdf" "building_emacs/" "Bryer.ResearchStatement.pdf" "bib-guidelines.tex" "bankstatements/" "Austin_Housing_2015.pdf" "August_CASH.soulver" "Anki/" "aguidetoksawriting.pdf" "Adobe/" "41393500.pdf" "201610051411_Remove_DSStore_File_in_Git.md" "201609301750_Texas_Benefits.pdf" "201607192138 - UT Insurance.pdf" "201607011219 - USAA to Mom for Car –July 2016.pdf" "201606270915 - Transfer to Lucia – July 2016.pdf" "201606251149 - misc_links.md" "201606010934 - Job_workshop.md" "201604271119.pdf" "201603230720 -  B&W 601 S2 Description.md" "201603080658 - Grader R.pdf" "201603010856 -  March bills.soulver" "201602111631 - SAIS scratch notes.md" "201602042058 - SAIS research statement.md" "201602041006 - SAIS Cover Letter.md" "2016-09-30-Fall_Finances.soulver" "2016-04-Bills.soulver" "2016 Fall Final ExamCIS Form.pdf" "2015TaxReturn.PDF" "2015TaxReturn-2.PDF" "2015TaxReturn copy.pdf" "2015_W2.pdf" "201512121441 - chess links.md" "201512050921 - Five Reasons.md" "201511161045 -  Brandon.md" "201510311600 - logic and marriage debate.md" "201510300930 - Alderaan.docx" "201510280529 - journal - Not talent but tenacity.md" "201510271103 - 309K proposal requirements.md" "201510252047 - Baby Nachito.md" "201510251904 - reading - Quandango 2009.md" "201510241205 - RHE 306 spring.md" "201510240844 - Outline Prospectus.oo3/" "201510240843 - Research notes _ starwars.md" "201510231020 - straw wars outline.md" "201510211352 - mini-prospectus.mellel" "201510211114 - letter, Seeker, Christopher.mellel" "201510211114 - letter - Rusk, Natalie.mellel" "201510192137 - letter - St David North.mellel" "201510190912 - Test - Index Cards.odt" "201510190703 -  Sample Note template" "201510110713 - writing revisions examples.md" "201510071519 - fall semester links.md" "201510051336 - history as poli Sci - Sparrow.md" "20151002 - OmniFocus-Oct 2015.md" "20150930 - Baby shower gifts.md" "201509131446 - RHE 306  student emails.md" "201509031727 - First day of class.md" "201508291335 - Sero te amavi.md" "201508132113 - MPEX Imaging Notes.md" "201507231530 - IR Prelim Bibliography.md" "201507031912 - IR Comp Prep.md" "201409201429 - Top Five Breakfasts.md" "201407300811 - Drafts Export.csv" "201210011616 - Lysis Reading Schedule.md" "2012-10-9-Fern-Wedding-Cohortians.jpg" "201104162351 - Act of Contrition.md" "200911222255 - outline scholastic disputation.pdf" "16-17 Authorization of Professional Services Letter.pdf" "02-annotations.tex" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/2010_Docs_Archive/_Inbox/Medical Bill Relief/" (22407 39464 0 0) "St_David_Forms/" "Pack_CFO/" "Ohio Health Forms/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/2010_Docs_Archive/_Inbox/Medical Bill Relief/Ohio Health Forms/" (22385 30349 0 0) "LaTeX Letter/" "2016_03_Pay_Stub.pdf" "2016_02_Pay_Stub.pdf" "2016_01_Pay_Stub.pdf" "201606071350.pdf" "2015_12_Pay_Stub.pdf" "2015_11_Pay_Stub.pdf" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/2010_Docs_Archive/_Inbox/Medical Bill Relief/Ohio Health Forms/LaTeX Letter/" (22250 53464 0 0) "letter_text_OH_Health.tex" "201603171013_Ohio_Health_Letter.tex" "201603171013_Ohio_Health_Letter.synctex.gz" "201603171013_Ohio_Health_Letter.pdf" "201603171013_Ohio_Health_Letter.log" "201603171013_Ohio_Health_Letter.aux" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

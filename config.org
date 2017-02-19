@@ -1,0 +1,433 @@
+#+startup: indent hidestars
+#+TITLE: Emacs Configuration
+#+AUTHOR: Luke M Perez
+
+* Introduction
+
+This is my Emacs =config.org= file. Following the best practices found around the web, the purpose of it is to house all my relevant customizations in this file rather than in =init.el=. The primary advantage is that by using =org-mode= to manage this file, I can rely on its powerful outlining and text manipulation features in a human readable way. 
+
+I do not write this for maximum portability. Comfortable as I might be with Emacs, I don't want to be responsible for troubleshooting when my file breaks your config. As such if you decide to use this as a starter-kit, I make no promises that anything works. I encourage you to copy and paste features one-at-a-time so that you can know immediately what, if anything, breaks your config.
+
+The boilerplate config file can be found from [[https://github.com/danielmai/dot-emacs-demo/blob/master/config.org][Daniel Mai's Github Repo]] of same name. I also rely on code from [[https://kieranhealy.org/resources/emacs-starter-kit/][Kieran Healy's starter kit]], [[https://github.com/jabranham/emacs-for-social-science/blob/master/init-emacs.org][Alex Branham's starter kit]], as well as various blog posts from [[http://sachachua.com/blog/][Sacha Chua]] and [[https://www.masteringemacs.org/][Mastering Emacs]]. Where possible, I try to reference them below in the outline. 
+
+* Personal Information
+
+#+begin_src emacs-lisp
+(setq user-full-name "Luke M Perez"
+      user-mail-address "lukemperez@gmail.com")
+#+end_src
+
+* Customize settings
+
+Set up the customize file to its own separate file, instead of saving
+customize settings in [[file:init.el][init.el]]. 
+
+#+begin_src emacs-lisp
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file)
+#+end_src
+
+* Sane defaults
+
+Let's start with some sane defaults, shall we?
+
+Sources for this section include [[https://github.com/magnars/.emacs.d/blob/master/settings/sane-defaults.el][Magnars Sveen]] and [[http://pages.sachachua.com/.emacs.d/Sacha.html][Sacha Chua]].
+
+#+begin_src emacs-lisp
+;; These functions are useful. Activate them.
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'narrow-to-region 'disabled nil)
+(put 'dired-find-alternate-file 'disabled nil)
+
+ 
+;; Answering just 'y' or 'n' will do
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; Keep all backup and auto-save files in one directory
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
+
+;; UTF-8 please
+(setq locale-coding-system 'utf-8) ; pretty
+(set-terminal-coding-system 'utf-8) ; pretty
+(set-keyboard-coding-system 'utf-8) ; pretty
+(set-selection-coding-system 'utf-8) ; please
+(prefer-coding-system 'utf-8) ; with sugar on top
+(setq-default indent-tabs-mode nil)
+
+;; Turn off the blinking cursor
+(blink-cursor-mode -1)
+
+(setq-default indent-tabs-mode nil)
+(setq-default indicate-empty-lines t)
+
+;; Don't count two spaces after a period as the end of a sentence.
+;; Just one space is needed.
+(setq sentence-end-double-space nil)
+
+;; delete the region when typing, just like as we expect nowadays.
+(delete-selection-mode t)
+
+(show-paren-mode t)
+
+(column-number-mode t)
+
+(global-visual-line-mode)
+(diminish 'visual-line-mode)
+
+(setq uniquify-buffer-name-style 'forward)
+
+;; -i gets alias definitions from .bash_profile
+(setq shell-command-switch "-ic")
+
+;; Don't beep at me
+(setq visible-bell t)
+#+end_src
+
+The following function for ~occur-dwim~ is taken from [[https://github.com/abo-abo][Oleh Krehel]] from
+[[http://oremacs.com/2015/01/26/occur-dwim/][his blog post at (or emacs]]. It takes the current region or the symbol
+at point as the default value for occur.
+
+#+begin_src emacs-lisp
+(defun occur-dwim ()
+  "Call `occur' with a sane default."
+  (interactive)
+  (push (if (region-active-p)
+            (buffer-substring-no-properties
+             (region-beginning)
+             (region-end))
+          (thing-at-point 'symbol))
+        regexp-history)
+  (call-interactively 'occur))
+
+(bind-key "M-s o" 'occur-dwim)
+#+end_src
+
+Ido-mode is a great way to show the file path when searching. Sacha Chua has more that I will need to review in time. 
+#+BEGIN_SRC emacs-lisp
+(require 'ido)
+(ido-mode t)
+
+#+END_SRC
+* Personal settings
+** Packages for improved emacs usage
+*** Helm
+*** ido 
+** Reading and Writing
+In this section I have the settings that enhacince the composition and editing of my text files.
+*** Font and sizing
+**** Font Inconsolata
+#+BEGIN_SRC emacs-lisp
+(set-default-font "Inconsolata-15")
+#+END_SRC
+*** Darkroom Mode
+Something in this setup is wrong and needs to be fixed.
+
+Details for =darkroom-mode= are located on it's website [[https://github.com/joaotavora/darkroom][here.]] It
+creates enlarged text and wide margins so that the text is in the
+center of the screen which makes writing much easier. One feature
+worth mentioning is =darkroom-tentative-mode= which will automatically
+exit the mode if there is more than one window in the frame (i.e.,
+=C-x 1=).
+
+#+BEGIN_SRC emacs-lisp
+  ; (use-package darkroom-mode
+  ;   :commands darkroom-tentative-mode
+  ;   :init
+  ;   (progn
+  ;     (defvar darkroom-mode-face-foreground "Inconsolata")
+  ;     (defvar darkroom-mode-face-size 160)
+  ;     (defvar darkroom-mode-center-margin 80)
+  ;     (define-key global-map [f6] 'darkroom-mode)))
+
+
+#+END_SRC
+*** Writeroom Mode
+
+=writeroom-mode= works very similar to darkroom mode and on my system seems to work much better. Details can be found on [[https://github.com/joostkremers/writeroom-mode][WriteRoom Mode at Github]]. 
+
+#+BEGIN_SRC emacs-lisp
+  (use-package writeroom-mode
+    :ensure t
+    :init
+    (progn
+      (define-key global-map [f6] 'writeroom-mode)))
+
+#+END_SRC
+*** Spell Check
+I use =flyspell= for spell check. the command is C-; to check the
+previous word. If it does not autocorrect with the correct word, you
+can run the command again.
+
+#+BEGIN_SRC emacs-lisp
+  (use-package flyspell
+    :ensure t
+    :defer t
+    :init
+    (progn
+      (add-hook 'prog-mode-hook 'flyspell-prog-mode)
+      (add-hook 'text-mode-hook 'flyspell-mode)
+      )
+    :config
+    ;; Sets flyspell correction to use two-finger mouse click
+    (define-key flyspell-mouse-map [down-mouse-3] #'flyspell-correct-word)
+    )
+#+END_SRC
+** Latex and Markdown
+Here I have settings specific to LaTeX and Markdown files including Pandoc. 
+*** Pandoc Mode
+This code I borrowed from [[https://kieranhealy.org/resources/emacs-starter-kit/ ][Kerian Healy's Emacs Starter Kit]], from which much of the social science, pandoc, and latex code was found. The point of pandoc mode is to allow me to both write articles and chapters in markdown while exporting to the necessary file format. 
+
+#+BEGIN_SRC emacs-lisp
+  (use-package pandoc-mode
+    :ensure t
+    :ensure hydra
+    :init 
+    (add-hook 'markdown-mode-hook 'pandoc-mode)
+    (add-hook 'TeX-mode-hook 'pandoc-mode)
+    (add-hook 'pandoc-mode-hook 'pandoc-load-default-settings)
+    (global-set-key (kbd "C-c p") 'pandoc-main-hydra/body)
+
+  )
+
+  ;; (add-hook 'markdown-mode-hook 'pandoc-mode)
+  ;; (add-hook 'TeX-mode-hook 'pandoc-mode)
+  ;; (add-hook 'pandoc-mode-hook 'pandoc-load-default-settings)
+  ;; (global-set-key (kbd "C-c p") 'pandoc-main-hydra/body)
+
+  ;; (require 'poly-R)
+  ;; (require 'poly-markdown)
+
+  ;;; polymode + markdown
+  ;; (add-to-list 'auto-mode-alist '("\\.md" . poly-markdown-mode))
+
+  ;;; polymode + R
+  ;; (add-to-list 'auto-mode-alist '("\\.Snw" . poly-noweb+r-mode))
+  ;; (add-to-list 'auto-mode-alist '("\\.Rnw" . poly-noweb+r-mode))
+  ;; (add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
+
+#+END_SRC
+
+We also want to use =Polymode= so that emacs can edit Rmarkdown type files that have R code in them. 
+
+#+BEGIN_SRC emacs-lisp
+  (use-package polymode
+    :ensure t
+    :mode
+    ("\\.Snw" . poly-noweb+r-mode)
+    ("\\.Rnw" . poly-noweb+r-mode)
+    ("\\.Rmd" . poly-markdown+r+mode)
+    ("\\.md" . poly-markdown-mode)
+    )
+
+#+END_SRC
+*** Markdown files
+Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =org-mode=. 
+
+#+BEGIN_SRC emacs-lisp
+
+(use-package markdown-mode
+	:ensure t)
+
+#+END_SRC
+*** AuCTeX
+If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No sense in trying anything else. One challenge that I had while setting up AuCTeX is that with Mac OSX El Cap, Emacs can have trouble finding the TeX distribution. I found very useful code from [[http://www.qqyang.org/blog/not-complete-guide-to-basictex/][Qingqing Yang's blog]] 
+
+#+BEGIN_SRC emacs-lisp
+(let (
+      (my-paths
+       '("~/bin"
+         "/usr/local/bin"
+         "/usr/bin"
+         "/Library/TeX/texbin" ; add path to basictex bin
+         "/usr/texbin" ; add path to basictex bin
+         "/Applications/Julia.app/Contents/Resources/julia/bin" ; path to julia bin
+         "/bin"
+         )))
+  (setenv "PATH" (concat (getenv "PATH") ":"
+                         (mapconcat 'identity my-paths ":")))
+  (setq exec-path (append my-paths (list "." exec-directory))))
+
+(use-package tex-site
+  :ensure auctex
+  :config
+  (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
+  (setq TeX-auto-save t
+        TeX-parse-self t
+        reftex-plug-into-AUCTeX t)
+  (add-hook 'LaTeX-mode-hook #'TeX-PDF-mode)
+  (setq TeX-source-correlate-method 'synctex)
+  (setq TeX-source-correlate-mode t)
+  (eval-after-load "tex"
+    '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s" TeX-run-TeX nil t :help "Process file with latexmk"))
+    )
+  (eval-after-load "tex"
+    '(add-to-list 'TeX-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s" TeX-run-TeX nil t :help "Process file with xelatexmk"))
+    )
+  (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
+#+END_SRC
+
+*** RefTex
+
+Now we need Org-Mode and LaTeX to find our bibliographies when we need them. For this we use =Ref-Tex=. Later we'll set up =Org-Ref= which does similar features more powerfully than =RefTex= but having both is essential so that you can work with both =.org= and =.tex= files.
+
+#+BEGIN_SRC emacs-lisp
+(setq reftex-default-bibliography 
+  '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+
+(setq reftex-bibpath-environment-variables
+  '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+
+(setq reftex-bibpath-environment-variables
+'("/Users/lmp/Library/texmf/bibtex/bib"))
+(setq reftex-default-bibliography '("/Users/lmp/Files/Academic/Bibliography/main.bib"))
+(setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
+
+(setq reftex-default-bibliography
+      (quote
+       ("user.bib" "local.bib" "main.bib")))
+
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+(autoload 'reftex-mode     "reftex" "RefTeX Minor Mode" t)
+(autoload 'turn-on-reftex  "reftex" "RefTeX Minor Mode" nil)
+(autoload 'reftex-citation "reftex-cite" "Make citation" nil)
+(autoload 'reftex-index-phrase-mode "reftex-index" "Phrase mode" t)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+
+;; Make RefTeX faster
+(setq reftex-enable-partial-scans t)
+(setq reftex-save-parse-info t)
+(setq reftex-use-multiple-selection-buffers t)
+(setq reftex-plug-into-AUCTeX t)
+
+;; Make RefTeX work with Org-Mode
+;; use 'C-c ]' instead of 'C-c [' because the latter is already
+;; defined in orgmode to the add-to-agenda command.
+(defun org-mode-reftex-setup ()
+  (load-library "reftex") 
+  (and (buffer-file-name)
+  (file-exists-p (buffer-file-name))
+  (reftex-parse-all))
+  (define-key org-mode-map (kbd "C-c ]") 'reftex-citation))
+
+(add-hook 'org-mode-hook 'org-mode-reftex-setup)
+
+;; RefTeX formats for biblatex (not natbib)
+(setq reftex-cite-format
+      '(
+        (?\C-m . "\\cite[]{%l}")
+        (?t . "\\textcite{%l}")
+        (?a . "\\autocite[]{%l}")
+        (?p . "\\parencite{%l}")
+        (?f . "\\footcite[][]{%l}")
+        (?F . "\\fullcite[]{%l}")
+        (?x . "[]{%l}")
+        (?X . "{%l}")
+        ))
+
+(setq font-latex-match-reference-keywords
+      '(("cite" "[{")
+        ("cites" "[{}]")
+        ("autocite" "[{")
+        ("footcite" "[{")
+        ("footcites" "[{")
+        ("parencite" "[{")
+        ("textcite" "[{")
+        ("fullcite" "[{") 
+        ("citetitle" "[{") 
+        ("citetitles" "[{") 
+        ("headlessfullcite" "[{")))
+
+(setq reftex-cite-prompt-optional-args nil)
+(setq reftex-cite-cleanup-optional-args t)
+
+
+#+END_SRC
+
+*** OrgRef
+
+=Org-Ref= is a powerful tool for working with citations, cross-references, and the like in Org-Mode courtesy of [[https://github.com/jkitchin/org-ref][John Kitchin]]. 
+
+#+BEGIN_SRC emacs-lisp
+
+(use-package org-ref
+	:ensure t
+	:init
+	(setq reftex-default-bibliography '("~/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+	(setq org-ref-default-bibliography '("~/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+	
+	(setq helm-bibtex-bibliography "~Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+
+#+END_SRC
+
+* Themes
+** Preliminaries 
+First we need to be able to switch themes as needed. I copied this code directly from [[https://github.com/danielmai/.emacs.d/blob/master/config.org][Daniel Mai]]
+
+#+BEGIN_SRC emacs-lisp
+
+;; This allows us to switch themes as needed
+
+(defun switch-theme (theme)
+  "Disables any currently active themes and loads THEME."
+  ;; This interactive call is taken from `load-theme'
+  (interactive
+   (list
+    (intern (completing-read "Load custom theme: "
+                             (mapc 'symbol-name
+                                   (custom-available-themes))))))
+  (let ((enabled-themes custom-enabled-themes))
+    (mapc #'disable-theme custom-enabled-themes)
+    (load-theme theme t)))
+
+(defun disable-active-themes ()
+  "Disables any currently active themes listed in `custom-enabled-themes'."
+  (interactive)
+  (mapc #'disable-theme custom-enabled-themes))
+
+(bind-key "s-<f12>" 'switch-theme)
+(bind-key "s-<f11>" 'disable-active-themes)
+
+#+END_SRC
+
+Now we can load out themes
+
+** Paganini Theme
+
+#+BEGIN_SRC emacs-lisp
+
+(use-package paganini-theme
+	:ensure t
+	:init)
+
+#+END_SRC
+
+** Zenburn Theme
+
+#+BEGIN_SRC emacs-lisp
+  (use-package zenburn-theme
+    :ensure t)
+
+#+END_SRC
+
+# #+BEGIN_SRC emacs-lisp
+
+# (use-package org-ref
+# 	:after org
+# 	:init
+# 	(setq reftex-default-bibliography '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib")))
+
+# #+END_SRC
+
+** Solarized-Light
+
+#+BEGIN_SRC emacs-lisp
+(use-package solarized-theme
+	:ensure t)
+
+#+END_SRC
+
+#+RESULTS:
+
