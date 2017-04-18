@@ -71,6 +71,10 @@
 (require 'ido)
 (ido-mode t)
 
+(use-package centered-cursor-mode
+        :ensure t
+        :init)
+
 (set-default-font "Inconsolata-15")
 
 ; (use-package darkroom-mode
@@ -172,8 +176,11 @@
     )
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 
-(setq reftex-default-bibliography 
-  '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+;; if this isn't already set in your .emacs
+(setq reftex-default-bibliography '("/Dropbox/AcademicWork/Bibs/refs.bib")) 
+
+;; (setq reftex-default-bibliography 
+  ;; '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
 
 (setq reftex-bibpath-environment-variables
   '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
@@ -241,6 +248,32 @@
 
 (setq reftex-cite-prompt-optional-args nil)
 (setq reftex-cite-cleanup-optional-args t)
+
+;; reftex in markdown mode
+
+;; define markdown citation formats
+(defvar markdown-cite-format)
+(setq markdown-cite-format
+      '(
+        (?\C-m . "[@%l]")
+        (?p . "[@%l]")
+        (?t . "@%l")
+        )
+      )
+
+;; wrap reftex-citation with local variables for markdown format
+(defun markdown-reftex-citation ()
+  (interactive)
+  (let ((reftex-cite-format markdown-cite-format)
+        (reftex-cite-key-separator "; @"))
+    (reftex-citation)))
+
+;; bind modified reftex-citation to C-c[, without enabling reftex-mode
+;;https://www.gnu.org/software/auctex/manual/reftex/Citations-Outside-LaTeX.html#SEC31
+(add-hook
+ 'markdown-mode-hook
+ (lambda ()
+   (define-key markdown-mode-map "\C-c[" 'markdown-reftex-citation)))
 
 (use-package org-ref
         :ensure t

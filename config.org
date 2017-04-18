@@ -110,6 +110,19 @@ Ido-mode is a great way to show the file path when searching. Sacha Chua has mor
 (ido-mode t)
 
 #+END_SRC
+
+Scrolling mode to keep the cursor centered: 
+
+#+BEGIN_SRC emacs-lisp
+
+(use-package centered-cursor-mode
+	:ensure t
+	:init)
+
+#+END_SRC
+
+#+RESULTS:
+
 * Personal settings
 ** Packages for improved emacs usage
 *** Helm
@@ -273,8 +286,13 @@ If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No s
 Now we need Org-Mode and LaTeX to find our bibliographies when we need them. For this we use =Ref-Tex=. Later we'll set up =Org-Ref= which does similar features more powerfully than =RefTex= but having both is essential so that you can work with both =.org= and =.tex= files.
 
 #+BEGIN_SRC emacs-lisp
-(setq reftex-default-bibliography 
-  '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+
+
+;; if this isn't already set in your .emacs
+(setq reftex-default-bibliography '("/Dropbox/AcademicWork/Bibs/refs.bib")) 
+
+;; (setq reftex-default-bibliography 
+  ;; '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
 
 (setq reftex-bibpath-environment-variables
   '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
@@ -345,6 +363,39 @@ Now we need Org-Mode and LaTeX to find our bibliographies when we need them. For
 
 
 #+END_SRC
+
+**** Markdown Reftex
+
+#+BEGIN_SRC emacs-lisp
+;; reftex in markdown mode
+
+;; define markdown citation formats
+(defvar markdown-cite-format)
+(setq markdown-cite-format
+      '(
+        (?\C-m . "[@%l]")
+        (?p . "[@%l]")
+        (?t . "@%l")
+        )
+      )
+
+;; wrap reftex-citation with local variables for markdown format
+(defun markdown-reftex-citation ()
+  (interactive)
+  (let ((reftex-cite-format markdown-cite-format)
+        (reftex-cite-key-separator "; @"))
+    (reftex-citation)))
+
+;; bind modified reftex-citation to C-c[, without enabling reftex-mode
+;;https://www.gnu.org/software/auctex/manual/reftex/Citations-Outside-LaTeX.html#SEC31
+(add-hook
+ 'markdown-mode-hook
+ (lambda ()
+   (define-key markdown-mode-map "\C-c[" 'markdown-reftex-citation)))
+#+END_SRC
+
+#+RESULTS:
+| (lambda nil (define-key markdown-mode-map [ (quote markdown-reftex-citation))) | pandoc-mode |
 
 *** OrgRef
 
