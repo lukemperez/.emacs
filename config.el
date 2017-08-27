@@ -75,6 +75,11 @@
         :ensure t
         :init)
 
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 (set-default-font "Inconsolata-15")
 
 ; (use-package darkroom-mode
