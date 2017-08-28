@@ -18,7 +18,7 @@ The boilerplate config file can be found from [[https://github.com/danielmai/dot
 #+end_src
 
 * Customize settings
-
+** Export init.el
 Set up the customize file to its own separate file, instead of saving
 customize settings in [[file:init.el][init.el]]. 
 
@@ -35,8 +35,6 @@ customize settings in [[file:init.el][init.el]].
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 #+END_SRC
 
-#+RESULTS:
-
 * Sane defaults
 ** Sane Defaults
 Let's start with some sane defaults, shall we?
@@ -50,13 +48,8 @@ Sources for this section include [[https://github.com/magnars/.emacs.d/blob/mast
 (put 'narrow-to-region 'disabled nil)
 (put 'dired-find-alternate-file 'disabled nil)
 
- 
 ;; Answering just 'y' or 'n' will do
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; Keep all backup and auto-save files in one directory
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
 
 ;; UTF-8 please
 (setq locale-coding-system 'utf-8) ; pretty
@@ -134,52 +127,36 @@ Scrolling mode to keep the cursor centered:
 #+END_SRC
 
 #+RESULTS:
-** Save backups to Directory
+# ** Save backups to Directory
 
-Here we want to save the backups to a single directory rather than in the file I'm working on.
+# Here we want to save the backups to a single directory rather than in the file I'm working on.
 
-#+BEGIN_SRC emacs-lisp
-    (setq backup-directory-alist
-          `((".*" . ,temporary-file-directory)))
-    (setq auto-save-file-name-transforms
-          `((".*" ,temporary-file-directory t)))
-#+END_SRC
+# #+BEGIN_SRC emacs-lisp
+#     (setq backup-directory-alist
+#           `((".*" . ,temporary-file-directory)))
+#     (setq auto-save-file-name-transforms
+#           `((".*" ,temporary-file-directory t)))
+# #+END_SRC
 
-#+RESULTS:
-| .* | /var/folders/ky/gk2v4nrx1ljfqk4xlrcml9hc0000gn/T/ | t |
+# #+RESULTS:
+# | .* | /var/folders/ky/gk2v4nrx1ljfqk4xlrcml9hc0000gn/T/ | t |
+
+;; Keep all backup and auto-save files in one directory
+
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
 
 * Personal settings
-** Packages for improved emacs usage
-*** Helm
 ** Reading and Writing
 In this section I have the settings that enhacince the composition and editing of my text files.
+
 *** Font and sizing
 **** Font Inconsolata
 #+BEGIN_SRC emacs-lisp
 (set-default-font "Inconsolata-15")
 #+END_SRC
-*** Darkroom Mode
-Something in this setup is wrong and needs to be fixed.
-
-Details for =darkroom-mode= are located on it's website [[https://github.com/joaotavora/darkroom][here.]] It
-creates enlarged text and wide margins so that the text is in the
-center of the screen which makes writing much easier. One feature
-worth mentioning is =darkroom-tentative-mode= which will automatically
-exit the mode if there is more than one window in the frame (i.e.,
-=C-x 1=).
-
-#+BEGIN_SRC emacs-lisp
-  ; (use-package darkroom-mode
-  ;   :commands darkroom-tentative-mode
-  ;   :init
-  ;   (progn
-  ;     (defvar darkroom-mode-face-foreground "Inconsolata")
-  ;     (defvar darkroom-mode-face-size 160)
-  ;     (defvar darkroom-mode-center-margin 80)
-  ;     (define-key global-map [f6] 'darkroom-mode)))
 
 
-#+END_SRC
 *** Writeroom Mode
 
 =writeroom-mode= works very similar to darkroom mode and on my system seems to work much better. Details can be found on [[https://github.com/joostkremers/writeroom-mode][WriteRoom Mode at Github]]. 
@@ -190,8 +167,8 @@ exit the mode if there is more than one window in the frame (i.e.,
     :init
     (progn
       (define-key global-map [f6] 'writeroom-mode)))
-
 #+END_SRC
+
 *** Spell Check
 I use =flyspell= for spell check. the command is C-; to check the
 previous word. If it does not autocorrect with the correct word, you
@@ -211,6 +188,7 @@ can run the command again.
     (define-key flyspell-mouse-map [down-mouse-3] #'flyspell-correct-word)
     )
 #+END_SRC
+
 ** Latex and Markdown
 Here I have settings specific to LaTeX and Markdown files including Pandoc. 
 *** Pandoc Mode
@@ -259,8 +237,9 @@ We also want to use =Polymode= so that emacs can edit Rmarkdown type files that 
     )
 
 #+END_SRC
+
 *** Markdown files
-Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =org-mode=. 
+Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =LaTeX= or =org-mode=. 
 
 #+BEGIN_SRC emacs-lisp
 
@@ -268,6 +247,7 @@ Although Markdown Mode is not as powerful as Org Mode, it has the benefit of bei
 	:ensure t)
 
 #+END_SRC
+
 *** AuCTeX
 If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No sense in trying anything else. One challenge that I had while setting up AuCTeX is that with Mac OSX El Cap, Emacs can have trouble finding the TeX distribution. I found very useful code from [[http://www.qqyang.org/blog/not-complete-guide-to-basictex/][Qingqing Yang's blog]] 
 
@@ -315,15 +295,12 @@ Now we need Org-Mode and LaTeX to find our bibliographies when we need them. For
 ;; if this isn't already set in your .emacs
 (setq reftex-default-bibliography '("/Dropbox/AcademicWork/Bibs/refs.bib")) 
 
-;; (setq reftex-default-bibliography 
-  ;; '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
-
 (setq reftex-bibpath-environment-variables
-  '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+  '("/Users/lmp/Dropbox/AcademicWork/Bibs/refs.bib"))
 
 (setq reftex-bibpath-environment-variables
 '("/Users/lmp/Library/texmf/bibtex/bib"))
-(setq reftex-default-bibliography '("/Users/lmp/Files/Academic/Bibliography/main.bib"))
+(setq reftex-default-bibliography '("/Users/lmp/Dropbox/AcademicWork/Bibs/refs.bib"))
 (setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
 
 (setq reftex-default-bibliography
@@ -430,10 +407,10 @@ Now we need Org-Mode and LaTeX to find our bibliographies when we need them. For
 (use-package org-ref
 	:ensure t
 	:init
-	(setq reftex-default-bibliography '("~/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
-	(setq org-ref-default-bibliography '("~/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+	(setq reftex-default-bibliography '("~/Dropbox/_AcademicWork/Bibs/refs.bib"))
+	(setq org-ref-default-bibliography '("~/Dropbox/_AcademicWork/Bibs/refs.bib"))
 	
-	(setq helm-bibtex-bibliography "~Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+	(setq helm-bibtex-bibliography "~Dropbox/_AcademicWork/Bibs/refs.bib"))
 
 #+END_SRC
 

@@ -15,13 +15,8 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'dired-find-alternate-file 'disabled nil)
 
- 
 ;; Answering just 'y' or 'n' will do
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; Keep all backup and auto-save files in one directory
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
 
 ;; UTF-8 please
 (setq locale-coding-system 'utf-8) ; pretty
@@ -79,21 +74,7 @@
         :ensure t
         :init)
 
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
-
 (set-default-font "Inconsolata-15")
-
-; (use-package darkroom-mode
-;   :commands darkroom-tentative-mode
-;   :init
-;   (progn
-;     (defvar darkroom-mode-face-foreground "Inconsolata")
-;     (defvar darkroom-mode-face-size 160)
-;     (defvar darkroom-mode-center-margin 80)
-;     (define-key global-map [f6] 'darkroom-mode)))
 
 (use-package writeroom-mode
   :ensure t
@@ -188,15 +169,12 @@
 ;; if this isn't already set in your .emacs
 (setq reftex-default-bibliography '("/Dropbox/AcademicWork/Bibs/refs.bib")) 
 
-;; (setq reftex-default-bibliography 
-  ;; '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
-
 (setq reftex-bibpath-environment-variables
-  '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+  '("/Users/lmp/Dropbox/AcademicWork/Bibs/refs.bib"))
 
 (setq reftex-bibpath-environment-variables
 '("/Users/lmp/Library/texmf/bibtex/bib"))
-(setq reftex-default-bibliography '("/Users/lmp/Files/Academic/Bibliography/main.bib"))
+(setq reftex-default-bibliography '("/Users/lmp/Dropbox/AcademicWork/Bibs/refs.bib"))
 (setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
 
 (setq reftex-default-bibliography
@@ -287,10 +265,10 @@
 (use-package org-ref
         :ensure t
         :init
-        (setq reftex-default-bibliography '("~/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
-        (setq org-ref-default-bibliography '("~/Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+        (setq reftex-default-bibliography '("~/Dropbox/_AcademicWork/Bibs/refs.bib"))
+        (setq org-ref-default-bibliography '("~/Dropbox/_AcademicWork/Bibs/refs.bib"))
         
-        (setq helm-bibtex-bibliography "~Dropbox/_AcademicWork/_Bibs/prospectus.bib"))
+        (setq helm-bibtex-bibliography "~Dropbox/_AcademicWork/Bibs/refs.bib"))
 
 ;; This allows us to switch themes as needed
 
