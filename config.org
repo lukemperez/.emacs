@@ -27,6 +27,16 @@ customize settings in [[file:init.el][init.el]].
 (load custom-file)
 #+end_src
 
+** MELPA
+
+#+BEGIN_SRC emacs-lisp
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+#+END_SRC
+
+#+RESULTS:
+
 * Sane defaults
 ** Sane Defaults
 Let's start with some sane defaults, shall we?
