@@ -414,6 +414,15 @@ Now we need Org-Mode and LaTeX to find our bibliographies when we need them. For
 
 #+END_SRC
 
+** Org-Bullets
+
+#+BEGIN_SRC emacs-lisp
+
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+#+END_SRC
+
 * Themes
 ** Preliminaries 
 First we need to be able to switch themes as needed. I copied this code directly from [[https://github.com/danielmai/.emacs.d/blob/master/config.org][Daniel Mai]]

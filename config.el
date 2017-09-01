@@ -270,6 +270,9 @@
         
         (setq helm-bibtex-bibliography "~Dropbox/_AcademicWork/Bibs/refs.bib"))
 
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
 ;; This allows us to switch themes as needed
 
 (defun switch-theme (theme)
