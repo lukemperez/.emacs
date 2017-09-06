@@ -483,15 +483,12 @@ Now we can load out themes
 
 #+END_SRC
 
-#+RESULTS:
-
 ** Github Theme
 
 #+BEGIN_SRC emacs-lisp
-(use-package 'github-theme
+
+(use-package github-theme
 	:ensure t
-	:init 
-	(setq github-theme t)
 	:config
 	(load-theme 'github t)
 )

@@ -307,10 +307,8 @@
         :ensure t
         :defer t)
 
-(use-package 'github-theme
+(use-package github-theme
         :ensure t
-        :init 
-        (setq github-theme t)
-        :config: 
+        :config
         (load-theme 'github t)
 )
