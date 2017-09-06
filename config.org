@@ -492,7 +492,7 @@ Now we can load out themes
 	:ensure t
 	:init 
 	(setq github-theme t)
-	:config: 
+	:config
 	(load-theme 'github t)
 )
 

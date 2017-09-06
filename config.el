@@ -297,10 +297,20 @@
 
 (use-package paganini-theme
         :ensure t
-        :init)
+        :defer t)
 
 (use-package zenburn-theme
-  :ensure t)
+  :ensure t
+      :defer t)
 
 (use-package solarized-theme
-        :ensure t)
+        :ensure t
+        :defer t)
+
+(use-package 'github-theme
+        :ensure t
+        :init 
+        (setq github-theme t)
+        :config: 
+        (load-theme 'github t)
+)

@@ -55,16 +55,16 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/lmp/.emacs.d/"
+ "/Users/lmp/Documents/Work/2017_Fall_Gov_310/Class_Lectures/02_week/"
  "/Users/lmp/Documents/Work/2017_Fall_Gov_310/"
  "/Users/lmp/Documents/Work/2017_Fall_Gov_310/miniLectures/"
  "/Users/lmp/Documents/Dissertation/"
  "/Users/lmp/Documents/Work/CV/"
  "/Users/lmp/Documents/Work/Academic_Jobs/JOB_APPS/BaldwinWallace/"
- "/Users/lmp/Documents/Work/2017_Fall_Gov_310/Class_Lectures/02_week/"
  "/Users/lmp/Documents/DHFS/"
  "/Users/lmp/Documents/DHFS/Project-Mgt-Short-Course/Git_Proj_MGT/"
  "/Users/lmp/Documents/Work/Academic_Jobs/"
- "/Users/lmp/.emacs.d/"
  "/Users/lmp/Documents/Writing/"
  "/Users/lmp/Dropbox/AcademicWork/Bibs/"
  "/Users/lmp/.emacs.d/elpa/archives/melpa/"
@@ -109,6 +109,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config.org"
+ "Week_2_Thu.md"
  "2017_Perez_Gov310_Syllabus.md"
  "mini.md"
  "Dissertation.org"
@@ -117,33 +119,31 @@
  "Week_two_lecture.md"
  "CommAdv.org"
  "Closed_Loops.tex"
- "Proj_Mgt_Handout.tex"
- "beamer_head.tex"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/lmp/Documents/Work/2017_Fall_Gov_310/Class_Lectures/02_week/" (22960 6681 0 0) "Week_two_lecture.md~" "Week_two_lecture.md" "Week_2_Thu.md~" "Week_2_Thu.md" "test.tex" "slides.pdf" "makefile" "lecture.pdf" "beamer_head.tex" "beamer.latex" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/.emacs.d/" (22960 2308 0 0) "readme.md" "org-bullets.el" "network-security.data" "LICENSE" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "custom.el" "config.org" "config.el" "bookmarks" "backups/" "auto-save-list/" ".org-id-locations" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/DHFS/Project-Mgt-Short-Course/Git_Proj_MGT/" (22959 26292 0 0) "Proj_Mgt_Handout.xdv" "Proj_Mgt_Handout.tex" "Proj_Mgt_Handout.pdf" "Proj_Mgt_Handout.fdb_latexmk" "Proj_MGT.bib" "Closed_Loops.xdv" "Closed_Loops.toc" "Closed_Loops.tex~" "Closed_Loops.tex" "Closed_Loops.synctex.gz" "Closed_Loops.snm" "Closed_Loops.rel" "Closed_Loops.pdf" "Closed_Loops.out" "Closed_Loops.nav" "Closed_Loops.log" "Closed_Loops.fls" "Closed_Loops.fdb_latexmk" "Closed_Loops.aux" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Documents/Work/2017_Fall_Gov_310/miniLectures/" (22959 26263 0 0) "mini.md~" "mini.md" "../" "./")
+
+ ("/Users/lmp/Documents/Work/Academic_Jobs/" (22960 2830 0 0) "Sept_jobs.md~" "Sept_jobs.md" "Letter_Writers/" "Jobs_At_Glance.pdf" "JobApplications.org" "JOB_APPS/" "Gov_JobMarket_Meeting.pdf" "Gov_JobMarket_Meeting.org" "APSA_Emails.numbers" "APSA_eJobs.md" "APSA_Cover_Letters/" "AcademicJobs.org~" "AcademicJobs.org" "Academic_Jobs.numbers" ".DS_Store" "../" "./")
+
  ("/Users/lmp/Documents/Dissertation/" (22959 20300 0 0) "utdiss2-05/" "todo.sty" "README.md" "Perez_Dissertation_Outline.pdf" "Perez_2017_ReligFree_grandstrat.md" "Notes/" "NARA_Files/" "Misc_Readings/" "makefile" "HMJ_UW_Spec_Collects/" "HMJ_Papers.yml" "glossary_diss.md" "Draft/" "dissnotes/" "Dissertation_Reading_ToDo.md.pdf" "Dissertation_Reading_ToDo.md" "Dissertation_pdf_smart.savedSearch" "Dissertation_Outline.md.pdf" "Dissertation_Outline.md" "Dissertation.tex~" "Dissertation.tex" "Dissertation.pdf" "Dissertation.org" "auto/" "201706061007_HMJ_Notes.md.pdf" "201706061007_HMJ_Notes.md" "201706011500_Special_Collections_UW.md.pdf" "201706011500_Special_Collections_UW.md" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
  ("/Users/lmp/Documents/DHFS/" (22959 26071 0 0) "Project-Mgt-Short-Course/" "GTD_DHFS_Outline.pdf" "GTD_DHFS_Flyer.pdf" "GTD_DHFS.psd" "DHFS_Notes.md" "DHFS_Cover_Flow.png" "DHFS_Cover_Flow.ai" "CommAdv.org~" "CommAdv.org" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Documents/DHFS/Project-Mgt-Short-Course/Git_Proj_MGT/" (22959 10051 0 0) "Proj_Mgt_Handout.xdv" "Proj_Mgt_Handout.tex" "Proj_Mgt_Handout.pdf" "Proj_Mgt_Handout.fdb_latexmk" "Proj_MGT.bib" "Closed_Loops.xdv" "Closed_Loops.toc" "Closed_Loops.tex~" "Closed_Loops.tex" "Closed_Loops.synctex.gz" "Closed_Loops.snm" "Closed_Loops.pdf" "Closed_Loops.out" "Closed_Loops.nav" "Closed_Loops.log" "Closed_Loops.fls" "Closed_Loops.fdb_latexmk" "Closed_Loops.aux" "auto/" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Documents/Work/2017_Fall_Gov_310/Class_Lectures/02_week/" (22959 19776 0 0) "Week_two_lecture.md~" "Week_two_lecture.md" "test.tex" "slides.pdf" "makefile" "lecture.pdf" "beamer_head.tex" "beamer.latex" "auto/" ".DS_Store" ".#Week_two_lecture.md" "#Week_two_lecture.md#" "../" "./")
 
  ("/Users/lmp/Documents/Work/Academic_Jobs/JOB_APPS/BaldwinWallace/" (22959 19687 0 0) "testing/" "Test.pdf" "Perez_2017_Teaching_evals.pdf" "Perez_2017_Teaching_evals.md" "Perez_2017_BaldWall_Teaching.pdf" "Perez_2017_BaldWall_Teaching.md~" "Perez_2017_BaldWall_Teaching.md" "Perez_2017_BaldWall_Cover.pdf" "Perez_2017_BaldWall_Cover.md~" "Perez_2017_BaldWall_Cover.md" "makefile" "Evals_Sp_2016.png" "Evals_Fa_2015.png" "CIS_RHE.yml" ".DS_Store" "../" "./")
 
  ("/Users/lmp/Documents/Work/2017_Fall_Gov_310/" (22959 9138 0 0) "syllabus.latex" "Perez_Gov310_Fall_2017_Syllabus.pdf" "miniLectures/" "makefile" "Gov310_notes.md~" "Gov310_notes.md" "Class_Terms.md~" "Class_Terms.md" "Class_Lectures/" "Berlin.pdf" "2017_Perez_Gov310_Syllabus.md" "2016_Levin_SELECTIONS.pdf" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Documents/Work/2017_Fall_Gov_310/miniLectures/" (22959 9138 0 0) "mini.md" "../" "./")
-
  ("/Users/lmp/Documents/" (22958 40185 0 0) "Writing/" "Work/" "vukovic_vladimir-art_of_attack.pdf" "UTseal_White.png" "UTex-Seal.png" "terminal_commands.md" "Su_2016_SSRN-id2677403.pdf" "Simboli_2017_SSRN-id2711887.pdf" "ScanSnap_Inbox/" "Personal/" "Perez_2017_Deskcopy.md" "Perez_2017_audio_MPEX.md" "International Religious Freedom Data, Aggregate File (2001-2005).XLSX" "Inbox_Sept_2017/" "git_writing.md" "git_repos.md" "Dissertation/" "DHFS/" "Danchin_2007_23JLReligion455.pdf" "Clear_Cache_Safari.md" "CIRI Data 1981_2011 2014.04.14.csv" "atom_setup.md" "Adobe/" "98-545.pdf" ".localized" ".gitignore" ".DS_Store" "../" "./")
 
  ("/Users/lmp/Documents/DHFS/Project-Mgt-Short-Course/" (22948 58728 0 0) "README.md" "Proj_Mgt_Handout.pdf" "LICENSE" "Git_Proj_MGT/" ".gitignore" ".git/" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Documents/Work/Academic_Jobs/" (22954 64370 0 0) "Letter_Writers/" "Jobs_At_Glance.pdf" "JobApplications.org" "JOB_APPS/" "Gov_JobMarket_Meeting.pdf" "Gov_JobMarket_Meeting.org" "APSA_Emails.numbers" "APSA_eJobs.md" "APSA_Cover_Letters/" "AcademicJobs.org~" "AcademicJobs.org" "Academic_Jobs.numbers" ".DS_Store" "../" "./")
-
- ("/Users/lmp/.emacs.d/" (22952 60149 0 0) "readme.md" "org-bullets.el" "network-security.data" "LICENSE" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "custom.el" "config.org" "config.el" "bookmarks" "backups/" "auto-save-list/" ".org-id-locations" ".git/" ".DS_Store" "../" "./")
 
  ("/Users/lmp/" (22950 45751 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Creative Cloud Files/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-LUKE’s MacBook Pro-5.2" ".zcompdump-lmp_mbp-5.2" ".z" ".Trash/" ".subversion/" ".rstudio-desktop/" ".Rhistory" ".RData" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".ispell_english" ".gnupg/" ".gitignore_global" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_history" ".atom/" "../" "./")
 
