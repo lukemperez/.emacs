@@ -461,7 +461,7 @@ Now we can load out themes
 
 (use-package paganini-theme
 	:ensure t
-	:init)
+	:defer t)
 
 #+END_SRC
 
@@ -469,26 +469,31 @@ Now we can load out themes
 
 #+BEGIN_SRC emacs-lisp
   (use-package zenburn-theme
-    :ensure t)
+    :ensure t
+	:defer t)
 
 #+END_SRC
-
-# #+BEGIN_SRC emacs-lisp
-
-# (use-package org-ref
-# 	:after org
-# 	:init
-# 	(setq reftex-default-bibliography '("/Users/lmp/Dropbox/_AcademicWork/_Bibs/prospectus.bib")))
-
-# #+END_SRC
 
 ** Solarized-Light
 
 #+BEGIN_SRC emacs-lisp
 (use-package solarized-theme
-	:ensure t)
+	:ensure t
+	:defer t)
 
 #+END_SRC
 
 #+RESULTS:
 
+** Github Theme
+
+#+BEGIN_SRC emacs-lisp
+(use-package 'github-theme
+	:ensure t
+	:init 
+	(setq github-theme t)
+	:config: 
+	(load-theme 'github t)
+)
+
+#+END_SRC
