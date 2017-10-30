@@ -127,24 +127,19 @@ Scrolling mode to keep the cursor centered:
 #+END_SRC
 
 #+RESULTS:
-# ** Save backups to Directory
 
-# Here we want to save the backups to a single directory rather than in the file I'm working on.
+** Save backups to Directory
 
-# #+BEGIN_SRC emacs-lisp
-#     (setq backup-directory-alist
-#           `((".*" . ,temporary-file-directory)))
-#     (setq auto-save-file-name-transforms
-#           `((".*" ,temporary-file-directory t)))
-# #+END_SRC
+Here we want to save the backups to a single directory rather than in the file I'm working on.
 
-# #+RESULTS:
-# | .* | /var/folders/ky/gk2v4nrx1ljfqk4xlrcml9hc0000gn/T/ | t |
+#+BEGIN_SRC emacs-lisp :results silent
 
-;; Keep all backup and auto-save files in one directory
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+#+END_SRC
 
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
 
 * Personal settings
 ** Reading and Writing
@@ -494,3 +489,5 @@ Now we can load out themes
 )
 
 #+END_SRC
+
+
