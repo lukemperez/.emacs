@@ -140,7 +140,6 @@ Here we want to save the backups to a single directory rather than in the file I
       `((".*" ,temporary-file-directory t)))
 #+END_SRC
 
-
 * Personal settings
 ** Reading and Writing
 In this section I have the settings that enhacince the composition and editing of my text files.
@@ -490,4 +489,26 @@ Now we can load out themes
 
 #+END_SRC
 
+
+* Experimental
+
+** Make a key-binding to my notes file
+
+The point with these hot-keys is to make short-cuts to several org files while I will use for notetaking. Ideally, I'd like to do this with markdown. Although Org-mode is much more powerful than markdown, I am partial to the option of keeping unique independent markdown files for each idea rather than a cluster of =.org= files. Still, this is helpful as it helps me thinkthrough how that might work. 
+
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-c d") 
+                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+
+(global-set-key (kbd "C-c a") 
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/acnotes.org")))
+
+(global-set-key (kbd "C-c c") 'org-capture)
+
+(setq org-default-notes-file "~/Dropbox/AcademicWork/acnotes.org")
+
+#+END_SRC
+
+#+RESULTS:
+: ~/Dropbox/AcademicWork/acnotes.org
 
