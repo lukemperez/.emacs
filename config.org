@@ -492,6 +492,18 @@ Now we can load out themes
 
 * Experimental
 
+** Deft Mode
+
+Instructions can be taken from [[https://github.com/jrblevin/deft][Github/DeftMode]]. It is a package that achieves a notational velocity like workflow from within Emacs.
+
+
+#+BEGIN_SRC emacs-lisp :results silent
+
+(setq deft-extensions '("txt" "tex" "org" "md"))
+(setq deft-directory "~/Dropbox/AcademicWork/notes")
+
+#+END_SRC
+
 ** Make a key-binding to my notes file
 
 The point with these hot-keys is to make short-cuts to several org files while I will use for notetaking. Ideally, I'd like to do this with markdown. Although Org-mode is much more powerful than markdown, I am partial to the option of keeping unique independent markdown files for each idea rather than a cluster of =.org= files. Still, this is helpful as it helps me thinkthrough how that might work. 
@@ -508,7 +520,3 @@ The point with these hot-keys is to make short-cuts to several org files while I
 (setq org-default-notes-file "~/Dropbox/AcademicWork/acnotes.org")
 
 #+END_SRC
-
-#+RESULTS:
-: ~/Dropbox/AcademicWork/acnotes.org
-

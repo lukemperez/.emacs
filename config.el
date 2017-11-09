@@ -317,3 +317,13 @@
         :config
         (load-theme 'github t)
 )
+
+(global-set-key (kbd "C-c d") 
+                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+
+(global-set-key (kbd "C-c a") 
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/acnotes.org")))
+
+(global-set-key (kbd "C-c c") 'org-capture)
+
+(setq org-default-notes-file "~/Dropbox/AcademicWork/acnotes.org")

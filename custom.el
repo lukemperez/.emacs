@@ -9,7 +9,7 @@
  '(org-agenda-files (quote ("~/Documents/Dissertation/Dissertation.org")))
  '(package-selected-packages
    (quote
-    (org-bullets professional-theme github-theme centered-cursor-mode center-cursor-mode org-ref solarized-emacs solarized-theme zenburn-theme writeroom-mode darkroom-mode auctex markdown-mode polymode pandoc-mode paganini-theme use-package))))
+    (deft org-bullets professional-theme github-theme centered-cursor-mode center-cursor-mode org-ref solarized-emacs solarized-theme zenburn-theme writeroom-mode darkroom-mode auctex markdown-mode polymode pandoc-mode paganini-theme use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
