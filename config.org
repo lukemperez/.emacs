@@ -279,6 +279,15 @@ If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No s
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 #+END_SRC
 
+**** Prevent emacs from creating folder "auto/" with .el files
+
+#+BEGIN_SRC emacs-lisp :result silent
+
+(setq TeX-auto-save nil)
+
+#+END_SRC
+
+
 *** RefTex
 
 Now we need Org-Mode and LaTeX to find our bibliographies when we need them. For this we use =Ref-Tex=. Later we'll set up =Org-Ref= which does similar features more powerfully than =RefTex= but having both is essential so that you can work with both =.org= and =.tex= files.

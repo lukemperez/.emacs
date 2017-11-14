@@ -318,6 +318,9 @@
         (load-theme 'github t)
 )
 
+(setq deft-extensions '("txt" "tex" "org" "md"))
+(setq deft-directory "~/Dropbox/AcademicWork/notes")
+
 (global-set-key (kbd "C-c d") 
                 (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
 
