@@ -35,7 +35,7 @@ customize settings in [[file:init.el][init.el]].
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 #+END_SRC
 
-* Sane defaults
+* Basic Defaults for sanity and efficiency 
 ** Sane Defaults
 Let's start with some sane defaults, shall we?
 
@@ -150,7 +150,6 @@ In this section I have the settings that enhacince the composition and editing o
 (set-default-font "Inconsolata-15")
 #+END_SRC
 
-
 *** Writeroom Mode
 
 =writeroom-mode= works very similar to darkroom mode and on my system seems to work much better. Details can be found on [[https://github.com/joostkremers/writeroom-mode][WriteRoom Mode at Github]]. 
@@ -253,9 +252,9 @@ If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No s
          "/usr/bin"
          "/Library/TeX/texbin" ; add path to basictex bin
          "/usr/texbin" ; add path to basictex bin
-         "/Applications/Julia.app/Contents/Resources/julia/bin" ; path to julia bin
          "/bin"
          )))
+
   (setenv "PATH" (concat (getenv "PATH") ":"
                          (mapconcat 'identity my-paths ":")))
   (setq exec-path (append my-paths (list "." exec-directory))))
@@ -279,13 +278,39 @@ If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No s
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 #+END_SRC
 
+**** Add Skim as my PDF viewer
+
+#+BEGIN_SRC emacs-lisp
+;; Use Skim as viewer, enable source <-> PDF sync
+;; make latexmk available via C-c C-c
+;; Note: SyncTeX is setup via ~/.latexmkrc (see below)
+(add-hook 'LaTeX-mode-hook (lambda ()
+  (push
+    '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+      :help "Run latexmk on file")
+    TeX-command-list)))
+(add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
+
+;; use Skim as default pdf viewer
+;; Skim's displayline is used for forward search (from .tex to .pdf)
+;; option -b highlights the current line; option -g opens Skim in the background  
+(setq TeX-view-program-selection '((output-pdf "PDF Viewer")))
+(setq TeX-view-program-list
+     '(("PDF Viewer" "/Applications/Skim.app/Contents/SharedSupport/displayline -b -g %n %o %b")))
+#+END_SRC
+
+
+
 **** Prevent emacs from creating folder "auto/" with .el files
+
+Here we want to prevent Emacs from automatically creating subdirectories when editing files. These directories contain =.el= files with the headers, sections, and other code used when editing =TeX= and =markdown= files.
 
 #+BEGIN_SRC emacs-lisp :result silent
 
 (setq TeX-auto-save nil)
 
 #+END_SRC
+
 
 
 *** RefTex

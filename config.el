@@ -146,30 +146,14 @@
          "/usr/bin"
          "/Library/TeX/texbin" ; add path to basictex bin
          "/usr/texbin" ; add path to basictex bin
-         "/Applications/Julia.app/Contents/Resources/julia/bin" ; path to julia bin
          "/bin"
          )))
+
   (setenv "PATH" (concat (getenv "PATH") ":"
                          (mapconcat 'identity my-paths ":")))
   (setq exec-path (append my-paths (list "." exec-directory))))
 
-(use-package tex-site
-  :ensure auctex
-  :config
-  (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
-  (setq TeX-auto-save t
-        TeX-parse-self t
-        reftex-plug-into-AUCTeX t)
-  (add-hook 'LaTeX-mode-hook #'TeX-PDF-mode)
-  (setq TeX-source-correlate-method 'synctex)
-  (setq TeX-source-correlate-mode t)
-  (eval-after-load "tex"
-    '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s" TeX-run-TeX nil t :help "Process file with latexmk"))
-    )
-  (eval-after-load "tex"
-    '(add-to-list 'TeX-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s" TeX-run-TeX nil t :help "Process file with xelatexmk"))
-    )
-  (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
+(setq TeX-auto-save nil)
 
 ;; if this isn't already set in your .emacs
 (setq reftex-default-bibliography '("/Dropbox/AcademicWork/Bibs/refs.bib")) 
