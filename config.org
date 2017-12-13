@@ -229,6 +229,16 @@ Here we want to save the backups to a single directory rather than in the file I
       `((".*" ,temporary-file-directory t)))
 
 #+END_SRC
+** Prevent emacs from creating folder "auto/" with .el files
+
+Here we want to prevent Emacs from automatically creating subdirectories when editing files. These directories contain =.el= files with the headers, sections, and other code used when editing =TeX= and =markdown= files.
+
+#+BEGIN_SRC emacs-lisp :result silent
+
+(setq TeX-auto-save nil)
+(setq auto-save-list-file-prefix nil)
+
+#+END_SRC
 
 ** Deft Mode
 

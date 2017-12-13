@@ -59,6 +59,16 @@
 (require 'ox-latex)
 (require 'ox-odt)
 
+(global-set-key (kbd "C-c d") 
+                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+
+(global-set-key (kbd "C-c n") 
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+
+(global-set-key (kbd "C-c c") 'org-capture)
+
+(setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
+
 (global-set-key (kbd "C-c c") 'org-capture)
 
 ;; First we need to require org-ref
@@ -120,18 +130,13 @@
         (load-theme 'github t)
 )
 
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 (setq deft-extensions '("txt" "tex" "org" "md"))
 (setq deft-directory "~/Dropbox/AcademicWork/notes")
-
-(global-set-key (kbd "C-c d") 
-                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
-
-(global-set-key (kbd "C-c a") 
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
-
-(global-set-key (kbd "C-c c") 'org-capture)
-
-(setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
 
 (setq-default line-spacing 0.25)
 
@@ -146,6 +151,8 @@
 
 ;; Don't make new frames when opening a new file with Emacs
 (setq ns-pop-up-frames nil)
+
+(setq org-footnote-define-inline +1)
 
 ;;(require 'org-bullets)
 ;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
