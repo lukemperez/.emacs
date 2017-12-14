@@ -201,6 +201,7 @@ Now we can load out themes
 ** Solarized-Light
 
 #+BEGIN_SRC emacs-lisp
+
 (use-package solarized-theme
 	:ensure t
 	:defer t)

@@ -103,7 +103,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("3b5ce826b9c9f455b7c4c8bff22c020779383a12f2f57bf2eb25139244bb7290" "2a739405edf418b8581dcd176aaf695d319f99e3488224a3c495cb0f9fd814e3" default)))
+    ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "3b5ce826b9c9f455b7c4c8bff22c020779383a12f2f57bf2eb25139244bb7290" "2a739405edf418b8581dcd176aaf695d319f99e3488224a3c495cb0f9fd814e3" default)))
  '(package-selected-packages (quote (auctex org-ref use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
