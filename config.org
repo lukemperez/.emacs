@@ -96,29 +96,30 @@ It bears mentioning that if I ever want to check my org-mode verison, I can use 
 
 #+END_SRC
 
-** Make a key-binding to my notes file
+** Capture
+
+Make a key-binding to my notes file.
 
 The point with these hot-keys is to make short-cuts to several org files while I will use for notetaking. Ideally, I'd like to do this with markdown. Although Org-mode is much more powerful than markdown, I am partial to the option of keeping unique independent markdown files for each idea rather than a cluster of =.org= files. Still, this is helpful as it helps me thinkthrough how that might work. 
 
 #+BEGIN_SRC emacs-lisp
-(global-set-key (kbd "C-c d") 
-                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+  ;; Set our default Notes file.
+  (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
 
-(global-set-key (kbd "C-c n") 
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
-
-(global-set-key (kbd "C-c c") 'org-capture)
-
-(setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
-
+  ;; Now set some keybindings to open specific org-files.
+  ;; Basic Capture
+  (global-set-key (kbd "C-c c") 'org-capture)
+  ;; Dissertation
+  (global-set-key (kbd "C-c d") 
+                  (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+  ;; general notes
+  (global-set-key (kbd "C-c n") 
+                  (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+  ;; DHFS workflow file
+  (global-set-key (kbd "C-c w")
+                  (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
 #+END_SRC
 
-This is the basic setup for capture.
-#+BEGIN_SRC emacs-lisp
-
-(global-set-key (kbd "C-c c") 'org-capture)
-
-#+END_SRC
 ** Org-Ref
 [[https://github.com/jkitchin/org-ref][Org-Ref]] is a package that brings bibliographic tools to Org-Mode. 
 
@@ -144,6 +145,7 @@ This is the basic setup for capture.
     '("~/Dropbox/AcademicWork/Bibs/refs.bib "))
 
 #+END_SRC
+
 
 * Themes
 ** Preliminaries 
@@ -296,7 +298,8 @@ Taking inspiration from [[https://www.wisdomandwonder.com/link/8750/only-use-in-
 
 #+END_SRC
 
-
+* Goals and Ideas
+** TODO I want to make this capture template more usable for research, scholarship, and the like. For now, I'm just going to create a few templates for the default =.org= capture file =notes.org=.
 * Archived
 ** Org-Bullets
 This creates bullets rather than asterisks. I didn't really like it so I turned it off. But I save the code, commented out, so that I can use it later if I want.

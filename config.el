@@ -71,6 +71,16 @@
 
 (global-set-key (kbd "C-c c") 'org-capture)
 
+(setq org-capture-template
+      '(("n" "Note" entry (datetree+file "~/Dropbox/AcademicWork/Org/notes.org" "Notes")
+         "* %?\nEntered on %U\n %i\n %a")))
+
+(setq org-capture-templates
+    '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+           "* TODO %?\n  %i\n  %a")
+      ("j" "Journal" entry (file+olp+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Notes")
+           "* %?\nEntered on %U\n  %i\n  %a")))
+
 ;; First we need to require org-ref
 
 (use-package org-ref
@@ -134,6 +144,9 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+(setq TeX-auto-save nil)
+(setq auto-save-list-file-prefix nil)
 
 (setq deft-extensions '("txt" "tex" "org" "md"))
 (setq deft-directory "~/Dropbox/AcademicWork/notes")
