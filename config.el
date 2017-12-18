@@ -59,27 +59,21 @@
 (require 'ox-latex)
 (require 'ox-odt)
 
-(global-set-key (kbd "C-c d") 
-                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
-
-(global-set-key (kbd "C-c n") 
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
-
-(global-set-key (kbd "C-c c") 'org-capture)
-
+;; Set our default Notes file.
 (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
 
+;; Now set some keybindings to open specific org-files.
+;; Basic Capture
 (global-set-key (kbd "C-c c") 'org-capture)
-
-(setq org-capture-template
-      '(("n" "Note" entry (datetree+file "~/Dropbox/AcademicWork/Org/notes.org" "Notes")
-         "* %?\nEntered on %U\n %i\n %a")))
-
-(setq org-capture-templates
-    '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
-           "* TODO %?\n  %i\n  %a")
-      ("j" "Journal" entry (file+olp+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Notes")
-           "* %?\nEntered on %U\n  %i\n  %a")))
+;; Dissertation
+(global-set-key (kbd "C-c d") 
+                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+;; general notes
+(global-set-key (kbd "C-c n") 
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+;; DHFS workflow file
+(global-set-key (kbd "C-c w")
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
 
 ;; First we need to require org-ref
 
@@ -99,6 +93,34 @@
 
 (setq reftex-default-bibliography 
     '("~/Dropbox/AcademicWork/Bibs/refs.bib "))
+
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init )
+
+(use-package pandoc-mode
+    :ensure t
+    :ensure hydra
+    :init
+    (add-hook 'markdown-mode-hook 'pandoc-mode)
+    (add-hook 'TeX-mode-hook 'pandoc-mode)
+    (add-hook 'pandoc-mode-hook 'pandoc-load-default-settings)
+    (global-set-key (kbd "C-c p") 'pandoc-main-hydra/body)
+
+  )
+
+(use-package polymode
+  :ensure t
+  :mode
+  ("\\.Snw" . poly-noweb+r-mode)
+  ("\\.Rnw" . poly-noweb+r-mode)
+  ("\\.Rmd" . poly-markdown+r+mode)
+  ("\\.md" . poly-markdown-mode)
+  )
 
 ;; This allows us to switch themes as needed
 

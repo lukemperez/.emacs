@@ -8,8 +8,8 @@
  (rear-context-string . "appen at\nall.\"\n\n")
  (position . 555))
 ("org-capture-last-stored"
- (filename . "~/org/gtd.org")
- (front-context-string . "** TODO So the c")
+ (filename . "~/Dropbox/AcademicWork/Org/gtd.org")
+ (front-context-string . "** TODO Tesing.\n")
  (rear-context-string)
  (position . 9))
 )

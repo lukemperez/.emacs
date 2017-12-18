@@ -92,7 +92,6 @@ It bears mentioning that if I ever want to check my org-mode verison, I can use 
 (require 'ox-md)
 (require 'ox-beamer)
 (require 'ox-latex)
-(require 'ox-odt)
 
 #+END_SRC
 
@@ -146,6 +145,50 @@ The point with these hot-keys is to make short-cuts to several org files while I
 
 #+END_SRC
 
+* Markdown files
+Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =LaTeX= or =org-mode=.
+
+#+BEGIN_SRC emacs-lisp
+    
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init )
+
+#+END_SRC
+
+* Pandoc Mode
+I love =Pandoc=. It converts nearly any text file into another. I use it to convert to =.md= files into =.tex= or =.pdf= as needed.
+
+#+BEGIN_SRC emacs-lisp
+(use-package pandoc-mode
+    :ensure t
+    :ensure hydra
+    :init
+    (add-hook 'markdown-mode-hook 'pandoc-mode)
+    (add-hook 'TeX-mode-hook 'pandoc-mode)
+    (add-hook 'pandoc-mode-hook 'pandoc-load-default-settings)
+    (global-set-key (kbd "C-c p") 'pandoc-main-hydra/body)
+
+  )
+#+END_SRC
+
+We also want to use =Polymode= so that emacs can edit Rmarkdown type files that have R code in them.
+
+#+BEGIN_SRC emacs-lisp
+  (use-package polymode
+    :ensure t
+    :mode
+    ("\\.Snw" . poly-noweb+r-mode)
+    ("\\.Rnw" . poly-noweb+r-mode)
+    ("\\.Rmd" . poly-markdown+r+mode)
+    ("\\.md" . poly-markdown-mode)
+    )
+
+#+END_SRC
 
 * Themes
 ** Preliminaries 
