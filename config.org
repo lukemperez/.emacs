@@ -304,7 +304,7 @@ Instructions can be taken from [[https://github.com/jrblevin/deft][Github/DeftMo
 I'd like to have a little more space between lines so that I can read the text that much easier. To do this, we need a little code.
 
 #+BEGIN_SRC emacs-lisp :results silent
-(setq-default line-spacing 0.25)
+(setq-default line-spacing 0.3)
 #+END_SRC
 ** Ignore Headlines
 This code permits the use of two tags, =:No_Export:= and =no_title=. 

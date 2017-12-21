@@ -57,7 +57,6 @@
 (require 'ox-md)
 (require 'ox-beamer)
 (require 'ox-latex)
-(require 'ox-odt)
 
 ;; Set our default Notes file.
 (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
