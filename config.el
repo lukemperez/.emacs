@@ -172,7 +172,7 @@
 (setq deft-extensions '("txt" "tex" "org" "md"))
 (setq deft-directory "~/Dropbox/AcademicWork/notes")
 
-(setq-default line-spacing 0.25)
+(setq-default line-spacing 0.3)
 
 (defun org-remove-headlines (backend)
   "Remove headlines with :no_title: tag."

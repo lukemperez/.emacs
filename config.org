@@ -117,7 +117,13 @@ The point with these hot-keys is to make short-cuts to several org files while I
   ;; DHFS workflow file
   (global-set-key (kbd "C-c w")
                   (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
+
+  ;; GTD Org File
+  (global-set-key (kbd "C-c z")
+                  (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
+
 #+END_SRC
+
 
 ** Org-Ref
 [[https://github.com/jkitchin/org-ref][Org-Ref]] is a package that brings bibliographic tools to Org-Mode. 
