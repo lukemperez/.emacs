@@ -74,6 +74,10 @@
 (global-set-key (kbd "C-c w")
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
 
+;; GTD Org File
+(global-set-key (kbd "C-c z")
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
+
 ;; First we need to require org-ref
 
 (use-package org-ref

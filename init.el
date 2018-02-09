@@ -104,6 +104,9 @@
  '(custom-safe-themes
    (quote
     ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "3b5ce826b9c9f455b7c4c8bff22c020779383a12f2f57bf2eb25139244bb7290" "2a739405edf418b8581dcd176aaf695d319f99e3488224a3c495cb0f9fd814e3" default)))
+ '(org-agenda-files
+   (quote
+    ("~/Documents/Work/TX_Triangle/Perez_Wancke_2018.org")))
  '(package-selected-packages
    (quote
     (markdown-mode polymode pandoc-mode auctex org-ref use-package))))
