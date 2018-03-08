@@ -64,12 +64,14 @@
 ;; Now set some keybindings to open specific org-files.
 ;; Basic Capture
 (global-set-key (kbd "C-c c") 'org-capture)
-;; Dissertation
+
+;; Dissertation Outline
 (global-set-key (kbd "C-c d") 
                 (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
 ;; general notes
 (global-set-key (kbd "C-c n") 
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+
 ;; DHFS workflow file
 (global-set-key (kbd "C-c w")
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))

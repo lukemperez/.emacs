@@ -79,6 +79,42 @@ If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No s
     )
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 #+END_SRC
+* RefTeX
+
+#+BEGIN_SRC emacs-lisp :results silent
+
+;; Begin by setting bibtex
+
+(setq reftex-bibpath-environment-variables
+	'("~/Library/TeX/texbin/bibtex/bib"))
+
+;; Set Default Bibliography
+(setq reftex-default-bibliography 
+    '("~/Users/lmp/Dropbox/AcademicWork/Bibs/refs.bib "))
+
+;; Add hooks to use AucTex automatically
+
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+
+;; Set commands for citations
+
+(eval-after-load 'reftex-vars
+  '(progn
+     ;; (also some other reftex-related customizations)
+     (setq reftex-cite-format
+           '((?\C-m . "\\autocite[]{%l}")
+             (?f . "\\footcite[][]{%l}")
+             (?t . "\\textcite[]{%l}")
+             (?p . "\\parencite[]{%l}")
+             (?o . "\\citepr[]{%l}")
+             (?n . "\\nocite{%l}")))))
+
+;; Possible code to fix error
+;; (setq reftex-external-file-finders
+;; '(("tex" . "/path/to/kpsewhich -format=.tex %f")
+;;   ("bib" . "/path/to/kpsewhich -format=.bib %f")))
+#+END_SRC
 * Org-Mode
 
 Org-Mode is the primary way that I should be writing. In this section, we need to add some settings that make things easier to manage, export, and the like. In previous setups of my =.emacs= configuration, I did not organize these as well as I could have. So here, I'm going to include the settings relevant to each mode or feature. More information can be found via the org-mode manual: I prefer the pdf [[http://orgmode.org/org.pdf][found here]]. 
@@ -139,7 +175,6 @@ The point with these hot-keys is to make short-cuts to several org files while I
 	(setq reftex-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
 	(setq org-ref-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
 	(setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib"))
-
 
 ;; Next we need to configure some settings.
 ;; * We begin by setting up the default bibliography
