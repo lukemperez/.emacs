@@ -98,7 +98,7 @@ Our next task is setting up a global bibliography so that RefTeX knows where to 
 
 #+END_SRC
 
-The default setting for RefTeX is to use =\cite{key}= when inserting citations. Because I use Biblatex-Chicago for nearly all my writing, I need to make changes to how the citation keys are generated. 
+The default setting for RefTeX is to use =\cite{key}= when inserting citations. Because I use Biblatex-Chicago for nearly all my writing, I need to make changes to how the citation keys are generated. Here I am thankful to a post [[https://tex.stackexchange.com/questions/31966/setting-up-reftex-with-biblatex-citation-commands][Stack Exchange and the answer by Aaron]].
 
 #+BEGIN_SRC emacs-lisp :results silent
 (eval-after-load 'reftex-vars
@@ -386,6 +386,7 @@ Taking inspiration from [[https://www.wisdomandwonder.com/link/8750/only-use-in-
 ** TODO I want to make this capture template more usable for research, scholarship, and the like. For now, I'm just going to create a few templates for the default =.org= capture file =notes.org=.
 ** TODO I want RefTeX to prompt me for page numbers when calling biblatex citation keys.
 ** TODO I want to add a command for autocites (plural citations) in reftex
+** TODO Set up Magit Mode
 * Archived
 ** Org-Bullets
 This creates bullets rather than asterisks. I didn't really like it so I turned it off. But I save the code, commented out, so that I can use it later if I want.
