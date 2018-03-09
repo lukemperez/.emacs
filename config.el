@@ -54,6 +54,38 @@
     )
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 
+;; Begin by setting bibtex
+
+(setq reftex-bibpath-environment-variables
+        '("~/Library/TeX/texbin/bibtex/bib"))
+
+;; Set Default Bibliography
+(setq reftex-default-bibliography 
+    '("~/Users/lmp/Dropbox/AcademicWork/Bibs/refs.bib "))
+
+;; Add hooks to use AucTex automatically
+
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+
+;; Set commands for citations
+
+(eval-after-load 'reftex-vars
+  '(progn
+     ;; (also some other reftex-related customizations)
+     (setq reftex-cite-format
+           '((?\C-m . "\\autocite[]{%l}")
+             (?f . "\\footcite[][]{%l}")
+             (?t . "\\textcite[]{%l}")
+             (?p . "\\parencite[]{%l}")
+             (?o . "\\citepr[]{%l}")
+             (?n . "\\nocite{%l}")))))
+
+;; Possible code to fix error
+;; (setq reftex-external-file-finders
+;; '(("tex" . "/path/to/kpsewhich -format=.tex %f")
+;;   ("bib" . "/path/to/kpsewhich -format=.bib %f")))
+
 (require 'ox-md)
 (require 'ox-beamer)
 (require 'ox-latex)
@@ -88,7 +120,6 @@
         (setq reftex-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
         (setq org-ref-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
         (setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib"))
-
 
 ;; Next we need to configure some settings.
 ;; * We begin by setting up the default bibliography

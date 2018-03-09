@@ -182,8 +182,8 @@ The point with these hot-keys is to make short-cuts to several org files while I
 ;; * Then we'll set up bibliographies for notes, and
 ;;   other purposes.
 
-(setq reftex-default-bibliography 
-    '("~/Dropbox/AcademicWork/Bibs/refs.bib "))
+;; (setq reftex-default-bibliography 
+;;    '("~/Dropbox/AcademicWork/Bibs/refs.bib "))
 
 #+END_SRC
 
