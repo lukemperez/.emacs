@@ -86,9 +86,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/lmp/.emacs.d/"
  "/Users/lmp/Dropbox/AcademicWork/Bibs/"
  "/Users/lmp/Documents/Dissertation/Draft/3_Eisenhower/"
- "/Users/lmp/.emacs.d/"
  "/Users/lmp/Documents/Dissertation/"
  "/Users/lmp/Documents/Work/Jobs_Alt_Ac/Houston_Institute/InterviewPrep/"
  "/Users/lmp/Documents/Work/Academic_Jobs/JOB_APPS/St_Vince/"
@@ -140,9 +140,9 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config.org"
  "refs.bib"
  "Perez_Ike_Text.tex"
- "config.org"
  "liberatingfaith.org"
  "Interview.md"
  "makefile"
@@ -154,9 +154,11 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lmp/.emacs.d/" (23201 46676 0 0) "init.el" "ido.last" "eshell/" "elpa/" "config.org" "config.el" "bookmarks" "auto-save-list/" ".git/" ".DS_Store" "../" "./")
+ ("/Users/lmp/.emacs.d/" (23201 54126 0 0) "init.el" "ido.last" "eshell/" "elpa/" "config.org" "config.el" "bookmarks" "auto-save-list/" ".git/" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Documents/Dissertation/Draft/3_Eisenhower/" (23201 45416 0 0) "Perez_Ike_Text.tex" "../" "./")
+ ("/Users/lmp/Documents/Dissertation/Draft/3_Eisenhower/" (23201 49354 0 0) "Perez_Ike_Text.tex" "../" "./")
+
+ ("/Users/lmp/" (23201 49422 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "github/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Creative Cloud Files/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-LUKE’s MacBook Pro-5.2" ".zcompdump-lmp_mbp-5.2" ".z" ".Trash/" ".subversion/" ".rstudio-desktop/" ".Rhistory" ".RData" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".ispell_english" ".gnupg/" ".gitignore_global" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".bundle/" ".bash_sessions/" ".bash_history" ".atom/" "../" "./")
 
  ("/Users/lmp/Documents/Work/Academic_Jobs/JOB_APPS/St_Vince/" (23200 19544 0 0) "Perez_2018_SVC_Cover.pdf" "Perez_2018_SVC_Cover.md" "makefile" "2018_St_Vincent_College_International_Politics_Postdoct.pages.pdf" "2018_St_Vincent_College_International_Politics_Postdoct.pages" "../" "./")
 
@@ -165,8 +167,6 @@
  ("/Users/lmp/Documents/Dissertation/" (23200 18962 0 0) "Word_Draft/" "utdiss2-05/" "ToDo_Research_Strategy.md" "TODO.pdf" "README.md" "Readings/" "Notes/" "NARA_Files/" "Misc_Readings/" "makefile" "liberatingfaith.org" "HMJ_UW_Spec_Collects/" "Draft/" "dissnotes/" "Dissertation_pdf_smart.savedSearch" "dissertation.org" "Dedication.md" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
  ("/Users/lmp/Documents/Work/Jobs_Alt_Ac/Houston_Institute/" (23200 20180 0 0) "ProgramSketch/" "Perez_2018_Houston_Institute.pdf" "Perez_2018_HI_ProgramSketch.md.pdf" "Perez_2018_HI_CV.pdf" "Perez_2018_HI_Cover.md" "Perez_2018_HI Resume.pdf" "makefile" "InterviewPrep/" ".DS_Store" "../" "./")
-
- ("/Users/lmp/" (23200 20502 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "github/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Creative Cloud Files/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-LUKE’s MacBook Pro-5.2" ".zcompdump-lmp_mbp-5.2" ".z" ".Trash/" ".subversion/" ".rstudio-desktop/" ".Rhistory" ".RData" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".ispell_english" ".gnupg/" ".gitignore_global" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".bundle/" ".bash_sessions/" ".bash_history" ".atom/" "../" "./")
 
  ("/Users/lmp/Documents/Work/Lincoln_Fellowship/" (23198 65321 0 0) "WRiting Sample/" "Perez_2018_Lincoln_WritingSample.md.pdf" "Perez_2018_Lincoln_WritingSample.md" "Perez_2018_Lincoln_Recommenders.md.pdf" "Perez_2018_Lincoln_Recommenders.md" "Perez_2018_Lincoln_Personal_Statement.md.pdf" "Perez_2018_Lincoln_Personal_Statement.md" "makefile" "Draft_Miller_Rec.md" ".DS_Store" "../" "./")
 

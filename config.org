@@ -80,41 +80,39 @@ If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No s
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 #+END_SRC
 * RefTeX
+I want to be sure that RefTeX loads whenever I am working on a TeX document.
 
 #+BEGIN_SRC emacs-lisp :results silent
+;; Set RefTeX to load automatically with AUCTeX
+(setq reftex-plug-into-AUCTeX t)
 
-;; Begin by setting bibtex
+#+END_SRC
 
-(setq reftex-bibpath-environment-variables
-	'("~/Library/TeX/texbin/bibtex/bib"))
+Our next task is setting up a global bibliography so that RefTeX knows where to look when invoking the command for citations. Many people are fond of listing that setting the global bibliographies can be a list but it was difficult to find an example of what that looked like. I actually use two different =.bib= files, one for books and articles (my references) and another for primary sources (archival research). Many thanks to [[https://github.com/tmalsburg/helm-bibtex][Titus von der Malsburg's GitHub]] for showing how it's done.
 
-;; Set Default Bibliography
-(setq reftex-default-bibliography 
-    '("~/Users/lmp/Dropbox/AcademicWork/Bibs/refs.bib "))
+#+BEGIN_SRC emacs-lisp :results silent
+;; So that RefTeX finds my bibliography
+(setq reftex-default-bibliography
+      '("~/Dropbox/AcademicWork/Bibs/refs.bib"
+        "~/Dropbox/AcademicWork/Bibs/primary.bib"))
 
-;; Add hooks to use AucTex automatically
+#+END_SRC
 
-(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
-(add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+The default setting for RefTeX is to use =\cite{key}= when inserting citations. Because I use Biblatex-Chicago for nearly all my writing, I need to make changes to how the citation keys are generated. 
 
-;; Set commands for citations
-
+#+BEGIN_SRC emacs-lisp :results silent
 (eval-after-load 'reftex-vars
   '(progn
      ;; (also some other reftex-related customizations)
      (setq reftex-cite-format
-           '((?\C-m . "\\autocite[]{%l}")
+           '((?\C-m . "\\cite[]{%l}")
              (?f . "\\footcite[][]{%l}")
              (?t . "\\textcite[]{%l}")
              (?p . "\\parencite[]{%l}")
-             (?o . "\\citepr[]{%l}")
+             (?a . "\\autocite[]{%l}")
              (?n . "\\nocite{%l}")))))
-
-;; Possible code to fix error
-;; (setq reftex-external-file-finders
-;; '(("tex" . "/path/to/kpsewhich -format=.tex %f")
-;;   ("bib" . "/path/to/kpsewhich -format=.bib %f")))
 #+END_SRC
+
 * Org-Mode
 
 Org-Mode is the primary way that I should be writing. In this section, we need to add some settings that make things easier to manage, export, and the like. In previous setups of my =.emacs= configuration, I did not organize these as well as I could have. So here, I'm going to include the settings relevant to each mode or feature. More information can be found via the org-mode manual: I prefer the pdf [[http://orgmode.org/org.pdf][found here]]. 
@@ -386,6 +384,8 @@ Taking inspiration from [[https://www.wisdomandwonder.com/link/8750/only-use-in-
 
 * Goals and Ideas
 ** TODO I want to make this capture template more usable for research, scholarship, and the like. For now, I'm just going to create a few templates for the default =.org= capture file =notes.org=.
+** TODO I want RefTeX to prompt me for page numbers when calling biblatex citation keys.
+** TODO I want to add a command for autocites (plural citations) in reftex
 * Archived
 ** Org-Bullets
 This creates bullets rather than asterisks. I didn't really like it so I turned it off. But I save the code, commented out, so that I can use it later if I want.
