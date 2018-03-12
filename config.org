@@ -136,7 +136,7 @@ It bears mentioning that if I ever want to check my org-mode verison, I can use 
 #+END_SRC
 
 ** Capture
-
+*** Key-bindings
 Make a key-binding to my notes file.
 
 The point with these hot-keys is to make short-cuts to several org files while I will use for notetaking. Ideally, I'd like to do this with markdown. Although Org-mode is much more powerful than markdown, I am partial to the option of keeping unique independent markdown files for each idea rather than a cluster of =.org= files. Still, this is helpful as it helps me thinkthrough how that might work. 
@@ -167,13 +167,22 @@ The point with these hot-keys is to make short-cuts to several org files while I
 
 #+END_SRC
 
-Next we setup the capture key-bindings and templates
-
+***  Capture templates
+Next we setup the capture key-bindings and templates. We begin with the basic capture =C-cc=
 #+BEGIN_SRC emacs-lisp :results silent
 
 ;; Basic Capture
-
 (global-set-key (kbd "C-c c") 'org-capture)
+
+;; Advanced capture (test)
+(setq org-capture-templates
+      '(;; testing source: http://www.ideaio.ch/posts/my-gtd-system-with-org-mode.html
+        ("q" "Quote" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Concepts" "Quotes")
+         "* %^{Title} %U         %?")
+        ("y" "Connection" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Connecting")
+         "* %^{Title} %U          %?")
+
+))
 
 #+END_SRC
 ** Org-Ref
