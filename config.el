@@ -54,7 +54,25 @@
     )
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 
+;; Set RefTeX to load automatically with AUCTeX
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(setq reftex-plug-into-AUCTeX t)
 
+;; So that RefTeX finds my bibliography
+(setq reftex-default-bibliography
+      '("~/Dropbox/AcademicWork/Bibs/refs.bib"
+        "~/Dropbox/AcademicWork/Bibs/primary.bib"))
+
+(eval-after-load 'reftex-vars
+  '(progn
+     ;; (also some other reftex-related customizations)
+     (setq reftex-cite-format
+           '((?\C-m . "\\cite[]{%l}")
+             (?f . "\\footcite[][]{%l}")
+             (?t . "\\textcite[?]{%l}")
+             (?p . "\\parencite[]{%l}")
+             (?a . "\\autocite[?]{%l}.")
+             (?n . "\\nocite{%l}")))))
 
 (require 'ox-md)
 (require 'ox-beamer)
@@ -63,16 +81,17 @@
 ;; Set our default Notes file.
 (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
 
-;; Now set some keybindings to open specific org-files.
-;; Basic Capture
-(global-set-key (kbd "C-c c") 'org-capture)
+;; General Academic Notes
+(global-set-key (kbd "C-c n") 
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
 
 ;; Dissertation Outline
 (global-set-key (kbd "C-c d") 
                 (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
-;; general notes
-(global-set-key (kbd "C-c n") 
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+
+;; A 2018 Journal (work in progress)
+(global-set-key (kbd "C-c j")
+                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
 ;; DHFS workflow file
 (global-set-key (kbd "C-c w")
@@ -81,6 +100,19 @@
 ;; GTD Org File
 (global-set-key (kbd "C-c z")
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
+
+;; Basic Capture
+(global-set-key (kbd "C-c c") 'org-capture)
+
+;; Advanced capture (test)
+(setq org-capture-templates
+      '(;; testing source: http://www.ideaio.ch/posts/my-gtd-system-with-org-mode.html
+        ("q" "Quote" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Concepts" "Quotes")
+         "* %^{Title} %U         %?")
+        ("y" "Connection" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Connecting")
+         "* %^{Title} %U          %?")
+
+))
 
 ;; First we need to require org-ref
 

@@ -4,12 +4,12 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/Dropbox/AcademicWork/Org/notes.org")
- (front-context-string . "** Augustine and")
- (rear-context-string . "appen at\nall.\"\n\n")
- (position . 555))
+ (front-context-string . "** Believe that ")
+ (rear-context-string . "happen at\nall.\"\n")
+ (position . 6220))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/AcademicWork/Org/gtd.org")
- (front-context-string . "** TODO Tesing.\n")
- (rear-context-string)
- (position . 9))
+ (filename . "~/Dropbox/AcademicWork/Org/notes.org")
+ (front-context-string . "**** Connecting ")
+ (rear-context-string . "18-03-11 Sunday\n")
+ (position . 11359))
 )
