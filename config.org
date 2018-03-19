@@ -70,7 +70,7 @@ I actually don't know what the below code does. I'm writing this note to myself 
   :ensure auctex
   :config
   (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
-  (setq TeX-auto-save t
+  (setq TeX-auto-save nil ; remove "/auto/" file generation
         TeX-parse-self t
         reftex-plug-into-AUCTeX t)
   (add-hook 'LaTeX-mode-hook #'TeX-PDF-mode)
