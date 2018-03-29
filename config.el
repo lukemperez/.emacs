@@ -40,7 +40,7 @@
   :ensure auctex
   :config
   (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
-  (setq TeX-auto-save t
+  (setq TeX-auto-save nil ; remove "/auto/" file generation
         TeX-parse-self t
         reftex-plug-into-AUCTeX t)
   (add-hook 'LaTeX-mode-hook #'TeX-PDF-mode)
@@ -226,6 +226,18 @@
 (setq ns-pop-up-frames nil)
 
 (setq org-footnote-define-inline +1)
+
+;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
+(defun unfill-paragraph (&optional region)
+  "Takes a multi-line paragraph and makes it into a single line of text."
+  (interactive (progn (barf-if-buffer-read-only) '(t)))
+  (let ((fill-column (point-max))
+        ;; This would override `fill-column' if it's an integer.
+        (emacs-lisp-docstring-fill-column t))
+    (fill-paragraph nil region)))
+
+;; Handy key definition
+(define-key global-map "\M-Q" 'unfill-paragraph)
 
 ;;(require 'org-bullets)
 ;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
