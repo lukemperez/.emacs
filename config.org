@@ -147,7 +147,6 @@ It bears mentioning that if I ever want to check my org-mode verison, I can use 
                           `(org-document-title ((t (,@headline ,@variable-tuple :height 1.5 :underline nil))))))
 #+END_SRC
 
-
 ** Exporting
 
 #+BEGIN_SRC emacs-lisp :results silent
@@ -215,12 +214,12 @@ Next we setup the capture key-bindings and templates. We begin with the basic ca
 
 ;; First we need to require org-ref
 
-(use-package org-ref
-	:ensure t
-	:init
-	(setq reftex-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
-	(setq org-ref-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
-	(setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib"))
+;(use-package org-ref
+;	:ensure t
+;	:init
+;	(setq reftex-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
+;	(setq org-ref-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
+;	(setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib"))
 
 ;; Next we need to configure some settings.
 ;; * We begin by setting up the default bibliography
