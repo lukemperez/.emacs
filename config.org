@@ -124,6 +124,13 @@ The default setting for RefTeX is to use =\cite{key}= when inserting citations. 
 Org-Mode is the primary way that I should be writing. In this section, we need to add some settings that make things easier to manage, export, and the like. In previous setups of my =.emacs= configuration, I did not organize these as well as I could have. So here, I'm going to include the settings relevant to each mode or feature. More information can be found via the org-mode manual: I prefer the pdf [[http://orgmode.org/org.pdf][found here]]. 
 
 It bears mentioning that if I ever want to check my org-mode verison, I can use =M-x org-version=. 
+** "Word Processor
+[[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Howardism]] has the good on setting up Org-Mode to work like a word processor.
+#+BEGIN_SRC emacs-lisp :results silent
+; remove slashes when presenting italice
+(setq org-hide-emphasis-markers t)
+
+#+END_SRC
 
 ** Exporting
 
