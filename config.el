@@ -148,8 +148,8 @@
 ;; * Then we'll set up bibliographies for notes, and
 ;;   other purposes.
 
-(setq reftex-default-bibliography 
-   '("~/Dropbox/AcademicWork/Bibs/refs.bib "))
+; (setq reftex-default-bibliography 
+;   '("~/Dropbox/AcademicWork/Bibs/refs.bib "))
 
 (use-package markdown-mode
   :ensure t
