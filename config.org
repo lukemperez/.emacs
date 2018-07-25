@@ -90,6 +90,7 @@ I want to be sure that RefTeX loads whenever I am working on a TeX document. I f
 #+BEGIN_SRC emacs-lisp :results silent
 ;; Set RefTeX to load automatically with AUCTeX
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(add-hook 'markdown-mode-hook 'turn-on-reftex) ; unsure if this works.
 (setq reftex-plug-into-AUCTeX t)
 
 #+END_SRC
@@ -107,18 +108,50 @@ Our next task is setting up a global bibliography so that RefTeX knows where to 
 The default setting for RefTeX is to use =\cite{key}= when inserting citations. Because I use Biblatex-Chicago for nearly all my writing, I need to make changes to how the citation keys are generated. Here I am thankful to a post [[https://tex.stackexchange.com/questions/31966/setting-up-reftex-with-biblatex-citation-commands][Stack Exchange and the answer by Aaron]].
 
 #+BEGIN_SRC emacs-lisp :results silent
-(eval-after-load 'reftex-vars
-  '(progn
-     ;; (also some other reftex-related customizations)
-     (setq reftex-cite-format
-           '((?\C-m . "\\cite[]{%l}")
-             (?f . "\\footcite[][]{%l}")
-             (?t . "\\textcite[?]{%l}")
-             (?p . "\\parencite[]{%l}")
-             (?a . "\\autocite[?]{%l}.")
-             (?n . "\\nocite{%l}")))))
+  (eval-after-load 'reftex-vars
+    '(progn
+       ;; (also some other reftex-related customizations)
+       (setq reftex-cite-format
+             '((?\C-m . "\\cite[]{%l}")
+               (?f . "\\footcite[][]{%l}")
+               (?t . "\\textcite[?]{%l}")
+               (?p . "\\parencite[]{%l}")
+               (?a . "\\autocite[?][]{%l}.")
+               (?n . "\\nocite{%l}")
+               (?P . "[@%l]")
+               (?T . "@%l [p. ]"))))
+  )
 #+END_SRC
 
+This next bit of code should allow reftex citations inside markdown.
+
+#+BEGIN_SRC emacs-lisp :results silent
+  ;; define markdown citation formats
+
+  ;; (defvar markdown-cite-format)
+  ;; (setq markdown-cite-format
+  ;;       '(
+  ;;         (?\C-m . "[@%l]")
+  ;;         (?p . "[@%l]")
+  ;;         (?t . "@%l")
+  ;;         )
+  ;;       )
+  ;; Previous code commented out because it may be unneeded.
+
+  ;; wrap reftex-citation with local variables for markdown format
+  (defun markdown-reftex-citation ()
+    (interactive)
+    (let ((reftex-cite-format markdown-cite-format)
+          (reftex-cite-key-separator "; @"))
+      (reftex-citation)))
+
+  ;; bind modified reftex-citation to C-c[, without enabling reftex-mode
+  ;; https://www.gnu.org/software/auctex/manual/reftex/Citations-Outside-LaTeX.html#SEC31
+  (add-hook
+   'markdown-mode-hook
+   (lambda ()
+     (define-key markdown-mode-map "\C-c[" 'markdown-reftex-citation)))
+#+END_SRC
 * Org-Mode
 
 Org-Mode is the primary way that I should be writing. In this section, we need to add some settings that make things easier to manage, export, and the like. In previous setups of my =.emacs= configuration, I did not organize these as well as I could have. So here, I'm going to include the settings relevant to each mode or feature. More information can be found via the org-mode manual: I prefer the pdf [[http://orgmode.org/org.pdf][found here]]. 
