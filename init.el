@@ -12,6 +12,9 @@
 ;; * Nevertheless, this init file and related files are in the public
 ;;   domain and free to use, extend, or modify.
 ;;
+;; Load Custom File
+;; (setq custom-file "~/.emacs-custom.el")
+;;      (load custom-file)
 
 ;; Turn off mouse interface asap to avoid momentary display
 
@@ -96,31 +99,4 @@
 
 ;;; Load the config
 (org-babel-load-file (concat user-emacs-directory "config.org"))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("1e67765ecb4e53df20a96fb708a8601f6d7c8f02edb09d16c838e465ebe7f51b" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "3b5ce826b9c9f455b7c4c8bff22c020779383a12f2f57bf2eb25139244bb7290" "2a739405edf418b8581dcd176aaf695d319f99e3488224a3c495cb0f9fd814e3" default)))
- '(org-agenda-files
-   (quote
-    ("~/Dropbox/AcademicWork/notes_ORG/narizny2007.org" "~/Dropbox/AcademicWork/notes_ORG/inboden2008.org" "~/Documents/Dissertation/liberatingfaith.org" "~/Documents/Work/TX_Triangle/Perez_Wancke_2018.org")))
- '(package-selected-packages
-   (quote
-    (markdown-mode polymode pandoc-mode auctex org-ref use-package))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(org-document-title ((t (:inherit default :weight bold :foreground "#839496" :height 1.5 :underline nil))))
- '(org-level-1 ((t (:inherit default :weight bold :foreground "#839496" :height 1.75))))
- '(org-level-2 ((t (:inherit default :weight bold :foreground "#839496" :height 1.5))))
- '(org-level-3 ((t (:inherit default :weight bold :foreground "#839496" :height 1.25))))
- '(org-level-4 ((t (:inherit default :weight bold :foreground "#839496" :height 1.1))))
- '(org-level-5 ((t (:inherit default :weight bold :foreground "#839496"))))
- '(org-level-6 ((t (:inherit default :weight bold :foreground "#839496"))))
- '(org-level-7 ((t (:inherit default :weight bold :foreground "#839496"))))
- '(org-level-8 ((t (:inherit default :weight bold :foreground "#839496")))))
+(custom-set-variables)
