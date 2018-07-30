@@ -2,6 +2,19 @@
 
 #+title: Emacs Configuration
 #+author: Luke M. Perez
+
+* Autosave
+
+#+BEGIN_SRC emacs-lisp :results silent
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+(setq TeX-auto-save nil)
+(setq auto-save-list-file-prefix nil)
+
+#+END_SRC
 * Setting up cache folders
 Finally, I set up a cache folder in my =.emacs.d= folder so that it's not quite as crowded:
 
