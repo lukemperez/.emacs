@@ -397,7 +397,7 @@ Now we can load out themes.
 
 ** Solarized Theme (light & dark)
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
 
 (use-package solarized-theme
 	:ensure t
@@ -407,14 +407,14 @@ Now we can load out themes.
 
 ** Github Theme
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
 
 (use-package github-theme
 	:ensure t
-	:defer t
-)
+	:defer t)
 
 #+END_SRC
+
 * Experimental
 ** Save backups to Directory
 
@@ -522,7 +522,7 @@ This creates bullets rather than asterisks. I didn't really like it so I turned 
 
 #+BEGIN_SRC emacs-lisp
 
-;;(require 'org-bullets)
-;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 #+END_SRC
