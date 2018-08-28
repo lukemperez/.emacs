@@ -389,9 +389,9 @@ Now we can load out themes.
 
 #+BEGIN_SRC emacs-lisp
 
-(use-package atom-dark-theme
-	 :ensure t
-     :defer t)
+  ;; (use-package atom-dark-theme
+  ;; 	 :ensure t
+  ;;      :defer t)
 
    #+END_SRC
 

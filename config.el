@@ -1,3 +1,11 @@
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+(setq TeX-auto-save nil)
+(setq auto-save-list-file-prefix nil)
+
 (defvar my/emacs-cache (concat user-emacs-directory ".cache/")
   "Folder to store cache files in.
 
@@ -247,8 +255,7 @@ Should end with a forward slash.")
 
 (use-package github-theme
 	:ensure t
-	:defer t
-)
+	:defer t)
 
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
@@ -289,5 +296,5 @@ Should end with a forward slash.")
 ;; Handy key definition
 (define-key global-map "\M-Q" 'unfill-paragraph)
 
-;;(require 'org-bullets)
-;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
