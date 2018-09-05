@@ -18,10 +18,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/lmp/.emacs.d/"
  "/Users/lmp/Documents/Mizzou/2018_Fall/"
  "/Users/lmp/Dropbox/AcademicWork/Citation_notes/"
  "/Users/lmp/Documents/Academic_Jobs/Syllabi/Government_Syllabus/"
- "/Users/lmp/.emacs.d/"
  "/Users/lmp/Documents/Dissertation/UT_Dissertation/"
  "/Users/lmp/Documents/Dissertation/Defense/"
  "/Users/lmp/Documents/Dissertation/Draft/1_Introduction/"
@@ -38,12 +38,12 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config.org"
  "syllabus.latex"
  "FIG_2018_Fall_Syllabus.md"
  "LincolnFellowship.org"
  "makefile"
  "2017_Perez_Syllabus_Example_One.md"
- "config.org"
  "KICD_FIG.org"
  "perez_2018_dissertation.tex"
  "dissdefense.org"
@@ -52,17 +52,17 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lmp/Documents/Mizzou/2018_Fall/" (23414 57712 320805 627000) "Updated Syllabus.docx" "syllabus.latex" "Possible_FIG_speakers.pdf" "KICD_FIG.org" "internationalpolitics.org" "internationalpolitics.pdf" "FIG_2018_Fall_Syllabus.md" "makefile" "FIG_2018_Fall_Syllabus.md.pdf" ".DS_Store" "internationalpolitics.tex" ".#FIG_2018_Fall_Syllabus.md" "../" "./")
+ ("/Users/lmp/.emacs.d/.cache/" (23428 44646 877663 779000) "customize.el~" "customize.el" "../" "./")
 
- ("/Users/lmp/.emacs.d/.cache/" (23412 34904 275764 853000) "customize.el~" "customize.el" "../" "./")
+ ("/Users/lmp/.emacs.d/" (23428 8421 620417 710000) ".cache/" ".git/" "elpa/" ".org-id-locations" "init.el" "auto-save-list/" "config.el" "ido.last~" "config.org" "eshell/" ".DS_Store" "ido.last" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Citation_notes/" (23412 14838 378698 367000) "LincolnFellowship.tex~" ".git/" "Gaddis_John.org" "Archive_Markdown/" "federalistpapers.org" ".gitignore" "LincolnFellowship.tex" "Ashley_Benedict.pdf" "Porter_Stephen.org" "Ashley_Benedict.org" "LincolnFellowship.org" ".DS_Store" "Ashley_Benedict.tex" "Fortin_Ernest.org" "LincolnFellowship.pdf" "../" "./")
+ ("/Users/lmp/Dropbox/AcademicWork/Citation_notes/" (23413 35213 102787 286000) "LincolnFellowship.tex~" ".git/" "Gaddis_John.org" "Archive_Markdown/" "federalistpapers.org" ".gitignore" "LincolnFellowship.tex" "Ashley_Benedict.pdf" "Porter_Stephen.org" "Ashley_Benedict.org" "LincolnFellowship.org" ".DS_Store" "Ashley_Benedict.tex" "Fortin_Ernest.org" "LincolnFellowship.pdf" "../" "./")
 
- ("/Users/lmp/.emacs.d/" (23412 34901 836843 910000) ".cache/" ".git/" "elpa/" ".org-id-locations" "init.el" "auto-save-list/" "config.el" "ido.last~" "config.org" "eshell/" ".DS_Store" "ido.last" "../" "./")
+ ("/Users/lmp/Documents/Mizzou/2018_Fall/" (23428 8189 586055 355000) "Updated Syllabus.docx" "syllabus.latex" "Possible_FIG_speakers.pdf" "KICD_FIG.org" "internationalpolitics.org" "internationalpolitics.pdf" "FIG_2018_Fall_Syllabus.md" "makefile" "FIG_2018_Fall_Syllabus.md.pdf" ".DS_Store" "internationalpolitics.tex" "../" "./")
+
+ ("/Users/lmp/" (23428 45099 341926 978000) ".bash_history" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" ".gem/" ".zcompdump-lmp_mbp-5.3" ".rstudio-desktop/" "Documents/" ".npm/" ".zcompdump-lmp_mbp-5.2" ".Trash/" "Dropbox/" "Applications/" "Movies/" ".RData" "github/" ".dropbox/" "Public/" ".bash_sessions/" ".cups/" ".gitignore_global" ".emacs.d/" ".oracle_jre_usage/" ".zcompdump-LUKE’s MacBook Pro-5.2" "Library/" "Desktop/" ".zsh_history" ".bundle/" ".atom/" "Pictures/" "Creative Cloud Files/" ".adobe/" ".zshrc" ".subversion/" ".z" ".CFUserTextEncoding" ".gnupg/" ".DS_Store" ".node-gyp/" ".install4j" "Music/" ".config/" ".Rhistory" "../" "./")
 
  ("/Users/lmp/Documents/Academic_Jobs/Syllabi/Government_Syllabus/" (23409 37932 707625 263000) "syllabus.latex" "2017_Perez_Syllabus_Example_One.md.pdf" "2017_Perez_Syllabus_Example_One.md" "makefile" "../" "./")
-
- ("/Users/lmp/" (23410 27022 685117 72000) ".bash_history" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" ".gem/" ".zcompdump-lmp_mbp-5.3" ".rstudio-desktop/" "Documents/" ".npm/" ".zcompdump-lmp_mbp-5.2" ".Trash/" "Dropbox/" "Applications/" "Movies/" ".RData" "github/" ".dropbox/" "Public/" ".bash_sessions/" ".cups/" ".gitignore_global" ".emacs.d/" ".oracle_jre_usage/" ".zcompdump-LUKE’s MacBook Pro-5.2" "Library/" "Desktop/" ".zsh_history" ".bundle/" ".atom/" "Pictures/" "Creative Cloud Files/" ".adobe/" ".zshrc" ".subversion/" ".z" ".CFUserTextEncoding" ".gnupg/" ".DS_Store" ".node-gyp/" ".install4j" "Music/" ".config/" ".Rhistory" "../" "./")
 
  ("/Users/lmp/Documents/Academic_Jobs/Syllabi/" (23383 30409 840807 754000) "Rhetoric_WAR_Syllabus/" "syllabus.latex" "Government_Syllabus/" "ForeignPolicy_Syllabus/" "ReligiousFreedom_Syllabus/" "Religion_USFP_Syllabus/" "Philosophy_FP/" "zArchive/" "Internat_Law/" "Rhetoric_309_Syllabus/" ".DS_Store" "../" "./")
 

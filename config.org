@@ -409,9 +409,9 @@ Now we can load out themes.
 
 #+BEGIN_SRC emacs-lisp :results silent
 
-(use-package github-theme
-	:ensure t
-	:defer t)
+  ;; (use-package github-theme
+  ;; 	:ensure t
+  ;; 	:defer t)
 
 #+END_SRC
 

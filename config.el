@@ -245,9 +245,9 @@ Should end with a forward slash.")
     (load-theme 'zenburn t)
 )
 
-(use-package atom-dark-theme
-	 :ensure t
-     :defer t)
+;; (use-package atom-dark-theme
+;; 	 :ensure t
+;;      :defer t)
 
 (use-package solarized-theme
 	:ensure t
