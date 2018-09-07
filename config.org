@@ -521,8 +521,9 @@ This bit of code lets me take a paragraph that includes line-breaks and turn int
 This creates bullets rather than asterisks. I didn't really like it so I turned it off. But I save the code, commented out, so that I can use it later if I want.
 
 #+BEGIN_SRC emacs-lisp
+;; Removed for troubleshooting
 
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; (require 'org-bullets)
+;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 #+END_SRC

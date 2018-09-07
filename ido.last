@@ -2,24 +2,34 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/lmp/Library/texlive/2017/" . "texmf-local/")
+ ("/Users/lmp/Library/texlive/" . "2017/")
+ ("/Users/lmp/Library/" . "texlive/")
+ ("/Users/" . "lmp/")
+ ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/" . "Letters/")
  ("/Users/lmp/Documents/Academic_Jobs/Syllabi/" . "Government_Syllabus/")
  ("/Users/lmp/Documents/Mizzou/" . "2018_Fall/")
  ("/Users/lmp/Documents/Academic_Jobs/2018_Apps/" . "CMC/")
  ("/Users/lmp/Documents/Academic_Jobs/" . "Syllabi/")
  ("/Users/lmp/Documents/Dissertation/Draft/" . "1_Introduction/")
  ("/Users/lmp/Documents/Dissertation/" . "UT_Dissertation/")
- ("/Users/lmp/Documents/" . "Mizzou/")
+ ("/Users/lmp/Documents/" . "CV/")
  ("/Users/lmp/.emacs.d/" . "elpa/")
  ("/" . ".PKInstallSandboxManager-SystemSoftware/")
- ("/Users/lmp/Dropbox/AcademicWork/" . "Bibs/")
+ ("/Users/lmp/Dropbox/AcademicWork/" . "Pandoc_Templates/")
  ("/Users/lmp/Dropbox/" . "AcademicWork/")
- ("/Users/lmp/" . "Documents/")
+ ("/Users/lmp/" . "Library/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/lmp/.emacs.d/"
+ "/Users/lmp/Library/texlive/2017/texmf-local/"
+ "/Users/lmp/Documents/Lucia/MU Cover Letter/"
+ "/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/"
+ "/Users/lmp/Documents/CV/"
+ "/Users/lmp/Documents/Lucia/"
  "/Users/lmp/Documents/Mizzou/2018_Fall/"
+ "/Users/lmp/.emacs.d/"
  "/Users/lmp/Dropbox/AcademicWork/Citation_notes/"
  "/Users/lmp/Documents/Academic_Jobs/Syllabi/Government_Syllabus/"
  "/Users/lmp/Documents/Dissertation/UT_Dissertation/"
@@ -38,25 +48,46 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "TexasLetter.cls"
+ "makefile"
+ "Lucia_CoverLetter.md"
+ "texasletter.latex"
+ "letertemplate.tex"
+ "LuciaResume_2018.md"
  "config.org"
  "syllabus.latex"
  "FIG_2018_Fall_Syllabus.md"
  "LincolnFellowship.org"
- "makefile"
- "2017_Perez_Syllabus_Example_One.md"
- "KICD_FIG.org"
- "perez_2018_dissertation.tex"
- "dissdefense.org"
- "Perez_Introduction_Text.tex"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lmp/.emacs.d/.cache/" (23428 44646 877663 779000) "customize.el~" "customize.el" "../" "./")
+ ("/Users/lmp/Documents/Lucia/MU Cover Letter/" (23439 48763 515443 49000) "Lucia_Resume.md" "Lucia_CoverLetter.md" "makefile" "letter.pdf" "letter.tex" "../" "./")
 
- ("/Users/lmp/.emacs.d/" (23428 8421 620417 710000) ".cache/" ".git/" "elpa/" ".org-id-locations" "init.el" "auto-save-list/" "config.el" "ido.last~" "config.org" "eshell/" ".DS_Store" "ido.last" "../" "./")
+ ("/Users/lmp/Library/texlive/2017/texmf-local/" (22936 27705 0 0) "TexasLetter.cls" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Citation_notes/" (23413 35213 102787 286000) "LincolnFellowship.tex~" ".git/" "Gaddis_John.org" "Archive_Markdown/" "federalistpapers.org" ".gitignore" "LincolnFellowship.tex" "Ashley_Benedict.pdf" "Porter_Stephen.org" "Ashley_Benedict.org" "LincolnFellowship.org" ".DS_Store" "Ashley_Benedict.tex" "Fortin_Ernest.org" "LincolnFellowship.pdf" "../" "./")
+ ("/Users/lmp/Library/texlive/2017/" (22936 27696 0 0) ".DS_Store" "texmf-local/" "texmf-var/" "../" "./")
+
+ ("/Users/lmp/Library/texlive/" (22927 9382 0 0) "2016/" "2017/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Library/" (23317 8145 791228 560000) "Caches/" "CoreFollowUp/" "Keyboard/" "texlive/" "Services/" "Cookies/" "Input Methods/" "SafariSafeBrowsing/" "Spelling/" "CallServices/" "Screen Savers/" "Metadata/" "KeyboardServices/" "Fonts/" "keenEvents.sqlite" "Containers/" "Dictionaries/" "Group Containers/" "LaunchAgents/" "Suggestions/" ".rdb.stkdc-itrwcdadvxth.iwxczegd2.lcf" "PubSub/" "Mobile Documents/" "Dropbox/" "FileProvider/" "Scripts/" "Icons/" "PreferencePanes/" "Colors/" "Safari/" "Accounts/" "Voices/" "MyHarmony/" "Internet Plug-Ins/" "PhotoshopCrashes/" "Logs/" "Keyboard Layouts/" "Audio/" "SyncedPreferences/" "Printers/" "com.apple.internal.ck/" "Personas/" "Sounds/" "Speech/" "FontCollections/" "CoreData/" "iMovie/" "iTunes/" "Workflows/" "Family/" "Passes/" "Favorites/" "LanguageModeling/" "Google/" "GameKit/" "Compositions/" "Mail/" ".localized" "Assistants/" "Application Scripts/" "ColorSync/" "ColorPickers/" "Sharing/" ".DS_Store" "Keychains/" "DES/" "Messages/" "PDF Services/" "Preferences/" "Calendars/" "WebKit/" "IdentityServices/" "Saved Application State/" "Autosave Information/" "Saved Searches/" "Assistant/" "Maps/" "Application Support/" "TeXShop/" "../" "./")
+
+ ("/Users/lmp/.emacs.d/" (23439 48438 500528 687000) ".cache/" ".git/" "elpa/" ".org-id-locations" "init.el" "auto-save-list/" "config.el" "ido.last~" "config.org" "eshell/" ".DS_Store" "ido.last" "../" "./")
+
+ ("/Users/lmp/Documents/Lucia/" (23439 48418 91864 676000) "MU Cover Letter/" "MU Resume/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/" (23391 21720 718264 649000) "texasletter.latex" "Government.png" "KICD.png" "mu.png" ".DS_Store" "utexasletter.tex" "../" "./")
+
+ ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/" (22966 48022 0 0) "CSL/" "Headers/" ".DS_Store" "Letters/" "Manuscripts/" "../" "./")
+
+ ("/Users/lmp/Dropbox/" (23355 59977 698055 0) "Soulver Files/" "Apps/" "lmp_site/" "Photos/" ".dropbox.cache/" "Perez_Luke/" "Teller_Logic_Primer/" "1Password.agilekeychain/" ".dropbox" "Public/" "Camera Uploads/" "Icon
+" "Prayer & Discernment/" "AcademicWork/" "Inbox/" ".DS_Store" "Screenshots/" ".ws.agile.1Password.settings" "receipts/" "../" "./")
+
+ ("/Users/lmp/Documents/CV/" (23428 28461 241623 392000) "CV.sty" "vita.latex" "Perez_Vita.md.pdf" "makefile" "cv.latex" ".DS_Store" "Perez_Vita.md" "../" "./")
+
+ ("/Users/lmp/.emacs.d/.cache/" (23439 14782 272398 953000) "customize.el~" "customize.el" "../" "./")
+
+ ("/Users/lmp/Dropbox/AcademicWork/Citation_notes/" (23438 60101 585475 456000) ".git/" "Gaddis_John.org" "Archive_Markdown/" "federalistpapers.org" ".gitignore" "LincolnFellowship.tex" "Ashley_Benedict.pdf" "Porter_Stephen.org" "Ashley_Benedict.org" "Mattingly_Garrett.org" "LincolnFellowship.org" ".DS_Store" "Aquinas_Thomas.org" "Ashley_Benedict.tex" "Fortin_Ernest.org" "LincolnFellowship.pdf" "../" "./")
 
  ("/Users/lmp/Documents/Mizzou/2018_Fall/" (23428 8189 586055 355000) "Updated Syllabus.docx" "syllabus.latex" "Possible_FIG_speakers.pdf" "KICD_FIG.org" "internationalpolitics.org" "internationalpolitics.pdf" "FIG_2018_Fall_Syllabus.md" "makefile" "FIG_2018_Fall_Syllabus.md.pdf" ".DS_Store" "internationalpolitics.tex" "../" "./")
 
@@ -73,9 +104,6 @@
  ("/Users/lmp/Documents/Dissertation/Defense/" (23396 33798 828270 476000) "dissdefense.tex" "Perez_2018_Dissertation_Defense.tex" "dissdefense.tex~" "dissdefense.org" "Perez_2018_Dissertation_Defense.pdf" "dissdefense.pdf" "dissdefense.md" "dissdefense.org~" "../" "./")
 
  ("/Users/lmp/Documents/Dissertation/UT_Dissertation/" (23396 44022 83901 214000) "utdiss2.sty" "mainmatter/" "5_Conclusion.tex" "figures/" "perez_2018_dissertation.tex" "1_Introduction.tex" "3_Eisenhower.tex" "4_Jackson_Vanik.tex" "utdiss2-05.sty" "perez_2018_signaturepage.pdf" "2_Theory.tex" ".DS_Store" "perez_2018_dissertation.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/" (23355 59975 698055 0) "Soulver Files/" "Apps/" "lmp_site/" "Photos/" ".dropbox.cache/" "Perez_Luke/" "Teller_Logic_Primer/" "1Password.agilekeychain/" ".dropbox" "Public/" "Camera Uploads/" "Icon
-" "Prayer & Discernment/" "AcademicWork/" "Inbox/" ".DS_Store" "Screenshots/" ".ws.agile.1Password.settings" "receipts/" "../" "./")
 
  ("/Users/lmp/Documents/Dissertation/Draft/1_Introduction/" (23391 30483 662742 226000) "Perez_Diss_Intro.md" "Perez_Introduction_Text.tex" "Perez_Intro_Chapter.tex" "makefile" "Perez_2018_Introduction.pdf" ".DS_Store" "../" "./")
 

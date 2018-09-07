@@ -253,9 +253,9 @@ Should end with a forward slash.")
 	:ensure t
 	:defer t)
 
-(use-package github-theme
-	:ensure t
-	:defer t)
+;; (use-package github-theme
+;; 	:ensure t
+;; 	:defer t)
 
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
