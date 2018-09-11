@@ -181,13 +181,19 @@ Should end with a forward slash.")
 ))
 
 ;; First we need to require org-ref
+(require 'org-ref)
 
-;(use-package org-ref
-;	:ensure t
-;	:init
-;	(setq reftex-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
-;	(setq org-ref-default-bibliography '(~/Dropbox/AcademicWork/Bibs/refs.bib"))
-;	(setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib"))
+(setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+
+;; see org-ref for use of these variables
+
+(setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
+      org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
+      org-ref-pdf-directory "~/Dropbox/AcademicWork/Org/PDFs/")
+
+
+
+;; (setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib")))
 
 ;; Next we need to configure some settings.
 ;; * We begin by setting up the default bibliography
@@ -296,5 +302,7 @@ Should end with a forward slash.")
 ;; Handy key definition
 (define-key global-map "\M-Q" 'unfill-paragraph)
 
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; Removed for troubleshooting
+
+;; (require 'org-bullets)
+;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
