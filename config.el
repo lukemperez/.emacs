@@ -191,18 +191,7 @@ Should end with a forward slash.")
       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
       org-ref-pdf-directory "~/Dropbox/AcademicWork/Org/PDFs/")
 
-
-
 ;; (setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib")))
-
-;; Next we need to configure some settings.
-;; * We begin by setting up the default bibliography
-;;   which I have saved in a Dropbox folder.
-;; * Then we'll set up bibliographies for notes, and
-;;   other purposes.
-
-; (setq reftex-default-bibliography 
-;   '("~/Dropbox/AcademicWork/Bibs/refs.bib "))
 
 (use-package markdown-mode
   :ensure t
