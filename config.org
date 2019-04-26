@@ -187,6 +187,7 @@ This next bit of code should allow reftex citations inside markdown.
 Org-Mode is the primary way that I should be writing. In this section, we need to add some settings that make things easier to manage, export, and the like. In previous setups of my =.emacs= configuration, I did not organize these as well as I could have. So here, I'm going to include the settings relevant to each mode or feature. More information can be found via the org-mode manual: I prefer the pdf [[http://orgmode.org/org.pdf][found here]]. 
 
 It bears mentioning that if I ever want to check my org-mode verison, I can use =M-x org-version=. 
+
 ** "Word Processor
 [[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Howardism]] has the good on setting up Org-Mode to work like a word processor.
 #+BEGIN_SRC emacs-lisp :results silent
@@ -227,32 +228,32 @@ Make a key-binding to my notes file.
 The point with these hot-keys is to make short-cuts to several org files while I will use for notetaking. Ideally, I'd like to do this with markdown. Although Org-mode is much more powerful than markdown, I am partial to the option of keeping unique independent markdown files for each idea rather than a cluster of =.org= files. Still, this is helpful as it helps me thinkthrough how that might work. 
 
 #+BEGIN_SRC emacs-lisp :results silent
-;; Set our default Notes file.
-(setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
+  ;; Set our default Notes file.
+  (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
 
-;; General Academic Notes
-(global-set-key (kbd "C-c n") 
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+  ;; General Academic Notes
+  (global-set-key (kbd "C-c n") 
+                  (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
 
-;; Dissertation Outline
-(global-set-key (kbd "C-c d") 
-                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+  ;; Dissertation Outline
+  ;; (global-set-key (kbd "C-c d") 
+  ;;                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
 
-;; A 2018 Journal (work in progress)
-(global-set-key (kbd "C-c j")
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
+  ;; A 2018 Journal (work in progress)
+  (global-set-key (kbd "C-c j")
+                  (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
-;; DHFS workflow file
-(global-set-key (kbd "C-c w")
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
+  ;; DHFS workflow file
+  ; (global-set-key (kbd "C-c w")
+  ;                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
 
-;; GTD Org File
-(global-set-key (kbd "C-c z")
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
+  ;; GTD Org File
+  ; (global-set-key (kbd "C-c z")
+  ;                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
 
 #+END_SRC
 
-***  Capture templates
+*** Capture templates
 Next we setup the capture key-bindings and templates. We begin with the basic capture =C-cc=
 #+BEGIN_SRC emacs-lisp :results silent
 
