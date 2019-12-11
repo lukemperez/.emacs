@@ -1,0 +1,55 @@
+make
+make
+make clean && make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make rebuild 
+make rebuild 
+make rebuild 
+make
+make
+make
+make
+make
+make
+make rebuild 
+git commit -am "Dec 10, 2019"
+git push origin master
+git pull origin master
+git status
+open .gitignore
+git status
+git add .
+git commit -m "updated git ignore"
+git push origin master
+git fsck
+clear
+git status
+git remote 
+git origin
+git --help
+git push origin master
+open .git
+git status -s
+git status -s
+clear
+git status
+git status -s
+git status
+git add .
+git commit -m "update"
+git push origin master
+git remote add origin git@github:lukemperez/Org.git
+git config http.postBuffer 524288000
+git config http.postBuffer 524288000
+git push orign master
+git push origin master
+git commit -am "test update" 
+git push origin master
