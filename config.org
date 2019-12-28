@@ -298,6 +298,10 @@ Work in progress
 
 #+END_SRC
 
+** Refile
+I want to re-file across files, [[https://stackoverflow.com/questions/22200312/refile-from-one-file-to-other][like in this thread]].
+
+
 * Markdown files
 Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =LaTeX= or =org-mode=.
 

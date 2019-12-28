@@ -152,20 +152,20 @@ Should end with a forward slash.")
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
 
 ;; Dissertation Outline
-(global-set-key (kbd "C-c d") 
-                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
+;; (global-set-key (kbd "C-c d") 
+;;                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
 
 ;; A 2018 Journal (work in progress)
 (global-set-key (kbd "C-c j")
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
 ;; DHFS workflow file
-(global-set-key (kbd "C-c w")
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
+; (global-set-key (kbd "C-c w")
+;                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
 
 ;; GTD Org File
-(global-set-key (kbd "C-c z")
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
+; (global-set-key (kbd "C-c z")
+;                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
 
 ;; Basic Capture
 (global-set-key (kbd "C-c c") 'org-capture)
