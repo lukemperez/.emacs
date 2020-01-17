@@ -1,55 +1,128 @@
-make
-make
-make clean && make
-make
-make
-make
-make
-make
-make
-make
-make
-make
+make rebuild 
+make rebuild 
 make rebuild 
 make rebuild 
 make rebuild 
 make
 make
-make
-make
+make rebuild 
 make
 make
 make rebuild 
-git commit -am "Dec 10, 2019"
-git push origin master
-git pull origin master
-git status
-open .gitignore
-git status
-git add .
-git commit -m "updated git ignore"
-git push origin master
-git fsck
+make
+make rebuild 
 clear
-git status
-git remote 
-git origin
-git --help
-git push origin master
-open .git
-git status -s
-git status -s
 clear
+clear
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make rebuild 
+make
+make
+make rebuild 
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make rebuild 
+cd ..
+cp SCSS2019/ ../Inprogress/NLNS/
+cd ../Inprogress/
+ls
+mkdir NatLawNatSec
+cp ../Completed/SCSS2019/* NatLawNatSec/*
+cp ../Completed/SCSS2019/* NatLawNatSec/
+cd NatLawNatSec/
+ls
+mv Perez_2019_scss_natlaw_natsec.md Perez_2020_ShawneeTrail.md
+mkdir archive
+mv 201909091553\ -\ natlaw\ and\ natsec.txt Perez_2019_scss_natlaw_natsec.md.pdf Perez_SCSS_Present.* archive/
+ls
+open .
+ls
+Perez_2020_ShawneeTrail_Abstract.md
+touch Perez_2020_ShawneeTrail_Abstract.md
+make
+make
 git status
-git status -s
+git commit -am "December 30, 2019"
+git push origin master
+make
 git status
-git add .
-git commit -m "update"
+git commit -am "January 3, 2019 -- created logbook"
+git add --all
+git commit -am "January 3, 2019 -- created logbook"
 git push origin master
-git remote add origin git@github:lukemperez/Org.git
-git config http.postBuffer 524288000
-git config http.postBuffer 524288000
-git push orign master
+git status
+cd ../Projects/Inprogress/
+ls
+git commit -am "Jan 6, 2019"
 git push origin master
-git commit -am "test update" 
-git push origin master
+git status
+ls
+open *.pdf
+open *.pdf
+git commit -am "January 7, 2019" && git push origin master
+cd Dropbox/AcademicWork/Teaching/2020_Spring_CEL475/
+open *.pdf
+ls
+mkdir readings
+make
+make
+make
+make
+make
+make rebuild 
+make
+make
+make

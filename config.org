@@ -73,6 +73,9 @@ can run the command again.
 
 #+END_SRC
 
+#+RESULTS:
+: /usr/local/bin/ispell
+
 * AuCTeX
 If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No sense in trying anything else. One challenge that I had while setting up AuCTeX is that with Mac OSX El Cap, Emacs can have trouble finding the TeX distribution. I found very useful code from [[http://www.qqyang.org/blog/not-complete-guide-to-basictex/][Qingqing Yang's blog]]
 
