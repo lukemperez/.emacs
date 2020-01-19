@@ -1,16 +1,4 @@
 make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make
-make
-make rebuild 
-make
-make
-make rebuild 
-make
-make rebuild 
 clear
 clear
 clear
@@ -126,3 +114,15 @@ make rebuild
 make
 make
 make
+git status
+git add --all
+git commit m
+git commit -m "January 17 2019"
+git push origin master
+git pull origin master
+git status
+git conflict
+git --help
+git diff
+clear
+open .

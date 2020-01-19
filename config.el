@@ -181,17 +181,25 @@ Should end with a forward slash.")
 ))
 
 ;; First we need to require org-ref
-(require 'org-ref)
+  ;; (require 'org-ref)
+  ;; (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
-(setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
-;; see org-ref for use of these variables
+  (use-package org-ref
+           :after org
+           :init
+           (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+           (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
+           (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib"))
+;;            (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
-(setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
-      org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
-      org-ref-pdf-directory "~/Dropbox/AcademicWork/Org/PDFs/")
+  ;; see org-ref for use of these variables
 
-;; (setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib")))
+  ;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
+  ;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
+  ;;       org-ref-pdf-directory "~/Dropbox/AcademicWork/PDFs/")
+
+;; (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
 
 (use-package markdown-mode
   :ensure t

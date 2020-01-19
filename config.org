@@ -279,25 +279,45 @@ Next we setup the capture key-bindings and templates. We begin with the basic ca
 *** Basic Setup
 #+BEGIN_SRC emacs-lisp :results silent
 
-;; First we need to require org-ref
-(require 'org-ref)
+    ;; First we need to require org-ref
+    ;; (require 'org-ref)
+    ;; (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
-(setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
-;; see org-ref for use of these variables
+    (use-package org-ref-core
+             :ensure org-ref
+             :demand t ; make sure this gets loaded
+             :after org
+             :init
+             (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+             (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
+             (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+		   (setq  bibtex-completion-library-path org-ref-pdf-directory))
 
-(setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
-      org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
-      org-ref-pdf-directory "~/Dropbox/AcademicWork/Org/PDFs/")
+  ;;            (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+
+    ;; see org-ref for use of these variables
+
+    ;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
+    ;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
+    ;;       org-ref-pdf-directory "~/Dropbox/AcademicWork/PDFs/")
 
 #+END_SRC
 
+*** Biblatex
+I like to use biblatex
+
+#+BEGIN_SRC emacs-lisp :results silent
+(setq  org-latex-pdf-process
+       '("latexmk -shell-escape -bibtex -pdf %f"))
+
+#+END_SRC
 *** Helm
-Work in progress
+# Work in progress. Right now I have the code nested within the larger use-package setup.
 
 #+BEGIN_SRC emacs-lisp :results silent
 
-;; (setq helm-bibtex-bibliography "~Dropbox/AcademicWork/Bibs/refs.bib")))
+  ;; (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
 
 #+END_SRC
 

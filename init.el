@@ -1,6 +1,6 @@
 ;; init.el --- Emacs Initialization File
 ;;
-;; Copyright (c) 2015-2017, Luke Matthew Perez
+;; Copyright (c) 2015-2020, Luke Matthew Perez
 ;;
 ;; * This file is distributed in the hope that it will be useful,
 ;;   but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -11,7 +11,8 @@
 ;; * This file is not part of GNU Emacs.
 ;; * Nevertheless, this init file and related files are in the public
 ;;   domain and free to use, extend, or modify.
-;;
+
+;; Depreciated code now that I use Config.org
 ;; Load Custom File
 ;; (setq custom-file "~/.emacs-custom.el")
 ;;      (load custom-file)
