@@ -185,12 +185,16 @@ Should end with a forward slash.")
   ;; (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
 
-  (use-package org-ref
+  (use-package org-ref-core
+           :ensure org-ref
+           :demand t ; make sure this gets loaded
            :after org
            :init
            (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
            (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
-           (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib"))
+           (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+		 (setq  bibtex-completion-library-path org-ref-pdf-directory))
+
 ;;            (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
   ;; see org-ref for use of these variables
@@ -198,6 +202,9 @@ Should end with a forward slash.")
   ;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
   ;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
   ;;       org-ref-pdf-directory "~/Dropbox/AcademicWork/PDFs/")
+
+(setq  org-latex-pdf-process
+       '("latexmk -shell-escape -bibtex -pdf %f"))
 
 ;; (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
 

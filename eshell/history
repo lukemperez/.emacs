@@ -1,48 +1,3 @@
-make rebuild 
-clear
-clear
-clear
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make rebuild 
-make
-make
-make rebuild 
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
 make
 make
 make
@@ -126,3 +81,48 @@ git --help
 git diff
 clear
 open .
+git commit -am "January 19, 2019"
+git push origin master
+git status
+git add --all
+git commit -m "January 19, 2019"
+git push origin master
+git status
+git add --all 
+git commi -m "January 19, 2020"
+git commit -m "January 19, 2020"
+git push origin master
+git status
+ls
+open .
+make
+make
+touch perez_mss.txt
+make book 
+make book 
+make book
+make
+make
+cp ../Paper/makefile makefile
+ls
+cd ..
+ls
+mkdir Proposal
+cd Proposal/
+touch Perez_2020_IJRF_Proposal.md
+cp ../Paper/makefile makefile
+ls
+make
+make
+make
+cd ../../libfaith_mss/
+ls
+cd Proposal/
+ls
+rm -rf Perez_2020_IJRF_Proposal.md 
+git status
+git commit -am "January 20, 2019"
+git push origin master
+git commit -am "January 20, 2019"
+git push origin master
+git status
