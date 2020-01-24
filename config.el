@@ -181,32 +181,42 @@ Should end with a forward slash.")
 ))
 
 ;; First we need to require org-ref
-  ;; (require 'org-ref)
-  ;; (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+;; (require 'org-ref)
+;; (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
 
-  (use-package org-ref-core
-           :ensure org-ref
-           :demand t ; make sure this gets loaded
-           :after org
-           :init
-           (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-           (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
-           (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
-		 (setq  bibtex-completion-library-path org-ref-pdf-directory))
+(use-package org-ref-core
+         :ensure org-ref
+         :demand t ; make sure this gets loaded
+         :after org
+         :init
+         (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+         (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
+         (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+         (setq bibtex-completion-library-path org-ref-pdf-directory)
+         (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+         :bind*
+         (("C-c C-r" . org-ref-helm-insert-cite-link)))
 
-;;            (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
-  ;; see org-ref for use of these variables
 
-  ;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
-  ;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
-  ;;       org-ref-pdf-directory "~/Dropbox/AcademicWork/PDFs/")
+;; see org-ref for use of these variables
+
+;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
+;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
+;;       org-ref-pdf-directory "~/Dropbox/AcademicWork/PDFs/")
+
+(defun org-remove-headlines (backend)
+  "Remove headlines with :no_title: tag."
+  (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
+                   "no_title"))
+
+(add-hook 'org-export-before-processing-hook #'org-remove-headlines)
 
 (setq  org-latex-pdf-process
        '("latexmk -shell-escape -bibtex -pdf %f"))
 
-;; (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+(setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
 
 (use-package markdown-mode
   :ensure t
