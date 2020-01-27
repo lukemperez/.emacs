@@ -3,6 +3,21 @@
 #+title: Emacs Configuration
 #+author: Luke M. Perez
 
+* Setup
+
+** Scratch in markdown mode
+I stole this from my buddy, Brenden Apfeld.
+    #+BEGIN_SRC emacs-lisp
+      (setq initial-major-mode #'org-mode
+            initial-scratch-message "# This buffer is for notes you don't want to save\n\n")
+    #+END_SRC
+
+** Ignore file case when trying to find stuff:
+This too, from my buddy, Brenden Apfeld.
+    #+BEGIN_SRC emacs-lisp
+      (setq read-file-name-completion-ignore-case t)
+    #+END_SRC
+
 * Autosave
 
 #+BEGIN_SRC emacs-lisp :results silent

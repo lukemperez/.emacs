@@ -151,21 +151,21 @@ Should end with a forward slash.")
 (global-set-key (kbd "C-c n") 
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
 
+;; A literature review Org-file
+(global-set-key (kbd "C-c l")
+  	      (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/literature.org")))
+
 ;; Dissertation Outline
 ;; (global-set-key (kbd "C-c d") 
 ;;                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
 
-;; A 2018 Journal (work in progress)
+;; A Journal (work in progress)
 (global-set-key (kbd "C-c j")
                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
-;; DHFS workflow file
-; (global-set-key (kbd "C-c w")
-;                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/dhfs.org")))
-
-;; GTD Org File
-; (global-set-key (kbd "C-c z")
-;                 (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/gtd.org")))
+;; Research File
+(global-set-key (kbd "C-C r")
+  	      (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
 ;; Basic Capture
 (global-set-key (kbd "C-c c") 'org-capture)
@@ -173,7 +173,7 @@ Should end with a forward slash.")
 ;; Advanced capture (test)
 (setq org-capture-templates
       '(;; testing source: http://www.ideaio.ch/posts/my-gtd-system-with-org-mode.html
-        ("q" "Quote" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Concepts" "Quotes")
+        ("q" "Quotes" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Concepts" "Quotes")
          "* %^{Title} %U         %?")
         ("y" "Connection" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Connecting")
          "* %^{Title} %U          %?")
