@@ -1,3 +1,35 @@
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make rebuild 
+cd ..
+cp SCSS2019/ ../Inprogress/NLNS/
+cd ../Inprogress/
+ls
+mkdir NatLawNatSec
+cp ../Completed/SCSS2019/* NatLawNatSec/*
+cp ../Completed/SCSS2019/* NatLawNatSec/
+cd NatLawNatSec/
+ls
+mv Perez_2019_scss_natlaw_natsec.md Perez_2020_ShawneeTrail.md
+mkdir archive
+mv 201909091553\ -\ natlaw\ and\ natsec.txt Perez_2019_scss_natlaw_natsec.md.pdf Perez_SCSS_Present.* archive/
+ls
+open .
+ls
+Perez_2020_ShawneeTrail_Abstract.md
+touch Perez_2020_ShawneeTrail_Abstract.md
+make
+make
+git status
 git commit -am "December 30, 2019"
 git push origin master
 make
@@ -87,42 +119,10 @@ git commit -am "January 20, 2019"
 git push origin master
 git status
 git status
-git add --all && git commit -m "January 20, 2019"
-git push origin master
-make
-git commit -am "January 21, 2020"
-git push origin master
 git status
-ls
-open .
-rm -rf CEL475\ \(1\).org
-ls
+git pull origin master
+git add --all && git commit -m "Jan 31, 2020 morning"
+git pull origin master
+git fetch --all
+git reset --hard  origin/master
 git status
-git commit -am "January 21, 2019"
-git push origin master
-git status
-git commit -am "January 23, 2020"
-git push origin master
-ls
-open *.pdf -a Skim
-open *.pdf -a Skim
-ls
-ls
-ls
-git status
-git commit -am "January 24 2020" && git push origin master
-ls
-open *.pdf -a emacs
-open *.pdf -a Skim
-cp makefile Perez_2018_LibFaith_Proposal.md ../../
-cd ../..
-ls
-mkdir Proposal
-mv makefile Proposal/
-mv Perez_2018_LibFaith_Proposal.md Proposal/Perez_2020_libfaith_proposal.md
-ls
-cd Proposal/
-ls
-make
-make rebuild 
-make

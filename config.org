@@ -4,7 +4,6 @@
 #+author: Luke M. Perez
 
 * Setup
-
 ** Scratch in markdown mode
 I stole this from my buddy, Brenden Apfeld.
     #+BEGIN_SRC emacs-lisp
