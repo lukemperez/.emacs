@@ -4,7 +4,6 @@
 #+author: Luke M. Perez
 
 * Setup
-
 ** Scratch in markdown mode
 I stole this from my buddy, Brenden Apfeld.
     #+BEGIN_SRC emacs-lisp
@@ -69,7 +68,7 @@ I use =flyspell= for spell check. the command is C-; to check the
 previous word. If it does not autocorrect with the correct word, you
 can run the command again.
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp results: silent
   (use-package flyspell
     :ensure t
     :defer t
@@ -87,9 +86,6 @@ can run the command again.
   (setq ispell-program-name "/usr/local/bin/ispell")
 
 #+END_SRC
-
-#+RESULTS:
-: /usr/local/bin/ispell
 
 * AuCTeX
 If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No sense in trying anything else. One challenge that I had while setting up AuCTeX is that with Mac OSX El Cap, Emacs can have trouble finding the TeX distribution. I found very useful code from [[http://www.qqyang.org/blog/not-complete-guide-to-basictex/][Qingqing Yang's blog]]
@@ -296,25 +292,26 @@ Next we setup the capture key-bindings and templates. We begin with the basic ca
 
   ;; First we need to require org-ref
   ;; (require 'org-ref)
-  ;; (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+  ;; (setq reftex-default-bibliography ;; '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
 
-  (use-package org-ref-core
-           :ensure org-ref
-           :demand t ; make sure this gets loaded
-           :after org
-           :init
-           (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-           (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
-           (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
-           (setq bibtex-completion-library-path org-ref-pdf-directory)
-           (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-           :bind*
-           (("C-c C-r" . org-ref-helm-insert-cite-link)))
+  ;; (use-package org-ref-core
+  ;;          :ensure org-ref
+  ;;          :demand t ; make sure this gets loaded
+  ;;          :after org
+  ;;          :init
+  ;;          (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+  ;;          (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
+  ;;          (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+  ;;          (setq bibtex-completion-library-path org-ref-pdf-directory)
+  ;;          (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+  ;;          :bind*
+  ;;          (("C-c C-r" . org-ref-helm-insert-cite-link)))
 
 
 
-  ;; see org-ref for use of these variables
+  ;; ;; see org-ref for us
+  ;; e of these variables
 
   ;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
   ;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")

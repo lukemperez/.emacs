@@ -17,6 +17,9 @@
 ;; (setq custom-file "~/.emacs-custom.el")
 ;;      (load custom-file)
 
+(setq byte-compile-warnings '(cl-functions))
+(require 'cl-lib)
+
 ;; Turn off mouse interface asap to avoid momentary display
 
 (when window-system

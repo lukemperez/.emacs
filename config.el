@@ -1,3 +1,8 @@
+(setq initial-major-mode #'org-mode
+      initial-scratch-message "# This buffer is for notes you don't want to save\n\n")
+
+(setq read-file-name-completion-ignore-case t)
+
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
@@ -182,25 +187,26 @@ Should end with a forward slash.")
 
 ;; First we need to require org-ref
 ;; (require 'org-ref)
-;; (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+;; (setq reftex-default-bibliography ;; '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
 
 
-(use-package org-ref-core
-         :ensure org-ref
-         :demand t ; make sure this gets loaded
-         :after org
-         :init
-         (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-         (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
-         (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
-         (setq bibtex-completion-library-path org-ref-pdf-directory)
-         (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-         :bind*
-         (("C-c C-r" . org-ref-helm-insert-cite-link)))
+;; (use-package org-ref-core
+;;          :ensure org-ref
+;;          :demand t ; make sure this gets loaded
+;;          :after org
+;;          :init
+;;          (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+;;          (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
+;;          (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+;;          (setq bibtex-completion-library-path org-ref-pdf-directory)
+;;          (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
+;;          :bind*
+;;          (("C-c C-r" . org-ref-helm-insert-cite-link)))
 
 
 
-;; see org-ref for use of these variables
+;; ;; see org-ref for us
+;; e of these variables
 
 ;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
 ;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
