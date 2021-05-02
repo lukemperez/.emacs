@@ -1,84 +1,13 @@
-ls
-cd 03_Out/
-ls
-cd ..
-ls
-mv 03_Out/ 03_chpt/
-rm -rf 03_Out/
-ls
-cd ..
-ls
-cd ResearchMaterials/
-ls
-open .
-ls
-cd ..
-ls
-cd Proposal/
-ls
-open *.md
-open *.md -a BBedit
-clear
-ls
-cd ...
-cd ..
-ls
-cd Inprogress/libfaith_mss/
-ls
-cd Archive_staged/
-ls
-cd Proposal/
-ls
-cd Sample_Proposal_CUP/
-ls
-open .
-make
-open *.pdf -a Skim
-make
-ls
-mkdir GrantReporting
-mv Perez_2020_SRF_ReportNarrative.md GrantReporting/
-ls
-open .
 make
 make
 make
-clear
-make
-make
-open .
 make
 make
 make
-open iterm
-open a- iterm
+make
 make
 cat makefile 
 make
-clear
-make
-make
-make
-make
-make
-make
-make
-make rebuild 
-make rebuild 
-make
-make
-make
-make
-make
-make
-make rebuild 
-make
-make
-make
-make
-make rebuild 
-make
-make rebuild 
 make
 make
 make
@@ -87,42 +16,113 @@ make
 make
 make
 make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+cp makefile NewsletterVersion/
+cd NewsletterVersion/
+ls
 make
 make
 cd ..
-ls
-mkdir RnR_Letter
-cd RnR_Letter/
-open .
-clear
-ls
-mv Perez_2019_Recommendation_Shoemaker.md Perez_2020_IJRF_RnR.md
 make
-make
-make
-make
-make
-make
-cd ../Paper/
-make rebuild 
-make
-make
-make rebuild 
-make
-make rebuild 
-ls
 open *.pdf -a Skim
-git commit -am "Aug 17"
-git commit -am "August 17, 2020"
+make
+make
+git commit -am "March 4, 2021"
+git push origin master
+git commit -am "correcting typos"
 git push origin master
 ls
+mv perez_2019_ISAm_slides.md Perez_2021_CyberColloquium.md
+make
+make
+make
+make
+make
+make
+make
+git remote -v
+git status
+clear
+clear
+open *.pdf -a Skim
 ls
-cp ../GIS_Orozco/makefile makefile
 ls
-cp ../GIS_Orozco/Perez_2019_letter_Orozco.md tmp.md
-rm -rf tmp.md 
+open research.org 
+ls *.pdf
+open notes.pdf 
+make
+make
+make
+git status
+open tmp.pdf 
+open tmp.pdf 
+git commit -am "new entries"
+git push origin master
+make
+open *.pdf -a Skim
+make
+make
+make
+make
+cat makefile 
+make rebuild 
+cat Perez_ResCal.csv
+make
+ls
+open *.pdf -a Skim
+open Perez_ResCal.pdf -a Skim
+open Perez_ResCal.pdf -a Skim
+ls
 make
 make
 make
 make
 make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+ls
+make rebuild 
+x
+exit
+ls
+x
+exit
+ls
+make
+x
+exit

@@ -91,43 +91,20 @@ Should end with a forward slash.")
      ;; (also some other reftex-related customizations)
      (setq reftex-cite-format
            '((?\C-m . "\\cite[]{%l}")
-             (?f . "\\footcite[][]{%l}")
-             (?t . "\\textcite[?]{%l}")
-             (?p . "\\parencite[]{%l}")
+             (?F . "\\footcite[][]{%l}")
+             (?T . "\\textcite[?]{%l}")
+             (?P . "\\parencite[]{%l}")
              (?a . "\\autocite[?][]{%l}.")
              (?n . "\\nocite{%l}")
-             (?P . "[@%l]")
-             (?T . "@%l [p. ]"))))
+             (?p . "[@%l]")
+             (?t . "@%l [ ]"))))
 )
 
-;; define markdown citation formats
+(setq LaTeX-biblatex-use-Biber t)
+(setq TeX-command-BibTeX "Biber")
 
-;; (defvar markdown-cite-format)
-;; (setq markdown-cite-format
-;;       '(
-;;         (?\C-m . "[@%l]")
-;;         (?p . "[@%l]")
-;;         (?t . "@%l")
-;;         )
-;;       )
-;; Previous code commented out because it may be unneeded.
-
-;; wrap reftex-citation with local variables for markdown format
-(defun markdown-reftex-citation ()
-  (interactive)
-  (let ((reftex-cite-format markdown-cite-format)
-        (reftex-cite-key-separator "; @"))
-    (reftex-citation)))
-
-;; bind modified reftex-citation to C-c[, without enabling reftex-mode
-;; https://www.gnu.org/software/auctex/manual/reftex/Citations-Outside-LaTeX.html#SEC31
-(add-hook
- 'markdown-mode-hook
- (lambda ()
-   (define-key markdown-mode-map "\C-c[" 'markdown-reftex-citation)))
-
-; remove slashes when presenting italice
-(setq org-hide-emphasis-markers t)
+;; remove slashes when presenting italice
+; (setq org-hide-emphasis-markers t)
 
 ;; (let* ((variable-tuple (cond ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
 ;;                              (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
@@ -172,64 +149,18 @@ Should end with a forward slash.")
 (global-set-key (kbd "C-C r")
   	      (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
-;; Basic Capture
-(global-set-key (kbd "C-c c") 'org-capture)
-
-;; Advanced capture (test)
-(setq org-capture-templates
-      '(;; testing source: http://www.ideaio.ch/posts/my-gtd-system-with-org-mode.html
-        ("q" "Quotes" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Concepts" "Quotes")
-         "* %^{Title} %U         %?")
-        ("y" "Connection" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Connecting")
-         "* %^{Title} %U          %?")
-
-))
-
 ;; First we need to require org-ref
 ;; (require 'org-ref)
-;; (setq reftex-default-bibliography ;; '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-
-
-;; (use-package org-ref-core
-;;          :ensure org-ref
-;;          :demand t ; make sure this gets loaded
-;;          :after org
-;;          :init
-;;          (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-;;          (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
-;;          (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
-;;          (setq bibtex-completion-library-path org-ref-pdf-directory)
-;;          (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-;;          :bind*
-;;          (("C-c C-r" . org-ref-helm-insert-cite-link)))
-
-
-
-;; ;; see org-ref for us
-;; e of these variables
-
-;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
-;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
-;;       org-ref-pdf-directory "~/Dropbox/AcademicWork/PDFs/")
-
-(defun org-remove-headlines (backend)
-  "Remove headlines with :no_title: tag."
-  (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
-                   "no_title"))
-
-(add-hook 'org-export-before-processing-hook #'org-remove-headlines)
-
-(setq  org-latex-pdf-process
-       '("latexmk -shell-escape -bibtex -pdf %f"))
-
-(setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+;; (require 'bibtex)
 
 (use-package markdown-mode
   :ensure t
   :commands (markdown-mode gfm-mode)
   :mode (("README\\.md\\'" . gfm-mode)
          ("\\.md\\'" . markdown-mode)
-         ("\\.markdown\\'" . markdown-mode))
+         ("\\.markdown\\'" . markdown-mode)
+         ("\\.rmd\\'" . markdown-mode)
+         ("\\.Rmd\\'" . markdown-mode))
   :init )
 
 (use-package pandoc-mode
@@ -270,59 +201,3 @@ Should end with a forward slash.")
     :config
     (load-theme 'zenburn t)
 )
-
-;; (use-package atom-dark-theme
-;; 	 :ensure t
-;;      :defer t)
-
-(use-package solarized-theme
-	:ensure t
-	:defer t)
-
-;; (use-package github-theme
-;; 	:ensure t
-;; 	:defer t)
-
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
-
-(setq TeX-auto-save nil)
-(setq auto-save-list-file-prefix nil)
-
-(setq deft-extensions '("txt" "tex" "org" "md"))
-(setq deft-directory "~/Dropbox/AcademicWork/notes")
-
-(setq-default line-spacing 0.3)
-
-(defun org-remove-headlines (backend)
-  "Remove headlines with :no_title: tag."
-  (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
-                   "no_title"))
-
-(add-hook 'org-export-before-processing-hook #'org-remove-headlines)
-
-(global-set-key "\M-p" 'org-insert-property-drawer)
-
-;; Don't make new frames when opening a new file with Emacs
-(setq ns-pop-up-frames nil)
-
-(setq org-footnote-define-inline +1)
-
-;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
-(defun unfill-paragraph (&optional region)
-  "Takes a multi-line paragraph and makes it into a single line of text."
-  (interactive (progn (barf-if-buffer-read-only) '(t)))
-  (let ((fill-column (point-max))
-        ;; This would override `fill-column' if it's an integer.
-        (emacs-lisp-docstring-fill-column t))
-    (fill-paragraph nil region)))
-
-;; Handy key definition
-(define-key global-map "\M-Q" 'unfill-paragraph)
-
-;; Removed for troubleshooting
-
-;; (require 'org-bullets)
-;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))

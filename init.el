@@ -104,3 +104,6 @@
 ;;; Load the config
 (org-babel-load-file (concat user-emacs-directory "config.org"))
 (custom-set-variables)
+
+;; Set default directory
+(setq default-directory "/Users/lmp/")

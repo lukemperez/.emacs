@@ -58,9 +58,7 @@ Every field will be updated, so previous change will be lost.
 
 (autoload 'doi-utils-update-field "doi-utils" "\
 Update the field at point in the bibtex entry.
-Data is retrieved from the doi in the entry.
-
-\(fn)" t nil)
+Data is retrieved from the doi in the entry." t nil)
 
 (autoload 'doi-utils-wos "doi-utils" "\
 Open Web of Science entry for DOI.
@@ -116,9 +114,7 @@ Get a list of possible matches.  This opens a helm buffer to
 select an entry.  The default action inserts a doi and url field
 in the bibtex entry at point.  The second action opens the doi
 url.  If there is already a doi field, the function raises an
-error.
-
-\(fn)" t nil)
+error." t nil)
 
 (autoload 'doi-utils-debug "doi-utils" "\
 Generate an org-buffer showing data about DOI.
@@ -130,7 +126,7 @@ Search Crossref with QUERY and use helm to select an entry to add to BIBTEX-FILE
 
 \(fn QUERY BIBTEX-FILE)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "doi-utils" '("crossref-add-bibtex-entry" "doi-" "pnas-pdf-url" "plist-get-keys" "aps-pdf-url" "aip-pdf-url" "asme-biomechanical-pdf-url" "osa-pdf-url" "iop-pdf-url" "ieee" "generic-full-pdf-url" "jstor-pdf-url" "jneurosci-pdf-url" "springer-" "science-" "sage-pdf-url" "linkinghub-elsevier-pdf-url" "rsc-pdf-url" "ecs" "tandfonline-pdf-url" "wiley-pdf-url" "*doi-utils-" "nature-pdf-url")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "doi-utils" '("*doi-utils-" "aip-pdf-url" "aps-pdf-url" "asme-biomechanical-pdf-url" "crossref-add-bibtex-entry" "doi-" "ecs" "generic-full-pdf-url" "ieee" "iop-pdf-url" "jneurosci-pdf-url" "jstor-pdf-url" "linkinghub-elsevier-pdf-url" "nature-pdf-url" "osa-pdf-url" "plist-get-keys" "pnas-pdf-url" "rsc-pdf-url" "sage-pdf-url" "science-" "springer-" "tandfonline-pdf-url" "wiley-pdf-url")))
 
 ;;;***
 
@@ -180,15 +176,11 @@ key.
 
 (autoload 'org-ref-bibtex-generate-longtitles "org-ref-bibtex" "\
 Generate longtitles.bib which are @string definitions.
-The full journal names are in `org-ref-bibtex-journal-abbreviations'.
-
-\(fn)" t nil)
+The full journal names are in `org-ref-bibtex-journal-abbreviations'." t nil)
 
 (autoload 'org-ref-bibtex-generate-shorttitles "org-ref-bibtex" "\
 Generate shorttitles.bib which are @string definitions.
-The abbreviated journal names in `org-ref-bibtex-journal-abbreviations'.
-
-\(fn)" t nil)
+The abbreviated journal names in `org-ref-bibtex-journal-abbreviations'." t nil)
 
 (autoload 'org-ref-stringify-journal-name "org-ref-bibtex" "\
 Replace journal name in a bibtex entry with a string.
@@ -200,9 +192,7 @@ START and END allow you to use this with `bibtex-map-entries'
 
 (autoload 'org-ref-helm-set-journal-string "org-ref-bibtex" "\
 Helm interface to set a journal string in a bibtex entry.
-Entries come from `org-ref-bibtex-journal-abbreviations'.
-
-\(fn)" t nil)
+Entries come from `org-ref-bibtex-journal-abbreviations'." t nil)
 
 (autoload 'org-ref-set-journal-string "org-ref-bibtex" "\
 Set a bibtex journal name to the string that represents FULL-JOURNAL-NAME.
@@ -211,9 +201,7 @@ This is defined in `org-ref-bibtex-journal-abbreviations'.
 \(fn FULL-JOURNAL-NAME)" t nil)
 
 (autoload 'org-ref-replace-nonascii "org-ref-bibtex" "\
-Hook function to replace non-ascii characters in a bibtex entry.
-
-\(fn)" t nil)
+Hook function to replace non-ascii characters in a bibtex entry." t nil)
 
 (autoload 'org-ref-title-case-article "org-ref-bibtex" "\
 Convert a bibtex entry article title to title-case.
@@ -245,46 +233,30 @@ N is a prefix argument.  If it is numeric, jump that many entries back.
 \(fn &optional N)" t nil)
 
 (autoload 'org-ref-bibtex-entry-doi "org-ref-bibtex" "\
-Get doi from entry at point.
-
-\(fn)" t nil)
+Get doi from entry at point." t nil)
 
 (autoload 'org-ref-bibtex-format-url-if-doi "org-ref-bibtex" "\
-Hook function to format url to follow the current DOI conventions.
-
-\(fn)" t nil)
+Hook function to format url to follow the current DOI conventions." t nil)
 
 (autoload 'org-ref-bibtex-wos "org-ref-bibtex" "\
-Open bibtex entry in Web Of Science if there is a DOI.
-
-\(fn)" t nil)
+Open bibtex entry in Web Of Science if there is a DOI." t nil)
 
 (autoload 'org-ref-bibtex-wos-citing "org-ref-bibtex" "\
 Open citing articles for bibtex entry in Web Of Science if
-there is a DOI.
-
-\(fn)" t nil)
+there is a DOI." t nil)
 
 (autoload 'org-ref-bibtex-wos-related "org-ref-bibtex" "\
 Open related articles for bibtex entry in Web Of Science if
-there is a DOI.
-
-\(fn)" t nil)
+there is a DOI." t nil)
 
 (autoload 'org-ref-bibtex-crossref "org-ref-bibtex" "\
-Open the bibtex entry in Crossref by its doi.
-
-\(fn)" t nil)
+Open the bibtex entry in Crossref by its doi." t nil)
 
 (autoload 'org-ref-bibtex-google-scholar "org-ref-bibtex" "\
-Open the bibtex entry at point in google-scholar by its doi.
-
-\(fn)" t nil)
+Open the bibtex entry at point in google-scholar by its doi." t nil)
 
 (autoload 'org-ref-bibtex-pubmed "org-ref-bibtex" "\
-Open the bibtex entry at point in Pubmed by its doi.
-
-\(fn)" t nil)
+Open the bibtex entry at point in Pubmed by its doi." t nil)
 
 (autoload 'org-ref-bibtex-pdf "org-ref-bibtex" "\
 Open the pdf for the bibtex entry at point.
@@ -307,14 +279,10 @@ name '[bibtexkey].pdf'. If the file does not exist, rename it to
 (autoload 'org-ref-bibtex "org-ref-bibtex" "\
 Menu command to run in a bibtex entry.
 Functions from `org-ref-bibtex-menu-funcs'.  They all rely on the
-entry having a doi.
-
-\(fn)" t nil)
+entry having a doi." t nil)
 
 (autoload 'org-ref-email-bibtex-entry "org-ref-bibtex" "\
-Email current bibtex entry at point and pdf if it exists.
-
-\(fn)" t nil)
+Email current bibtex entry at point and pdf if it exists." t nil)
 
 (autoload 'org-ref-set-bibtex-keywords "org-ref-bibtex" "\
 Add KEYWORDS to a bibtex entry.
@@ -340,7 +308,7 @@ will clobber the file.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from org-ref-citeproc.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-citeproc" '("orcp-" "superscript" "sentence-beginning-p" "lastname" "firstname" "bibliography-style" "baseline" "bold" "italics" "citation-style" "*orcp-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-citeproc" '("*orcp-" "baseline" "bibliography-style" "bold" "citation-style" "firstname" "italics" "lastname" "orcp-" "sentence-beginning-p" "superscript")))
 
 ;;;***
 
@@ -350,41 +318,27 @@ will clobber the file.
 (autoload 'org-ref-show-link-messages "org-ref-core" "\
 Turn on link messages.
 You will see a message in the minibuffer when on a cite, ref or
-label link.
-
-\(fn)" t nil)
+label link." t nil)
 
 (autoload 'org-ref-cancel-link-messages "org-ref-core" "\
-Stop showing messages in minibuffer when on a link.
-
-\(fn)" t nil)
+Stop showing messages in minibuffer when on a link." t nil)
 
 (autoload 'org-ref-change-completion "org-ref-core" "\
 Change the completion backend.
 Options are \"org-ref-helm-bibtex\", \"org-ref-helm-cite\",
-\"org-ref-ivy-cite\" and \"org-ref-reftex\".
-
-\(fn)" t nil)
+\"org-ref-ivy-cite\" and \"org-ref-reftex\"." t nil)
 
 (autoload 'org-ref-mouse-message "org-ref-core" "\
-Display message for link under mouse cursor.
-
-\(fn)" t nil)
+Display message for link under mouse cursor." t nil)
 
 (autoload 'org-ref-mouse-messages-on "org-ref-core" "\
-Turn on mouse messages.
-
-\(fn)" t nil)
+Turn on mouse messages." t nil)
 
 (autoload 'org-ref-mouse-messages-off "org-ref-core" "\
-Turn off mouse messages.
-
-\(fn)" t nil)
+Turn off mouse messages." t nil)
 
 (autoload 'org-ref-insert-bibliography-link "org-ref-core" "\
-Insert a bibliography with completion.
-
-\(fn)" t nil)
+Insert a bibliography with completion." t nil)
 
 (autoload 'org-ref-list-of-figures "org-ref-core" "\
 Generate buffer with list of figures in them.
@@ -400,14 +354,10 @@ ARG does nothing.
 \(fn &optional ARG)" t nil)
 
 (autoload 'org-ref-insert-ref-link "org-ref-core" "\
-Completion function for a ref link.
-
-\(fn)" t nil)
+Completion function for a ref link." t nil)
 
 (autoload 'org-pageref-insert-ref-link "org-ref-core" "\
-Insert a pageref link with completion.
-
-\(fn)" t nil)
+Insert a pageref link with completion." t nil)
 
 (autoload 'org-ref-define-citation-link "org-ref-core" "\
 Add a citation link of TYPE for `org-ref'.
@@ -424,9 +374,7 @@ Insert a cite link of TYPE with completion.
 
 (autoload 'org-ref-store-bibtex-entry-link "org-ref-core" "\
 Save a citation link to the current bibtex entry.
-Save in the default link type.
-
-\(fn)" t nil)
+Save in the default link type." t nil)
 
 (autoload 'org-ref-index "org-ref-core" "\
 Open an *index* buffer with links to index entries.
@@ -437,9 +385,7 @@ PATH is required for the org-link, but it does nothing here.
 (autoload 'org-ref-open-bibtex-pdf "org-ref-core" "\
 Open pdf for a bibtex entry, if it exists.
 assumes point is in
-the entry of interest in the bibfile.  but does not check that.
-
-\(fn)" t nil)
+the entry of interest in the bibfile.  but does not check that." t nil)
 
 (autoload 'org-ref-open-bibtex-notes "org-ref-core" "\
 From a bibtex entry, open the notes if they exist.
@@ -450,57 +396,37 @@ non-interactively.  the `reftex-format-citation' function did not
 work perfectly; there were carriage returns in the strings, and
 it did not put the key where it needed to be.  so, below I replace
 the carriage returns and extra spaces with a single space and
-construct the heading by hand.
-
-\(fn)" t nil)
+construct the heading by hand." t nil)
 
 (autoload 'org-ref-open-in-browser "org-ref-core" "\
-Open the bibtex entry at point in a browser using the url field or doi field.
-
-\(fn)" t nil)
+Open the bibtex entry at point in a browser using the url field or doi field." t nil)
 
 (autoload 'org-ref-build-full-bibliography "org-ref-core" "\
-Build pdf of all bibtex entries, and open it.
-
-\(fn)" t nil)
+Build pdf of all bibtex entries, and open it." t nil)
 
 (autoload 'org-ref-extract-bibtex-entries "org-ref-core" "\
-Extract the bibtex entries in the current buffer into a src block.
-
-\(fn)" t nil)
+Extract the bibtex entries in the current buffer into a src block." t nil)
 
 (autoload 'org-ref-find-bad-citations "org-ref-core" "\
 Create a list of citation keys that do not have a matching bibtex entry.
 List is displayed in an `org-mode' buffer using the known bibtex
-file.  Makes a new buffer with clickable links.
-
-\(fn)" t nil)
+file.  Makes a new buffer with clickable links." t nil)
 
 (autoload 'org-ref-find-non-ascii-characters "org-ref-core" "\
-Find non-ascii characters in the buffer.  Useful for cleaning up bibtex files.
-
-\(fn)" t nil)
+Find non-ascii characters in the buffer.  Useful for cleaning up bibtex files." t nil)
 
 (autoload 'org-ref-sort-bibtex-entry "org-ref-core" "\
-Sort fields of entry in standard order.
-
-\(fn)" t nil)
+Sort fields of entry in standard order." t nil)
 
 (autoload 'org-ref-downcase-bibtex-entry "org-ref-core" "\
-Downcase the entry type and fields.
-
-\(fn)" t nil)
+Downcase the entry type and fields." t nil)
 
 (autoload 'org-ref-clean-bibtex-entry "org-ref-core" "\
 Clean and replace the key in a bibtex entry.
-See functions in `org-ref-clean-bibtex-entry-hook'.
-
-\(fn)" t nil)
+See functions in `org-ref-clean-bibtex-entry-hook'." t nil)
 
 (autoload 'org-ref-sort-citation-link "org-ref-core" "\
-Replace link at point with sorted link by year.
-
-\(fn)" t nil)
+Replace link at point with sorted link by year." t nil)
 
 (autoload 'org-ref-swap-citation-link "org-ref-core" "\
 Move citation at point in DIRECTION +1 is to the right, -1 to the left.
@@ -510,28 +436,20 @@ Move citation at point in DIRECTION +1 is to the right, -1 to the left.
 (autoload 'org-ref-next-key "org-ref-core" "\
 Move cursor to the next cite key when on a cite link.
 Otherwise run `right-word'. If the cursor moves off the link,
-move to the beginning of the next cite link after this one.
-
-\(fn)" t nil)
+move to the beginning of the next cite link after this one." t nil)
 
 (autoload 'org-ref-previous-key "org-ref-core" "\
 Move cursor to the previous cite key when on a cite link.
 Otherwise run `left-word'. If the cursor moves off the link,
-move to the beginning of the previous cite link after this one.
-
-\(fn)" t nil)
+move to the beginning of the previous cite link after this one." t nil)
 
 (autoload 'org-ref-link-message "org-ref-core" "\
-Print a minibuffer message about the link that point is on.
-
-\(fn)" t nil)
+Print a minibuffer message about the link that point is on." t nil)
 
 (autoload 'org-ref-help "org-ref-core" "\
-Open the `org-ref' manual.
+Open the `org-ref' manual." t nil)
 
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-core" '("oro" "orp" "oru" "orn" "ori" "orsl" "orc" "org-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-core" '("orc" "org-" "ori" "orn" "oro" "orp" "orsl" "oru")))
 
 ;;;***
 
@@ -556,11 +474,9 @@ FULL is the expanded acronym.
 \(fn LABEL ABBRV FULL)" t nil)
 
 (autoload 'org-ref-insert-glossary-link "org-ref-glossary" "\
-Helm command to insert glossary and acronym entries as links.
+Helm command to insert glossary and acronym entries as links." t nil)
 
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-glossary" '("org-ref-" "or-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-glossary" '("or-" "org-ref-")))
 
 ;;;***
 
@@ -571,31 +487,23 @@ Helm command to insert glossary and acronym entries as links.
 Insert label link at point.
 Helm will display existing labels in the current buffer to avoid
 duplication. If you use a prefix arg insert a radio target
-instead of a label.
-
-\(fn)" t nil)
+instead of a label." t nil)
 
 (autoload 'org-ref-helm-insert-ref-link "org-ref-helm" "\
 Helm menu to insert ref links to labels in the document.
 If you are on link, replace with newly selected label.  Use
 \\[universal-argument] to insert a different kind of ref link.
 Use a double \\[universal-argument] \\[universal-argument] to insert a
-\[[#custom-id]] link
-
-\(fn)" t nil)
+\[[#custom-id]] link" t nil)
 
 (autoload 'org-ref "org-ref-helm" "\
 Opens a helm interface to actions for `org-ref'.
 Shows bad citations, ref links and labels.
-This widens the file so that all links go to the right place.
-
-\(fn)" t nil)
+This widens the file so that all links go to the right place." t nil)
 
 (autoload 'helm-tag-bibtex-entry "org-ref-helm" "\
 Helm interface to add keywords to a bibtex entry.
-Run this with the point in a bibtex entry.
-
-\(fn)" t nil)
+Run this with the point in a bibtex entry." t nil)
 
 ;;;***
 
@@ -604,17 +512,13 @@ Run this with the point in a bibtex entry.
 ;;; Generated autoloads from org-ref-helm-bibtex.el
 
 (autoload 'org-ref-bibtex-completion-completion "org-ref-helm-bibtex" "\
-Use helm and ‘helm-bibtex’ for completion.
-
-\(fn)" t nil)
+Use helm and ‘helm-bibtex’ for completion." t nil)
 
 (autoload 'org-ref-helm-load-completions-async "org-ref-helm-bibtex" "\
 Load the bibtex files into helm sources asynchronously.
 For large bibtext files, the intial call to ‘org-ref-helm-insert-cite-link’
 can take a long time to load the completion sources.  This function loads
-the completion sources in the background so the initial call to ‘org-ref-helm-insert-cite-link’ is much faster.
-
-\(fn)" t nil)
+the completion sources in the background so the initial call to ‘org-ref-helm-insert-cite-link’ is much faster." t nil)
 
 (autoload 'org-ref-helm-insert-cite-link "org-ref-helm-bibtex" "\
 Insert a citation link with `helm-bibtex'.
@@ -643,7 +547,7 @@ With a prefix ARG, browse citation links.
 
 \(fn &optional ARG)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-helm-bibtex" '("org-ref-" "bibtex-completion-copy-candidate")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-helm-bibtex" '("bibtex-completion-copy-candidate" "org-ref-")))
 
 ;;;***
 
@@ -660,9 +564,7 @@ With a prefix ARG, browse citation links.
 
 (autoload 'org-ref-isbn-clean-bibtex-entry "org-ref-isbn" "\
 Clean a bibtex entry inserted via `isbn-to-bibtex'.
-See functions in `org-ref-isbn-clean-bibtex-entry-hook'.
-
-\(fn)" t nil)
+See functions in `org-ref-isbn-clean-bibtex-entry-hook'." t nil)
 
 (autoload 'isbn-to-bibtex-lead "org-ref-isbn" "\
 Search lead.to for ISBN bibtex entry.
@@ -687,9 +589,7 @@ in the file. Data comes from worldcat.
 ;;; Generated autoloads from org-ref-ivy-cite.el
 
 (autoload 'org-ref-ivy-cite-completion "org-ref-ivy-cite" "\
-Use ivy for completion.
-
-\(fn)" t nil)
+Use ivy for completion." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-ivy-cite" '("or-" "org-ref-")))
 
@@ -698,15 +598,10 @@ Use ivy for completion.
 ;;;### (autoloads nil "org-ref-latex" "org-ref-latex.el" (0 0 0 0))
 ;;; Generated autoloads from org-ref-latex.el
 
-(autoload 'org-ref-latex-debug "org-ref-latex" "\
-
-
-\(fn)" t nil)
+(autoload 'org-ref-latex-debug "org-ref-latex" nil t nil)
 
 (autoload 'org-ref-latex-click "org-ref-latex" "\
-Jump to entry clicked on.
-
-\(fn)" t nil)
+Jump to entry clicked on." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-latex" '("org-ref-")))
 
@@ -736,9 +631,7 @@ variable `org-ref-pdf-doi-regex'.
 \(fn PDF-FILE)" t nil)
 
 (autoload 'org-ref-pdf-crossref-lookup "org-ref-pdf" "\
-Lookup highlighted text in PDFView in CrossRef.
-
-\(fn)" t nil)
+Lookup highlighted text in PDFView in CrossRef." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-pdf" '("org-ref-" "pdftotext-executable")))
 
@@ -760,14 +653,10 @@ Get MEDLINE xml for PMID as a string.
 \(fn PMID)" t nil)
 
 (autoload 'pubmed "org-ref-pubmed" "\
-Open http://www.ncbi.nlm.nih.gov/pubmed in a browser.
-
-\(fn)" t nil)
+Open http://www.ncbi.nlm.nih.gov/pubmed in a browser." t nil)
 
 (autoload 'pubmed-advanced "org-ref-pubmed" "\
-Open http://www.ncbi.nlm.nih.gov/pubmed/advanced in a browser.
-
-\(fn)" t nil)
+Open http://www.ncbi.nlm.nih.gov/pubmed/advanced in a browser." t nil)
 
 (autoload 'pubmed-simple-search "org-ref-pubmed" "\
 Open QUERY in Pubmed in a browser.
@@ -783,14 +672,10 @@ Open QUERY in Pubmed in a browser.
 ;;; Generated autoloads from org-ref-reftex.el
 
 (autoload 'org-ref-reftex-completion "org-ref-reftex" "\
-Use reftex and org-mode for completion.
-
-\(fn)" t nil)
+Use reftex and org-mode for completion." t nil)
 
 (autoload 'org-ref-open-notes-from-reftex "org-ref-reftex" "\
-Call reftex, and open notes for selected entry.
-
-\(fn)" t nil)
+Call reftex, and open notes for selected entry." t nil)
 
 (autoload 'org-ref-cite-onclick-minibuffer-menu "org-ref-reftex" "\
 Action when a cite link is clicked on.
@@ -809,9 +694,7 @@ get a lot of options.  LINK-STRING is used by the link function.
 ;;; Generated autoloads from org-ref-scifinder.el
 
 (autoload 'scifinder "org-ref-scifinder" "\
-Open https://scifinder.cas.org/scifinder/view/scifinder/scifinderExplore.jsf in a browser.
-
-\(fn)" t nil)
+Open https://scifinder.cas.org/scifinder/view/scifinder/scifinderExplore.jsf in a browser." t nil)
 
 ;;;***
 
@@ -849,7 +732,7 @@ Open QUERY as an advanced search at scopus.com.
 
 \(fn QUERY)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-scopus" '("scopus" "*scopus-api-key*" "*hydra-eid*")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-scopus" '("*hydra-eid*" "*scopus-api-key*" "scopus")))
 
 ;;;***
 
@@ -888,24 +771,16 @@ Drag-n-drop function to download the first DOI in a url.
 
 (autoload 'org-ref-version "org-ref-utils" "\
 Provide a version string for org-ref.
-Copies the string to the clipboard.
-
-\(fn)" t nil)
+Copies the string to the clipboard." t nil)
 
 (autoload 'org-ref-debug "org-ref-utils" "\
-Print some debug information to a buffer.
-
-\(fn)" t nil)
+Print some debug information to a buffer." t nil)
 
 (autoload 'org-ref-open-pdf-at-point "org-ref-utils" "\
-Open the pdf for bibtex key under point if it exists.
-
-\(fn)" t nil)
+Open the pdf for bibtex key under point if it exists." t nil)
 
 (autoload 'org-ref-open-url-at-point "org-ref-utils" "\
-Open the url for bibtex key under point.
-
-\(fn)" t nil)
+Open the url for bibtex key under point." t nil)
 
 (autoload 'org-ref-open-notes-at-point "org-ref-utils" "\
 Open the notes for bibtex key under point in a cite link in a buffer.
@@ -914,57 +789,37 @@ Can also be called with THEKEY in a program.
 \(fn &optional THEKEY)" t nil)
 
 (autoload 'org-ref-citation-at-point "org-ref-utils" "\
-Give message of current citation at point.
-
-\(fn)" t nil)
+Give message of current citation at point." t nil)
 
 (autoload 'org-ref-open-citation-at-point "org-ref-utils" "\
-Open bibtex file to key at point.
-
-\(fn)" t nil)
+Open bibtex file to key at point." t nil)
 
 (autoload 'org-ref-copy-entry-as-summary "org-ref-utils" "\
-Copy the bibtex entry for the citation at point as a summary.
-
-\(fn)" t nil)
+Copy the bibtex entry for the citation at point as a summary." t nil)
 
 (autoload 'org-ref-copy-entry-at-point-to-file "org-ref-utils" "\
 Copy the bibtex entry for the citation at point to NEW-FILE.
 Prompt for NEW-FILE includes bib files in
 `org-ref-default-bibliography', and bib files in current working
-directory.  You can also specify a new file.
-
-\(fn)" t nil)
+directory.  You can also specify a new file." t nil)
 
 (autoload 'org-ref-wos-at-point "org-ref-utils" "\
-Open the doi in wos for bibtex key under point.
-
-\(fn)" t nil)
+Open the doi in wos for bibtex key under point." t nil)
 
 (autoload 'org-ref-wos-citing-at-point "org-ref-utils" "\
-Open the doi in wos citing articles for bibtex key under point.
-
-\(fn)" t nil)
+Open the doi in wos citing articles for bibtex key under point." t nil)
 
 (autoload 'org-ref-wos-related-at-point "org-ref-utils" "\
-Open the doi in wos related articles for bibtex key under point.
-
-\(fn)" t nil)
+Open the doi in wos related articles for bibtex key under point." t nil)
 
 (autoload 'org-ref-google-scholar-at-point "org-ref-utils" "\
-Search google scholar for bibtex key under point using the title.
-
-\(fn)" t nil)
+Search google scholar for bibtex key under point using the title." t nil)
 
 (autoload 'org-ref-pubmed-at-point "org-ref-utils" "\
-Open the doi in pubmed for bibtex key under point.
-
-\(fn)" t nil)
+Open the doi in pubmed for bibtex key under point." t nil)
 
 (autoload 'org-ref-crossref-at-point "org-ref-utils" "\
-Open the doi in crossref for bibtex key under point.
-
-\(fn)" t nil)
+Open the doi in crossref for bibtex key under point." t nil)
 
 (autoload 'org-ref-bibliography "org-ref-utils" "\
 Create a new buffer with a bibliography.
@@ -999,16 +854,12 @@ Set link TYPE properties to PARAMETERS.
 ;;; Generated autoloads from org-ref-wos.el
 
 (autoload 'wos-search "org-ref-wos" "\
-Open the word at point or selection in Web of Science as a topic query.
-
-\(fn)" t nil)
+Open the word at point or selection in Web of Science as a topic query." t nil)
 
 (autoload 'wos "org-ref-wos" "\
-Open Web of Science search page in a browser.
+Open Web of Science search page in a browser." t nil)
 
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-wos" '("wos-" "*wos-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ref-wos" '("*wos-" "wos-")))
 
 ;;;***
 
@@ -1030,9 +881,7 @@ Display output if VERBOSE is non-nil.
 \(fn MEDFILE &optional VERBOSE)" t nil)
 
 (autoload 'clean-entries "x2bib" "\
-Map over bibtex entries and clean them.
-
-\(fn)" t nil)
+Map over bibtex entries and clean them." t nil)
 
 ;;;***
 

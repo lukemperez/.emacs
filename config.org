@@ -50,7 +50,7 @@ Save a few misc files in the =.cache= directory:
 * IDO Mode
 Ido-mode is a great way to show the file path when searching.
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
 (require 'ido)
 (ido-mode t)
 
@@ -59,6 +59,61 @@ Ido-mode is a great way to show the file path when searching.
 (ido-mode 1)
 
 #+END_SRC
+
+* [Experimental] Highlight eshell
+I want to highlight =eshell= similarly to how iTerm does. To do so, I begin with some code from [[https://emacs.stackexchange.com/questions/33405/no-colors-for-eshell][this stackexchange post]], and changed "blue" to "red" so it is readable in zenburn theme.
+
+#+BEGIN_SRC emacs-lisp :results silent
+(defun my-eshell-prompt ()
+  "Highlight eshell pwd and prompt separately."
+  (mapconcat
+   (lambda (list)
+     (propertize (car list)
+                 'read-only      t
+                 'font-lock-face (cdr list)
+                 'front-sticky   '(font-lock-face read-only)
+                 'rear-nonsticky '(font-lock-face read-only)))
+   `((,(abbreviate-file-name (eshell/pwd)) :foreground "red")
+     (,(if (zerop (user-uid)) " # " " $ ") :foreground "green"))
+   ""))
+
+(setq eshell-highlight-prompt nil
+      eshell-prompt-function  #'my-eshell-prompt)
+
+#+END_SRC      
+
+Howardism has a way of [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][bringing the eshell up as needed n a small window]].
+
+#+begin_src emacs-lisp :results silent
+    (defun eshell-here ()
+      "Opens up a new shell in the directory associated with the
+    current buffer's file. The eshell is renamed to match that
+    directory to make multiple eshell windows easier."
+      (interactive)
+      (let* ((parent (if (buffer-file-name)
+                         (file-name-directory (buffer-file-name))
+                       default-directory))
+             (height (/ (window-total-height) 3))
+             (name   (car (last (split-string parent "/" t)))))
+        (split-window-vertically (- height))
+        (other-window 1)
+        (eshell "new")
+        (rename-buffer (concat "*eshell: " name "*"))
+
+        (insert (concat "ls"))
+        (eshell-send-input)))
+
+    (global-set-key (kbd "C-!") 'eshell-here)
+#+end_src 
+
+And when you close it, you just use the command =x= in the eshell
+
+#+begin_src emacs-lisp :results silent
+    (defun eshell/x ()
+      (insert "exit")
+      (eshell-send-input)
+      (delete-window))
+#+end_src
 * Scrolling
 
 For now, I'm going to leave this blank. I'll decide how I want Emacs to handle my scrolling of text.
@@ -128,6 +183,7 @@ I actually don't know what the below code does. I'm writing this note to myself 
     )
   (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
 #+END_SRC
+
 * RefTeX
 I want to be sure that RefTeX loads whenever I am working on a TeX document. I figured out the code from [[https://emacs.stackexchange.com/questions/34189/emacs-setup-for-latex-after-use-package-verse][Stack Exchange.]] (NB: There's mode code in the answer suggesting key bindings for GREP searching the document. Might be worth looking into.)
 
@@ -146,7 +202,6 @@ Our next task is setting up a global bibliography so that RefTeX knows where to 
 (setq reftex-default-bibliography
       '("~/Dropbox/AcademicWork/Bibs/refs.bib"
         "~/Dropbox/AcademicWork/Bibs/primary.bib"))
-
 #+END_SRC
 
 The default setting for RefTeX is to use =\cite{key}= when inserting citations. Because I use Biblatex-Chicago for nearly all my writing, I need to make changes to how the citation keys are generated. Here I am thankful to a post [[https://tex.stackexchange.com/questions/31966/setting-up-reftex-with-biblatex-citation-commands][Stack Exchange and the answer by Aaron]].
@@ -157,45 +212,55 @@ The default setting for RefTeX is to use =\cite{key}= when inserting citations. 
        ;; (also some other reftex-related customizations)
        (setq reftex-cite-format
              '((?\C-m . "\\cite[]{%l}")
-               (?f . "\\footcite[][]{%l}")
-               (?t . "\\textcite[?]{%l}")
-               (?p . "\\parencite[]{%l}")
+               (?F . "\\footcite[][]{%l}")
+               (?T . "\\textcite[?]{%l}")
+               (?P . "\\parencite[]{%l}")
                (?a . "\\autocite[?][]{%l}.")
                (?n . "\\nocite{%l}")
-               (?P . "[@%l]")
-               (?T . "@%l [p. ]"))))
+               (?p . "[@%l]")
+               (?t . "@%l [ ]"))))
   )
 #+END_SRC
 
-This next bit of code should allow reftex citations inside markdown.
+Now we want Emacs to default to BibLaTeX dialect when creating new citations.
 
 #+BEGIN_SRC emacs-lisp :results silent
-  ;; define markdown citation formats
-
-  ;; (defvar markdown-cite-format)
-  ;; (setq markdown-cite-format
-  ;;       '(
-  ;;         (?\C-m . "[@%l]")
-  ;;         (?p . "[@%l]")
-  ;;         (?t . "@%l")
-  ;;         )
-  ;;       )
-  ;; Previous code commented out because it may be unneeded.
-
-  ;; wrap reftex-citation with local variables for markdown format
-  (defun markdown-reftex-citation ()
-    (interactive)
-    (let ((reftex-cite-format markdown-cite-format)
-          (reftex-cite-key-separator "; @"))
-      (reftex-citation)))
-
-  ;; bind modified reftex-citation to C-c[, without enabling reftex-mode
-  ;; https://www.gnu.org/software/auctex/manual/reftex/Citations-Outside-LaTeX.html#SEC31
-  (add-hook
-   'markdown-mode-hook
-   (lambda ()
-     (define-key markdown-mode-map "\C-c[" 'markdown-reftex-citation)))
+(setq LaTeX-biblatex-use-Biber t)
+(setq TeX-command-BibTeX "Biber")
 #+END_SRC
+
+
+# This next bit of code should allow reftex citations inside markdown.
+# It needs to remain commented out as of Sept 2020 since I am sure it is not needed.
+# Be sure to remove this if I can work for several months without needing to uncomment it.
+# #+BEGIN_SRC emacs-lisp :results silent
+#   ;; define markdown citation formats
+
+#   ;; (defvar markdown-cite-format)
+#   ;; (setq markdown-cite-format
+#   ;;       '(
+#   ;;         (?\C-m . "[@%l]")
+#   ;;         (?p . "[@%l]")
+#   ;;         (?t . "@%l")
+#   ;;         )
+#   ;;       )
+#   ;; Previous code commented out because it may be unneeded.
+
+#   ;; wrap reftex-citation with local variables for markdown format
+#   (defun markdown-reftex-citation ()
+#     (interactive)
+#     (let ((reftex-cite-format markdown-cite-format)
+#           (reftex-cite-key-separator "; @"))
+#       (reftex-citation)))
+
+#   ;; bind modified reftex-citation to C-c[, without enabling reftex-mode
+#   ;; https://www.gnu.org/software/auctex/manual/reftex/Citations-Outside-LaTeX.html#SEC31
+#   (add-hook
+#    'markdown-mode-hook
+#    (lambda ()
+#      (define-key markdown-mode-map "\C-c[" 'markdown-reftex-citation)))
+# #+END_SRC
+
 * Org-Mode
 
 Org-Mode is the primary way that I should be writing. In this section, we need to add some settings that make things easier to manage, export, and the like. In previous setups of my =.emacs= configuration, I did not organize these as well as I could have. So here, I'm going to include the settings relevant to each mode or feature. More information can be found via the org-mode manual: I prefer the pdf [[http://orgmode.org/org.pdf][found here]]. 
@@ -205,8 +270,8 @@ It bears mentioning that if I ever want to check my org-mode verison, I can use 
 ** "Word Processor
 [[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Howardism]] has the good on setting up Org-Mode to work like a word processor.
 #+BEGIN_SRC emacs-lisp :results silent
-  ; remove slashes when presenting italice
-  (setq org-hide-emphasis-markers t)
+  ;; remove slashes when presenting italice
+  ; (setq org-hide-emphasis-markers t)
 
   ;; (let* ((variable-tuple (cond ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
   ;;                              (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
@@ -268,104 +333,83 @@ The point with these hot-keys is to make short-cuts to several org files while I
 #+END_SRC
 
 *** Capture templates
-Next we setup the capture key-bindings and templates. We begin with the basic capture =C-cc=
-#+BEGIN_SRC emacs-lisp :results silent
+# Next we setup the capture key-bindings and templates. We begin with the basic capture =C-cc=
+# #+BEGIN_SRC emacs-lisp :results silent
 
-;; Basic Capture
-(global-set-key (kbd "C-c c") 'org-capture)
+# ;; Basic Capture
+# (global-set-key (kbd "C-c c") 'org-capture)
 
-;; Advanced capture (test)
-(setq org-capture-templates
-      '(;; testing source: http://www.ideaio.ch/posts/my-gtd-system-with-org-mode.html
-        ("q" "Quotes" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Concepts" "Quotes")
-         "* %^{Title} %U         %?")
-        ("y" "Connection" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Connecting")
-         "* %^{Title} %U          %?")
+# ;; Advanced capture (test)
+# (setq org-capture-templates
+#       '(;; testing source: http://www.ideaio.ch/posts/my-gtd-system-with-org-mode.html
+#         ("q" "Quotes" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Concepts" "Quotes")
+#          "* %^{Title} %U         %?")
+#         ("y" "Connection" entry (file+datetree "~/Dropbox/AcademicWork/Org/notes.org" "Connecting")
+#          "* %^{Title} %U          %?")
 
-))
+# ))
 
-#+END_SRC
+# #+END_SRC
 ** Org-Ref
 [[https://github.com/jkitchin/org-ref][Org-Ref]] is a package that brings bibliographic tools to Org-Mode. 
 *** Basic Setup
 #+BEGIN_SRC emacs-lisp :results silent
 
-  ;; First we need to require org-ref
-  ;; (require 'org-ref)
-  ;; (setq reftex-default-bibliography ;; '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-
-
-  ;; (use-package org-ref-core
-  ;;          :ensure org-ref
-  ;;          :demand t ; make sure this gets loaded
-  ;;          :after org
-  ;;          :init
-  ;;          (setq org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-  ;;          (setq org-ref-pdf-directory '("~/Dropbox/AcademicWork/PDFs"))
-  ;;          (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
-  ;;          (setq bibtex-completion-library-path org-ref-pdf-directory)
-  ;;          (setq reftex-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib"))
-  ;;          :bind*
-  ;;          (("C-c C-r" . org-ref-helm-insert-cite-link)))
-
-
-
-  ;; ;; see org-ref for us
-  ;; e of these variables
-
-  ;; (setq org-ref-bibliography-notes "~/Dropbox/AcademicWork/Org/notes.org"
-  ;;       org-ref-default-bibliography '("~/Dropbox/AcademicWork/Bibs/refs.bib")
-  ;;       org-ref-pdf-directory "~/Dropbox/AcademicWork/PDFs/")
+;; First we need to require org-ref
+;; (require 'org-ref)
+;; (require 'bibtex)
 
 #+END_SRC
 *** Ignore headlines (experimental)
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-(defun org-remove-headlines (backend)
-  "Remove headlines with :no_title: tag."
-  (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
-                   "no_title"))
+# (defun org-remove-headlines (backend)
+#   "Remove headlines with :no_title: tag."
+#   (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
+#                    "no_title"))
 
-(add-hook 'org-export-before-processing-hook #'org-remove-headlines)
+# (add-hook 'org-export-before-processing-hook #'org-remove-headlines)
 
-#+END_SRC
-*** Biblatex
-I like to use biblatex
+# #+END_SRC
+# *** Biblatex
+# I like to use biblatex
 
-#+BEGIN_SRC emacs-lisp :results silent
-(setq  org-latex-pdf-process
-       '("latexmk -shell-escape -bibtex -pdf %f"))
+# #+BEGIN_SRC emacs-lisp :results silent
+# (setq  org-latex-pdf-process
+#        '("latexmk -shell-escape -bibtex -pdf %f"))
 
-#+END_SRC
-*** Helm
-# Work in progress. Right now I have the code nested within the larger use-package setup.
+# #+END_SRC
+# *** Helm
+# # Work in progress. Right now I have the code nested within the larger use-package setup.
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-(setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
+# (setq helm-bibtex-bibliography "~/Dropbox/AcademicWork/Bibs/refs.bib")
 
-#+END_SRC
+# #+END_SRC
 
 * Markdown files
 Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =LaTeX= or =org-mode=.
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
     
-(use-package markdown-mode
-  :ensure t
-  :commands (markdown-mode gfm-mode)
-  :mode (("README\\.md\\'" . gfm-mode)
-         ("\\.md\\'" . markdown-mode)
-         ("\\.markdown\\'" . markdown-mode))
-  :init )
+  (use-package markdown-mode
+    :ensure t
+    :commands (markdown-mode gfm-mode)
+    :mode (("README\\.md\\'" . gfm-mode)
+           ("\\.md\\'" . markdown-mode)
+           ("\\.markdown\\'" . markdown-mode)
+           ("\\.rmd\\'" . markdown-mode)
+           ("\\.Rmd\\'" . markdown-mode))
+    :init )
 
 #+END_SRC
 
 * Pandoc Mode
 I love =Pandoc=. It converts nearly any text file into another. I use it to convert to =.md= files into =.tex= or =.pdf= as needed.
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
 (use-package pandoc-mode
     :ensure t
     :ensure hydra
@@ -382,23 +426,23 @@ We also want to use =Polymode= so that emacs can edit Rmarkdown type files that 
 
 *This is temporary commented out because it seems to be giving emacs issues when loading.*
 
-# #+BEGIN_SRC emacs-lisp
-#   (use-package polymode
-#     :ensure t
-#     :mode
-#     ("\\.Snw" . poly-noweb+r-mode)
-#     ("\\.Rnw" . poly-noweb+r-mode)
-#     ("\\.Rmd" . poly-markdown+r+mode)
-#     ("\\.md" . poly-markdown-mode)
-#     )
+# # #+BEGIN_SRC emacs-lisp
+# #   (use-package polymode
+# #     :ensure t
+# #     :mode
+# #     ("\\.Snw" . poly-noweb+r-mode)
+# #     ("\\.Rnw" . poly-noweb+r-mode)
+# #     ("\\.Rmd" . poly-markdown+r+mode)
+# #     ("\\.md" . poly-markdown-mode)
+# #     )
 
-# #+END_SRC
+# # #+END_SRC
 
 * Themes
 ** Preliminaries 
 First we need to be able to switch themes as needed. I copied this code directly from [[https://github.com/danielmai/.emacs.d/blob/master/config.org][Daniel Mai]]
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
 
 ;; This allows us to switch themes as needed
 
@@ -428,7 +472,7 @@ Now we can load out themes.
 
 ** Zenburn Theme
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
   (use-package zenburn-theme
       :ensure t
       :config
@@ -437,145 +481,144 @@ Now we can load out themes.
 
 #+END_SRC
 
+
 ** Atom Dark
 
-#+BEGIN_SRC emacs-lisp
-
-  ;; (use-package atom-dark-theme
-  ;; 	 :ensure t
-  ;;      :defer t)
+(use-package atom-dark-theme
+	 :ensure t
+     :defer t)
 
    #+END_SRC
 
-** Solarized Theme (light & dark)
+# ** Solarized Theme (light & dark)
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-(use-package solarized-theme
-	:ensure t
-	:defer t)
+# (use-package solarized-theme
+# 	:ensure t
+# 	:defer t)
 
-#+END_SRC
+# #+END_SRC
 
-** Github Theme
+# ** Github Theme
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-  ;; (use-package github-theme
-  ;; 	:ensure t
-  ;; 	:defer t)
+#   ;; (use-package github-theme
+#   ;; 	:ensure t
+#   ;; 	:defer t)
 
-#+END_SRC
+# #+END_SRC
 
 * Experimental
-** Save backups to Directory
+# ** Save backups to Directory
 
-Here we want to save the backups to a single directory rather than in the file I'm working on.
+# Here we want to save the backups to a single directory rather than in the file I'm working on.
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
+# (setq backup-directory-alist
+#       `((".*" . ,temporary-file-directory)))
+# (setq auto-save-file-name-transforms
+#       `((".*" ,temporary-file-directory t)))
 
-#+END_SRC
-** Prevent emacs from creating folder "auto/" with .el files
+# #+END_SRC
+# ** Prevent emacs from creating folder "auto/" with .el files
 
-Here we want to prevent Emacs from automatically creating subdirectories when editing files. These directories contain =.el= files with the headers, sections, and other code used when editing =TeX= and =markdown= files.
+# Here we want to prevent Emacs from automatically creating subdirectories when editing files. These directories contain =.el= files with the headers, sections, and other code used when editing =TeX= and =markdown= files.
 
-#+BEGIN_SRC emacs-lisp :result silent
+# #+BEGIN_SRC emacs-lisp :result silent
 
-(setq TeX-auto-save nil)
-(setq auto-save-list-file-prefix nil)
+# (setq TeX-auto-save nil)
+# (setq auto-save-list-file-prefix nil)
 
-#+END_SRC
+# #+END_SRC
 
-** Deft Mode
+# ** Deft Mode
 
-Instructions can be taken from [[https://github.com/jrblevin/deft][Github/DeftMode]]. It is a package that achieves a notational velocity like workflow from within Emacs.
+# Instructions can be taken from [[https://github.com/jrblevin/deft][Github/DeftMode]]. It is a package that achieves a notational velocity like workflow from within Emacs.
 
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-(setq deft-extensions '("txt" "tex" "org" "md"))
-(setq deft-directory "~/Dropbox/AcademicWork/notes")
+# (setq deft-extensions '("txt" "tex" "org" "md"))
+# (setq deft-directory "~/Dropbox/AcademicWork/notes")
 
-#+END_SRC
+# #+END_SRC
 
-** Line Spacing
-I'd like to have a little more space between lines so that I can read the text that much easier. To do this, we need a little code.
+# ** Line Spacing
+# I'd like to have a little more space between lines so that I can read the text that much easier. To do this, we need a little code.
 
-#+BEGIN_SRC emacs-lisp :results silent
-(setq-default line-spacing 0.3)
-#+END_SRC
-** Ignore Headlines
-This code permits the use of two tags, =:No_Export:= and =no_title=. 
+# #+BEGIN_SRC emacs-lisp :results silent
+# (setq-default line-spacing 0.3)
+# #+END_SRC
+# ** Ignore Headlines
+# This code permits the use of two tags, =:No_Export:= and =no_title=. 
 
-#+BEGIN_SRC emacs-lisp results: silent
+# #+BEGIN_SRC emacs-lisp results: silent
 
-(defun org-remove-headlines (backend)
-  "Remove headlines with :no_title: tag."
-  (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
-                   "no_title"))
+# (defun org-remove-headlines (backend)
+#   "Remove headlines with :no_title: tag."
+#   (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
+#                    "no_title"))
 
-(add-hook 'org-export-before-processing-hook #'org-remove-headlines)
+# (add-hook 'org-export-before-processing-hook #'org-remove-headlines)
 
-#+END_SRC
-** Hot Key for a property drawer
+# #+END_SRC
+# ** Hot Key for a property drawer
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-(global-set-key "\M-p" 'org-insert-property-drawer)
+# (global-set-key "\M-p" 'org-insert-property-drawer)
 
-#+END_SRC
-** Mac OSX Settings
+# #+END_SRC
+# ** Mac OSX Settings
 
-#+BEGIN_SRC emacs-lisp
-;; Don't make new frames when opening a new file with Emacs
-(setq ns-pop-up-frames nil)
-#+END_SRC
-** In-line Footnotes
+# #+BEGIN_SRC emacs-lisp
+# ;; Don't make new frames when opening a new file with Emacs
+# (setq ns-pop-up-frames nil)
+# #+END_SRC
+# ** In-line Footnotes
 
-Taking inspiration from [[https://www.wisdomandwonder.com/link/8750/only-use-in-line-footnotes-unless-your-document-is-very-very-small][Wisdom and Wonder]], I set up Org-mode to create all in-line footnotes. The post has more, like random generated IDs, but for now, I am just experimenting.
+# Taking inspiration from [[https://www.wisdomandwonder.com/link/8750/only-use-in-line-footnotes-unless-your-document-is-very-very-small][Wisdom and Wonder]], I set up Org-mode to create all in-line footnotes. The post has more, like random generated IDs, but for now, I am just experimenting.
 
-#+BEGIN_SRC emacs-lisp
+# #+BEGIN_SRC emacs-lisp
 
-(setq org-footnote-define-inline +1)
+# (setq org-footnote-define-inline +1)
 
-#+END_SRC
-** Unwrap line
+# #+END_SRC
+# ** Unwrap line
 
-This bit of code lets me take a paragraph that includes line-breaks and turn into a single line. [[https://www.emacswiki.org/emacs/UnfillParagraph][The code was found here]].
+# This bit of code lets me take a paragraph that includes line-breaks and turn into a single line. [[https://www.emacswiki.org/emacs/UnfillParagraph][The code was found here]].
 
-#+BEGIN_SRC emacs-lisp :results silent
+# #+BEGIN_SRC emacs-lisp :results silent
 
-;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
-(defun unfill-paragraph (&optional region)
-  "Takes a multi-line paragraph and makes it into a single line of text."
-  (interactive (progn (barf-if-buffer-read-only) '(t)))
-  (let ((fill-column (point-max))
-        ;; This would override `fill-column' if it's an integer.
-        (emacs-lisp-docstring-fill-column t))
-    (fill-paragraph nil region)))
+# ;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
+# (defun unfill-paragraph (&optional region)
+#   "Takes a multi-line paragraph and makes it into a single line of text."
+#   (interactive (progn (barf-if-buffer-read-only) '(t)))
+#   (let ((fill-column (point-max))
+#         ;; This would override `fill-column' if it's an integer.
+#         (emacs-lisp-docstring-fill-column t))
+#     (fill-paragraph nil region)))
 
-;; Handy key definition
-(define-key global-map "\M-Q" 'unfill-paragraph)
-#+END_SRC
+# ;; Handy key definition
+# (define-key global-map "\M-Q" 'unfill-paragraph)
+# #+END_SRC
 
-* Goals and Ideas
-** TODO I want to make this capture template more usable for research, scholarship, and the like. For now, I'm just going to create a few templates for the default =.org= capture file =notes.org=.
-** TODO I want RefTeX to prompt me for page numbers when calling biblatex citation keys.
-** TODO I want to add a command for autocites (plural citations) in reftex
-** TODO Set up Magit Mode
-* Archived
-** Org-Bullets
-This creates bullets rather than asterisks. I didn't really like it so I turned it off. But I save the code, commented out, so that I can use it later if I want.
+# * Goals and Ideas
+# ** TODO I want to make this capture template more usable for research, scholarship, and the like. For now, I'm just going to create a few templates for the default =.org= capture file =notes.org=.
+# ** TODO I want RefTeX to prompt me for page numbers when calling biblatex citation keys.
+# ** TODO I want to add a command for autocites (plural citations) in reftex
+# ** TODO Set up Magit Mode
+# * Archived
+# ** Org-Bullets
+# This creates bullets rather than asterisks. I didn't really like it so I turned it off. But I save the code, commented out, so that I can use it later if I want.
 
-#+BEGIN_SRC emacs-lisp
-;; Removed for troubleshooting
+# #+BEGIN_SRC emacs-lisp
+# ;; Removed for troubleshooting
 
-;; (require 'org-bullets)
-;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+# ;; (require 'org-bullets)
+# ;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
-#+END_SRC
+# #+END_SRC

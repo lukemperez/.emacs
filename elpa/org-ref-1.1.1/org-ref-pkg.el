@@ -9,7 +9,7 @@
     (f "0.18.0")
     (emacs "24.4")
     (pdf-tools "0.7"))
-  :keywords
+  :commit "db6c52f41faba686a378a8c57356a563f5cef496" :keywords
   '("org-mode" "cite" "ref" "label")
   :authors
   '(("John Kitchin" . "jkitchin@andrew.cmu.edu"))

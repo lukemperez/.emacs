@@ -12,13 +12,16 @@
 (autoload 'pandoc-mode "pandoc-mode" "\
 Minor mode for interacting with Pandoc.
 
+If called interactively, enable Pandoc mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
 \(fn &optional ARG)" t nil)
 
 (autoload 'conditionally-turn-on-pandoc "pandoc-mode" "\
 Turn on pandoc-mode if a pandoc settings file exists.
-This is for use in major mode hooks.
-
-\(fn)" nil nil)
+This is for use in major mode hooks." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pandoc-mode" '("pandoc-")))
 
@@ -28,7 +31,7 @@ This is for use in major mode hooks.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from pandoc-mode-utils.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pandoc-mode-utils" '("latex" "jsmath" "mimetex" "mathjax" "wrap" "webtex" "katex" "base-header-level" "bibliography" "columns" "citation-abbreviations" "csl" "eol" "email-obfuscation" "epub-chapter-level" "number-offset" "indented-code-classes" "id-prefix" "track-changes" "tab-stop" "title-prefix" "resource-path" "reference-location" "slide-level" "pandoc-" "pdf-engine" "def" "dpi" "highlight-style")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pandoc-mode-utils" '("base-header-level" "bibliography" "citation-abbreviations" "columns" "csl" "def" "dpi" "email-obfuscation" "eol" "epub-chapter-level" "highlight-style" "id-prefix" "indented-code-classes" "jsmath" "katex" "latex" "mathjax" "mimetex" "number-offset" "pandoc-" "pdf-engine" "reference-location" "resource-path" "slide-level" "tab-stop" "title-prefix" "track-changes" "webtex" "wrap")))
 
 ;;;***
 

@@ -87,9 +87,7 @@ Interactively, or if CLEANUP is non-nil, pass DOI through
 (defalias 'dissemin-lookup 'biblio-dissemin-lookup)
 
 (autoload 'biblio-dissemin--register-action "biblio-dissemin" "\
-Add Dissemin to list of `biblio-selection-mode' actions.
-
-\(fn)" nil nil)
+Add Dissemin to list of `biblio-selection-mode' actions." nil nil)
 
 (add-hook 'biblio-selection-mode-hook #'biblio-dissemin--register-action)
 
@@ -114,9 +112,7 @@ Insert BibTeX entry matching DOI.
 ;;; Generated autoloads from biblio-download.el
 
 (autoload 'biblio-download--register-action "biblio-download" "\
-Add download to list of `biblio-selection-mode' actions.
-
-\(fn)" nil nil)
+Add download to list of `biblio-selection-mode' actions." nil nil)
 
 (add-hook 'biblio-selection-mode-hook #'biblio-download--register-action)
 

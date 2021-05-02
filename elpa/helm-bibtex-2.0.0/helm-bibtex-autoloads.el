@@ -6,14 +6,6 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "bibtex-completion" "bibtex-completion.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from bibtex-completion.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "bibtex-completion" '("bibtex-completion-")))
-
-;;;***
-
 ;;;### (autoloads nil "helm-bibtex" "helm-bibtex.el" (0 0 0 0))
 ;;; Generated autoloads from helm-bibtex.el
 
@@ -26,10 +18,6 @@ reread.
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-bibtex" '("helm-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("helm-bibtex-pkg.el") (0 0 0 0))
 
 ;;;***
 
