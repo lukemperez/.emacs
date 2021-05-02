@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+=======
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make rebuild 
+cd ..
+cp SCSS2019/ ../Inprogress/NLNS/
+cd ../Inprogress/
+ls
+mkdir NatLawNatSec
+cp ../Completed/SCSS2019/* NatLawNatSec/*
+cp ../Completed/SCSS2019/* NatLawNatSec/
+cd NatLawNatSec/
+ls
+mv Perez_2019_scss_natlaw_natsec.md Perez_2020_ShawneeTrail.md
+mkdir archive
+mv 201909091553\ -\ natlaw\ and\ natsec.txt Perez_2019_scss_natlaw_natsec.md.pdf Perez_SCSS_Present.* archive/
+ls
+open .
+ls
+Perez_2020_ShawneeTrail_Abstract.md
+touch Perez_2020_ShawneeTrail_Abstract.md
+make
+make
+git status
+git commit -am "December 30, 2019"
+git push origin master
+>>>>>>> 89cc7270841132b2ee6bff12d47a1310e9528d33
 make
 make
 make
@@ -43,6 +80,7 @@ make
 make
 git commit -am "March 4, 2021"
 git push origin master
+<<<<<<< HEAD
 git commit -am "correcting typos"
 git push origin master
 ls
@@ -126,3 +164,14 @@ ls
 make
 x
 exit
+=======
+git status
+git status
+git status
+git pull origin master
+git add --all && git commit -m "Jan 31, 2020 morning"
+git pull origin master
+git fetch --all
+git reset --hard  origin/master
+git status
+>>>>>>> 89cc7270841132b2ee6bff12d47a1310e9528d33
