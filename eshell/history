@@ -1,5 +1,17 @@
 make
 make
+cat makefile 
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
 make
 make
 make
@@ -98,31 +110,19 @@ make
 make
 make
 ls
-make rebuild 
-x
-exit
+cd Raw_Data/
 ls
 x
 exit
 ls
-make
+cd Raw_Data/
+ls
 x
 exit
 ls
-git commit -am "updates to eshell customizing"
-git status
-git add --all
-git commit -am "updates eshell customize"
-git status
-git push origin master
-git pull origin master
-git status
-git add --all
-git status
-git commit -am "pull/merge"
-git status
-git push origin master
-gitgit sgit status
-git status
+ls
+x
+exit
+ls
 x
 exit
