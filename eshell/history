@@ -1,10 +1,5 @@
 make
 make
-cat makefile 
-make
-make
-make
-make
 make
 make
 make
@@ -124,5 +119,10 @@ ls
 x
 exit
 ls
+x
+exit
+ls
+git commit -am "updates"
+git push origin master
 x
 exit
