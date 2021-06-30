@@ -28,47 +28,6 @@ Should end with a forward slash.")
 (setq ido-everywhere t)
 (ido-mode 1)
 
-(defun my-eshell-prompt ()
-  "Highlight eshell pwd and prompt separately."
-  (mapconcat
-   (lambda (list)
-     (propertize (car list)
-                 'read-only      t
-                 'font-lock-face (cdr list)
-                 'front-sticky   '(font-lock-face read-only)
-                 'rear-nonsticky '(font-lock-face read-only)))
-   `((,(abbreviate-file-name (eshell/pwd)) :foreground "#dcdccc")
-     (,(if (zerop (user-uid)) " # " " $ ") :foreground "green"))
-   ""))
-
-(setq eshell-highlight-prompt nil
-      eshell-prompt-function  #'my-eshell-prompt)
-
-(defun eshell-here ()
-  "Opens up a new shell in the directory associated with the
-current buffer's file. The eshell is renamed to match that
-directory to make multiple eshell windows easier."
-  (interactive)
-  (let* ((parent (if (buffer-file-name)
-                     (file-name-directory (buffer-file-name))
-                   default-directory))
-         (height (/ (window-total-height) 3))
-         (name   (car (last (split-string parent "/" t)))))
-    (split-window-vertically (- height))
-    (other-window 1)
-    (eshell "new")
-    (rename-buffer (concat "*eshell: " name "*"))
-
-    (insert (concat "ls"))
-    (eshell-send-input)))
-
-(global-set-key (kbd "C-!") 'eshell-here)
-
-(defun eshell/x ()
-  (insert "exit")
-  (eshell-send-input)
-  (delete-window))
-
 (use-package flyspell
   :ensure t
   :defer t
@@ -242,3 +201,81 @@ directory to make multiple eshell windows easier."
     :config
     (load-theme 'zenburn t)
 )
+
+;; (use-package ess
+;;   :ensure t
+;;   :init (require 'ess-site))
+
+
+(use-package ess-site
+    :ensure ess
+    :pin melpa-stable
+    :diminish eldoc-mode
+    :defer 2
+    :bind
+    (:map ess-mode-map
+          ("M-p" . jab/add-pipe))
+    :config
+    (add-hook 'ess-mode-hook
+              (lambda ()
+                (ess-set-style 'RStudio)))
+    (defun jab/add-pipe ()
+      "Adds a pipe operator %>% with one space to the left and starts a new line with proper indentation"
+      (interactive)
+      (just-one-space 1)
+      (insert "%>%")
+      (ess-newline-and-indent))
+
+)
+
+;; :custom
+;; (ess-history-file nil "Don't save .Rhistory files because that's stupid!!")
+;; (ess-history-directory nil)
+;; (inferior-R-args "--no-restore-data")
+;; (ess-nuke-trailing-whitespace-p t)
+;; (ess-eval-visibly 'nowait "Don't hog Emacs")
+;; (ess-ask-for-ess-directory nil "don't ask for dir when starting a process") 
+;; (ess-eldoc-show-on-symbol t "show eldoc on symbol instead of only inside of parens")
+;; (ess-use-ido nil "rely on helm instead of ido") 
+;; (ess-pdf-viewer-pref "emacsclient"))
+
+(defun my-eshell-prompt ()
+  "Highlight eshell pwd and prompt separately."
+  (mapconcat
+   (lambda (list)
+     (propertize (car list)
+                 'read-only      t
+                 'font-lock-face (cdr list)
+                 'front-sticky   '(font-lock-face read-only)
+                 'rear-nonsticky '(font-lock-face read-only)))
+   `((,(abbreviate-file-name (eshell/pwd)) :foreground "#dcdccc")
+     (,(if (zerop (user-uid)) " # " " $ ") :foreground "green"))
+   ""))
+
+(setq eshell-highlight-prompt nil
+      eshell-prompt-function  #'my-eshell-prompt)
+
+(defun eshell-here ()
+  "Opens up a new shell in the directory associated with the
+current buffer's file. The eshell is renamed to match that
+directory to make multiple eshell windows easier."
+  (interactive)
+  (let* ((parent (if (buffer-file-name)
+                     (file-name-directory (buffer-file-name))
+                   default-directory))
+         (height (/ (window-total-height) 3))
+         (name   (car (last (split-string parent "/" t)))))
+    (split-window-vertically (- height))
+    (other-window 1)
+    (eshell "new")
+    (rename-buffer (concat "*eshell: " name "*"))
+
+    (insert (concat "ls"))
+    (eshell-send-input)))
+
+(global-set-key (kbd "C-!") 'eshell-here)
+
+(defun eshell/x ()
+  (insert "exit")
+  (eshell-send-input)
+  (delete-window))

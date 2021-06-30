@@ -1,128 +1,128 @@
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
 make
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
 make
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+pandoc Clark_2008_etal.md --pdf-engine=xelatex -o tmp.pdf && open tmp.pdf -a Skim
+x
+exit
+ls
 make
+x
+exit
+ls
 make
+x
+exit
+ls
 make
+x
+exit
+ls
 make
+x
+exit
+ls
 make
+x
+exit
+ls
 make
+x
+exit
+ls
 make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-cp makefile NewsletterVersion/
-cd NewsletterVersion/
+x
+exit
 ls
 make
 make
-cd ..
-make
-open *.pdf -a Skim
-make
-make
-git commit -am "March 4, 2021"
-git push origin master
-git commit -am "correcting typos"
-git push origin master
+x
+exit
 ls
-mv perez_2019_ISAm_slides.md Perez_2021_CyberColloquium.md
 make
-make
-make
-make
-make
-make
-make
-git remote -v
-git status
-clear
-clear
-open *.pdf -a Skim
-ls
-ls
-open research.org 
-ls *.pdf
-open notes.pdf 
-make
-make
-make
-git status
-open tmp.pdf 
-open tmp.pdf 
-git commit -am "new entries"
-git push origin master
-make
-open *.pdf -a Skim
-make
-make
-make
-make
-cat makefile 
-make rebuild 
-cat Perez_ResCal.csv
-make
-ls
-open *.pdf -a Skim
-open Perez_ResCal.pdf -a Skim
-open Perez_ResCal.pdf -a Skim
+x
+exit
 ls
 make
 make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
+x
+exit
 ls
-cd Raw_Data/
+make
+x
+exit
+ls
+make
+x
+exit
+ls
+make
+x
+exit
+ls
+make
+x
+exit
+ls
+make
 ls
 x
 exit
 ls
-cd Raw_Data/
-ls
 x
 exit
 ls
-ls
-x
-exit
-ls
-x
-exit
-ls
-git commit -am "updates"
-git push origin master
+open *.pdf -a Skim
+open *.pdf -a Skim
 x
 exit
