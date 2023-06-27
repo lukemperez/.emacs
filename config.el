@@ -28,54 +28,6 @@ Should end with a forward slash.")
 (setq ido-everywhere t)
 (ido-mode 1)
 
-(use-package flyspell
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'prog-mode-hook 'flyspell-prog-mode)
-    (add-hook 'text-mode-hook 'flyspell-mode)
-    )
-  :config
-  ;; Sets flyspell correction to use two-finger mouse click
-  (define-key flyspell-mouse-map [down-mouse-3] #'flyspell-correct-word)
-  )
-
-;; This tells Emacs were to find ispell when using the Mac
-(setq ispell-program-name "/usr/local/bin/ispell")
-
-(let (
-      (my-paths
-       '("~/bin"
-         "/usr/local/bin"
-         "/usr/bin"
-         "/Library/TeX/texbin" ; add path to basictex bin
-         "/usr/texbin" ; add path to basictex bin
-         "/bin"
-         )))
-
-  (setenv "PATH" (concat (getenv "PATH") ":"
-                         (mapconcat 'identity my-paths ":")))
-  (setq exec-path (append my-paths (list "." exec-directory))))
-
-(use-package tex-site
-  :ensure auctex
-  :config
-  (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
-  (setq TeX-auto-save nil ; remove "/auto/" file generation
-        TeX-parse-self t
-        reftex-plug-into-AUCTeX t)
-  (add-hook 'LaTeX-mode-hook #'TeX-PDF-mode)
-  (setq TeX-source-correlate-method 'synctex)
-  (setq TeX-source-correlate-mode t)
-  (eval-after-load "tex"
-    '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s" TeX-run-TeX nil t :help "Process file with latexmk"))
-    )
-  (eval-after-load "tex"
-    '(add-to-list 'TeX-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s" TeX-run-TeX nil t :help "Process file with xelatexmk"))
-    )
-  (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
-
 ;; Set RefTeX to load automatically with AUCTeX
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (add-hook 'markdown-mode-hook 'turn-on-reftex) ; unsure if this works.
@@ -197,39 +149,50 @@ Should end with a forward slash.")
 (bind-key "s-<f11>" 'disable-active-themes)
 
 (use-package zenburn-theme
-    :ensure t
-    :config
-    (load-theme 'zenburn t)
-)
+  :ensure t
+  :load-path "themes"
+  :init (setq zenburn-theme t)
+  :config (load-theme 'zenburn t)
+  )
+
+;; (use-package atom-dark-theme
+;; 	 :ensure t
+;;      :defer t)
+;; (use-package atom-dark-theme
+;;   :config
+;;   (load-theme 'atom-one-dark t)
+;;   )
+
+;; (use-package solarized-theme
+;;         :ensure t
+;;         :defer t
+;;         :config
+;;         (load-theme 'solarized-dark t))
 
 ;; (use-package ess
-;;   :ensure t
-;;   :init (require 'ess-site))
+;;     :ensure ess
+;;     :pin melpa-stable
+;;     :diminish eldoc-mode
+;;     :defer 2
+;;     :bind
+;;     (:map ess-mode-map
+;;           ("M-p" . jab/add-pipe))
+;;     :config
+;;     (add-hook 'ess-mode-hook
+;;               (lambda ()
+;;                 (ess-set-style 'RStudio)))
+;;     (defun jab/add-pipe ()
+;;       "Adds a pipe operator %>% with one space to the left and starts a new line with proper indentation"
+;;       (interactive)
+;;       (just-one-space 1)
+;;       (insert "%>%")
+;;       (ess-newline-and-indent))
 
+;; )
 
-(use-package ess-site
-    :ensure ess
-    :pin melpa-stable
-    :diminish eldoc-mode
-    :defer 2
-    :bind
-    (:map ess-mode-map
-          ("M-p" . jab/add-pipe))
-    :config
-    (add-hook 'ess-mode-hook
-              (lambda ()
-                (ess-set-style 'RStudio)))
-    (defun jab/add-pipe ()
-      "Adds a pipe operator %>% with one space to the left and starts a new line with proper indentation"
-      (interactive)
-      (just-one-space 1)
-      (insert "%>%")
-      (ess-newline-and-indent))
-
-)
-
-;; :custom
-;; (ess-history-file nil "Don't save .Rhistory files because that's stupid!!")
+;; ;; :custom
+;; ;; (ess-history-file nil 
+;; ;; "Don't save .Rhistory files because that's stupid!!")
 ;; (ess-history-directory nil)
 ;; (inferior-R-args "--no-restore-data")
 ;; (ess-nuke-trailing-whitespace-p t)
@@ -256,14 +219,12 @@ Should end with a forward slash.")
       eshell-prompt-function  #'my-eshell-prompt)
 
 (defun eshell-here ()
-  "Opens up a new shell in the directory associated with the
-current buffer's file. The eshell is renamed to match that
-directory to make multiple eshell windows easier."
+  "Opens up a new shell in the directory associated with the current buffer's file. The eshell is renamed to match that directory to make multiple eshell windows easier."
   (interactive)
   (let* ((parent (if (buffer-file-name)
                      (file-name-directory (buffer-file-name))
                    default-directory))
-         (height (/ (window-total-height) 3))
+         (height (/ (window-total-height) 4))
          (name   (car (last (split-string parent "/" t)))))
     (split-window-vertically (- height))
     (other-window 1)
@@ -278,4 +239,5 @@ directory to make multiple eshell windows easier."
 (defun eshell/x ()
   (insert "exit")
   (eshell-send-input)
+
   (delete-window))

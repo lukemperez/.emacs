@@ -2,359 +2,149 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/ArchiveTeaching/2020_Spring_CEL475/" . "Syllabus_Notes/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/ArchiveTeaching/" . "2020_Spring_CEL475/")
- ("/Users/lmp/Teaching/" . "2021F_justWar/")
- ("/Users/lmp/ASU_Service/" . "draftGOP_Govs_EAD/")
- ("/Users/lmp/Research/mssData/CCES2020/" . "Raw_Data/")
- ("/Users/lmp/Research/mssData/" . "CCES_Data/")
- ("/Users/lmp/Research/" . "mssData/")
- ("/Users/lmp/Desktop/tmpCV/" . "CV/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/WorkingDrafts/" . "ShawneeDraft/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/" . "WorkingDrafts/")
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/" . "APSA2021/")
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/" . "Inprogress/")
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Spring_CEL475/" . "Syllabus_Notes/")
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Teaching/" . "2020_Spring_CEL475/")
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/" . "Projects/")
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/" . "AcademicWork/")
- ("/Volumes/Macintosh HD/Users/lmp/" . "Research/")
+ ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/" . "Lib Order Paper 041023/")
+ ("/Users/lmp/Research/CES_LIO/Paper/" . "Gibson_methods/")
+ ("/Users/lmp/Research/CES_LIO/" . "Paper/")
+ ("/Volumes/Macintosh HD/Users/lmp/" . ".bibs/")
  ("/Volumes/Macintosh HD/Users/" . "lmp/")
  ("/Volumes/Macintosh HD/" . "Users/")
- ("/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/Tides/Letter_credit_collections/" . "letter_4_followup_disputing/")
- ("/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/Tides/" . "Letter_credit_collections/")
- ("/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/" . "Tides/")
- ("/Volumes/MacExternal/_13in_MBP_Files/" . "MBP_13inch_Documents/")
- ("/Volumes/MacExternal/" . "_13in_MBP_Files/")
- ("/Volumes/" . "Macintosh HD/")
- ("/Users/lmp/Dropbox/AcademicWork/ND_KGS/" . "cover/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_IS_Julianne/" . "hrNotes/")
- ("/Users/lmp/Dropbox/AcademicWork/resume_CV/" . "CV/")
- ("/Users/lmp/.emacs.d/elpa/" . "use-package-2.4/")
- ("/Users/lmp/Dropbox/Proj_LibFaith/Data/" . "IRFAdata/")
- ("/Users/lmp/Dropbox/Proj_LibFaith/" . "Data/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_CEL494/" . "jwNotes/")
- ("/Users/lmp/Dropbox/lmp_site/themes/robjhyndman/" . "theme.toml/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2019_Fall_CEL100/" . "Syllabus/")
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/" . "Statements/")
- ("/Users/lmp/Desktop/" . "cyberJustWar/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/" . "Paper/")
- ("/Users/lmp/Dropbox/AcademicWork/SCETL/" . "draftnotes/")
- ("/Users/lmp/Dropbox/zArchived/Job_Market/2018_jobs/ASU_SCETL/job_talk/" . "Beam_talk/")
- ("/Users/lmp/Dropbox/zArchived/Job_Market/2018_jobs/ASU_SCETL/" . "job_talk/")
- ("/Users/lmp/Dropbox/zArchived/Job_Market/2018_jobs/" . "ASU_SCETL/")
- ("/Users/lmp/Dropbox/zArchived/Job_Market/" . "2018_jobs/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/Archive_staged/" . "Proposal/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Spring_CEL475/" . "Syllabus_Notes/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/mss/" . "02_chpt/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/ISAm_2019/" . "Paper/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/tempmd/" . "01-chapterone/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/Letters/Shoemaker/" . "2020_HF_Shoemaker/")
- ("/Users/lmp/Dropbox/zArchived/KICD/2019_Sp/" . "classnotes/")
- ("/Users/lmp/Dropbox/zArchived/KICD/" . "2019_Sp/")
- ("/Users/lmp/Dropbox/zArchived/" . "Job_Market/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/Letters/" . "GIS_Orozco/")
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/" . "ArchiveTeaching/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/MPSA_CCES/" . "Data/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Completed/" . "2019_archive/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/" . "mss/")
- ("/Users/lmp/Dropbox/AcademicWork/KICD/Letters/" . "Rec_Samara/")
- ("/Users/lmp/Dropbox/AcademicWork/Inbox_AcWork/" . "ISA_Midwest_Chair/")
- ("/Users/lmp/Documents/NDISC_CONF/" . "NDISC_Final_Draft/")
- ("/Users/lmp/Dropbox/AcademicWork/Job_Market/2018_jobs/" . "ASU_SCETL/")
- ("/Users/lmp/Dropbox/AcademicWork/Job_Market/" . "2018_jobs/")
- ("/Users/lmp/Dropbox/AcademicWork/KICD/2019_Sp/" . "classnotes/")
- ("/Users/lmp/Dropbox/AcademicWork/KICD/" . "2019_Sp/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/" . "libfaith_mss/")
- ("/Users/lmp/Dropbox/AcademicWork/Projects/" . "Inprogress/")
- ("/Users/lmp/Library/texlive/2017/" . "texmf-local/")
- ("/Users/lmp/Library/texlive/" . "2017/")
- ("/Users/lmp/Library/" . "texlive/")
- ("/Users/" . "lmp/")
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/" . "Misc/")
- ("/Users/lmp/Documents/Academic_Jobs/Syllabi/" . "Government_Syllabus/")
- ("/Users/lmp/Documents/Mizzou/" . "2018_Fall/")
- ("/Users/lmp/Documents/Academic_Jobs/2018_Apps/" . "CMC/")
- ("/Users/lmp/Documents/Academic_Jobs/" . "Syllabi/")
- ("/Users/lmp/Documents/Dissertation/Draft/" . "1_Introduction/")
- ("/Users/lmp/Documents/Dissertation/" . "UT_Dissertation/")
- ("/Users/lmp/Documents/" . "Rstats/")
- ("/Users/lmp/.emacs.d/" . "elpa/")
+ ("/Volumes/MacExternal/zArchived/AcademicWork/" . "Org/")
+ ("/Volumes/MacExternal/zArchived/" . "AcademicWork/")
+ ("/Volumes/MacExternal/" . "zArchived/")
+ ("/Volumes/" . "MacExternal/")
  ("/" . "Volumes/")
- ("/Users/lmp/Dropbox/AcademicWork/" . "notes/")
- ("/Users/lmp/Dropbox/" . "NotesLitt/")
- ("/Users/lmp/" . "Dropbox/")
+ ("/Users/lmp/Research/liberatingFaith/mssData/dataIRFA/Regime Type/" . "RAS/")
+ ("/Users/lmp/Research/liberatingFaith/mssData/dataIRFA/" . "Regime Type/")
+ ("/Users/lmp/Research/liberatingFaith/mssData/" . "dataIRFA/")
+ ("/Users/lmp/Research/liberatingFaith/" . "mssData/")
+ ("/Users/lmp/Research/" . "CES_LIO/")
+ ("/Users/lmp/Dropbox/AcademicWork/" . "Bibs/")
+ ("/Users/lmp/Dropbox/" . "AcademicWork/")
+ ("/Users/" . "lmp/")
+ ("/Users/lmp/.emacs.d/elpa/archives/" . "org/")
+ ("/Users/lmp/.emacs.d/elpa/" . "use-package-20210207.1926/")
+ ("/Users/lmp/.emacs.d/" . ".cache/")
+ ("/Users/lmp/" . "Research/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/lmp/Dropbox/NotesLitt/"
- "/Users/lmp/Documents/Rstats/"
- "/Users/lmp/Desktop/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/mss/02_chpt/"
- "/Users/lmp/Research/CCES_LIO/"
- "/Users/lmp/Research/mssData/CCES_Data/"
- "/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Misc/"
- "/Users/lmp/Teaching/2021F_justWar/"
- "/Users/lmp/Dropbox/AcademicWork/Teaching/ArchiveTeaching/2020_Spring_CEL475/Syllabus_Notes/"
- "/Users/lmp/ASU_Service/draftGOP_Govs_EAD/"
- "/Users/lmp/Research/mssData/CCES2020/"
- "/Users/lmp/Research/mssData/CCES2020/Raw_Data/"
- "/Volumes/Macintosh HD/Users/lmp/.emacs.d/"
- "/Users/lmp/Research/ResearchCalendar/"
- "/Users/lmp/Research/LeadershipBookReview/"
- "/Users/lmp/Dropbox/AcademicWork/Bibs/"
- "/Users/lmp/Documents/GradSchlSuccess/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/Paper/"
- "/Users/lmp/Research/NSF_CAREER/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/mss/01_Intro/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/Data/"
- "/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Manuscripts/"
- "/Volumes/Macintosh HD/Users/lmp/Research/mssData/CCES2020/"
- "/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/Statements/"
- "/Users/lmp/Dropbox/AcademicWork/Org/"
- "/Users/lmp/Desktop/invoice/"
- "/Users/lmp/Desktop/cyberJustWar/"
- "/Users/lmp/Desktop/tmpCV/CV/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/cyberJustWar/Presentation/Presentation/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/cyberJustWar/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/WorkingDrafts/ShawneeDraft/"
- "/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/"
- "/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/APSA2021/"
- "/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/"
- "/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Org/"
- "/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Spring_CEL475/Syllabus_Notes/"
- "/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/Tides/Letter_credit_collections/letter_4_followup_disputing/"
- "/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_CEL494/jwNotes/"
- "/Users/lmp/Dropbox/AcademicWork/ND_KGS/cover/"
- "/Users/lmp/Dropbox/AcademicWork/ND_KGS/teachstmt/"
+ "/Users/lmp/Research/CES_LIO/Paper/"
  "/Users/lmp/.emacs.d/"
- "/Users/lmp/Dropbox/AcademicWork/Duck/"
- "/Users/lmp/Dropbox/AcademicWork/ND_KGS/"
- "/Users/lmp/Dropbox/AcademicWork/resume_CV/CV/"
- "/Users/lmp/Dropbox/Inbox/"
- "/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_CEL494/"
- "/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Spring_CEL475/Syllabus_Notes/"
- "/Users/lmp/Dropbox/AcademicWork/Teaching/2019_Fall_CEL100/Syllabus/"
- "/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/SCETL_Letter/"
- "/Users/lmp/Dropbox/AcademicWork/Teaching/Letters/USMC_Guerro/"
+ "/Users/lmp/.bibs/"
+ "/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/Tex_to_MD/"
+ "/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/Lib Order Paper 041023/"
+ "/Users/lmp/Service/SCETL_Munoz/CommitteeMemo/"
+ "/Volumes/MacExternal/zArchived/AcademicWork/Org/"
+ "/Volumes/Macintosh HD/Users/lmp/.bibs/"
+ "/Volumes/MacExternal/zArchived/AcademicWork/Bibs/"
+ "/Users/lmp/Research/liberatingFaith/mssData/dataIRFA/Regime Type/RAS/"
+ "/Users/lmp/Research/liberatingFaith/mssData/dataIRFA/Regime Type/"
+ "/Users/lmp/Research/liberatingFaith/mssData/"
+ "/Users/lmp/Desktop/"
+ "/Users/lmp/Dropbox/AcademicWork/Bibs/"
+ "/Users/lmp/Research/liberatingFaith/mssData/dataOpinion/"
+ "/Users/lmp/.emacs.d/.cache/"
+ "/Users/lmp/.emacs.d/elpa/use-package-20210207.1926/"
+ "/Users/lmp/.emacs.d/elpa/zenburn-theme-2.7.0/"
+ "/Users/lmp/.emacs.d/elpa/archives/org/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "Clark_2008_etal.md"
- "rstats.Rmd"
- "CLAS_SummerSalaryActionForm_2021_Luke Perez_Other_Signed.pdf"
- "Clark_2008_etal.pdf"
- "02_Chpt.md"
- "makefile"
- "Perez_DRAFT_LiberalOrder_CCES.md"
- "cces2020.r"
- "syllabus.latex"
- "Perez_2020_Spring_CEL475_Syllabus.md"
+ "Perez_Gibson_CES_LIO.md"
+ "config.org"
+ "init.el"
+ "refs.bib"
+ "mpsa.md"
+ "MPSA.log"
+ "mpsa.bib"
+ "Perez_Gibson_CES_LIO_040423.log"
+ "Perez_Gibson_CES_LIO_040423.tex"
+ "main.tex"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lmp/Dropbox/" (24777 15861 176375 899000) "Writing/" "Soulver Files/" "Proj_LibFaith/" "tmpNotes/" "NotesLitt/" "Apps/" "lmp_site/" "Photos/" "ASU_Service/" "PPI/" ".dropbox.cache/" "Masters/" "1Password.agilekeychain/" "nvNotes/" ".dropbox" "Public/" "Camera Uploads/" "zArchived/" "20200918_git_repots_list.txt" "Vault.dbx-vault" "Icon" "Clips/" "ScrivBackups/" "AcademicWork/" "Inbox/" ".DS_Store" "Screenshots/" "Tides/" ".ws.agile.1Password.settings" "receipts/" "../" "./")
+ ("/Users/lmp/.emacs.d/" (25755 13907 510568 1000) ".cache/" ".git/" "elpa/" "init.el" "auto-save-list/" "config.el" "config.org" "eshell/" ".DS_Store" "ido.last" "../" "./")
 
- ("/Users/lmp/Research/" (24758 32939 568904 846000) "ResearchCalendar/" "NSF_CAREER/" "LeadershipBookReview/" "mssData/" "CCES_LIO/" ".DS_Store" "../" "./")
+ ("/Users/lmp/" (25755 13569 793418 264000) ".zsh_sessions/" ".viminfo" ".bash_history" "Toggl/" "WindhamPerez.savedSearch" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" ".revox/" "Service/" ".hushlogin" "Documents/" ".npm/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.7.1" ".Trash/" "Dropbox/" "Applications/" ".bibs/" "Movies/" ".ssh/" ".zcompdump-C02ZQHAJMD6T-5.7.1" "Teaching/" ".cisco/" ".dropbox/" "Public/" ".cups/" ".emacs.d/" "Zotero/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8" "ASU_MyTrips/" ".lesshst" "Library/" "Desktop/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.9" ".zsh_history" ".atom-backup/" "output/" ".openjfx/" "git-tmp/" ".atom/" "Pictures/" "tmpPandoc/" "Creative Cloud Files/" ".local/" "Dropbox_ASU/" ".adobe/" "Dropbox (ASU)/" ".zshrc" ".doppler/" ".subversion/" ".z" ".CFUserTextEncoding" ".logseq/" ".pandoc/" ".r/" ".DS_Store" ".anyconnect" "Databases/" "Logseq/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8.1" "Calibre/" "Dropbox (Personal)/" "Music/" ".config/" "SCETL/" ".Rhistory" "Research/" "../" "./")
 
- ("/Users/lmp/Documents/" (24777 2544 415308 971000) "202106081353_film_Costs.soulver" "tmpGradSchool/" "202104151536_email_sig.html" "Reading_mss.savedSearch" "BBEdit Backups/" "mssLibFaith.md" "Zoom/" "TCR_Perez_June_01_2021_Order/" "202106141852_Screenshot_Artifact_Uprising_Shipping.png" "TCR_Perez_June_01_2021_Order.zip" "Statements/" "library.bib" "Adobe/" ".aperture2Lightroom/" "PRQ Search Committee/" "TPPF_Tejanos/" "Nopal/" "202104221728_Hamilton_Exec_OmniFocus.png" "202105151537_MPSA_David_Panel.md" "Library/" "202104021134_ohio_travel_estimates.soulver" "202104011930_Note_Southwest_re_Travel.md" "Megan_JobMarket/" "Rstats/" "W-9 form.pdf" ".localized" "GradSchlSuccess/" "Classics/" ".DS_Store" "20210422_OF_reading_tag.png" "202103310858_messages_error.png" "ScanSnap/" "202104151537_GreatHearts_Virtues.md" "CEL475.savedSearch" "202104021133_yard_costs_estimate.soulver" "../" "./")
+ ("/Users/lmp/Desktop/" (25747 21378 534357 406000) "Process/" "Aldrich Sullivan and Borgida 1989.pdf" "capture.md" ".localized" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Documents/Rstats/" (24778 20482 962882 633000) "stochastic.png" "rstats.Rmd" "rstats.pdf" "makefile" "LetsDeal.R" "rstats.tex" "rstats_files/" "../" "./")
+ ("/Volumes/Macintosh HD/Users/lmp/.bibs/" (25755 8300 315946 131000) "refs.bib.bak" "refs.bib.sav.tmp" "refs.bib" "../" "./")
 
- ("/Users/lmp/.emacs.d/" (24770 36125 427731 216000) ".cache/" ".git/" "elpa/" "elpaOld/" "init.el" "auto-save-list/" "config.el" "config.org" "eshell/" "ido.last" "../" "./")
+ ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/Lib Order Paper 041023/" (25652 54195 970665 2000) "Biden_NATO_040223_Labels.png" "DemocratL_Low_WTO_040223_Labels.png" "NATO_Tab_040823.png" "MPSA-blx.bib" "BidenV_Med_NATO_040223_Labels.png" "TrumpV_Low_NATO_040223_Labels.png" "DemocratL_Med_NATO_040223_Labels.png" "BidenV_Low_WTO_040223_Labels.png" "Fstats_NATO_040823.png" "Med_WTO_040223_Labels.png" "chicago-author-date.csl" "Low_Know_NATO_040223_Labels.png" "TrumpV_High_NATO_040223_Labels.png" "mpsa.bbl" "RepL_NATO_040223_Labels.png" "RepublicanL_Low_NATO_040223_Labels.png" "DemL_NATO_040223_Labels.png" "RepublicanL_High_NATO_040223_Labels.png" "BidenV_WTO_040223_Labels.png" "BidenV_Low_NATO_040223_Labels.png" "TrumpV_Med_NATO_040223_Labels.png" "NATO_Tab_041023.png" "RepublicanL_Med_NATO_040223_Labels.png" "RepublicanL_Low_WTO_040223_Labels.png" "Biden_High_NATO_040223_Labels.png" "DemL_sqrt_trans.png" "TrumpV_Low_WTO_040223_Labels.png" "ALL_WTO_040223_Labels.png" "DemocratL_Low_NATO_040223_Labels.png" "MPSA.tex" "BidenV_High_WTO_040223_Labels.png" "Med_Know_NATO_040223_Labels.png" "Perez_Gibson_CES_LIO_040423.tex" "TrumpV_WTO_040223_Labels.png" "High_Know_NATO_040223_Labels.png" "Fstats_WTO_040823.png" "Perez_Gibson_2023_MPSA.pdf" "DemocratL_Med_WTO_040223_Labels.png" "main.tex" "RepL_WTO_040223_Labels.png" "Low_WTO_040223_Labels.png" "BidenV_Med_WTO_040223_Labels.png" "WTO_Tab_041023.png" "DemocratL_High_WTO_040223_Labels.png" "ALL_NATO_040223_Labels.png" "mpsa.bib" "mpsa.blg" "DemL_WTO_040223_Labels.png" "TrumpV_NATO_040223_Labels.png" "MPSA.aux" ".DS_Store" "TrumpV_High_WTO_040223_Labels.png" "MPSA.log" "WTO_Tab_040823.png" "High_WTO_040223_Labels.png" "TrumpV_Med_WTO_040223_Labels.png" "DemocratL_High_NATO_040223_Labels.png" "MPSA.run.xml" "adjmeans.png" "RepublicanL_High_WTO_040223_Labels.png" "RepublicanL_Med_WTO_040223_Labels.png" "../" "./")
 
- ("/Volumes/Macintosh HD/Users/lmp/.emacs.d/" (24770 36125 427731 216000) ".cache/" ".git/" "elpa/" "elpaOld/" "init.el" "auto-save-list/" "config.el" "config.org" "eshell/" "ido.last" "../" "./")
+ ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/Tex_to_MD/" (25652 48020 627007 23000) "Perez_Gibson_CES_LIO_040423.md" "MPSA.tex" "Perez_Gibson_CES_LIO_040423.tex" "mpsa.md" "tmp.pdf" "main.tex" "mpsa.bib" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Desktop/" (24776 55936 939630 591000) "testTMP/" "invoice/" "Year 7_iphone/" "_2016_Social_Media/" "tmp/" "202105281658_TotalWine_Receipt.pdf" "PRQ Editor 2022-circulate.docx" "MarkHama.md" "0590795_0590795-R1-E005.jpg" "Year2/" "Year3/" "MarkHama.md.pdf" "Lucky 7/" "Cigna.pdf" "lamp_no05.pdf" "Luke Perez - insulation certificate.pdf" "401B5B74-642F-4694-93F6-747F1C37386A.jpeg" "Year 4/" "NSF_1848036_CAREER.pdf" "CLAS_SummerSalaryActionForm_2021_Luke Perez_Research_Signed.pdf" ".localized" "Reading List.csv" ".DS_Store" "5-year-resaerch/" "CLAS_SummerSalaryActionForm_2021_Luke Perez_Other_Signed.pdf" "Year6/" "dev-website/" "Year1/" "Perez_SRP_Rebate_forms.pdf" "Year7/" "images-strategy/" "Turek_HDiplo_Roundtable.pdf" "../" "./")
+ ("/Users/lmp/.bibs/" (25755 8300 315946 131000) "refs.bib.bak" "refs.bib.sav.tmp" "refs.bib" "../" "./")
 
- ("/Users/lmp/Dropbox/NotesLitt/" (24770 36095 926064 538000) "Clark_2008_etal.md" "Philpott_2007.md" "tmp.pdf" ".DS_Store" "../" "./")
+ ("/Users/lmp/Research/CES_LIO/" (25679 44188 192558 59000) "Presentation/" "UT CES 2022 Data & Code Book/" ".git/" "cesLIO/" "mytrip_MPSA2023/" ".gitignore" "UNCW-experiment/" "archive_stratch/" ".DS_Store" "Paper/" "../" "./")
 
- ("/Users/lmp/" (24776 51368 94563 829000) ".bash_history" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" "ASU_Service/" ".hushlogin" "Documents/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.7.1" ".Trash/" "Dropbox/" "Applications/" "Movies/" ".ssh/" ".zcompdump-C02ZQHAJMD6T-5.7.1" "Teaching/" ".dropbox/" "Public/" ".cups/" ".emacs.d/" "Zotero/" "Library/" "Desktop/" ".zsh_history" ".atom-backup/" "output/" ".openjfx/" ".atom/" "Pictures/" "Creative Cloud Files/" ".local/" ".adobe/" ".zshrc" ".subversion/" ".z" ".CFUserTextEncoding" ".r/" ".DS_Store" "Databases/" "Music/" ".config/" ".Rhistory" "Research/" "../" "./")
+ ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/" (25652 10376 541677 557000) "Lib Order Paper 041023.zip" "CES UNCW Final 07012022.docx" ".DS_Store" "Lib Order Paper 041023/" "Tex_to_MD/" "../" "./")
 
- ("/Users/lmp/Research/CCES_LIO/" (24758 41947 412364 836000) "Perez_DRAFT_LiberalOrder_CCES.md.pdf" "Perez_DRAFT_LiberalOrder_CCES.md" "makefile" "../" "./")
+ ("/Users/lmp/Library/TinyTeX/texmf-dist/tex/latex/biblatex-chicago/" (25652 18957 727116 631000) "chicago-dates-common.cbx" "cms-american.lbx" "chicago-authordate-trad.bbx" "chicago-dates-common16.cbx" "cms-german.lbx" "cms-nynorsk.lbx" "chicago-notes.cbx" "cms-french.lbx" "chicago-authordate.bbx" "cms-british.lbx" "cms-spanish.lbx" "chicago-authordate-trad16.bbx" "chicago-notes16.cbx" "cms-dutch.lbx" "chicago-authordate16.cbx" "cms-norwegian.lbx" "biblatex-chicago.sty" "cmsendnotes.sty" "cms-norsk.lbx" "cms-romanian.lbx" "chicago-authordate.cbx" "chicago-authordate-trad16.cbx" "chicago-notes16.bbx" "cms-swedish.lbx" "cms-icelandic.lbx" "cmsdocs.sty" "cms-finnish.lbx" "chicago-authordate16.bbx" "cms-brazilian.lbx" "chicago-authordate-trad.cbx" "cms-ngerman.lbx" "cms.dbx" "chicago-notes.bbx" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/notes_ORG/" (24162 31827 864496 911000) "NatLaw.org" "Maritain.org" "Pink2018.org" "../" "./")
+ ("/Users/lmp/Service/SCETL_Munoz/CommitteeMemo/" (25635 7272 581751 628000) "SCETL Summary of Munoz Candidacy Evaluations.pdf" "MunozMemoSCETL.tex" "munozEval.tex" "texMemo.cls" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/ArchiveTeaching/2020_Spring_CEL475/Syllabus_Notes/" (24742 37561 677475 641000) "gs_outline.tex" "Perez_2020_Spring_CEL475_Syllabus.md" "Perez_2020_Spring_CEL475_Syllabus.md.pdf" "gs_outline.org" "gs_outline.bbl" "gs_outline.pdf" "Gs.org" "gs_readinglist.pdf" "CEL475.tex" "Gs.pdf" "gs_readinglist.org" "makefile" "Gs.tex" "CEL475.pdf" "gs_readinglist.tex" "CEL475.bbl" "CEL475.org" "../" "./")
+ ("/Users/lmp/Research/CES_LIO/Paper/" (25652 9833 263190 57000) "Gibson_methods/" "chicago-author-date.csl" "workingpaper.latex" "Perez_Gibson_CES_LIO.md" "makefile" "mpsa.bib" ".DS_Store" "Perez_Gibson_CES_LIO.md.pdf" "../" "./")
 
- ("/Users/lmp/Teaching/2021F_justWar/" (24749 10833 671810 599000) "CEL494_JW_Syllabus.md.pdf" "makefile" "CEL494_JW_Syllabus.md" ".DS_Store" "../" "./")
+ ("/Volumes/MacExternal/zArchived/AcademicWork/Org/" (25214 41189 233775 20000) ".git/" "logbook.org" "literature.tex" "literature.pdf" "journal.org" ".gitignore" "literature.org" "notes.org_archive" "OrgArchive.org" "research.org" "notes.pdf" "perez_research_agenda.tex" "notes.org" "wine.org" "perez_research_agenda.pdf" ".DS_Store" "notes.tex" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Misc/" (24742 39064 238853 217000) "syll.tex" "syllabus.latex" "short_essay.sty" "long_essay.sty" "short.latex" "../" "./")
+ ("/Volumes/" (25633 46841 3128 860000) "TimeMachine/" "Macintosh HD/" "MacExternal/" "../" "./")
 
- ("/Users/lmp/Research/mssData/CCES_Data/" (24749 25797 89085 81000) "Raw_Data/" "cces2018.r" "cces2020.r" ".DS_Store" ".Rhistory" "../" "./")
+ ("/Users/lmp/Research/" (25591 42601 212403 567000) "APSA/" "ResearchCalendar/" "liberatingFaith/" "NSF_CAREER/" "_TenureAnnualRev/" "ND2022/" "cyberJustWar/" "CES_LIO/" "notes/" "1821secofstateJQAdmas.pdf" "ISAM2021/" "ISAW2021/" "talks/" "APSR_StrategyFreedom/" "Providence/" "makefile" ".DS_Store" "5-year-resaerch/" "ISA-2022/" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/ArchiveTeaching/2020_Spring_CEL475/" (24323 31060 252299 939000) "Online/" "cel-475-statesmanship-and-am-strategy-2020-spring-export.imscc" "readings/" "Syllabus_Notes/" ".DS_Store" "Assignments/" "../" "./")
+ ("/Volumes/Macintosh HD/Users/lmp/" (25617 59267 206504 194000) ".zsh_sessions/" ".viminfo" ".bash_history" "Toggl/" "WindhamPerez.savedSearch" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" ".revox/" "Service/" ".hushlogin" "Documents/" ".npm/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.7.1" ".Trash/" "Dropbox/" "Applications/" ".bibs/" "Movies/" ".ssh/" ".zcompdump-C02ZQHAJMD6T-5.7.1" "Teaching/" ".cisco/" ".dropbox/" "Public/" ".cups/" ".emacs.d/" "Zotero/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8" "ASU_MyTrips/" ".lesshst" "Library/" "Desktop/" ".zsh_history" ".atom-backup/" "output/" ".openjfx/" "git-tmp/" ".atom/" "Pictures/" "tmpPandoc/" "Creative Cloud Files/" ".local/" "Dropbox_ASU/" ".adobe/" "Dropbox (ASU)/" ".zshrc" ".doppler/" ".subversion/" ".z" ".CFUserTextEncoding" ".logseq/" ".pandoc/" ".r/" ".DS_Store" ".anyconnect" "Databases/" "Logseq/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8.1" "Calibre/" "Dropbox (Personal)/" "Music/" ".config/" ".Rhistory" "Research/" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/ArchiveTeaching/" (24664 49762 111848 823000) "2020_Fall_CEL494/" "2020_Fall_IS_Julianne/" "2019_Fall_CEL100/" ".DS_Store" "2020_Spring_CEL475/" "../" "./")
+ ("/Volumes/Macintosh HD/Users/" (25580 1884 931185 572000) "lmp/" "administrator/" "Shared/" ".localized" "cas/" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/" (24704 27887 472083 932000) "2021_Spring_Vega/" "2021_Spring_Jandhyala_thesis/" "Rudys_Syll/" "2021_Fall_CEL494/" ".DS_Store" "ArchiveTeaching/" "Letters/" "2021_Fall_CEL100/" "../" "./")
+ ("/Volumes/Macintosh HD/" (25572 49001 0 0) "cores/" "tmp/" "Volumes/" "dev/" "opt/" "Applications/" "Users/" ".vol/" "private/" ".VolumeIcon.icns" "System/" "Library/" "var/" "etc/" ".file" "sbin/" "bin/" "usr/" "home/" "../" "./")
 
- ("/Users/lmp/Research/NSF_CAREER/" (24734 58114 968261 206000) "Perez_2021_NSFCareer.tex" "Perez_2021_NSFCareer.Rmd" "Perez_2021_NSFCareer.pdf" "Reference_Materials/" "Slides/" "test.bib" "makefile" ".DS_Store" "../" "./")
+ ("/Volumes/MacExternal/zArchived/AcademicWork/Bibs/" (25346 31608 149268 866000) ".git/" "zotero.bib" "primary.bib" ".DS_Store" "refs.bib" "../" "./")
 
- ("/Users/lmp/ASU_Service/draftGOP_Govs_EAD/" (24732 16936 671551 145000) "CPTL ASU REBUILDING Arizona’s Civics Capacity May 2021.docx" "SCETL_EAD_RGA_Draft.md" "SCETL ASU civic ed EACH proposal May 2021.docx" "SCETL_EAD_RGA_Draft.docx" "../" "./")
+ ("/Volumes/MacExternal/zArchived/AcademicWork/" (24687 25711 963394 523000) "Syllabi (collected)/" "Bibs/" "Citation_notes/" "202103231724_Prudence.bib" "notes_ORG/" "PDFs/" "refs/" "202103231714_Mendeley_Backup.bib" "Teaching/" "ReadingList.savedSearch" "notes/" "StatementsProfessional/" "LaTeX Training/" "_MendeleyPDFs/" "Tenure/" "ND_KGS/" "Books_PDF_Scanned/" "Online_Clippings/" "Datasets/" "Duck/" "Projects/" "Org/" "resume_CV/" "CV-Examples/" "Cites_Web/" "Github_templates/" "_ProcessPDFs/" "Pandoc_Templates/" ".DS_Store" "Inbox_AcWork/" "MISC/" "SCETL/" "../" "./")
 
- ("/Users/lmp/Teaching/" (24716 30278 994863 77000) "2021F_justWar/" "Guidelines for Sample Syllabi - April 2021.doc" "Jandhyala_2021_03_29_Honors_Thesis_draft.pdf" "../" "./")
+ ("/Volumes/MacExternal/zArchived/" (25371 25531 257150 843000) "Writing/" "Soulver Files/" "Proj_LibFaith/" "Scrivener Projects/" "Pandiag/" "_2016_Social_Media/" "5509 Link/" "tmpNotes/" "NotesLitt/" "Lucia's Phone View Archive/" "PhD-Applications/" "Cicero Rep-laws/" "(TextExpand) Backup for Transfer.textexpander" "Photos/" "PPI/" "Statements_Archive/" "Conejo_Family/" "carmenOHIO.mp3" "Prospectus_Archive/" "Masters/" "Texas/" "Leo's Lounge/" "Photo_Video_Archive/" "BusyCal Backups/" "dissertation/" "Fr_Martin_Augustine_Book/" "nvNotes/" "Home2020/" "Job_Market/" "Luke and Lucia/" "Public/" "Elements/" "Camera Uploads/" "Elshtain/" "200806171400 Confidential_Event Planning.docx" "iThoughts/" "Archive_OmniFocus.ofocus/" "Dubas Wedding pics & video/" "Teaching Archive/" "Lucky 7/" "Wedding/" "Longboard Habit Main Feature/" "website archived/" "SAIS Summer Study/" "FSI Spanish/" "Prayer & Discernment/" "2010_Accident/" "Clips/" "ScrivBackups/" "AcademicWork/" ".DS_Store" "Screenshots/" "Ohio State/" "prelims_archive/" "ANG/" "Luke & Carolyn/" "Virtual APSA/" "201206131512 - DCSS Account Info.md" "KICD/" "Villanova/" "Scrivener/" "Tides/" "receipts/" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/SCETL_Letter/" (24380 19859 684685 182000) "scetl.png" "letter_scetl.tex" "test.png" "../" "./")
+ ("/Users/lmp/Research/liberatingFaith/mssData/dataIRFA/Regime Type/" (25537 31337 809328 10000) "IRFA/" "fullTables.log" "fullTables.aux" "RAS/" "fullTables.pdf" "Indicator explanation.rtf" "DemocracyIndicator Explanation" ".DS_Store" "fullTables.tex" "../" "./")
 
- ("/Users/lmp/ASU_Service/" (24730 63391 640942 85000) "draftGOP_Govs_EAD/" ".DS_Store" "../" "./")
+ ("/Volumes/MacExternal/Archived Files/" (25128 60334 902846 236000) "Writing/" "Work_Archive/" "Work_Copied_Backup_27_Nov_2017/" ".DS_Store" "Dissertation_Archive_27_November_2017/" "Personal/" "../" "./")
 
- ("/Users/lmp/Research/mssData/" (24730 54278 186323 18000) "CCES_Data/" ".DS_Store" "../" "./")
+ ("/Volumes/MacExternal/" (25361 10780 769538 773000) "writing/" "Process/" "MBP_13inch_Documents/" "Strobist/" "Fall_2015_ReadingsNotes/" ".VolumeIcon.ico" "Christianity_Freedom_Book/" "Ricoh 17 December/" ".TemporaryItems/" "Perez on 8x10/" "Word/" "_13in_MBP_Files/" "Photos_Film/" "Nixon_Library_Backup/" ".DocumentRevisions-V100/" ".fseventsd/" "Photos_Backups_Temp/" "stockgift/" "Statements/" "Videos/" "dissnotes/" "Archived Files/" "zArchived/" ".Trashes/" "HumanRights_Spring_2016/" "iTunes_Library/" "20180130_Process/" "Books/" "Photos_Digital/" "Lucia_Resume/" "Photography/" "Hugo_Test_Websites_2021/" "Readings_Prospectus/" "GreatHearts/" "Leases_Archive/" "_Inbox/" "Lelia_Brousard_Tracks/" "autorun.inf" "Photos_Nacho_Camera/" "Lucia_Phone_Apr_2020/" "_Photos_Misc_HDs/" "Simple_Note_Archive/" "Inbox/" ".DS_Store" ".Spotlight-V100/" "Taxes_Archive/" "Choosing-to-Lead/" "UW_Jackson_Backup/" "Tides/" "Copy_emacs.d/" "._Private-Public.exe" "../" "./")
 
- ("/Users/" (23991 57577 0 0) "lmp/" "administrator/" "Shared/" ".localized" "cas/" "../" "./")
+ ("/Users/" (25580 1884 931185 572000) "lmp/" "administrator/" "Shared/" ".localized" "cas/" "../" "./")
 
- ("/Volumes/Macintosh HD/Users/lmp/Research/mssData/CCES2020/" (24730 54023 664813 948000) "Raw_Data/" "cces2020.r" ".DS_Store" "../" "./")
+ ("/Users/lmp/Research/liberatingFaith/mssData/dataIRFA/" (25536 29753 693698 853000) "Data/" "Final_Writeup_DataAnalysis.docx" "Final_Writeup_DataAnalysis.pdf" "06_Chapter_Data/" "IRFAReports/" "Regime Type/" "PDFs_shared/" "Icon" ".DS_Store" "Julianne_Email_Answers/" "rscript/" "SummaryUpdates/" "../" "./")
 
- ("/Users/lmp/Research/mssData/CCES2020/Raw_Data/" (24730 47058 899021 964000) "CCES20_UTB_OUTPUT.sav" "UT CCES 2020 Module B Updated 10.31.2020.docx" "CCES20_UTB_OUTPUT_codebook.txt" "../" "./")
+ ("/Users/lmp/Research/liberatingFaith/mssData/" (25364 39061 651413 629000) "ces18.weighted.html" "ces20..weighted.html" "ces20_IRF_pid3.png" "dataOpinion/" "ces.18.20.polr.html" "ces20..unweighted.html" "ces18_pid3.docx" "ces20.html" "ces18_IRF_pid3.png" "dataIRFA/" ".DS_Store" "ces18.unweighted.html" "ces20_IRF_Gender.png" ".Rhistory" "../" "./")
 
- ("/Users/lmp/Research/mssData/CCES2020/" (24730 54023 664813 948000) "Raw_Data/" "cces2020.r" ".DS_Store" "../" "./")
+ ("/Users/lmp/Research/liberatingFaith/" (25536 29753 693698 966000) "SRF_Reporting/" "mssData/" "mssDraft/" "primarySources/" "Heilbrunn1997.pdf" "postWorkshop/" ".DS_Store" "workshop/" "propose/" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/RnR_Letter/" (24376 17158 768665 720000) "Perez_2020_IJRF_RnR.pdf" "Perez_2020_IJRF_RnR.md" "makefile" "../" "./")
+ ("/Users/lmp/Research/liberatingFaith/mssData/dataIRFA/Regime Type/RAS/" (25536 29890 56537 368000) "RASmodel.corrplot.png" "HeterogenietyRegions.RAS.png" "stargazercodeRAS.tex" "RASmodel.R" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/Analysis/" (24374 64324 500271 447000) "z.csv" ".Rproj.user/" "tabl4.tex" "tabl1.tex" "CCES18_UTA_OUTPUT.dta" "tabl2.tex" "tabl3.tex" "CCES18_UTB_OUTPUT.dta" "z.txt" "Analysis.Rproj" "IJRF.R" ".DS_Store" ".Rhistory" "../" "./")
+ ("/Users/lmp/Research/liberatingFaith/mssData/dataOpinion/" (25363 49127 504460 268000) "Raw_Data/" "cesCombined.r" "tblFigs/" "cces2018.r" "cces2020.r" "scratch_ces20.r" ".DS_Store" "IRFchina.tex" ".Rhistory" "../" "./")
 
- ("/Users/lmp/Research/LeadershipBookReview/" (24729 47736 858366 486000) "Perez_2021_Leadership_VoegelinView.md" "../" "./")
+ ("/Users/lmp/Dropbox/AcademicWork/Bibs/" (25346 31608 149268 874000) ".git/" "zotero.bib" "primary.bib" ".DS_Store" "refs.bib" "../" "./")
 
- ("/Users/lmp/Research/ResearchCalendar/" (24729 49226 353633 193000) "Perez_2021_Research_Calendar.tex" ".Rproj.user/" "Perez_ResCal.pdf" "ResearchCalendar.Rproj" "Perez_ResCal.xlsx" "Perez_2021_Research_Calendar.Rmd" "Perez_2021_Research_Calendar.pdf" "Perez_ResCal.csv" "yrcal.png" "makefile" ".DS_Store" "ResCal.png" ".Rhistory" "../" "./")
+ ("/Users/lmp/Dropbox/" (25306 61970 120289 970000) "Writing/" "Soulver Files/" "Proj_LibFaith/" "tmpNotes/" "NotesLitt/" "Apps/" "lmp_site/" "Photos/" "ASU_Service/" "PPI/" ".dropbox.cache/" "Masters/" "1Password.agilekeychain/" "nvNotes/" ".dropbox" "Public/" "Camera Uploads/" "zArchived/" "Perez 2021 Income Taxes/" "2022_PLS_Submissions/" "20200918_git_repots_list.txt" "Publications/" "Icon" "Clips/" "ScrivBackups/" "AcademicWork/" "Inbox/" ".DS_Store" "Screenshots/" "Scrivener/" "Tides/" ".ws.agile.1Password.settings" "receipts/" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Bibs/" (24729 34510 853389 81000) "Prudence.bib" "lmp_poliSci-1.bib" "Eisenhower Chapter.bib" ".git/" "Eisenhower (Religion, Grand Strategy).bib" "PrudenceGS.bib" "PubOpRelig.bib" "zotero.bib" "miscbib.bib" "refts_archive_20180701.bib" "PubOpFP.bib" "primary.bib" "lmp_poliSci.bib" "refsPapers.bib" "Grand Strategy.bib" "Prudence & NatSec.bib" "LICENSE" ".DS_Store" "refs.bib" "relpol.bib" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/Statements/" (24729 26226 191025 119000) "rmd-Statement.tex" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/" (24332 43078 557114 370000) "Archive_staged/" "Archive_Materials/" ".#lf_mss.org" "Proposal/" "ResearchMaterials/" "URA_Hiring/" ".DS_Store" "mss/" "GrantReporting/" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/" (24300 64057 886868 341000) "readinglist_interpol.md" "readinglist_interpol.md.pdf" "readinglist_prudence_strategy.md.pdf" "APSA_2019_Reciepts/" "readinglist.md" "makefile" "Inprogress/" "readinglist.md.pdf" "McInerny_1995.md" ".DS_Store" "McInerny_1995.md.pdf" "readinglist_prudence_strategy.md" "readinglist_Catholic_Mind.md.pdf" "readinglist_Catholic_Mind.md" "Completed/" "v-dem_codebook_v9.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/Paper/" (24723 8251 820792 588000) "IJRF_2020_IRF_PublicOpinion_CCES.md" "IJRF_2020_IRF_PublicOpinion_CCES.docx" "tabl4.tex" "IJRF_2020_IRF_PublicOpinion_CCES.md.pdf" "tabl1.tex" "tabl2.tex" "tabl3.tex" "Peer_Reviews/" "tabl5_china.tex" "makefile" "Archive_tables/" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/mss/01_Intro/" (24723 8749 375624 686000) "01_intro.md.pdf" "01_intro.md" "1_Introduction.tex" "makefile" "01_metadata.yaml" "../" "./")
-
- ("/Users/lmp/Documents/GradSchlSuccess/" (24721 30571 227445 526000) "gss.md" "tag-fail.png" "GradSchoolSuccess.opml" "OF_complex.png" "PhDcomments.gif" "OF_reading_tag.png" "OF_complex-small.png" "makefile" "images/" "gss.md.pdf" ".DS_Store" "PhDcomments.png" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Manuscripts/" (24721 29248 700682 861000) "statement.tex" "workingpaper.tex" "readingnotes.tex" "draft.tex" "classlecture.tex" "IOtemplate.tex" "workingpaper.tex~" "writesample.tex" "IOtemplate.fdb_latexmk" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/Data/" (24663 58652 699796 820000) "CCES18_UTB_OUTPUT_codebook.txt" "tbl2.html" "CCES18_UTA_OUTPUT_codebook.txt" "ess.org" "tabl1.html" "Old tables for origin submission/" "CCES18_UTA_OUTPUT.sav" "tabl1.tex" "rQuestions.txt" "CCES18_UTA_OUTPUT.dta" "CCES18_UTB_OUTPUT.dta" "tabl3.html" "CCES18_UTB_OUTPUT.sav" "tabl3.csv" "scratch.R" "tabl2.csv" ".DS_Store" "Perez_2020_multinomial_for_RnR.html" "tabl1.csv" "tabl4.html" "tabl5.csv" "MPSA_Script.R" "tabl4.csv" ".Rhistory" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/" (24722 47469 504932 476000) "Presentation/" "Revision Notes/" "Data/" ".git/" "Final_Rev_May_2021/" "MyTrip_ISAmw/" ".gitignore" "Proposal/" "README.md" "RnR_Letter/" "Analysis/" "Accepted_Changes/" "CCES2018_Questions_Init/" ".DS_Store" "PDF_Readings/" "Paper/" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/" (24678 29067 662416 409000) "CWLiberalism/" "libfaith_mss/" "NatLawNatSec/" "cyberJustWar/" "JQA/" "RF_MyTrip/" "APSA2020_GS_Post_CW/" "LSU_MyTrip/" "README.md" "Miscellaneous/" "APSA2020_GS_Religion/" "de_libero_arbitrio/" "ISSS-IS/" "Locke_Immig/" "IJIRF_CCES_IRFA/" "AW_Grant/" "APSA2021/" "MPSA2020/" ".DS_Store" "CCES2020/" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/CWLiberalism/" (24269 13680 889498 449000) "4_Jackson_Vanik.fdb_latexmk" "4_Jackson_Vanik.synctex.gz" "4_Jackson_Vanik.blg" "4_Jackson_Vanik.fls" "4_Jackson_Vanik.log" "4_Jackson_Vanik.aux" "4_Jackson_Vanik.run.xml" "Perez_GeopoliticsIR_ScoopJacksonAndSovietJews.md" "4_Jackson_Vanik.bcf" "4_Jackson_Vanik.out" "perez_2018_dissertation.tex" "4_Jackson_Vanik.tex" "Perez_GeopoliticsIR_ScoopJacksonAndSovietJews.md.pdf" "4_Jackson_Vanik.pdf" ".DS_Store" "4_Jackson_Vanik.xdv" "4_Jackson_Vanik.bbl" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/Revision Notes/" (24241 53649 561300 854000) "Perez_2020_Outline_CCESpaper.org" "Perez_2020_Outline_CCESpaper.pdf" "Perez_2020_Outline_CCESpaper.tex" "pubopinFP.org" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/IJIRF_CCES_IRFA/Presentation/" (24265 27280 936059 56000) "simple.tex" "beamer_head.tex" "IRFchurch.md" "perez_2019_ISAm_slides.md.pdf" "IRFchurch.md.pdf" "03_tue_slides.txt" "pidmodels.tex" "midmodels.txt" "perez_2019_ISAm_slides.md" "makefile" "IRFchurch.tex" "IRFchina.txt" "chisq_irf_pid.tex" "IRFchina.tex" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Research/" (24712 26614 487925 895000) "ResearchCalendar/" ".DS_Store" "../" "./")
-
- ("/Volumes/" (24720 7350 776196 586000) "TimeMachine/" "Macintosh HD/" "com.apple.TimeMachine.localsnapshots/" "Recovery/" "../" "./")
-
- ("/Volumes/Macintosh HD/" (24712 62944 360216 158000) "cores/" "tmp/" "Volumes/" "dev/" "opt/" "Applications/" "Users/" ".vol/" "private/" ".fseventsd/" ".VolumeIcon.icns" "System/" "Library/" "var/" "etc/" ".file" "sbin/" "bin/" ".PKInstallSandboxManager-SystemSoftware/" ".DS_Store" "usr/" "home/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/" (24720 9125 33660 446000) ".bash_history" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" ".hushlogin" "Documents/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.7.1" ".Trash/" "Dropbox/" "Applications/" "Movies/" ".ssh/" ".zcompdump-C02ZQHAJMD6T-5.7.1" "Teaching/" ".dropbox/" "Public/" ".cups/" ".emacs.d/" "Zotero/" "Library/" "Desktop/" ".zsh_history" ".atom-backup/" ".openjfx/" ".atom/" "Pictures/" "Creative Cloud Files/" ".local/" ".zshrc" ".subversion/" ".z" ".CFUserTextEncoding" ".r/" ".DS_Store" "Databases/" "Music/" ".config/" ".Rhistory" "Research/" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/Letters/" (24712 26873 686713 405000) "SCETL_Letter/" "Statements/" "Personal_Business/" ".DS_Store" "../" "./")
+ ("/Users/lmp/.emacs.d/.cache/" (25250 6376 112702 250000) "bookmarks" "customize.el" "../" "./")
 
  ("/Users/lmp/Dropbox/AcademicWork/" (24687 25711 963394 546000) "Syllabi (collected)/" "Bibs/" "Citation_notes/" "202103231724_Prudence.bib" "notes_ORG/" "PDFs/" "refs/" "202103231714_Mendeley_Backup.bib" "Teaching/" "ReadingList.savedSearch" "notes/" "StatementsProfessional/" "LaTeX Training/" "_MendeleyPDFs/" "Tenure/" "ND_KGS/" "Books_PDF_Scanned/" "Online_Clippings/" "Datasets/" "Duck/" "Projects/" "Org/" "resume_CV/" "CV-Examples/" "Cites_Web/" "Github_templates/" "_ProcessPDFs/" "Pandoc_Templates/" ".DS_Store" "Inbox_AcWork/" "MISC/" "SCETL/" "../" "./")
 
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Org/" (24712 16355 224605 329000) ".git/" "logbook.org" "literature.tex" "literature.pdf" "journal.org" ".gitignore" "literature.org" "notes.org_archive" "OrgArchive.org" "research.org" "notes.pdf" "perez_research_agenda.tex" "notes.org" "wine.org" "perez_research_agenda.pdf" ".DS_Store" "notes.tex" "../" "./")
+ ("/Users/lmp/Dropbox/AcademicWork/Org/" (25214 41189 233774 966000) ".git/" "logbook.org" "literature.tex" "literature.pdf" "journal.org" ".gitignore" "literature.org" "notes.org_archive" "OrgArchive.org" "research.org" "notes.pdf" "perez_research_agenda.tex" "notes.org" "wine.org" "perez_research_agenda.pdf" ".DS_Store" "notes.tex" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Org/" (24712 16355 224605 329000) ".git/" "logbook.org" "literature.tex" "literature.pdf" "journal.org" ".gitignore" "literature.org" "notes.org_archive" "OrgArchive.org" "research.org" "notes.pdf" "perez_research_agenda.tex" "notes.org" "wine.org" "perez_research_agenda.pdf" ".DS_Store" "notes.tex" "../" "./")
+ ("/Users/lmp/.emacs.d/elpa/zenburn-theme-2.7.0/" (25249 26642 853619 834000) "zenburn-theme.el" "zenburn-theme-autoloads.el" "zenburn-theme-pkg.el" "../" "./")
 
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/GrantReporting/" (24693 52728 149259 326000) "Perez_2021_SRF_Final_Report.md" "Financial Report_Liberating Faith- American Grant Strategy_AWD00034523_4.12.2021.pdf" "makefile" "Perez_2020_SRF_ReportNarrative.pdf" "Perez_2021_SRF_Final_Report.pdf" "SRF_Award_Modification_March_2021.pdf" "Perez_2020_SRF_ReportNarrative.md" "../" "./")
+ ("/Users/lmp/.emacs.d/elpa/" (25249 26247 549562 302000) "julia-mode-0.4/" "dash-2.19.1/" "markdown-mode-2.5/" "pandoc-mode-2.32/" "hydra-0.15.0/" "ess-18.10.2/" "use-package-20210207.1926/" "bind-key-20210210.1609/" "archives/" ".DS_Store" "auctex-13.1.3/" "lv-0.15.0/" "zenburn-theme-2.7.0/" "../" "./")
 
- ("/Users/lmp/Desktop/invoice/" (24695 14473 916733 11000) "invoice.tex" "invoice.fdb_latexmk" "invoice.xdv" "invoice.cls" "invoice.log" "invoice.aux" "invoice.fls" "invoice.synctex.gz" "../" "./")
+ ("/Users/lmp/.emacs.d/elpa/use-package-20210207.1926/" (25249 24829 629265 418000) "use-package-jump.elc" "use-package.info" "use-package-diminish.el" "use-package.el" "use-package-delight.elc" "use-package-lint.el" "use-package-diminish.elc" "dir" "use-package-delight.el" "use-package-pkg.el" "use-package-jump.el" "use-package-autoloads.el" "use-package-core.el" "use-package-ensure.el" "use-package-ensure.elc" "use-package.elc" "use-package-bind-key.elc" "use-package-bind-key.el" "use-package-lint.elc" "use-package-core.elc" "../" "./")
 
- ("/Users/lmp/Desktop/cyberJustWar/" (24687 23766 718596 973000) "Presentation/" "makefile" "NewsletterVersion/" ".DS_Store" "Perez_2021_Cyber_JustWar.md" "../" "./")
+ ("/Users/lmp/.emacs.d/elpa/archives/org/" (25249 24827 998764 876000) "archive-contents" "../" "./")
 
- ("/Users/lmp/Dropbox/Inbox/" (24685 55274 911119 971000) "DraftsExport-2020-08-29-02-21.csv" "598Kent.m4a" "Receipt-2019-10-26-07-57-48.pdf" "Daily Vocab Notes.pdf" "30025730.pdf" "Bookmarks_S.html" "bookmarks_F.html" "staged for possible deletation/" "USAA_Document00233B16-AE73-420C-89BB-CA3C6D7FFD6E.pdf" "Public_Opinion_and_American_Foreign_Policy_Revised..._----_(Chapter_1._Introduction).pdf" "AZ MVD Now.pdf" "202006011554_DebtPayoff.pdf" "2018_TaxReturn.PDF" "30027190.pdf" "Public_Opinion_and_American_Foreign_Policy_Revised..._----_(Chapter_5._Sources_of_Foreign_Policy_Attitudes).pdf" "Whiteboard-2020-08-28-01-40-43.pdf" "Liberating Faith, NY Times 1989- - Sheet1.csv" "bookmarks_C.html" "orders_1464563864915776426_1519579049641437052__2021-03-19T17_41_45Z_ESTIMATE.pdf" "Paul_SCETL_pandiag.m4a" "Tmp-delete.png" "Public_Opinion_and_American_Foreign_Policy_Revised..._----_(Intro).pdf" "File Apr 07, 8 20 03 AM.png" "AddressBook_Old/" "Rmarkdown.pdf" "2019_01_03_Credit_Reports/" "IMG_9567.mov" "Whiteboard-2020-11-10-11-30-30.pdf" "_DSC8367.JPG" "Finnis_2021_abortion.pdf" "ATurn_to_Religionin_IR.pdf" "_DSC8366.JPG" "Whiteboard-2017-10-24-06-53-03.pdf" "File Mar 19, 1 01 51 PM.pdf" "demographic_engineering_and_international_conflict_evidence_from_china_and_the_former_ussr.pdf" "meeting_saved_chat.txt" "JHDTV032_400x400.jpg" "CEL475_Gen_desg/" "KICD_Work_Machine/" "My Clippings.txt" "intergralismReadinglist.md" "grandstrat_globaliz.md" ".DS_Store" "Screenshot 2020-09-23 at 8.02.10 PM.png" "july2020.soulver" "_VoiceRecorder_archive/" "File Aug 24, 2 51 23 PM.pdf" "onlineteaching.md" "Tides/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/APSA2021/" (24675 59822 898328 894000) "apsa2021Proposal.md" "Scratch/" "makefile" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Dropbox/zArchived/Job_Market/2018_jobs/ASU_SCETL/job_talk/" (24093 63903 52572 721000) "Perez_2019_ASU_JobTalk.tex" "Beam_talk/" "Perez_2019_ASU_JobTalk.pdf" "Perez_2019_ASU_JobTalk.org" "Mss_jobtalk/" "Perez_Scratch_Job_Talk.org" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/cyberJustWar/" (24658 35687 291319 405000) "tmp.docx" "Presentation/" "Perez_2021_Cyber_outline.md" "Perez_2021_Cyber_outline.docx" "Perez_2021_Cyber_outline.md.pdf" "makefile" "NewsletterVersion/" ".DS_Store" "Perez_2021_Cyber_JustWar.md" "Perez_2021_Cyber_JustWar.md.pdf" "Perez_2021_Cyber_JustWar.docx" "../" "./")
-
- ("/Users/lmp/Desktop/tmpCV/CV/" (24670 49872 38311 588000) "Mullen-cv-two-page.synctex.gz" ".git/" "Mullen-cv.tex" "Mullen-cv-two-page.fls" "Mullen-cv-two-page.log" "README.md" "Mullen-cv-two-page.aux" "Mullen-cv-two-page.fdb_latexmk" "Mullen-cv-two-page.pdf" "Mullen-cv-one-page.tex" "Makefile" "auto/" "Mullen-cv-two-page.tex" "Mullen-cv-two-page.out" "../" "./")
-
- ("/Users/lmp/Desktop/tmpCV/" (24670 48928 288257 414000) "CV/" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/cyberJustWar/Presentation/Presentation/" (24658 32818 819574 149000) "beamer_head.tex" "makefile" "Perez_2021_CyberColloquium.md" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/resume_CV/CV/" (24658 11992 262305 903000) "CV.sty" "Perez_Vita.md.pdf" "cv.tex" "Perez_Vitae.pdf" "vita.tex" "makefile" "Perez_Vita.md" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_CEL494/" (24627 56634 598325 222000) "CEL494_2020_JustWar_Annotated.md.pdf" "sw1/" "jwNotes/" "CEL494_2020_JustWar.md.pdf" "jwSlack.jpg" "jw.org" "sw2/" "jw.jpg" "Matthew_5_7.md" "makefile" "jw.pdf" "jw.tex" "CEL494_2020_JustWar.md" "Matthew_5_7.md.pdf" ".DS_Store" "tmp_email.md" "tmp_email.md.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/WorkingDrafts/ShawneeDraft/" (24624 8454 632737 11000) "Perez_Kushner_2019_ShawneeTrail_Locke.docx" "Perez_Kushner_2021_Locke_Outline.md" "Comments_SCETL_Presentation.docx" "makefile" "Perez_Kushner_2021_Shawnee_Draft_preMerge.md" "Perez_Kushner_2021_Locke_Outline.md.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/WorkingDrafts/" (24605 52826 758969 338000) "Perez_Kushner_2020_Locke.md" "ShawneeDraft/" ".DS_Store" "Locke Paper Into Draft 6.3.2020.docx" "../" "./")
-
- ("/Users/lmp/Dropbox/zArchived/KICD/2019_Sp/classnotes/" (24093 63933 260449 336000) "Theaetetus_II.md" "IAFP.md.pdf" "strategy_Contest.md" "Schelling.md" "strategy_Contest.md.pdf" "Notes.md" "Schelling.md.pdf" "lessonplan.md" "USFP2019.org" "Niebuhr.md" "memos.md.pdf" "lessonplan.md.pdf" "Theaetetus_III.md.pdf" "Theaetetus_Diagrams_Knowlege_Perception.pdf" "Theaetetus_III.md" "rhetoric.md.pdf" "Introduction.md.pdf" "Perez_2018_Theatetus_USFP.md" "mead.md" "Introduction.md" "IAFP.md" "Perez_2018_Theatetus_USFP.md.pdf" "memos.md" "usfp_summary.org" "Ramnsey.md.pdf" "makefile" "Theaetetus_II.md.pdf" "Theaetetus.md.pdf" "Niebuhr.md.pdf" "Theaetetus.md" "Notes.md.pdf" "Ramnsey.md" "Lindberg/" "rhetoric.md" "mead.md.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/notes/" (24444 65021 568843 497000) "201911241543 Response to Gregg re Hirschfeld.md" "201907071038_Five_Things_Photographer.md" "201809281400 On instrumentalism.md" "201510241027 Walk to heaven backward.md" "201501061531 Bookstore in Rome.md" "201909301135 Mary Hirschfeld on teaching Thomas and economics.md" "201611070746 Mel Blount Rule.md" "201304132339 qt Roger Eberts Rules of Twitter.md" "201803021020 Silove - Grand Strategy.md" "201710280949 Senate and Foreign Policy Training.md" "201812051236 Aliyah.md" "201309271155 How to Read Academic Articles.md" "201511011344 priority of check.md" "201205120000 Augustine Machiavelli.md" "201111221310 Cupidity's Terror.md" "201201061538 Wisdom Permanence.md" "201707170949 Puzzles Writing.md" "201703292012 qt forty paragraphs.md" "201609122057 idea Nixon religion policy as non-comprehensvie.md" "201509211021 diss propsectus.md" "201510280641 AcWriMo Edit response link for PhD-2-Published.md" "201510210803 idea mini prospectus 1st ques.md" "201803141440 Inboden - Foster Dulles.md" "201509191600 idea religious policy motivation.md" "201811050515 Dubius University Assessments.md" "201902230612 Augustinian Pyschology.md" "201607111537 scratch religion foreign policy assistance .md" "201709221052 Note on Path Dependency.md" "201603172007 workout log.md" "201509011929 Pig Pie Po.md" "201702200830 Orwell on sentences.md" "201605031940 qt Augustine Writing.md" "201510081618 idea Congress as moral agent.md" "201912272130 Common Good Conservatism.md" "201810172006 Jesse Unruh.md" "201909211522 JQA and American empire.md" "201510081618 A foreign policy of the American people.md" "201607260819 Bruce Stubbs strategy.md" "201510081618 Swell - Three Temporalities.md" "201902111525 iPod Serial Number.md" "201706061007 HMJ Library Notes.md" "201512202030 Christmas Oratorio.md" "201909280656 Guardians No Property and Hunter Biden.md" "201608111710 Nixon is the hard case.md" "201912051520 Buying Books.md" "201811082131 Prudence as Martial Virtue in Aristotle.md" "201811120742 Qs USFP.md" "201811090538 everyone has dirt.md" "201811050525 Esoteric Writing Church Fathers.md" "201308021608 APD Reading List.md" "202003140740  Covid19.md" "201510081618 Wilsonianism.md" "201702200842 Orwell rules writing.md" "201811050546 Rights vs Duty.md" "201909190819 reading RAND Rumsfeld Wargame Notes.md" "201105191400 A Promise To California.md" "201902121705 Melenian Dialogue has the logic backward.md" "201609211008 States as case study?.md" "201510081617 idea -Congress as foreign policy actor.md" "201912279148 Bus Pass Theory of Genius.md" "201909112140 Society not the state.md" "201903040743 Institutional Capture Catholic Education.md" "201709300753 Walter Judd Congress Cold War.md" "201510191124 political motivations.md" "201511030805 Learning Record.md" "201108301527 Why Strauss.md" "201811090846 ref qca dataset.md" "201709111705 qt Tocqueville where are we.md" "201704130745 qt Hill deciding grandstrat.md" "201705031358 quodlibetales.md" "202003110601 Morality and realism.md" "201510190659 Diss Prelim Bibliography.md" "201510241404 Extraordinary Responsibility.md" "201909230943 Endless War Costs.md" "201609122120 Ambassador to Vietnam to Kissinger.md" "201910190743 Natsec as Ethics.md" "201909240758 Intelligence says Iran attacked Saudi Oil.md" "201911201027 Southwest Gift Cards.md" "201204290000 Augustine International Theory.md" "201910010554 Introduction to Thomas Aquinas.md" "201706011500 UW Special Collections.md" "201404010837 Puritans and Just War.md" "201811041346 Jackson-Vanik.md" "201704131007 political science academic freedom.md" "201304130902 Niebuhrian Realism.md" "201510240912 term Augustinian Thomism.md" "201702221445_Academic_Writing.md" "201003200000 Augustine - Friend of Truth.md" "201510081618 Swell - Culture.md" "201511302005 IR Prelim Books (Law Library).md" "201811050605 missionaries not monestaries.md" "201807280900 Catholic Integralism Readings.md" "201510081618 Preston - Liberation Theology.md" "201205081730 note Laws_3_prepolitical.md" "201207061628 Civ Dei IV.md" "201510190922 Campell, A.L. 2002.md" "201308301112 Religion and Politics Reading List.md" "201703130749 Pyschology and Grand Strategy.md" "201805070925 RevealJS Ideas.md" "201811050632 Myth of Solution.md" "201803301226 Posen - Grand Strategy.md" "201703151246 Formal Logic Political Science.md" "201311041241 Cal Tech Rules.md" "201608160000 Prayer Before Study.md" "201912042229 Flowers.md" "201309271155 How to read an article.md" "201510261124 notes why no healthcare reform.md" "201510210822 idea mini prospectus 3d ques.md" "201509231806 qt logic what we say of the world.md" "201811121502 Catholic Social Science.md" "201909271229 note Mens Dress Shoes.md" "201404010838 Granger Causality.md" "201702091341 Nifty Fifty.md" "201808301416 Reconstructing IR Theory Reading List.md" "201309211521 Federalist reading list.md" "201204071500 Augustine - Man Social by Nature - CD 12_28.md" "201307232151 nonTheory Diss Ideas.md" "201510081618 Sewell - Logics of History.md" "201510201351 non nombis domine.md" "201510191948 letter St David North.md" "201510240815 five programing languages.md" "201707051110 Thomism and IR.md" "201703231530 qt strategy management.md" "201512050921 Five Reasons.md" "201311170929 qt Americans discuss not converse.md" "201602170713 gnucash.md" "201707211439 Qualitative Citations.md" "201510081618 idea Morality and Foreign Policy.md" "201909122320 conn Liberalism is not an agent.md" "201811082000 Reading List.md" "202001230548 note Clausewitz on Strategy.md" "201412051752 term Musical glossary.md" "201911071115 Marshall Brief.md" "201510081618 Continental realism vs USFP.md" "201402251800 reading Obama Oslo.md" "201609122125 Memorandum of talking to points to Vatican.md" "201512202029 The Mystical Nativity.md" "201606240842 Case defined.md" ".DS_Store" "201612011355 Noguchi Filing System.md" "201603181047 qt Writer as Gunman.md" "201610232250 Open vs Closed lacing.md" "201303101314 Experience philosophy theology.md" "201712170813 StarWars Civ Dei.md" "201703151605 GS as object of inquiry.md" "201309022110 Latino Politics Reading List.md" "201609292245 7 core competencies for PMF.md" "201804170813 Foreign Policy Crash Course.md" "201702230755 qt Nisbet models metaphor.md" "201803291239 Narizny - Grand Strategy.md" "201605302107 qt Shakespeare pride m4measure.md" "201510252106 music 3 Gymnopedies (arr. A. Miolin) .md" "Notes & Settings" "201510081618 conn idea decline of religion as FP influence.md" "201709281512 Lawmaking as Disseration Writing.md" "201603222011 qt UN Special Raporteurs.md" "201409201429 Top Five Breakfasts.md" "201510191041 Campell, A.L. 2003.md" "201510240911 Morality, Politics, Augustine.md" "201811041650 Matthew Lamb Beyond Pessimism.md" "201304070704 Seneca De otio.md" "201510081618 Taxonomy USFP traditions.md" "201609121253 qt free security and republican.md" "201502240637 Record Collecting Checklist.md" "201609300949 conn international religious status quo.md" "201510210815 idea mini propspectus 2d ques.md" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/Letters/USMC_Guerro/" (24443 44623 368514 270000) "Perez_2020_Letter_Victor.md" "Perez_2020_PIQ_Guerrero_Victor.pdf" "makefile" "Perez_2020_Letter_Victor.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/mss/02_chpt/" (24444 63599 853125 76000) "02_theory_sept2020.md.pdf" "02_Theory_Outline.ooutline" "02_theory_sept2020.md" "scrivExp/" "makefile" "02_metadata.yaml" "2_Theory.tex" ".DS_Store" "02_chpt.ooutline" "02_Chpt.md" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_CEL494/jwNotes/" (24446 19394 348277 912000) "07_Hobbes_Spinoza.md" "06_Vitoria_Suarez.md" "07_Hobbes_Spinoza.md.pdf" "05_Machiavelli_Moore.md.pdf" "05_Machiavelli_Moore.md" "makefile" "01_Dubik.md.pdf" "06_Vitoria_Suarez.md.pdf" "04_Thomas_Dante.md.pdf" "04_Thomas_Dante.md" "02_Greece_Rome.md" "01_Dubik.md" "02_Greece_Rome.md.pdf" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/" (24591 12339 55034 821000) "WorkingDrafts/" "Perez_Kushner_2021_Locke_Outline.md" "locke.bib" ".git/" "Perez_Kushner_2019_Locke.md" "Perez_Kushner_2019_Locke.md.pdf" ".gitignore" "makefile" "papers/" "LockeImmig.org" "Perez_Kushner_2021_Locke_Outline.md.pdf" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/Locke_Immig/" (24591 12339 55034 821000) "WorkingDrafts/" "Perez_Kushner_2021_Locke_Outline.md" "locke.bib" ".git/" "Perez_Kushner_2019_Locke.md" "Perez_Kushner_2019_Locke.md.pdf" ".gitignore" "makefile" "papers/" "LockeImmig.org" "Perez_Kushner_2021_Locke_Outline.md.pdf" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Pandoc_Templates/" (24049 7456 66425 301000) "CSL/" "Word/" ".DS_Store" "Letters/" "Manuscripts/" "Misc/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/" (24573 64900 674753 25000) "CWLiberalism/" ".git/" "libfaith_mss/" "NatLawNatSec/" "JQA/" "RF_MyTrip/" "APSA2020_GS_Post_CW/" "LSU_MyTrip/" "README.md" "Miscellaneous/" "APSA2020_GS_Religion/" "de_libero_arbitrio/" "ISSS-IS/" "Locke_Immig/" "IJIRF_CCES_IRFA/" "APSA2021/" "MPSA2020/" ".DS_Store" "CCES2020/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Projects/" (24300 64057 886868 341000) "readinglist_interpol.md" "readinglist_interpol.md.pdf" "readinglist_prudence_strategy.md.pdf" "APSA_2019_Reciepts/" "readinglist.md" "makefile" "Inprogress/" "readinglist.md.pdf" "McInerny_1995.md" ".DS_Store" "McInerny_1995.md.pdf" "readinglist_prudence_strategy.md" "readinglist_Catholic_Mind.md.pdf" "readinglist_Catholic_Mind.md" "Completed/" "v-dem_codebook_v9.pdf" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Spring_CEL475/Syllabus_Notes/" (24397 29253 38504 727000) "gs_outline.tex" "Perez_2020_Spring_CEL475_Syllabus.md" "Perez_2020_Spring_CEL475_Syllabus.md.pdf" "gs_outline.org" "gs_outline.bbl" "gs_outline.pdf" "Gs.org" "gs_readinglist.pdf" "CEL475.tex" "Gs.pdf" "gs_readinglist.org" "makefile" "Gs.tex" "CEL475.pdf" "gs_readinglist.tex" "CEL475.bbl" "CEL475.org" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Spring_CEL475/" (24323 31060 252299 939000) "Online/" "cel-475-statesmanship-and-am-strategy-2020-spring-export.imscc" "readings/" "Syllabus_Notes/" ".DS_Store" "Assignments/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/Teaching/" (24297 21032 332482 614000) "2020_Fall_CEL494/" "2020_Fall_IS_Julianne/" "Rudys_Syll/" "2019_Fall_CEL100/" "Jandhyala_thesis/" ".DS_Store" "Letters/" "2020_Spring_CEL475/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/AcademicWork/" (24431 31742 94778 627000) "Syllabi (collected)/" "Bibs/" "Citation_notes/" "notes_ORG/" "PDFs/" "Teaching/" "ReadingList.savedSearch" "notes/" "LaTeX Training/" "_MendeleyPDFs/" "Tenure/" "ND_KGS/" "Books_PDF_Scanned/" "Online_Clippings/" "Datasets/" "Duck/" "Projects/" "Org/" "resume_CV/" "CV-Examples/" "Cites_Web/" "Github_templates/" "_ProcessPDFs/" "Pandoc_Templates/" ".DS_Store" "Inbox_AcWork/" "MISC/" "SCETL/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/lmp/Dropbox/" (24444 59728 681084 963000) "Writing/" "Soulver Files/" "Proj_LibFaith/" "Passwords app.dbx-passwords" "Apps/" "lmp_site/" "Photos/" ".dropbox.cache/" "1Password.agilekeychain/" "Notes/" ".dropbox" "Public/" "Camera Uploads/" "zArchived/" "20200918_git_repots_list.txt" "Vault.dbx-vault" "Icon" "Clips/" "ScrivBackups/" "AcademicWork/" "Inbox/" ".DS_Store" "Screenshots/" "Computer backup.dbx-backup" ".ws.agile.1Password.settings" "receipts/" "../" "./")
-
- ("/Volumes/Macintosh HD/Users/" (23991 57577 0 0) "lmp/" "administrator/" "Shared/" ".localized" "cas/" "../" "./")
-
- ("/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/Tides/Letter_credit_collections/letter_4_followup_disputing/" (24452 43873 740346 227000) "Perez_2019_Letter_Document_Request.md" "makefile" ".DS_Store" "../" "./")
-
- ("/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/Tides/Letter_credit_collections/" (24452 43865 424254 19000) "letter_2_documentrequest/" "letter_1_disputecollections/" "letter_4_followup_disputing/" "letter_3_followup/" ".DS_Store" "../" "./")
-
- ("/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/Tides/" (24025 46354 92344 999000) "5day.docx" "Letter_credit_collections/" "Possible Emergency Move.pdf" "Perez_2019_11_14_consult_LT_150.pdf" "Reciepts/" "Perez_2019_Tides_AC.md" "makefile" "draft.md" "letter.latex" "Perez_2019_Tides_AC.md.pdf" ".DS_Store" "draft.md.pdf" "../" "./")
-
- ("/Volumes/MacExternal/_13in_MBP_Files/MBP_13inch_Documents/" (24198 4786 816721 678000) "Mendeley/" "201911040934_Debt_Payoff.soulver" "Dissertation_pdf_smart.savedSearch" "201908220911_Rumsfeld_Conf_Hotel_RSVP_Conf_No_3142834008.pdf" "201912210707_Emacs_Crash_Report.md" "1021_Ashland/" "Rubio_2019_Common_Good_Capitalism.pdf" "Reservations | Budget Car Rental.pdf" "Mizzou/" "Camden Lamar/" "201907011848_Travel_to_PHX.xlsx" "BBEdit Backups/" "Midgette_2018_classical_music.pdf" "Rubio_2019_from_HTML.md" "ScanSnap Home folder/" "MPSA2019.savedSearch" "Screenshot 2019-10-23 20.31.06.png" "SuperShuttle Reservations.pdf" "2020030616-9_Contacts_Archive.abbu/" "2019_MPSA_Docs/" "201912051045_December_budget.soulver" "Barr_2019.pdf" "SCETL_Contract/" "Statements/" "Adobe/" "Cover_letter_ex/" "A7_Battery_Chamber/" "Academia.edu_Bundle_-_US_Foreign_Policy_and_Religion_Oxford_Research_Encyclopedia_of_Religion/" "Org_Files_Local/" "ScanSnap_Inbox/" "2019_Jan.soulver" "TerminalTips.txt" "201911121550_Debt_to_Mom.soulver" "SSPUSADV.pdf" "Order Invoice #552373036 | zulily.pdf" "ASU_Auth_Driver/" "Resume/" "WeddingPhotography_Budget.soulver" "timesheet_2019.xlsx" "Application_633_North_May.pdf" "Measure for Measure/" "Christmas2019/" "Lucia'sBills.soulver" ".DS_Store" "2018_12_01_Budget.soulver" "Building the Strategy of Freedom.pdf" "GooglePhotos_Archive/" "Soulver/" "_Process/" "ASU_SCETL/" "Principles of the Moral Life.docx" "maga_triad/" "Test_Syllabus/" "201910160000_Tides_Collections_Notice.pdf" "\"Becoming American: Immigration and Civic Integration\" with Reihan Salam and Tomás Jiménez.pdf" "Tides/" "LrClassicLogs/" "../" "./")
-
- ("/Volumes/MacExternal/_13in_MBP_Files/" (24198 5686 446152 718000) "MBP_13inch_Documents/" "Surf_Nacho_Dec_2019/" "Fergie_2019.md" "202001282228_JayPage_JiuJitsu_Pricing.pdf" "Confirmation - Safelite AutoGlass®.pdf" "mdp.39015023097275-1581168020.pdf" ".DS_Store" "California_Dec_2019/" "../" "./")
-
- ("/Volumes/MacExternal/" (24219 12191 912689 453000) "writing/" "MBP_13inch_Documents/" "Strobist/" "Fall_2015_ReadingsNotes/" ".VolumeIcon.ico" "Christianity_Freedom_Book/" "Ricoh 17 December/" ".TemporaryItems/" "Perez on 8x10/" "Word/" "_13in_MBP_Files/" "Photos_Film/" "Nixon_Library_Backup/" ".DocumentRevisions-V100/" ".fseventsd/" "Photos_Backups_Temp/" "Statements/" "Videos/" "dissnotes/" "Archived Files/" ".Trashes/" "iTunes_Library/" "20180130_Process/" "Books/" "Photos_Digital/" "2016_Taxes/" "Lucia_Resume/" "Photography/" "Readings_Prospectus/" "Leases_Archive/" "Lelia_Brousard_Tracks/" "autorun.inf" "Lucia_Phone_Apr_2020/" "2017_Taxes/" "Simple_Note_Archive/" ".DS_Store" ".Spotlight-V100/" "Choosing-to-Lead/" "UW_Jackson_Backup/" "Copy_emacs.d/" "._Private-Public.exe" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/Archive_Materials/" (24401 35417 582126 515000) "1977_Carter_Jimmy_ND.pdf" "19851105_WAPO_JJK.pdf" "19740504_Jimmy_Carter_Georgia_Law_Day.pdf" "1904_Russian_Tsar-Stop_your_cruel_oppression_of_the_Jews-LOC_hh0145s.jpg" "19840605_WAPO_JK.pdf" "19850619_WAPO_JK.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Duck/" (24436 6446 491050 683000) "20200317_podcast.md" "DoM_perez_sanger/" "201810310953_ww_roadblock.md" "2020107_drones_Suleimani.md" "20200929_Trump_Biden_Debate.md" "Published/" "20190515_Plato_Foreign_Policy.html" "201810090807_relfree_strategy.html" "debate2020.org" "20181107_ww_conference.md" "20190503_One_Cheer_For_Huntington.md" "write_tense.html" "20190515_Plato_Foreign_Policy.md" "20190503_One_Cheer_For_Huntington.html" "makefile" "201810310953_ww_roadblock.html" ".DS_Store" "20200315_onlineteaching.md" "html_out/" "20181107_ww_conference.html" "201810090807_relfree_strategy.md" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/ND_KGS/teachstmt/" (24436 50764 415303 201000) "statement.tex" "Perez_2017_Teaching_Statement.md" "makefile" ".DS_Store" "scratch.txt" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/ND_KGS/cover/" (24436 50802 471843 822000) "perez_2020_nd_coverletter.md" "makefile" ".DS_Store" "../" "./")
-
- ("/Users/lmp/.emacs.d/.cache/" (24436 57664 802331 813000) "bookmarks" "customize.el" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/ND_KGS/" (24434 14979 81096 926000) "cover/" "wrtsmpl/" "Final_Packet/" "job_talk/" "teachstmt/" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Downloads/" (24431 21172 47896 604000) "Dependence_on_God_and_Man_Toward_a_Catho.pdf" "[The War Lover] 5. Crime and Punishment.pdf" "[The War Lover] Epilogue On Reading Plato's Republic.pdf" "nobullproject_label_02396343444621633554.pdf" "[The War Lover] 3. Sons and Lovers.pdf" "AEI Blumenthal Flyer.pdf" "[The War Lover] 7. Pride and Prejudice.pdf" "Gavin_TNSR-Vol-2-Issue-4.pdf" "Summary paper.docx" "[The War Lover] 2. A Tale of Two Cities.pdf" "[The War Lover] Acknowledgments.pdf" "HafnerBurton2013.docx" "~$hland - Cover Letter.docx" "Perez_Lucia_Medical_Bills.pdf" "Non_CCSS_Aligned_Curriculum/" "syllabi/" "~$e Research Statement.docx" "[The War Lover] 4. Heart of Darkness.pdf" "~$e Teaching Statement.docx" "9 3 just war.docx" "syllabi.zip" "China-SIM-Final-Edited-PDF-1.pdf" "[The War Lover] Notes.pdf" "OmniOutliner-5.7.1.dmg" "PLAW-105publ292.pdf" "Unmasking_Limbo_Reading_Inferno_IV_as_Ke.pdf" "[The War Lover] Contents.pdf" "[The War Lover] Bibliography.pdf" "Wylie_Tyrannicide.pdf" "[The War Lover] Frontmatter.pdf" ".localized" "Non_CCSS_Aligned_Curriculum.zip" "lukemperez_2020-Sep-08.png" ".DS_Store" "[The War Lover] 6. The Portrait of a Lady.pdf" "SA.660.777.01-3.pdf" "[The War Lover] 1. War and Peace.pdf" "Bakke_2020_etal.pdf" "~$shner Cover Letter.docx" "[The War Lover] A Notice to the Reader.pdf" "Kushner Cover Letter.docx" "LJ_statement.pdf" "carter_moyn.pdf" "Kushner Cover Letter-1 EDIT.docx" "[The War Lover] Prologue On Reading a Platonic Dialogue.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Projects/Inprogress/libfaith_mss/mss/" (24427 56984 279441 57000) "ScrvSync/" "mssLibFaith.scriv/" "cases_IRF.numbers" "book.yaml" "makefile" ".DS_Store" "02_chpt/" "01_Intro/" "tmpCompile/" "book.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_IS_Julianne/" (24430 6873 33530 642000) "2020_HumRights_indpt.md" "makefile" ".DS_Store" "hrNotes/" "2020_HumRights_indpt.md.pdf" "../" "./")
-
- ("/Users/lmp/Dropbox/AcademicWork/Teaching/2020_Fall_IS_Julianne/hrNotes/" (24430 6850 951216 547000) "history1970s.md.pdf" "Walldorf_2008.md.pdf" "makefile" "history1970s.md" "Walldorf_2008.md" "../" "./")
+ ("/Users/lmp/.emacs.d/elpa/archives/" (25249 24827 996992 858000) "melpa-stable/" "melpa/" "gnu/" "org/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

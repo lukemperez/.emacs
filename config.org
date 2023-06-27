@@ -20,6 +20,7 @@ This too, from my buddy, Brenden Apfeld.
 * Autosave
 
 #+BEGIN_SRC emacs-lisp :results silent
+
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
@@ -47,7 +48,8 @@ Save a few misc files in the =.cache= directory:
   (setq recentf-save-file (concat my/emacs-cache "recentf"))
   (setq nsm-settings-file (concat my/emacs-cache "network-security.data"))
 #+END_SRC
-* IDO Mode
+
+* Ido-Mode
 Ido-mode is a great way to show the file path when searching.
 
 #+BEGIN_SRC emacs-lisp :results silent
@@ -65,72 +67,71 @@ Ido-mode is a great way to show the file path when searching.
 For now, I'm going to leave this blank. I'll decide how I want Emacs to handle my scrolling of text.
 
 * Spell Check
-I use =flyspell= for spell check. the command is C-; to check the
-previous word. If it does not autocorrect with the correct word, you
-can run the command again.
 
-#+BEGIN_SRC emacs-lisp results: silent
-  (use-package flyspell
-    :ensure t
-    :defer t
-    :init
-    (progn
-      (add-hook 'prog-mode-hook 'flyspell-prog-mode)
-      (add-hook 'text-mode-hook 'flyspell-mode)
-      )
-    :config
-    ;; Sets flyspell correction to use two-finger mouse click
-    (define-key flyspell-mouse-map [down-mouse-3] #'flyspell-correct-word)
-    )
+I was using =flyspell= but the setup gave an error. Removed to troubleshoot 2022-04-12-08:51
 
-  ;; This tells Emacs were to find ispell when using the Mac
-  (setq ispell-program-name "/usr/local/bin/ispell")
+Tried using =package-install= instead.
 
-#+END_SRC
+# #+begin_src emacs-lisp :results silent
+#   (use-package flycheck
+#     :ensure t
+#     :init (global-flycheck-mode))
+# #+end_src
 
-* AuCTeX
-If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No sense in trying anything else. One challenge that I had while setting up AuCTeX is that with Mac OSX El Cap, Emacs can have trouble finding the TeX distribution. I found very useful code from [[http://www.qqyang.org/blog/not-complete-guide-to-basictex/][Qingqing Yang's blog]]
+* LaTex
+** AucTex
+If you're going to write LaTeX files on Emacs, AucTeX is the Gold Standard. No sense in trying anything else. One challenge that I had while setting up AuCTeX is that with Mac OSX El Cap, Emacs can have trouble finding the TeX distribution. I found very useful code from [[http://www.qqyang.org/blog/not-complete-guide-to-basictex/][Qingqing Yang's blog]]. Both the aforementioned link is broken, /and/ I'm using macOS 12.4 Monterey. So I'm seeing if this helps corrects my broken emacs config.
 
-#+BEGIN_SRC emacs-lisp
-(let (
-      (my-paths
-       '("~/bin"
-         "/usr/local/bin"
-         "/usr/bin"
-         "/Library/TeX/texbin" ; add path to basictex bin
-         "/usr/texbin" ; add path to basictex bin
-         "/bin"
-         )))
+# #+BEGIN_SRC emacs-lisp :results silent
+# (let (
+#       (my-paths
+#        '("~/bin"
+#          "/usr/local/bin"
+#          "/usr/bin"
+#          "/Library/TeX/texbin" ; add path to basictex bin
+#          "/usr/texbin" ; add path to basictex bin
+#          "/bin"
+#          )))
 
-  (setenv "PATH" (concat (getenv "PATH") ":"
-                         (mapconcat 'identity my-paths ":")))
-  (setq exec-path (append my-paths (list "." exec-directory))))
-#+END_SRC
+#   (setenv "PATH" (concat (getenv "PATH") ":"
+#                          (mapconcat 'identity my-paths ":")))
+#   (setq exec-path (append my-paths (list "." exec-directory))))
+# #+END_SRC
 
 I actually don't know what the below code does. I'm writing this note to myself so that I make sure to figure it out, and then to modify or delete it as needed.
 
-#+BEGIN_SRC emacs-lisp :results silent
+#+BEGIN_SRC eeXmacs-lisp :results silent
+  (use-package auctex
+    :defer t
+    :ensure t
+    :config
+    (setq TeX-auto-save nil)
+)
+#+END_SRC
+  
+  # #+BEGIN_SRC emacs-lisp :results silent
 
-(use-package tex-site
-  :ensure auctex
-  :config
-  (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
-  (setq TeX-auto-save nil ; remove "/auto/" file generation
-        TeX-parse-self t
-        reftex-plug-into-AUCTeX t)
-  (add-hook 'LaTeX-mode-hook #'TeX-PDF-mode)
-  (setq TeX-source-correlate-method 'synctex)
-  (setq TeX-source-correlate-mode t)
-  (eval-after-load "tex"
-    '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s" TeX-run-TeX nil t :help "Process file with latexmk"))
-    )
-  (eval-after-load "tex"
-    '(add-to-list 'TeX-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s" TeX-run-TeX nil t :help "Process file with xelatexmk"))
-    )
-  (add-hook 'TeX-mode-hook (lambda () (setq TeX-command-default "latexmk"))))
+    (use-package tex-site
+      :ensure auctex
+      :defer t
+      :config
+      (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
+      (setq TeX-auto-save nil
+            Tex-parse-self t
+            reftex-plug-into-AUCTeX t)
+      (add-hook 'LaTeX-mode-hook #'Tex-PDF-mode)
+      (setq TeX-source-correlate-method 'synctex)
+      (setq TeX-source-correlate-mode t)
+      (eval-after-load "tex"
+        '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s"
+                                          TeX-run-TeX nil t :help "Process file with latexmk")))
+      (eval-after-load "tex"
+        '(add-to-list 'Tex-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s"
+                                          Tex-run-Tex nil t :help "Process file with xelatex")))
+      (add-hook 'Tex-mode-hook (lambda () (setq Tex-command-default "xelatex"))))
 #+END_SRC
 
-* RefTeX
+** RefTeX
 I want to be sure that RefTeX loads whenever I am working on a TeX document. I figured out the code from [[https://emacs.stackexchange.com/questions/34189/emacs-setup-for-latex-after-use-package-verse][Stack Exchange.]] (NB: There's mode code in the answer suggesting key bindings for GREP searching the document. Might be worth looking into.)
 
 #+BEGIN_SRC emacs-lisp :results silent
@@ -174,39 +175,6 @@ Now we want Emacs to default to BibLaTeX dialect when creating new citations.
 (setq LaTeX-biblatex-use-Biber t)
 (setq TeX-command-BibTeX "Biber")
 #+END_SRC
-
-
-# This next bit of code should allow reftex citations inside markdown.
-# It needs to remain commented out as of Sept 2020 since I am sure it is not needed.
-# Be sure to remove this if I can work for several months without needing to uncomment it.
-# #+BEGIN_SRC emacs-lisp :results silent
-#   ;; define markdown citation formats
-
-#   ;; (defvar markdown-cite-format)
-#   ;; (setq markdown-cite-format
-#   ;;       '(
-#   ;;         (?\C-m . "[@%l]")
-#   ;;         (?p . "[@%l]")
-#   ;;         (?t . "@%l")
-#   ;;         )
-#   ;;       )
-#   ;; Previous code commented out because it may be unneeded.
-
-#   ;; wrap reftex-citation with local variables for markdown format
-#   (defun markdown-reftex-citation ()
-#     (interactive)
-#     (let ((reftex-cite-format markdown-cite-format)
-#           (reftex-cite-key-separator "; @"))
-#       (reftex-citation)))
-
-#   ;; bind modified reftex-citation to C-c[, without enabling reftex-mode
-#   ;; https://www.gnu.org/software/auctex/manual/reftex/Citations-Outside-LaTeX.html#SEC31
-#   (add-hook
-#    'markdown-mode-hook
-#    (lambda ()
-#      (define-key markdown-mode-map "\C-c[" 'markdown-reftex-citation)))
-# #+END_SRC
-
 * Org-Mode
 
 Org-Mode is the primary way that I should be writing. In this section, we need to add some settings that make things easier to manage, export, and the like. In previous setups of my =.emacs= configuration, I did not organize these as well as I could have. So here, I'm going to include the settings relevant to each mode or feature. More information can be found via the org-mode manual: I prefer the pdf [[http://orgmode.org/org.pdf][found here]]. 
@@ -420,40 +388,46 @@ Now we can load out themes.
 
 #+BEGIN_SRC emacs-lisp :results silent
   (use-package zenburn-theme
-      :ensure t
-      :config
-      (load-theme 'zenburn t)
-  )
+    :ensure t
+    :load-path "themes"
+    :init (setq zenburn-theme t)
+    :config (load-theme 'zenburn t)
+    )
+#+END_SRC
+
+** Atom Dark
+# Package unavailable as of 2022-04-29
+
+#+BEGIN_SRC emacs-lisp :results silent
+  ;; (use-package atom-dark-theme
+  ;; 	 :ensure t
+  ;;      :defer t)
+  ;; (use-package atom-dark-theme
+  ;;   :config
+  ;;   (load-theme 'atom-one-dark t)
+  ;;   )
+   #+END_SRC
+
+** Solarized Theme (light & dark)
+
+#+BEGIN_SRC emacs-lisp :results silent
+
+  ;; (use-package solarized-theme
+  ;;         :ensure t
+  ;;         :defer t
+  ;;         :config
+  ;;         (load-theme 'solarized-dark t))
 
 #+END_SRC
 
-
-** Atom Dark
-
-(use-package atom-dark-theme
-	 :ensure t
-     :defer t)
-
-   #+END_SRC
-
-# ** Solarized Theme (light & dark)
+** Github Theme
+# Package seems to be unavilable 2022-04-28
 
 # #+BEGIN_SRC emacs-lisp :results silent
-
-# (use-package solarized-theme
-# 	:ensure t
-# 	:defer t)
-
-# #+END_SRC
-
-# ** Github Theme
-
-# #+BEGIN_SRC emacs-lisp :results silent
-
-#   ;; (use-package github-theme
-#   ;; 	:ensure t
-#   ;; 	:defer t)
-
+#   (use-package github-theme
+#     :ensure t
+#     :defer t
+#     :config (load-theme 'github t))
 # #+END_SRC
 
 * [Experimental] ESS
@@ -461,33 +435,29 @@ We installed ESS from Melpa. Now we ensure it loads on startup.
 
 #+begin_src emacs-lisp results: silent
   ;; (use-package ess
-  ;;   :ensure t
-  ;;   :init (require 'ess-site))
+  ;;     :ensure ess
+  ;;     :pin melpa-stable
+  ;;     :diminish eldoc-mode
+  ;;     :defer 2
+  ;;     :bind
+  ;;     (:map ess-mode-map
+  ;;           ("M-p" . jab/add-pipe))
+  ;;     :config
+  ;;     (add-hook 'ess-mode-hook
+  ;;               (lambda ()
+  ;;                 (ess-set-style 'RStudio)))
+  ;;     (defun jab/add-pipe ()
+  ;;       "Adds a pipe operator %>% with one space to the left and starts a new line with proper indentation"
+  ;;       (interactive)
+  ;;       (just-one-space 1)
+  ;;       (insert "%>%")
+  ;;       (ess-newline-and-indent))
 
+  ;; )
 
-  (use-package ess-site
-      :ensure ess
-      :pin melpa-stable
-      :diminish eldoc-mode
-      :defer 2
-      :bind
-      (:map ess-mode-map
-            ("M-p" . jab/add-pipe))
-      :config
-      (add-hook 'ess-mode-hook
-                (lambda ()
-                  (ess-set-style 'RStudio)))
-      (defun jab/add-pipe ()
-        "Adds a pipe operator %>% with one space to the left and starts a new line with proper indentation"
-        (interactive)
-        (just-one-space 1)
-        (insert "%>%")
-        (ess-newline-and-indent))
-
-  )
-
-  ;; :custom
-  ;; (ess-history-file nil "Don't save .Rhistory files because that's stupid!!")
+  ;; ;; :custom
+  ;; ;; (ess-history-file nil 
+  ;; ;; "Don't save .Rhistory files because that's stupid!!")
   ;; (ess-history-directory nil)
   ;; (inferior-R-args "--no-restore-data")
   ;; (ess-nuke-trailing-whitespace-p t)
@@ -498,9 +468,6 @@ We installed ESS from Melpa. Now we ensure it loads on startup.
   ;; (ess-pdf-viewer-pref "emacsclient"))
 
 #+end_src
-
-
-#+RESULTS:
 
 * [Experimental] Highlight eshell
 I want to highlight =eshell= similarly to how iTerm does. To do so, I begin with some code from [[https://emacs.stackexchange.com/questions/33405/no-colors-for-eshell][this stackexchange post]], and changed "blue" to something from the zenburn theme. In the future, I should [[https://gist.github.com/dlebauer/1486859][adapt the full color spectrum from zenburn]] to ehsell.
@@ -527,35 +494,35 @@ I want to highlight =eshell= similarly to how iTerm does. To do so, I begin with
 Howardism has a way of [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][bringing the eshell up as needed n a small window]].
 
 #+begin_src emacs-lisp :results silent
-    (defun eshell-here ()
-      "Opens up a new shell in the directory associated with the
-    current buffer's file. The eshell is renamed to match that
-    directory to make multiple eshell windows easier."
-      (interactive)
-      (let* ((parent (if (buffer-file-name)
-                         (file-name-directory (buffer-file-name))
-                       default-directory))
-             (height (/ (window-total-height) 3))
-             (name   (car (last (split-string parent "/" t)))))
-        (split-window-vertically (- height))
-        (other-window 1)
-        (eshell "new")
-        (rename-buffer (concat "*eshell: " name "*"))
+  (defun eshell-here ()
+    "Opens up a new shell in the directory associated with the current buffer's file. The eshell is renamed to match that directory to make multiple eshell windows easier."
+    (interactive)
+    (let* ((parent (if (buffer-file-name)
+                       (file-name-directory (buffer-file-name))
+                     default-directory))
+           (height (/ (window-total-height) 4))
+           (name   (car (last (split-string parent "/" t)))))
+      (split-window-vertically (- height))
+      (other-window 1)
+      (eshell "new")
+      (rename-buffer (concat "*eshell: " name "*"))
 
-        (insert (concat "ls"))
-        (eshell-send-input)))
+      (insert (concat "ls"))
+      (eshell-send-input)))
 
-    (global-set-key (kbd "C-!") 'eshell-here)
+  (global-set-key (kbd "C-!") 'eshell-here)
 #+end_src 
 
 And when you close it, you just use the command =x= in the eshell
 
 #+begin_src emacs-lisp :results silent
-    (defun eshell/x ()
-      (insert "exit")
-      (eshell-send-input)
-      (delete-window))
+  (defun eshell/x ()
+    (insert "exit")
+    (eshell-send-input)
+    
+    (delete-window))
 #+end_src
+
 * Experimental
 # ** Save backups to Directory
 
@@ -608,9 +575,10 @@ And when you close it, you just use the command =x= in the eshell
 #   (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
 #                    "no_title"))
 
-# (add-hook 'org-export-before-processing-hook #'org-remove-headlines)
+# # (add-hook 'org-export-before-processing-hook #'org-remove-headlines)
 
 # #+END_SRC
+
 # ** Hot Key for a property drawer
 
 # #+BEGIN_SRC emacs-lisp :results silent
@@ -633,24 +601,24 @@ And when you close it, you just use the command =x= in the eshell
 # (setq org-footnote-define-inline +1)
 
 # #+END_SRC
-# ** Unwrap line
+** Unwrap line
 
-# This bit of code lets me take a paragraph that includes line-breaks and turn into a single line. [[https://www.emacswiki.org/emacs/UnfillParagraph][The code was found here]].
+This bit of code lets me take a paragraph that includes line-breaks and turn into a single line. [[https://www.emacswiki.org/emacs/UnfillParagraph][The code was found here]].
 
-# #+BEGIN_SRC emacs-lisp :results silent
+#+BEGIN_SRC emacs-lisp :results silent
 
-# ;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
-# (defun unfill-paragraph (&optional region)
-#   "Takes a multi-line paragraph and makes it into a single line of text."
-#   (interactive (progn (barf-if-buffer-read-only) '(t)))
-#   (let ((fill-column (point-max))
-#         ;; This would override `fill-column' if it's an integer.
-#         (emacs-lisp-docstring-fill-column t))
-#     (fill-paragraph nil region)))
+;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
+(defun unfill-paragraph (&optional region)
+  "Takes a multi-line paragraph and makes it into a single line of text."
+  (interactive (progn (barf-if-buffer-read-only) '(t)))
+  (let ((fill-column (point-max))
+        ;; This would override `fill-column' if it's an integer.
+        (emacs-lisp-docstring-fill-column t))
+    (fill-paragraph nil region)))
 
-# ;; Handy key definition
-# (define-key global-map "\M-Q" 'unfill-paragraph)
-# #+END_SRC
+;; Handy key definition
+(define-key global-map "\M-Q" 'unfill-paragraph)
+#+END_SRC
 
 # * Goals and Ideas
 # ** TODO I want to make this capture template more usable for research, scholarship, and the like. For now, I'm just going to create a few templates for the default =.org= capture file =notes.org=.
@@ -668,4 +636,3 @@ And when you close it, you just use the command =x= in the eshell
 # ;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 # #+END_SRC
-
