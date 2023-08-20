@@ -35,7 +35,8 @@ Should end with a forward slash.")
 
 ;; So that RefTeX finds my bibliography
 (setq reftex-default-bibliography
-      '("~/Dropbox/AcademicWork/Bibs/refs.bib"
+      '("~/.bibs/refs.bib"
+        "~/Dropbox/AcademicWork/Bibs/refs.bib"
         "~/Dropbox/AcademicWork/Bibs/primary.bib"))
 
 (eval-after-load 'reftex-vars
@@ -78,28 +79,28 @@ Should end with a forward slash.")
 (require 'ox-beamer)
 (require 'ox-latex)
 
-;; Set our default Notes file.
-(setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
+;; Set our default Notes file.n
+;; (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
 
 ;; General Academic Notes
-(global-set-key (kbd "C-c n") 
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+;; (global-set-key (kbd "C-c n") 
+                ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
 
 ;; A literature review Org-file
-(global-set-key (kbd "C-c l")
-  	      (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/literature.org")))
+;; (global-set-key (kbd "C-c l")
+              ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/literature.org")))
 
 ;; Dissertation Outline
 ;; (global-set-key (kbd "C-c d") 
 ;;                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
 
 ;; A Journal (work in progress)
-(global-set-key (kbd "C-c j")
-                (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
+;; (global-set-key (kbd "C-c j")
+                ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
 ;; Research File
-(global-set-key (kbd "C-C r")
-  	      (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
+;; (global-set-key (kbd "C-C r")
+              ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
 ;; First we need to require org-ref
 ;; (require 'org-ref)
@@ -125,6 +126,9 @@ Should end with a forward slash.")
     (global-set-key (kbd "C-c p") 'pandoc-main-hydra/body)
 
   )
+
+;; load the library
+;; (require 'quarto-mode)
 
 ;; This allows us to switch themes as needed
 
@@ -182,17 +186,17 @@ Should end with a forward slash.")
 ;;               (lambda ()
 ;;                 (ess-set-style 'RStudio)))
 ;;     (defun jab/add-pipe ()
-;;       "Adds a pipe operator %>% with one space to the left and starts a new line with proper indentation"
+;;       "Adds a pipe operator =|<>= with one space to the left and starts a new line with proper indentation"
 ;;       (interactive)
 ;;       (just-one-space 1)
-;;       (insert "%>%")
+;;       (insert "|<>")
 ;;       (ess-newline-and-indent))
 
-;; )
+;;   )
 
-;; ;; :custom
-;; ;; (ess-history-file nil 
-;; ;; "Don't save .Rhistory files because that's stupid!!")
+;; :custom
+;; (ess-history-file nil 
+;;  "Don't save .Rhistory files because that's stupid!!")
 ;; (ess-history-directory nil)
 ;; (inferior-R-args "--no-restore-data")
 ;; (ess-nuke-trailing-whitespace-p t)
@@ -241,3 +245,15 @@ Should end with a forward slash.")
   (eshell-send-input)
 
   (delete-window))
+
+;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
+(defun unfill-paragraph (&optional region)
+  "Takes a multi-line paragraph and makes it into a single line of text."
+  (interactive (progn (barf-if-buffer-read-only) '(t)))
+  (let ((fill-column (point-max))
+        ;; This would override `fill-column' if it's an integer.
+        (emacs-lisp-docstring-fill-column t))
+    (fill-paragraph nil region)))
+
+;; Handy key definition
+(define-key global-map "\M-Q" 'unfill-paragraph)

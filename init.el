@@ -31,14 +31,17 @@
 (setq initial-scratch-message "")
 
 ;; Set up MELPA so that you can load packages more efficiently.
-;; * I use the stable release because I do not want to trouble-
+;; * I used the stable release because I do not want to trouble-
 ;;   shoot my Emacs when I'm busy writing my dissertation, article,
 ;;   or book.
+;; * Fall 2023 I moved to regular MELPA to trouble shoot an error I keep getting.
 ;; * For more information, visit <https://melpa.org>
 
 (require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 ;; These functions are useful. Activate them.

@@ -145,10 +145,11 @@ I want to be sure that RefTeX loads whenever I am working on a TeX document. I f
 Our next task is setting up a global bibliography so that RefTeX knows where to look when invoking the command for citations. Many people are fond of listing that setting the global bibliographies can be a list but it was difficult to find an example of what that looked like. I actually use two different =.bib= files, one for books and articles (my references) and another for primary sources (archival research). Many thanks to [[https://github.com/tmalsburg/helm-bibtex][Titus von der Malsburg's GitHub]] for showing how it's done.
 
 #+BEGIN_SRC emacs-lisp :results silent
-;; So that RefTeX finds my bibliography
-(setq reftex-default-bibliography
-      '("~/Dropbox/AcademicWork/Bibs/refs.bib"
-        "~/Dropbox/AcademicWork/Bibs/primary.bib"))
+  ;; So that RefTeX finds my bibliography
+  (setq reftex-default-bibliography
+        '("~/.bibs/refs.bib"
+          "~/Dropbox/AcademicWork/Bibs/refs.bib"
+          "~/Dropbox/AcademicWork/Bibs/primary.bib"))
 #+END_SRC
 
 The default setting for RefTeX is to use =\cite{key}= when inserting citations. Because I use Biblatex-Chicago for nearly all my writing, I need to make changes to how the citation keys are generated. Here I am thankful to a post [[https://tex.stackexchange.com/questions/31966/setting-up-reftex-with-biblatex-citation-commands][Stack Exchange and the answer by Aaron]].
@@ -221,28 +222,28 @@ Make a key-binding to my notes file.
 The point with these hot-keys is to make short-cuts to several org files while I will use for notetaking. Ideally, I'd like to do this with markdown. Although Org-mode is much more powerful than markdown, I am partial to the option of keeping unique independent markdown files for each idea rather than a cluster of =.org= files. Still, this is helpful as it helps me thinkthrough how that might work. 
 
 #+BEGIN_SRC emacs-lisp :results silent
-  ;; Set our default Notes file.
-  (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
+  ;; Set our default Notes file.n
+  ;; (setq org-default-notes-file "~/Dropbox/AcademicWork/Org/notes.org")
 
   ;; General Academic Notes
-  (global-set-key (kbd "C-c n") 
-                  (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
+  ;; (global-set-key (kbd "C-c n") 
+                  ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/notes.org")))
 
   ;; A literature review Org-file
-  (global-set-key (kbd "C-c l")
-  		(lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/literature.org")))
+  ;; (global-set-key (kbd "C-c l")
+                ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/literature.org")))
 
   ;; Dissertation Outline
   ;; (global-set-key (kbd "C-c d") 
   ;;                (lambda () (interactive) (find-file "~/Documents/Dissertation/dissertation.org")))
 
   ;; A Journal (work in progress)
-  (global-set-key (kbd "C-c j")
-                  (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
-                
+  ;; (global-set-key (kbd "C-c j")
+                  ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
+
   ;; Research File
-  (global-set-key (kbd "C-C r")
-  		(lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
+  ;; (global-set-key (kbd "C-C r")
+                ;; (lambda () (interactive) (find-file "~/Dropbox/AcademicWork/Org/journal.org")))
 
 #+END_SRC
 
@@ -352,6 +353,14 @@ We also want to use =Polymode= so that emacs can edit Rmarkdown type files that 
 
 # # #+END_SRC
 
+* Quarto Mode
+We need to install combatiblity for Quarto as we have for Markdown.
+
+#+begin_src emacs-lisp
+  ;; load the library
+  ;; (require 'quarto-mode)
+#+end_src
+
 * Themes
 ** Preliminaries 
 First we need to be able to switch themes as needed. I copied this code directly from [[https://github.com/danielmai/.emacs.d/blob/master/config.org][Daniel Mai]]
@@ -431,7 +440,8 @@ Now we can load out themes.
 # #+END_SRC
 
 * [Experimental] ESS
-We installed ESS from Melpa. Now we ensure it loads on startup.
+<2023-07-06 Thu 10:48> This code spits a warning about =ess-history-directory= when Emacs loads. I need to re-write this code and clear the error. 
+
 
 #+begin_src emacs-lisp results: silent
   ;; (use-package ess
@@ -447,17 +457,17 @@ We installed ESS from Melpa. Now we ensure it loads on startup.
   ;;               (lambda ()
   ;;                 (ess-set-style 'RStudio)))
   ;;     (defun jab/add-pipe ()
-  ;;       "Adds a pipe operator %>% with one space to the left and starts a new line with proper indentation"
+  ;;       "Adds a pipe operator =|<>= with one space to the left and starts a new line with proper indentation"
   ;;       (interactive)
   ;;       (just-one-space 1)
-  ;;       (insert "%>%")
+  ;;       (insert "|<>")
   ;;       (ess-newline-and-indent))
 
-  ;; )
+  ;;   )
 
-  ;; ;; :custom
-  ;; ;; (ess-history-file nil 
-  ;; ;; "Don't save .Rhistory files because that's stupid!!")
+  ;; :custom
+  ;; (ess-history-file nil 
+  ;;  "Don't save .Rhistory files because that's stupid!!")
   ;; (ess-history-directory nil)
   ;; (inferior-R-args "--no-restore-data")
   ;; (ess-nuke-trailing-whitespace-p t)
@@ -466,6 +476,7 @@ We installed ESS from Melpa. Now we ensure it loads on startup.
   ;; (ess-eldoc-show-on-symbol t "show eldoc on symbol instead of only inside of parens")
   ;; (ess-use-ido nil "rely on helm instead of ido") 
   ;; (ess-pdf-viewer-pref "emacsclient"))
+
 
 #+end_src
 
@@ -607,17 +618,18 @@ This bit of code lets me take a paragraph that includes line-breaks and turn int
 
 #+BEGIN_SRC emacs-lisp :results silent
 
-;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
-(defun unfill-paragraph (&optional region)
-  "Takes a multi-line paragraph and makes it into a single line of text."
-  (interactive (progn (barf-if-buffer-read-only) '(t)))
-  (let ((fill-column (point-max))
-        ;; This would override `fill-column' if it's an integer.
-        (emacs-lisp-docstring-fill-column t))
-    (fill-paragraph nil region)))
+  ;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
+  (defun unfill-paragraph (&optional region)
+    "Takes a multi-line paragraph and makes it into a single line of text."
+    (interactive (progn (barf-if-buffer-read-only) '(t)))
+    (let ((fill-column (point-max))
+          ;; This would override `fill-column' if it's an integer.
+          (emacs-lisp-docstring-fill-column t))
+      (fill-paragraph nil region)))
 
-;; Handy key definition
-(define-key global-map "\M-Q" 'unfill-paragraph)
+  ;; Handy key definition
+  (define-key global-map "\M-Q" 'unfill-paragraph)
+  
 #+END_SRC
 
 # * Goals and Ideas

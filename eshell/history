@@ -2,3 +2,9 @@ ls
 open .
 ls
 ls -l
+ls
+cd elpa
+ls
+cd archives/
+ls
+open .
