@@ -28,6 +28,67 @@ Should end with a forward slash.")
 (setq ido-everywhere t)
 (ido-mode 1)
 
+(use-package auctex
+    :defer t
+    :ensure t
+    :config
+    (setq TeX-auto-save nil)
+)
+
+(use-package tex-site
+    :ensure auctex
+    :defer t
+    :config
+     (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
+     (setq TeX-auto-save nil
+           Tex-parse-self t
+           reftex-plug-into-AUCTeX t)
+     (add-hook 'LaTeX-mode-hook #'Tex-PDF-mode)
+     (setq TeX-source-correlate-method 'synctex)
+     (setq TeX-source-correlate-mode t)
+     (setq latex-run-command "xelatex"))
+
+     ;; (eval-after-load "tex"
+     ;;   '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s"
+     ;;                                     TeX-run-TeX nil t :help "Process file with latexmk")))
+     ;; (eval-after-load "tex"
+     ;;   '(add-to-list 'Tex-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s"
+     ;;                                     Tex-run-Tex nil t :help "Process file with xelatex")))
+
+     ;; (add-hook 'Tex-mode-hook (lambda () (setq Tex-command-default "xelatex")))
+
+;; AucTeX
+
+;; (setq TeX-auto-save t)
+;; (setq TeX-parse-self t)
+;; (setq-default TeX-master nil)
+;; (add-hook 'LaTeX-mode-hook 'visual-line-mode)
+;; (add-hook 'LaTeX-mode-hook 'flyspell-mode)
+;; (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+;; (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+;; (setq reftex-plug-into-AUCTeX t)
+;; (setq TeX-PDF-mode t)
+
+;; Use Skim as viewer, enable source <-> PDF sync
+;; make latexmk available via C-c C-c
+;; Note: SyncTeX is setup via ~/.latexmkrc (see below)
+;;
+;; (add-hook 'LaTeX-mode-hook (lambda ()
+  ;; (push
+    ;; '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+      ;; :help "Run latexmk on file")
+    ;; TeX-command-list)))
+;; (add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
+
+
+;; use Skim as default pdf viewer
+;; Skim's displayline is used for forward search (from .tex to .pdf)
+;; option -b highlights the current line; option -g opens Skim in the background  
+;;
+;; (setq TeX-view-program-selection '((output-pdf "PDF Viewer")))
+;; (setq TeX-view-program-list
+     ;; '(("PDF Viewer" "/Applications/Skim.app/Contents/SharedSupport/displayline -b -g %n %o %b")))
+
 ;; Set RefTeX to load automatically with AUCTeX
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (add-hook 'markdown-mode-hook 'turn-on-reftex) ; unsure if this works.

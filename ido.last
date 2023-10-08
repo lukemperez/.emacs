@@ -2,12 +2,27 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/lmp/Documents/03_Resources/" . "ResumeCV/")
+ ("/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/Nadine Edits 100623/" . "Draft100623_NadineEdits/")
+ ("/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/" . "Nadine Edits 100623/")
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL598/" . "syllabus/")
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/tmp/" . "syllabus/")
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/" . "tmp/")
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/" . "Syllabus/")
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL500/syllabus/" . "Rmd/")
+ ("/Users/lmp/Documents/" . "03_Resources/")
+ ("/Users/lmp/Teaching/2023F_CEL100/Exams/Unit_1/" . "templates/")
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL500/" . "syllabus/")
+ ("/Users/lmp/Teaching/Spring2024/" . "2024S_CEL598/")
+ ("/Users/lmp/Teaching/2023F_CEL100/Quizzes/Quiz_01/" . "scores/")
+ ("/Users/lmp/Teaching/2023F_CEL100/Quizzes/" . "Quiz_01/")
+ ("/Users/lmp/Teaching/2023F_CEL494/" . "notes/")
+ ("/Users/lmp/.pandoc/" . "md/")
+ ("/Users/lmp/Documents/03_Resources/" . "CV/")
  ("/Users/lmp/Service/AJPS_Ed_Assist/" . "AJPS_resume/")
  ("/Users/lmp/Teaching/2023F_CEL100/" . "lectures/")
- ("/Users/lmp/Teaching/" . "2023F_CEL100/")
+ ("/Users/lmp/Teaching/" . "Spring2024/")
  ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/" . "Tex_to_MD/")
- ("/Users/lmp/Research/CES_LIO/Paper/" . "Gibson_methods/")
+ ("/Users/lmp/Research/CES_LIO/Paper/" . "10_8_Perez/")
  ("/Users/lmp/Research/CES_LIO/" . "Paper/")
  ("/Volumes/Macintosh HD/Users/lmp/" . ".bibs/")
  ("/Volumes/Macintosh HD/Users/" . "lmp/")
@@ -28,20 +43,36 @@
  ("/Users/lmp/.emacs.d/elpa/archives/" . "melpa/")
  ("/Users/lmp/.emacs.d/elpa/" . "archives/")
  ("/Users/lmp/.emacs.d/" . "elpa/")
- ("/Users/lmp/" . ".emacs.d/")
+ ("/Users/lmp/" . ".bibs/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/lmp/.emacs.d/.cache/"
- "/Users/lmp/.emacs.d/"
  "/Users/lmp/.bibs/"
+ "/Users/lmp/.pandoc/md/"
+ "/Users/lmp/.emacs.d/"
+ "/Users/lmp/Research/CES_LIO/Paper/10_8_Perez/"
+ "/Users/lmp/Research/CES_LIO/Paper/tmp2_Oct/"
+ "/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/Nadine Edits 100623/Draft100623_NadineEdits/"
+ "/Users/lmp/Teaching/Spring2024/2024S_CEL598/syllabus/"
+ "/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/qmd/"
+ "/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/tmp/syllabus/"
+ "/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/"
+ "/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/tmp/ref_readinglist/"
+ "/Users/lmp/Teaching/Spring2024/2024S_CEL500/syllabus/"
+ "/Users/lmp/Teaching/Spring2024/2024S_CEL500/syllabus/Rmd/"
+ "/Users/lmp/Teaching/2023F_CEL100/lectures/"
+ "/Users/lmp/Documents/03_Resources/CV/"
+ "/Users/lmp/Teaching/2023F_CEL100/Exams/Unit_1/templates/"
+ "/Users/lmp/Teaching/2023F_CEL100/Notes/"
+ "/Users/lmp/Teaching/2023F_CEL100/Quizzes/Quiz_01/scores/"
+ "/Users/lmp/Teaching/2023F_CEL494/notes/"
  "/Users/lmp/Research/CES_LIO/Paper/"
+ "/Users/lmp/.emacs.d/.cache/"
  "/Users/lmp/.emacs.d/elpa/archives/melpa/"
  "/Users/lmp/Desktop/"
  "/Users/lmp/Documents/03_Resources/ResumeCV/"
  "/Users/lmp/Documents/03_Resources/ResumeCV/Lucia_Resume/"
- "/Users/lmp/Teaching/2023F_CEL100/lectures/"
  "/Users/lmp/Service/AJPS_Ed_Assist/"
  "/Users/lmp/Teaching/2023F_CEL100/slides/"
  "/Users/lmp/Research/CES_LIO/Rscripts/"
@@ -63,73 +94,145 @@
 
 ;; ----- ido-work-file-list -----
 (
- "bookmarks"
- "init.el"
- "config.org"
  "refs.bib"
- "ces.bib"
- "Perez_Gibson_2023_LIO_electoral.md"
- "archive-contents"
+ "ASUletter.latex"
+ "config.org"
+ "paper.tex"
  "config.el"
- "capture.md"
- "Perez_2023_Resume.md"
+ "workingpaper.latex"
+ "ces.bib"
+ "Nadines_edits.tex"
+ "_quarto.yaml"
+ "598.bib"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lmp/.emacs.d/" (25826 36809 558822 897000) ".cache/" ".git/" "org-persist/" "elpa/" "init.el" "config.el" "config.org" "abbrev_defs" "eshell/" ".DS_Store" "ido.last" "../" "./")
+ ("/Users/lmp/.emacs.d/" (25891 12881 472337 495000) ".cache/" ".git/" "org-persist/" "elpa/" "init.el" "config.el" "config.org" "abbrev_defs" "eshell/" ".DS_Store" "ido.last" "../" "./")
 
- ("/Users/lmp/" (25826 36461 235456 925000) ".zsh_sessions/" ".viminfo" ".bash_history" "Toggl/" "WindhamPerez.savedSearch" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" ".revox/" "Service/" ".hushlogin" "Documents/" ".npm/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.7.1" ".Trash/" "Dropbox/" "Applications/" ".bibs/" "Movies/" ".ssh/" ".zcompdump-C02ZQHAJMD6T-5.7.1" "Teaching/" ".cisco/" ".dropbox/" "Public/" ".cups/" ".emacs.d/" "Zotero/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8" "ASU_MyTrips/" ".lesshst" "Library/" "Desktop/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.9" ".zsh_history" ".atom-backup/" "output/" ".openjfx/" "git-tmp/" ".atom/" "Pictures/" "Creative Cloud Files/" ".local/" "Dropbox_ASU/" ".adobe/" "Dropbox (ASU)/" ".zshrc" ".doppler/" ".subversion/" ".z" ".CFUserTextEncoding" ".logseq/" ".pandoc/" ".r/" ".DS_Store" ".anyconnect" "Databases/" "Logseq/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8.1" "Calibre/" "Dropbox (Personal)/" "Music/" ".config/" "SCETL/" ".Rhistory" "Research/" "../" "./")
+ ("/Users/lmp/Research/CES_LIO/Paper/10_8_Perez/" (25891 12511 513236 600000) "Biden_NATO_040223_Labels.png" "ces.bib" "DemocratL_Low_WTO_040223_Labels.png" "ANCOVA_TAB.tex" "NATO_Tab_040823.png" "BidenV_Med_NATO_040223_Labels.png" "TrumpV_Low_NATO_040223_Labels.png" "paper.ttt" "DemocratL_Med_NATO_040223_Labels.png" "BidenV_Low_WTO_040223_Labels.png" "Fstats_NATO_040823.png" "Med_WTO_040223_Labels.png" "paper.log" "Low_Know_NATO_040223_Labels.png" "paper-blx.bib" "TrumpV_High_NATO_040223_Labels.png" "RepL_NATO_040223_Labels.png" "paper.aux" "RepublicanL_Low_NATO_040223_Labels.png" "paper.blg" "DemL_NATO_040223_Labels.png" "paper.fff" "RepublicanL_High_NATO_040223_Labels.png" "BidenV_WTO_040223_Labels.png" "BidenV_Low_NATO_040223_Labels.png" "TrumpV_Med_NATO_040223_Labels.png" "NATO_Tab_041023.png" "RepublicanL_Med_NATO_040223_Labels.png" "RepublicanL_Low_WTO_040223_Labels.png" "paper.synctex.gz" "Biden_High_NATO_040223_Labels.png" "DemL_sqrt_trans.png" "TrumpV_Low_WTO_040223_Labels.png" "ALL_WTO_040223_Labels.png" "DemocratL_Low_NATO_040223_Labels.png" "paper.tex.bbl" "BidenV_High_WTO_040223_Labels.png" "Med_Know_NATO_040223_Labels.png" "TrumpV_WTO_040223_Labels.png" "High_Know_NATO_040223_Labels.png" "Fstats_WTO_040823.png" "paper.tex" "DemocratL_Med_WTO_040223_Labels.png" "paper.tex.blg" "paper.bcf" "RepL_WTO_040223_Labels.png" "Low_WTO_040223_Labels.png" "BidenV_Med_WTO_040223_Labels.png" "WTO_Tab_041023.png" "auto/" "figs/" "DemocratL_High_WTO_040223_Labels.png" "ALL_NATO_040223_Labels.png" "paper.run.xml" "missfont.log" "DemL_WTO_040223_Labels.png" "paper.bbl" "TrumpV_NATO_040223_Labels.png" ".DS_Store" "TrumpV_High_WTO_040223_Labels.png" "WTO_Tab_040823.png" "High_WTO_040223_Labels.png" "paper.pdf" "TrumpV_Med_WTO_040223_Labels.png" "DemocratL_High_NATO_040223_Labels.png" "adjmeans.png" "RepublicanL_High_WTO_040223_Labels.png" "RepublicanL_Med_WTO_040223_Labels.png" "../" "./")
 
- ("/Users/lmp/Research/CES_LIO/Paper/" (25825 12565 650170 644000) "ces.bib" "Perez_Gibson_2023_LIO_electoral.md.pdf" "Perez_Gibson_2023_LIO_electoral.md" "Archive_MPSA_version/" "makefile" ".DS_Store" "../" "./")
+ ("/Users/lmp/" (25891 12345 785095 5000) ".zsh_sessions/" ".viminfo" ".bash_history" "Toggl/" "WindhamPerez.savedSearch" ".gitconfig" "Downloads/" ".oh-my-zsh/" ".ispell_english" ".revox/" "Service/" ".hushlogin" "Documents/" ".npm/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.7.1" ".Trash/" "Dropbox/" "Applications/" ".bibs/" "Movies/" ".ssh/" ".z.24016" ".zcompdump-C02ZQHAJMD6T-5.7.1" "Teaching/" ".cisco/" ".dropbox/" "Public/" ".cups/" ".emacs.d/" "Zotero/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8" "ASU_MyTrips/" ".lesshst" "Library/" "Desktop/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.9" ".zsh_history" ".atom-backup/" "output/" ".openjfx/" "git-tmp/" ".atom/" "Pictures/" "Creative Cloud Files/" ".local/" ".adobe/" "Dropbox (ASU)/" ".zshrc" ".doppler/" ".subversion/" ".z" ".CFUserTextEncoding" ".logseq/" ".pandoc/" ".r/" ".DS_Store" ".anyconnect" "Databases/" "Logseq/" ".zcompdump-TCLAETL-C02ZQHAJMD6T-5.8.1" "Calibre/" "Dropbox (Personal)/" "Music/" ".config/" "SCETL/" ".Rhistory" "Research/" "../" "./")
 
- ("/Users/lmp/.emacs.d/elpa/archives/melpa/" (25825 9014 205111 123000) "archive-contents" "../" "./")
+ ("/Users/lmp/.emacs.d/.cache/" (25891 9278 650170 635000) "customize.el" "../" "./")
+
+ ("/Users/lmp/.emacs.d/elpa/archives/melpa/" (25891 8525 629076 240000) "archive-contents" "../" "./")
+
+ ("/Applications/" (25890 57417 139927 379000) "Dark Noise.app/" "Skim.app/" "Scrivener.app/" "Soulver 2.app/" "RStudio.app/" "iA Writer.app/" "Tweetbot.app/" "Slack.app/" "Adobe Acrobat DC/" "Timery.app/" "ScanSnap Online Update.localized/" "Mendeley Reference Manager.app/" "QLMarkdown.app/" "Evernote.app/" "Pins.app/" "Logseq.app/" "Microsoft PowerPoint.app/" "OBS.app/" "Airmail.app/" "quarto/" "Emacs.app/" " myASU.app/" "Firefox.app/" "Adobe Photoshop 2023/" "Adobe Audition 2023/" "Goodnotes.app/" "OmniOutliner.app/" "Icro.app/" "iTerm.app/" "AnkiApp.app/" "nvALT.app/" "XLD.app/" "Cron.app/" "Adobe Lightroom Classic/" "Microsoft OneNote.app/" "Falcon.app/" "R.app/" "Adobe Media Encoder 2023/" "Play.app/" "Byword.app/" "Agenda.app/" "GarageBand.app/" "Micro.blog.app/" "Pages.app/" "Qobuz.app/" "JabRef.app/" "Audio Hijack.app/" "1Password for Safari.app/" "TunnelBear.app/" "Forecast.app/" "Apple Configurator.app/" "Highlights.app/" "Keynote.app/" "1Password 7.app.zip" ".com.bomgar.scc.5E87C1D4/" "Marked 2.app/" "Downie 4.app/" "Microsoft Outlook.app/" "Typefully.app/" "zoom.us.app/" "calibre.app/" "Utilities/" "Microsoft Excel.app/" "Adobe Digital Editions.app/" "Doppler.app/" "Amphetamine.app/" "LogiTune.app/" "Safari.app/" "Mellel 5.app/" "Baking Soda.app/" "NetNewsWire.app/" "Vinegar.app/" "Adobe InDesign 2023/" "Backblaze.app/" "Cisco/" "ABBYY FineReader for ScanSnap/" "OmniFocus.app/" "ScanSnap Manual.localized/" "Adobe InDesign 2022/" "Microsoft Word.app/" "SuperDuper!.app/" "DaisyDisk.app/" ".zoomusUpdateUseOnly/" "Focus.app/" "MindNode.app/" "iMovie.app/" "Drafts.app/" "VueScan.app/" "Downlink.app/" "Simplenote.app/" "Fantastical.app/" "Warp.app/" "OneDrive.app/" "Nota.app/" "Adobe Creative Cloud/" "VOX Universal.app/" "LaunchBar.app/" "DEVONthink 3.app/" "Dropbox.app/" ".localized" "Numbers.app/" "Self Service.app/" "Papers.app/" "Anki.app/" "Ivory.app/" "Google Chrome.app/" "Tomato 2.app/" "Telegram Desktop.app/" "Raycast.app/" "Capture One 21.app/" ".DS_Store" "Cardhop.app/" "1Password.app/" "TeX/" "Keybase.app/" "Adobe Digital Editions 4.5.app/" "Adium.app/" "ScanSnap/" "Signal.app/" "Zotero.app/" "BBEdit.app/" "HandBrake.app/" "BusyCal.app/" "VOX.app/" "Manuscript/" "AQ Device Manager.app/" "Bookends.app/" "Mendeley Desktop.app/" "MarsEdit.app/" "Save to Reader.app/" "Spark.app/" "../" "./")
+
+ ("/Applications/Emacs.app/" (25802 60586 648744 431000) "Contents/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/" (25798 3318 0 0) "PkgInfo" "Info.plist" "Resources/" "MacOS/" "_CodeSignature/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/Resources/" (25798 2953 0 0) "Emacs.icns" "Credits.html" "site-lisp/" "info/" "etc/" "include/" "document.icns" "lisp/" "English.lproj/" "man/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/Resources/lisp/" (25798 2953 0 0) "pcmpl-x.el.gz" "vcursor.el.gz" "bs.el.gz" "hexl.el.gz" "soundex.elc" "wdired.el.gz" "sqlite.elc" "rect.el.gz" "help-mode.elc" "tooltip.el.gz" "shadowfile.el.gz" "bs.elc" "emacs-lock.el.gz" "array.el.gz" "image-file.el.gz" "dired-loaddefs.el.gz" "autoinsert.elc" "iimage.el.gz" "pcomplete.el.gz" "wid-edit.el.gz" "profiler.elc" "case-table.elc" "novice.elc" "emacs-lisp/" "epa-mail.el.gz" "help-fns.el.gz" "misc.elc" "international/" "mpc.elc" "minibuf-eldef.el.gz" "svg.elc" "hfy-cmap.elc" "userlock.el.gz" "scroll-bar.elc" "savehist.el.gz" "proced.elc" "rtree.elc" "w32-vars.elc" "progmodes/" "button.elc" "tabify.elc" "autoinsert.el.gz" "dirtrack.elc" "ibuffer-loaddefs.el.gz" "reposition.el.gz" "edmacro.elc" "ps-print.elc" "align.el.gz" "proced.el.gz" "mb-depth.el.gz" "tutorial.el.gz" "locate.el.gz" "forms.elc" "format.elc" "scroll-bar.el.gz" "elec-pair.el.gz" "mwheel.el.gz" "tabify.el.gz" "sqlite-mode.el.gz" "font-core.elc" "epa-mail.elc" "md4.el.gz" "composite.el.gz" "auth-source.el.gz" "image.elc" "icomplete.elc" "display-line-numbers.elc" "thingatpt.elc" "ecomplete.el.gz" "ehelp.el.gz" "char-fold.elc" "thread.elc" "dynamic-setting.elc" "locate.elc" "so-long.elc" "pcmpl-git.elc" "info-xref.el.gz" "font-core.el.gz" "ffap.elc" "format.el.gz" "paren.elc" "edmacro.el.gz" "tmm.el.gz" "external-completion.el.gz" "ezimage.elc" "kermit.el.gz" "obarray.el.gz" "ldefs-boot.el" "jit-lock.elc" "play/" "frame.elc" "cus-face.elc" "format-spec.el.gz" "uniquify.el.gz" "mouse-copy.elc" "auth-source.elc" "select.elc" "cmuscheme.el.gz" "indent.el.gz" "msb.el.gz" "view.el.gz" "whitespace.elc" "epa-ks.el.gz" "filesets.elc" "foldout.el.gz" "woman.elc" "find-dired.el.gz" "skeleton.elc" "htmlfontify.el.gz" "hippie-exp.elc" "facemenu.el.gz" "pcmpl-rpm.elc" "widget.elc" "iimage.elc" "calculator.el.gz" "expand.el.gz" "display-line-numbers.el.gz" "loadhist.elc" "jka-cmpr-hook.elc" "minibuffer.elc" "find-cmd.el.gz" "informat.elc" "loadhist.el.gz" "erc/" "md4.elc" "midnight.el.gz" "ps-bdf.elc" "w32-fns.elc" "pcmpl-unix.elc" "cdl.elc" "completion.elc" "dom.elc" "hex-util.el.gz" "talk.el.gz" "scroll-lock.el.gz" "ielm.elc" "recentf.el.gz" "ecomplete.elc" "info-look.elc" "dos-vars.elc" "jsonrpc.elc" "lpr.el.gz" "isearch.el.gz" "filenotify.el.gz" "sqlite-mode.elc" "forms.el.gz" "reveal.elc" "external-completion.elc" "help-fns.elc" "ibuffer.elc" "dired.el.gz" "subr.el.gz" "files.el.gz" "pgtk-dnd.el.gz" "theme-loaddefs.el" "pcmpl-gnu.elc" "misearch.elc" "chistory.elc" "env.el.gz" "hi-lock.el.gz" "tab-bar.elc" "help-at-pt.el.gz" "custom.el.gz" "view.elc" "sort.elc" "ses.elc" "comint.el.gz" "hi-lock.elc" "find-dired.elc" "x-dnd.elc" "plstore.el.gz" "image.el.gz" "startup.el.gz" "notifications.elc" "minibuffer.el.gz" "w32-fns.el.gz" "htmlfontify.elc" "ps-print-loaddefs.el.gz" "whitespace.el.gz" "t-mouse.elc" "loaddefs.el.gz" "epg-config.el.gz" "hilit-chg.elc" "misc.el.gz" "time-stamp.elc" "color.elc" "recentf.elc" "startup.elc" "pixel-scroll.elc" "face-remap.elc" "cus-load.el" "xt-mouse.elc" "elide-head.elc" "outline.elc" "newcomment.el.gz" "xt-mouse.el.gz" "ruler-mode.el.gz" "follow.el.gz" "userlock.elc" "ps-print-loaddefs.elc" "allout.elc" "descr-text.elc" "registry.el.gz" "mwheel.elc" "timezone.elc" "json.el.gz" "rtree.el.gz" "cus-dep.el.gz" "pcomplete.elc" "transient.el.gz" "informat.el.gz" "ielm.el.gz" "wid-browse.el.gz" "thread.el.gz" "apropos.el.gz" "timezone.el.gz" "files-x.el.gz" "server.el.gz" "faces.el.gz" "epa-file.el.gz" "ehelp.elc" "keymap.el.gz" "ibuf-ext.elc" "mouse.elc" "time.el.gz" "help-macro.elc" "man.elc" "dabbrev.elc" "mouse.el.gz" "rot13.elc" "saveplace.elc" "vc/" "autorevert.elc" "allout-widgets.el.gz" "COPYING" "info.el.gz" "sqlite.el.gz" "generic-x.elc" "ansi-osc.elc" "foldout.elc" "pcmpl-gnu.el.gz" "replace.elc" "dframe.elc" "fileloop.el.gz" "apropos.elc" "bookmark.elc" "tool-bar.elc" "delim-col.el.gz" "help.elc" "help-macro.el.gz" "version.elc" "isearchb.el.gz" "ps-bdf.el.gz" "paren.el.gz" "cus-face.el.gz" "bindings.el.gz" "mouse-copy.el.gz" "epa-hook.elc" "window.elc" "epa-ks.elc" "pcmpl-rpm.el.gz" "menu-bar.el.gz" "pixel-scroll.el.gz" "dos-fns.elc" "ffap.el.gz" "plstore.elc" "thingatpt.el.gz" "epa-hook.el.gz" "cedet/" "tmm.elc" "epa-dired.elc" "so-long.el.gz" "face-remap.el.gz" "help.el.gz" "ps-mule.elc" "filenotify.elc" "pcmpl-cvs.elc" "version.el.gz" "dired-loaddefs.elc" "dired-aux.el.gz" "abbrev.elc" "delsel.el.gz" "cus-theme.elc" "calc/" "calculator.elc" "disp-table.el.gz" "ls-lisp.elc" "hl-line.elc" "register.el.gz" "lpr.elc" "epa-file.elc" "display-fill-column-indicator.elc" "ps-print.el.gz" "simple.elc" "ibuf-ext.el.gz" "faces.elc" "generic-x.el.gz" "delim-col.elc" "man.el.gz" "reveal.el.gz" "image/" "cus-dep.elc" "url/" "README" "echistory.el.gz" "midnight.elc" "term.el.gz" "tempo.el.gz" "dired-aux.elc" "transient.elc" "yank-media.el.gz" "leim/" "ibuf-macs.elc" "frameset.elc" "abbrev.el.gz" "strokes.elc" "repeat.elc" "help-mode.el.gz" "dirtrack.el.gz" "mh-e/" "facemenu.elc" "cus-edit.elc" "echistory.elc" "w32-vars.el.gz" "xml.elc" "strokes.el.gz" "find-cmd.elc" "pcmpl-linux.elc" "speedbar.el.gz" "kmacro.elc" "hfy-cmap.el.gz" "pcmpl-cvs.el.gz" "language/" "misearch.el.gz" "filecache.el.gz" "find-lisp.elc" "simple.el.gz" "master.el.gz" "tutorial.elc" "shell.el.gz" "rect.elc" "dynamic-setting.el.gz" "xwidget.elc" "battery.el.gz" "t-mouse.el.gz" "menu-bar.elc" "char-fold.el.gz" "pcmpl-unix.el.gz" "x-dnd.el.gz" "ebuff-menu.el.gz" "treesit.el.gz" "isearch.elc" "mouse-drag.elc" "scroll-lock.elc" "find-file.elc" "vcursor.elc" "hexl.elc" "hilit-chg.el.gz" "ls-lisp.el.gz" "finder-inf.el" "subr.elc" "xml.el.gz" "env.elc" "fringe.elc" "kermit.elc" "mouse-drag.el.gz" "obarray.elc" "emacs-lock.elc" "register.elc" "ps-samp.el.gz" "epg-config.elc" "files.elc" "hl-line.el.gz" "tar-mode.elc" "flow-ctrl.el.gz" "password-cache.el.gz" "buff-menu.el.gz" "tab-line.elc" "auth-source-pass.elc" "disp-table.elc" "pcmpl-linux.el.gz" "dired.elc" "scroll-all.elc" "avoid.elc" "pgtk-dnd.elc" "tree-widget.el.gz" "term/" "case-table.el.gz" "uniquify.elc" "repeat.el.gz" "notifications.el.gz" "doc-view.el.gz" "windmove.el.gz" "skeleton.el.gz" "info-xref.elc" "delsel.elc" "ansi-color.elc" "newcomment.elc" "pcmpl-x.elc" "isearchb.elc" "type-break.elc" "select.el.gz" "profiler.el.gz" "icomplete.el.gz" "emulation/" "term.elc" "macros.elc" "windmove.elc" "jit-lock.el.gz" "reposition.elc" "printing.elc" "bookmark.el.gz" "hex-util.elc" "composite.elc" "frame.el.gz" "tooltip.elc" "kmacro.el.gz" "elide-head.el.gz" "mail/" "org/" "image-file.elc" "tempo.elc" "arc-mode.elc" "avoid.el.gz" "ps-samp.elc" "align.elc" "imenu.elc" "window.el.gz" "wdired.elc" "ses.el.gz" "scroll-all.el.gz" "sort.el.gz" "master.elc" "desktop.el.gz" "array.elc" "registry.elc" "jsonrpc.el.gz" "electric.elc" "format-spec.elc" "cus-edit.el.gz" "custom.elc" "autorevert.el.gz" "password-cache.elc" "textmodes/" "electric.el.gz" "flow-ctrl.elc" "speedbar.elc" "svg.el.gz" "treesit.elc" "allout.el.gz" "frameset.el.gz" "nxml/" "allout-widgets.elc" "dnd.elc" "buff-menu.elc" "button.el.gz" "wid-edit.elc" "winner.el.gz" "server.elc" "rot13.el.gz" "dired-x.el.gz" "outline.el.gz" "epg.el.gz" "cus-start.el.gz" "printing.el.gz" "macros.el.gz" "font-lock.elc" "arc-mode.el.gz" "desktop.elc" "color.el.gz" "expand.elc" "time.elc" "subdirs.el" "dos-w32.el.gz" "double.elc" "obsolete/" "cus-start.elc" "ezimage.el.gz" "shell.elc" "jka-compr.el.gz" "epa.elc" "descr-text.el.gz" "ps-mule.el.gz" "use-package/" "elec-pair.elc" "follow.elc" "mpc.el.gz" "image-mode.el.gz" "image-mode.elc" "keymap.elc" "find-file.el.gz" "bindings.elc" "dos-fns.el.gz" "eshell/" "finder.el.gz" "info-look.el.gz" "calendar/" "auth-source-pass.el.gz" "talk.elc" "ibuffer.el.gz" "tab-line.el.gz" "net/" "comint.elc" "tree-widget.elc" "json.elc" "tar-mode.el.gz" "jka-cmpr-hook.el.gz" "winner.elc" "saveplace.el.gz" "tool-bar.el.gz" "display-fill-column-indicator.el.gz" "filesets.el.gz" "time-stamp.el.gz" "gnus/" "mb-depth.elc" "cdl.el.gz" "minibuf-eldef.elc" "xdg.el.gz" "dnd.el.gz" "xdg.elc" "jka-compr.elc" "files-x.elc" "dos-vars.el.gz" "rfn-eshadow.el.gz" "fringe.el.gz" "epa-dired.el.gz" "dired-x.elc" "ibuf-macs.el.gz" "info.elc" "ibuffer-loaddefs.elc" "type-break.el.gz" "replace.el.gz" "ido.el.gz" "shadowfile.elc" "soundex.el.gz" "filecache.elc" "dframe.el.gz" "widget.el.gz" "loaddefs.elc" "savehist.elc" "chistory.el.gz" "epa.el.gz" "tab-bar.el.gz" "dom.el.gz" "find-lisp.el.gz" "xwidget.el.gz" "wid-browse.elc" "novice.el.gz" "double.el.gz" "hippie-exp.el.gz" "epg.elc" "ido.elc" "loadup.el" "cus-theme.el.gz" "woman.el.gz" "yank-media.elc" "indent.elc" "msb.elc" "dabbrev.el.gz" "ruler-mode.elc" "finder.elc" "completion.el.gz" "help-at-pt.elc" "ansi-color.el.gz" "pcmpl-git.el.gz" "doc-view.elc" "ebuff-menu.elc" "cmuscheme.elc" "fileloop.elc" "font-lock.el.gz" "rfn-eshadow.elc" "ansi-osc.el.gz" "imenu.el.gz" "dos-w32.elc" "battery.elc" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/Resources/lisp/international/" (25798 2936 0 0) "iso-ascii.el.gz" "mule-util.elc" "latin1-disp.el.gz" "textsec-check.elc" "uni-titlecase.el" "mule.elc" "uni-brackets.el" "mule-cmds.el.gz" "ucs-normalize.el.gz" "ccl.el.gz" "ucs-normalize.elc" "fontset.el.gz" "charscript.el.gz" "utf7.el.gz" "uni-special-titlecase.el" "utf7.elc" "uni-decimal.el" "ja-dic-utl.elc" "iso-cvt.el.gz" "uni-combining.el" "latexenc.el.gz" "utf-7.elc" "cp51932.elc" "uni-digit.el" "iso-transl.elc" "eucjp-ms.elc" "charprop.el" "ccl.elc" "textsec-check.el.gz" "characters.el.gz" "ja-dic-utl.el.gz" "ja-dic-cnv.el.gz" "titdic-cnv.elc" "uni-confusable.el" "eucjp-ms.el.gz" "ogonek.elc" "uni-comment.el" "kinsoku.el.gz" "titdic-cnv.el.gz" "mule-diag.elc" "characters.elc" "uni-mirrored.el" "uni-uppercase.el" "mule-conf.elc" "utf-7.el.gz" "isearch-x.el.gz" "charscript.elc" "ja-dic-cnv.elc" "uni-category.el" "iso-transl.el.gz" "textsec.elc" "iso-ascii.elc" "isearch-x.elc" "uni-scripts.el" "iso-cvt.elc" "kinsoku.elc" "quail.el.gz" "emoji-labels.el" "fontset.elc" "emoji-zwj.elc" "mule.el.gz" "uni-special-uppercase.el" "latin1-disp.elc" "uni-name.el" "idna-mapping.el" "robin.el.gz" "mule-cmds.elc" "mule-diag.el.gz" "emoji.elc" "uni-special-lowercase.el" "quail.elc" "kkc.el.gz" "uni-decomposition.el" "ogonek.el.gz" "rfc1843.el.gz" "textsec.el.gz" "rfc1843.elc" "latexenc.elc" "robin.elc" "uni-lowercase.el" "emoji-zwj.el.gz" "mule-util.el.gz" "uni-old-name.el" "uni-bidi.el" "emoji.el.gz" "uni-numeric.el" "cp51932.el.gz" "mule-conf.el.gz" "kkc.elc" "../" "./")
+
+ ("/Users/lmp/.config/" (25608 62231 204102 151000) "raycast/" "iterm2/" "rstudio/" "neofetch/" "gh/" "../" "./")
+
+ ("/Users/lmp/Research/" (25890 47146 398314 531000) "APSA/" "ResearchCalendar/" "liberatingFaith/" "NSF_CAREER/" "_TenureAnnualRev/" "ND2022/" "cyberJustWar/" "CES_LIO/" "notes/" "1821secofstateJQAdmas.pdf" "ISAM2021/" "MIPS/" "ISAW2021/" "CES_NATO/" "talks/" "APSR_StrategyFreedom/" "Providence/" "makefile" "GrandStrategy/" ".DS_Store" "5-year-resaerch/" "ISA-2022/" "../" "./")
+
+ ("/Users/lmp/Desktop/" (25890 47175 109669 777000) "Process/" "Scout_Oath_Law.md.pdf" "Scout_Oath_Law.md" "Bartlett 2006.pdf" "Kass 2021.pdf" "_Rumsfeld/" " Kass 2006.pdf" "Enrollment Section 2023.docx" "Alter 2015.pdf" "Jones 1984.pdf" "capture.md" ".localized" "tmpHugo/" ".DS_Store" "Gray 2007.pdf" ".Rhistory" "untitled folder/" "../" "./")
+
+ ("/Users/lmp/Research/CES_LIO/Paper/" (25890 51013 946145 256000) "tmp/" "10_7_Draft_Nadine/" "08_23_Draft_Perez/" ".DS_Store" "10_8_Perez/" "../" "./")
+
+ ("/Users/lmp/Research/CES_LIO/Paper/tmp2_Oct/" (25889 44381 287724 138000) "Biden_NATO_040223_Labels.png" "ces.bib" "DemocratL_Low_WTO_040223_Labels.png" "ANCOVA_TAB.tex" "NATO_Tab_040823.png" "BidenV_Med_NATO_040223_Labels.png" "TrumpV_Low_NATO_040223_Labels.png" "paper.ttt" "DemocratL_Med_NATO_040223_Labels.png" "BidenV_Low_WTO_040223_Labels.png" "Fstats_NATO_040823.png" "Med_WTO_040223_Labels.png" "paper.log" "Low_Know_NATO_040223_Labels.png" "paper-blx.bib" "TrumpV_High_NATO_040223_Labels.png" "RepL_NATO_040223_Labels.png" "paper.aux" "RepublicanL_Low_NATO_040223_Labels.png" "paper.blg" "DemL_NATO_040223_Labels.png" "paper.fff" "RepublicanL_High_NATO_040223_Labels.png" "BidenV_WTO_040223_Labels.png" "BidenV_Low_NATO_040223_Labels.png" "TrumpV_Med_NATO_040223_Labels.png" "NATO_Tab_041023.png" "RepublicanL_Med_NATO_040223_Labels.png" "RepublicanL_Low_WTO_040223_Labels.png" "Biden_High_NATO_040223_Labels.png" "DemL_sqrt_trans.png" "TrumpV_Low_WTO_040223_Labels.png" "ALL_WTO_040223_Labels.png" "DemocratL_Low_NATO_040223_Labels.png" "paper.tex.bbl" "BidenV_High_WTO_040223_Labels.png" "Med_Know_NATO_040223_Labels.png" "TrumpV_WTO_040223_Labels.png" "High_Know_NATO_040223_Labels.png" "Fstats_WTO_040823.png" "paper.tex" "DemocratL_Med_WTO_040223_Labels.png" "paper.tex.blg" "paper.bcf" "RepL_WTO_040223_Labels.png" "Low_WTO_040223_Labels.png" "BidenV_Med_WTO_040223_Labels.png" "WTO_Tab_041023.png" "figs/" "DemocratL_High_WTO_040223_Labels.png" "ALL_NATO_040223_Labels.png" "paper.run.xml" "DemL_WTO_040223_Labels.png" "paper.bbl" "TrumpV_NATO_040223_Labels.png" ".DS_Store" "TrumpV_High_WTO_040223_Labels.png" "WTO_Tab_040823.png" "High_WTO_040223_Labels.png" "paper.pdf" "TrumpV_Med_WTO_040223_Labels.png" "DemocratL_High_NATO_040223_Labels.png" "adjmeans.png" "RepublicanL_High_WTO_040223_Labels.png" "RepublicanL_Med_WTO_040223_Labels.png" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL598/syllabus/" (25888 23977 734912 956000) ".quarto/" "tmp/" "quarto/" "598.bib" "_quarto.yaml" "CEL598_Syllabus.pdf" "Rmd/" "598.qmd" ".DS_Store" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/Nadine Edits 100623/Draft100623_NadineEdits/" (25889 27844 588104 780000) "ces.bib" "chicago-author-date.csl" "Nadines_edits.log" "Nadines_edits.aux" "Nadines_edits.pdf" "makefile" "Nadines_edits.tex" "../" "./")
+
+ ("/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/" (25889 25692 297839 797000) "Nadine Edits 100623.zip" "Nadine Edits 100623/" "Nadine Edits 100623.pdf" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/Nadine Edits 100623/" (25889 25687 499578 864000) "Biden_NATO_040223_Labels.png" "DemocratL_Low_WTO_040223_Labels.png" "ANCOVA_TAB.tex" "diss.bib" "NATO_Tab_040823.png" "BidenV_Med_NATO_040223_Labels.png" "TrumpV_Low_NATO_040223_Labels.png" "DemocratL_Med_NATO_040223_Labels.png" "BidenV_Low_WTO_040223_Labels.png" "Fstats_NATO_040823.png" "Med_WTO_040223_Labels.png" "chicago-author-date.csl" "Draft100623_NadineEdits/" "Low_Know_NATO_040223_Labels.png" "TrumpV_High_NATO_040223_Labels.png" "RepL_NATO_040223_Labels.png" "RepublicanL_Low_NATO_040223_Labels.png" "DemL_NATO_040223_Labels.png" "RepublicanL_High_NATO_040223_Labels.png" "BidenV_WTO_040223_Labels.png" "BidenV_Low_NATO_040223_Labels.png" "TrumpV_Med_NATO_040223_Labels.png" "NATO_Tab_041023.png" "RepublicanL_Med_NATO_040223_Labels.png" "RepublicanL_Low_WTO_040223_Labels.png" "Biden_High_NATO_040223_Labels.png" "DemL_sqrt_trans.png" "TrumpV_Low_WTO_040223_Labels.png" "ALL_WTO_040223_Labels.png" "DemocratL_Low_NATO_040223_Labels.png" "MPSA.tex" "BidenV_High_WTO_040223_Labels.png" "Med_Know_NATO_040223_Labels.png" "Perez_Gibson_CES_LIO_040423.tex" "TrumpV_WTO_040223_Labels.png" "High_Know_NATO_040223_Labels.png" "Fstats_WTO_040823.png" "DemocratL_Med_WTO_040223_Labels.png" "main.tex" "RepL_WTO_040223_Labels.png" "Low_WTO_040223_Labels.png" "BidenV_Med_WTO_040223_Labels.png" "WTO_Tab_041023.png" "DemocratL_High_WTO_040223_Labels.png" "ALL_NATO_040223_Labels.png" "draft082623/" "mpsa.bib" "DemL_WTO_040223_Labels.png" "TrumpV_NATO_040223_Labels.png" ".DS_Store" "TrumpV_High_WTO_040223_Labels.png" "OnHold.tex" "WTO_Tab_040823.png" "High_WTO_040223_Labels.png" "TrumpV_Med_WTO_040223_Labels.png" "DemocratL_High_NATO_040223_Labels.png" "adjmeans.png" "RepublicanL_High_WTO_040223_Labels.png" "RepublicanL_Med_WTO_040223_Labels.png" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/" (25888 18406 35814 745000) "ags_calendar.txt" ".quarto/" "CEL475_Spring2023_Syllabus.md" "tmp/" "475.bib" "CEL475_AGS_Readings.csv" "CEL475_Spring2023_Syllabus.md.pdf" "makefile" ".DS_Store" "qmd/" "chicago-syllabus.csl" "log.log" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/qmd/" (25888 20060 520170 838000) "ags_calendar.txt" ".quarto/" "475.bib" "CEL475_Syllabus.pdf" "CEL475_AGS_Readings.csv" "475.qmd" "chicago-syllabus.csl" "_quarto.yml" "../" "./")
+
+ ("/Users/lmp/.pandoc/md/" (25888 17224 353002 312000) "statement.tex" "syllabus.latex" "workingpaper.latex" "manuscript.tex" "gradereport.latex" "syllabus.tex" "ASUletter.latex" "vita.tex" "statement.latex" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL598/" (25864 30662 617994 50000) "syllabus/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/tmp/syllabus/" (25888 15655 529955 872000) "syllabus.pdf" "Fall_2020_international_law/" "syllabus.Rmd" "course_parts.csv" "seal.png" "classify.csv" "Spring_2021_international_organizations/" ".readinglist_au.lb" "grading.csv" "syllabus.tex" "scriven_svm-latex-syllabus.tex" "composition.csv" "bibfile.bib" "syllabus.log" ".Rhistory" "../" "./")
+
+ ("/Users/" (25876 21077 650644 39000) "lmp/" "administrator/" "Shared/" ".localized" "cas/" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/tmp/ref_readinglist/" (25880 37700 0 0) "readinglist.pdf" "readinglist.rmd" "scriven_svm-latex-syllabus_rdlst.tex" "topics.csv" "bibfile.bib" "classifyf.csv" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/tmp/" (25888 11450 339779 19000) "syllabus/" "README.md" "ref_readinglist/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/" (25888 12582 272015 266000) "2024S_CEL598/" "2024S_CEL475/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL500/syllabus/" (25888 12210 376207 94000) ".quarto/" "tmp/" "quarto/" "598.bib" "_quarto.yaml" "CEL598_Syllabus.pdf" "Rmd/" "598.qmd" ".DS_Store" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/lectures/" (25887 18132 205556 492000) ".quarto/" "lecture_08.qmd" "lecture_09.qmd" "PE_CEL100.md" "lecture_08.pdf" "lecture_09.pdf" "lecture_04.pdf" "lecture_10.pdf" "lecture_11.pdf" "lecture_05.pdf" "lecture_07.pdf" "lecture_06.pdf" "lecture_12.pdf" "lecture_02.pdf" "lecture_03.pdf" "lecture_01.pdf" "lecture_04.qmd" "lecture_10.qmd" "lecture_11.qmd" "lecture_05.qmd" "lecture_07.qmd" "lecture_06.qmd" "lecture_12.qmd" "lecture_02.qmd" "lecture_03.qmd" "_quarto.yml" "lecture_01.qmd" "Samuel_01.txt" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL500/syllabus/Rmd/" (25888 11763 634660 931000) "course_parts.csv" "classify.csv" "grading.csv" "598.tex" "composition.csv" "598.Rmd" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/" (25877 42535 143203 563000) "booklet_spr2023/" "Syllabus/" ".DS_Store" "../" "./")
+
+ ("/Volumes/Macintosh HD/Users/lmp/.bibs/" (25880 13127 34160 508000) "refs.bib" "../" "./")
+
+ ("/Users/lmp/.bibs/" (25880 13127 34160 508000) "refs.bib" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/Notes/" (25866 5412 279376 29000) "outlineTheogony.qmd" ".quarto/" "exam1_studyguide.qmd" "outlineTheogony.pdf" "homer-marginalia-1.jpeg" "clausewitz_1.jpg" "lockeQuestions.qmd" "clausewitz_2.jpg" "how_to_annotate.pdf" "homer-marginalia-2.jpeg" "lockeQuestions.docx" "how_to_read.pdf" "makefile" "1323_001.pdf" "locke.jpg" "lockeQuestions.pdf" ".DS_Store" "1323_001.png" "how_to_annotate.qmd" "how_to_read.qmd" "_quarto.yml" "../" "./")
+
+ ("/Users/lmp/Documents/03_Resources/CV/" (25875 4867 384228 999000) "CV.sty" "Perez_Vita.md.pdf" "cv.tex" "vita.tex" "makefile" "Perez_Vita.md" "../" "./")
+
+ ("/Users/lmp/Documents/03_Resources/" (25875 2913 211881 265000) "Experian_Tides/" "FY24 Research Budget_Luke Perez.xlsx" "Reading_mss.savedSearch" "CV/" "SCETL_Internals/" "IMG_6805.jpeg" "PSLF Application/" "Adobe/" "Experian Documents/" "pacoart.jpg" "Nopal/" "Mesa Schools/" "Resumes/" "Faith_Formation/" ".DS_Store" "SCETL_2023_Retreat/" "CEL475.savedSearch" "../" "./")
+
+ ("/Users/lmp/Documents/" (25860 39760 134002 815000) "SyllabusBank/" "BBEdit Backups/" "Zoom/" "03_Resources/" "Bookends/" "Bookmarks/" "04_Archive/" "Statements/" "01_Projects/" ".aperture2Lightroom/" "Library/" ".localized" ".DS_Store" "02_Areas/" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/Exams/Unit_1/templates/" (25871 25117 437718 643000) "examTemplate.tex" "solutionTemplate.tex" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/Exams/Unit_1/" (25871 25033 107751 691000) "questions/" "zips/" "CEL100_Unit1_Exam.R" "templates/" "skeleton/" ".DS_Store" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/Quizzes/Quiz_01/scores/" (25862 25573 685484 672000) ".quarto/" "CEL100_quiz01_report_files/" "_quarto.yaml" "scratchCode.R" "CEL100_89239.csv" "NM_QuizItemReport.csv" "quiz1_questReport.csv" "quiz1time.csv" "CEL100_quiz01_report.qmd" "CEL100_quiz01_report.html" ".DS_Store" "CEL100_quiz01_report.Rmd" "CEL100_quiz01_report.pdf" "quiz1_report.R" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Teaching/" (25864 30650 140233 223000) "2023F_CEL494/" "2023-2024-Theses/" "2023F_CEL100/" "Spring2024/" "Archive/" "Guidelines for Sample Syllabi - April 2021.doc" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Teaching/Spring2024/2024S_CEL500/" (25864 30662 617994 50000) "syllabus/" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL494/notes/" (25856 43546 185995 883000) ".quarto/" "augustine.qmd" "augustine.pdf" "justwar.pdf" "deVitoria.qmd" "justwar.qmd" "_quarto.yml" ".Rhistory" "deVitoria.pdf" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/Quizzes/Quiz_01/" (25852 30738 319379 566000) "questions/" "zips/" "quiz2Questions.md" "quiz2questions_full.md" "CEL100_Quiz2.R" "scores/" ".DS_Store" "Machiavelli Quiz CEL100.rtf" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/Quizzes/" (25860 32479 230044 729000) "Quiz_00/" ".DS_Store" "Quiz_01/" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/" (25860 33088 263978 846000) "photoRoster.pdf" "Quizzes/" "Data/" "lectures/" "Exams/" "Readings/" "Notes/" "Syllabus/" "slides/" ".DS_Store" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL100/slides/" (25829 9227 678559 284000) "lecture02.html" ".quarto/" "lecture01_files/" "lecture01.qmd" "lecture02.qmd" "lecture02_files/" "_quarto.yml" ".Rhistory" "lecture01.html" "../" "./")
+
+ ("/Users/lmp/Teaching/2023F_CEL494/" (25811 54213 770442 664000) "notes/" "syllabus/" ".DS_Store" ".Rhistory" "../" "./")
+
+ ("/Users/lmp/.pandoc/" (25405 43926 411382 578000) ".git/" "csl/" "md/" ".gitignore" "README.md" "syllabus.tex" "images/" "LICENSE" ".DS_Store" "Rmarkdown/" "../" "./")
+
+ ("/Users/lmp/Research/CES_LIO/" (25830 11109 573016 219000) "Presentation/" "data/" ".git/" "mytrip_MPSA2023/" "Rscripts/" ".gitignore" "UNCW-experiment/" "README.md" "Archive_MPSA_version/" "archive_stratch/" ".DS_Store" "Paper/" "../" "./")
+
+ ("/Users/lmp/Documents/03_Resources/ResumeCV/Lucia_Resume/" (25823 57943 523491 170000) "resume.latex" "Lucia_Resume.md" "Lucia_Resume_Archived/" "makefile" ".DS_Store" "Lucia_Resume.md.pdf" "../" "./")
 
  ("/Users/lmp/.emacs.d/elpa/archives/" (25825 9014 202049 623000) "nongnu/" "melpa/" "gnu/" "../" "./")
 
  ("/Users/lmp/.emacs.d/elpa/" (25825 9029 223460 66000) "dash-20230714.723/" "hydra-20220910.1206/" "markdown-mode-20230817.847/" "lv-20200507.1518/" "archives/" "pandoc-mode-20230416.952/" "zenburn-theme-20230315.1004/" "../" "./")
 
- ("/Users/lmp/Desktop/" (25825 7844 180148 220000) "Baele and Bettiza 2021.pdf" "Process/" "Zhang etal 2023.pdf" "30025730.pdf" "Bell_2011.pdf" "Bettiza 2021.pdf" "Aldrich Sullivan and Borgida 1989.pdf" "30027190.pdf" "Encarnacion_2016.pdf" "Thomas 2019 intro.pdf" "Diamond_1992.pdf" "Augustine_as_a_Reader_of_Cicero.pdf" "mdp.39015023097275-1581168020.pdf" "capture.md" ".localized" "Beard_2014.pdf" "Aron_1972.pdf" "Bendyna_2001_etall.pdf" "Bonino 2010.pdf" ".DS_Store" "Arriaga_2019_wsj.pdf" "Caverley 2023.pdf" "SCETL_Director_jobAd.pdf" "Fariss_2019.pdf" "../" "./")
-
- ("/Users/lmp/Documents/03_Resources/" (25815 51609 299312 756000) "Experian_Tides/" "Reading_mss.savedSearch" "ResumeCV/" "PSLF Application/" "Adobe/" "Experian Documents/" "Nopal/" "Mesa Schools/" ".DS_Store" "SCETL_2023_Retreat/" "CEL475.savedSearch" "../" "./")
-
  ("/Users/lmp/Documents/03_Resources/ResumeCV/" (25823 57531 266219 512000) "resume.latex" "Perez_2023_Resume.md.pdf" "Perez_2023_Resume.md" "Lucia_Resume/" "makefile" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Documents/03_Resources/ResumeCV/Lucia_Resume/" (25823 57713 482707 693000) "resume.latex" "Lucia_Resume.md" "Lucia_Resume_Archived/" "makefile" ".DS_Store" "Lucia_Resume.md.pdf" "../" "./")
-
  ("/Users/lmp/Documents/03_Resources/ResumeCV/Lucia_Resume/Lucia_Resume_Archived/" (25823 56451 342830 424000) ".Lucia_Res.lb" "Lucia_Res.pdf" ".DS_Store" "Lucia_Res.tex" "../" "./")
-
- ("/Users/lmp/.emacs.d/.cache/" (25822 12673 385731 493000) "bookmarks" "customize.el" "../" "./")
-
- ("/Users/lmp/Teaching/2023F_CEL100/lectures/" (25822 17985 317450 686000) ".quarto/" "lecture_01.pdf" "_quarto.yml" "lecture_01.qmd" ".Rhistory" "../" "./")
-
- ("/Users/lmp/Teaching/2023F_CEL100/" (25811 54805 33204 501000) "Quizzes/" "lectures/" "Exams/" "Readings/" "Notes/" "Syllabus/" "slides/" ".DS_Store" ".Rhistory" "../" "./")
-
- ("/Users/lmp/Teaching/" (25820 60264 444592 37000) "2023F_CEL494/" "2023-2024-Theses/" "2023F_CEL100/" "Archive/" "Guidelines for Sample Syllabi - April 2021.doc" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Teaching/2023F_CEL100/slides/" (25810 50052 803838 655000) ".quarto/" "lecture01_files/" "lecture01.qmd" "_quarto.yml" ".Rhistory" "lecture01.html" "../" "./")
 
  ("/Users/lmp/Service/AJPS_Ed_Assist/AJPS_resume/" (25815 51510 627699 747000) "../" "./")
 
  ("/Users/lmp/Service/AJPS_Ed_Assist/" (25815 52193 726660 987000) "Perez_2023_AJPS_coverLetter.md" "AJPS_resume/" "AJPS_coverLetter/" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Research/" (25809 15232 639920 438000) "APSA/" "ResearchCalendar/" "liberatingFaith/" "NSF_CAREER/" "_TenureAnnualRev/" "ND2022/" "cyberJustWar/" "CES_LIO/" "notes/" "1821secofstateJQAdmas.pdf" "ISAM2021/" "ISAW2021/" "CES_NATO/" "talks/" "APSR_StrategyFreedom/" "Providence/" "makefile" ".DS_Store" "5-year-resaerch/" "ISA-2022/" "../" "./")
-
  ("/Users/lmp/Research/CES_LIO/Rscripts/" (25765 59267 920511 7000) "ngram.R" ".Rhistory" "../" "./")
 
  ("/Users/lmp/Research/CES_LIO/data/" (25765 49490 278697 445000) "lio_ngram.csv" "rawngram.txt" "../" "./")
 
- ("/Users/lmp/Research/CES_LIO/" (25765 48427 171292 847000) "Presentation/" "data/" ".git/" "mytrip_MPSA2023/" "Rscripts/" ".gitignore" "UNCW-experiment/" "README.md" "archive_stratch/" ".DS_Store" "Paper/" "../" "./")
-
- ("/Users/" (25755 14707 31836 875000) "lmp/" "administrator/" "Shared/" ".localized" "cas/" "../" "./")
-
  ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/Tex_to_MD/" (25755 19634 806361 517000) "Perez_Gibson_CES_LIO_040423.md" "MPSA.tex" "Perez_Gibson_CES_LIO_040423.tex" "mpsa.md" "tmp.pdf" "main.tex" "mpsa.bib" ".DS_Store" "../" "./")
 
- ("/Volumes/Macintosh HD/Users/lmp/.bibs/" (25755 8300 315946 131000) "refs.bib.bak" "refs.bib.sav.tmp" "refs.bib" "../" "./")
-
  ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/Lib Order Paper 041023/" (25652 54195 970665 2000) "Biden_NATO_040223_Labels.png" "DemocratL_Low_WTO_040223_Labels.png" "NATO_Tab_040823.png" "MPSA-blx.bib" "BidenV_Med_NATO_040223_Labels.png" "TrumpV_Low_NATO_040223_Labels.png" "DemocratL_Med_NATO_040223_Labels.png" "BidenV_Low_WTO_040223_Labels.png" "Fstats_NATO_040823.png" "Med_WTO_040223_Labels.png" "chicago-author-date.csl" "Low_Know_NATO_040223_Labels.png" "TrumpV_High_NATO_040223_Labels.png" "mpsa.bbl" "RepL_NATO_040223_Labels.png" "RepublicanL_Low_NATO_040223_Labels.png" "DemL_NATO_040223_Labels.png" "RepublicanL_High_NATO_040223_Labels.png" "BidenV_WTO_040223_Labels.png" "BidenV_Low_NATO_040223_Labels.png" "TrumpV_Med_NATO_040223_Labels.png" "NATO_Tab_041023.png" "RepublicanL_Med_NATO_040223_Labels.png" "RepublicanL_Low_WTO_040223_Labels.png" "Biden_High_NATO_040223_Labels.png" "DemL_sqrt_trans.png" "TrumpV_Low_WTO_040223_Labels.png" "ALL_WTO_040223_Labels.png" "DemocratL_Low_NATO_040223_Labels.png" "MPSA.tex" "BidenV_High_WTO_040223_Labels.png" "Med_Know_NATO_040223_Labels.png" "Perez_Gibson_CES_LIO_040423.tex" "TrumpV_WTO_040223_Labels.png" "High_Know_NATO_040223_Labels.png" "Fstats_WTO_040823.png" "Perez_Gibson_2023_MPSA.pdf" "DemocratL_Med_WTO_040223_Labels.png" "main.tex" "RepL_WTO_040223_Labels.png" "Low_WTO_040223_Labels.png" "BidenV_Med_WTO_040223_Labels.png" "WTO_Tab_041023.png" "DemocratL_High_WTO_040223_Labels.png" "ALL_NATO_040223_Labels.png" "mpsa.bib" "mpsa.blg" "DemL_WTO_040223_Labels.png" "TrumpV_NATO_040223_Labels.png" "MPSA.aux" ".DS_Store" "TrumpV_High_WTO_040223_Labels.png" "MPSA.log" "WTO_Tab_040823.png" "High_WTO_040223_Labels.png" "TrumpV_Med_WTO_040223_Labels.png" "DemocratL_High_NATO_040223_Labels.png" "MPSA.run.xml" "adjmeans.png" "RepublicanL_High_WTO_040223_Labels.png" "RepublicanL_Med_WTO_040223_Labels.png" "../" "./")
-
- ("/Users/lmp/.bibs/" (25755 8300 315946 131000) "refs.bib.bak" "refs.bib.sav.tmp" "refs.bib" "../" "./")
 
  ("/Users/lmp/Research/CES_LIO/Paper/Gibson_methods/" (25652 10376 541677 557000) "Lib Order Paper 041023.zip" "CES UNCW Final 07012022.docx" ".DS_Store" "Lib Order Paper 041023/" "Tex_to_MD/" "../" "./")
 

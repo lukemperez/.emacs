@@ -8,3 +8,116 @@ ls
 cd archives/
 ls
 open .
+ls
+open .
+ls
+make
+touch paper.css
+touch panmarked.sh
+open panmarked.sh 
+make
+make
+make: *** No rule to make target `Perez_Gibson_2023_LIO_electoral.docx', needed by `all'.  Stop.
+make: *** No rule to make target `Perez_Gibson_2023_LIO_electoral.docx', needed by `all'.  Stop.
+make
+make
+make
+make
+make
+ls
+touch lecture_03.qmd
+quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
+quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
+quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
+quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
+quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
+quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
+quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
+open *.pdf -a Skim
+ls
+mv CEL494_justWar_syllabus.qmd CEL5xx_strategyAmerRepublic.qmd
+ls
+rm -rf *.pdf
+ls
+quarto render
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+open *.pdf -a SKim
+ls
+rm -rf *.html
+touch _quarto.yaml
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+open *.pdf -a SKim
+ls
+open .
+clear
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+open *.pdf -a SKim
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+ls -l
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+ls
+quarto render CEL5xx_strategyAmerRepublic.qmd 
+quartor render CEL5xx_strategyAmerRepublic.qmd
+quarto render CEL5xx_strategyAmerRepublic.qmd
+open *.pdf -a Skim
+ls
+mv CEL5xx_strategyAmerRepublic.qmd CEL598_American_Strategic_Thought.qmd
+ls
+open .
+ls
+open .
+mv CEL5xx_strategyAmerRepublic.qmd CEL598_American_Strategic_Thought.qmd
+clear
+ls
+quarto render CEL598_American_Strategic_Thought.qmd 
+open *.pdf -a Skim
+open .
+quarto render CEL598_American_Strategic_Thought.qmd 
+quarto render CEL598_American_Strategic_Thought.qmd 
+quarto render CEL598_American_Strategic_Thought.qmd 
+open *.pdf -a Skim
+ls
+make
+make
+make
+make
+make rebuild 
+make rebuild 
+make rebuild 
+open *.md -a BBedit
+open *.md -a BBedit
+make rebuild 
+ls
+clear
+make
+make
+make
+make
+make
+make
+make
+make
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+quarto render lecture_10.qmd && open lecture_10.pdf -a Skim
+make
+make rebuild 
+make
+make
+make
+make
+make
+quarto render lecture_11.qmd && open lecture_11.pdf -a Skim
+quarto render lecture_11.qmd && open lecture_11.pdf -a Skim
+quarto render lecture_11.qmd && open lecture_11.pdf -a Skim
+git status
+ls
+x
+exit
