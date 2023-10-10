@@ -171,6 +171,9 @@ Should end with a forward slash.")
 ;; (require 'org-ref)
 ;; (require 'bibtex)
 
+;; (require 'yaml-mode)
+  ;; (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
 (use-package markdown-mode
   :ensure t
   :commands (markdown-mode gfm-mode)
@@ -201,7 +204,6 @@ Should end with a forward slash.")
   ("\\.md" . poly-markdown-mode)
   )
 
-;; load the library
 (require 'quarto-mode)
 
 ;; This allows us to switch themes as needed
@@ -242,10 +244,10 @@ Should end with a forward slash.")
 ;;   )
 
 ;; (use-package solarized-theme
-;;         :ensure t
-;;         :defer t
-;;         :config
-;;         (load-theme 'solarized-dark t))
+        ;; :ensure t
+        ;; :defer t
+        ;; :config
+        ;; (load-theme 'solarized-dark t))
 
 ;; (use-package ess
 ;;     :ensure ess

@@ -232,29 +232,6 @@ Org-Mode is the primary way that I should be writing. In this section, we need t
 
 It bears mentioning that if I ever want to check my org-mode verison, I can use =M-x org-version=. 
 
-** "Word Processor
-[[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Howardism]] has the good on setting up Org-Mode to work like a word processor. I've commented out the code because I do not really use org-mode much, but do not want to lose the reference to making the code if I ever go back.
-
-#+BEGIN_SRC emacs-lisp :results silent
-  ;; remove slashes when presenting italice
-  ; (setq org-hide-emphasis-markers t)
-
-  ;; (let* ((variable-tuple (cond ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
-  ;;                              (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
-  ;;        (base-font-color     (face-foreground 'default nil 'default))
-  ;;        (headline           `(:inherit default :weight bold :foreground ,base-font-color)))
-
-  ;;   (custom-theme-set-faces 'user
-  ;;                           `(org-level-8 ((t (,@headline ,@variable-tuple))))
-  ;;                           `(org-level-7 ((t (,@headline ,@variable-tuple))))
-  ;;                           `(org-level-6 ((t (,@headline ,@variable-tuple))))
-  ;;                           `(org-level-5 ((t (,@headline ,@variable-tuple))))
-  ;;                           `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-  ;;                           `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.15))))
-  ;;                           `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.25))))
-  ;;                           `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.35))))
-  ;;                           `(org-document-title ((t (,@headline ,@variable-tuple :height 1.5 :underline nil))))))
-#+END_SRC
 
 ** Exporting
 
@@ -355,15 +332,6 @@ The point with these hot-keys is to make short-cuts to several org files while I
 
 # #+END_SRC
 
-* YAML Mode
-
-I need to write yaml files sometimes and need highlighting for those. The simpliest I have this, [[https://github.com/yoshiki/yaml-mode][yaml-mode]]. I just pulled the default recommended setup so that both =.yaml= and =.yml= files activate yaml-mode.
-
-#+BEGIN_SRC :results silent
-  (require 'yaml-mode)
-    (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-#+END_SRC
-
 * Markdown files
 Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =LaTeX= or =org-mode=.
 
@@ -381,7 +349,8 @@ Although Markdown Mode is not as powerful as Org Mode, it has the benefit of bei
 
 #+END_SRC
 
-* Pandoc Mode
+** Pandoc Mode
+
 I love =Pandoc=. It converts nearly any text file into another. I use it to convert to =.md= files into =.tex= or =.pdf= as needed.
 
 #+BEGIN_SRC emacs-lisp :results silent
@@ -397,27 +366,27 @@ I love =Pandoc=. It converts nearly any text file into another. I use it to conv
   )
 #+END_SRC
 
+** Polymode
 We also want to use =Polymode= so that emacs can edit Rmarkdown type files that have R code in them.
 
 *This is temporary commented out because it seems to be giving emacs issues when loading.*
 
-#+BEGIN_SRC emacs-lisp
-    (use-package polymode
-      :ensure t
-      :mode
-      ("\\.Snw" . poly-noweb+r-mode)
-      ("\\.Rnw" . poly-noweb+r-mode)
-      ("\\.Rmd" . poly-markdown+r+mode)
-      ("\\.md" . poly-markdown-mode)
-      )
+#+BEGIN_SRC emacs-lisp :results silent
+  (use-package polymode
+    :ensure t
+    :mode
+    ("\\.Snw" . poly-noweb+r-mode)
+    ("\\.Rnw" . poly-noweb+r-mode)
+    ("\\.Rmd" . poly-markdown+r+mode)
+    ("\\.md" . poly-markdown-mode)
+    )
 
 #+END_SRC
 
-* Quarto Mode
+** Quarto Mode
 We need to install combatiblity for Quarto as we have for Markdown.
 
 #+begin_src emacs-lisp :results silent
-  ;; load the library
   (require 'quarto-mode)
 #+end_src
 
@@ -481,11 +450,11 @@ Now we can load out themes.
 
 #+BEGIN_SRC emacs-lisp :results silent
 
-  (use-package solarized-theme
-          :ensure t
-          :defer t
-          :config
-          (load-theme 'solarized-dark t))
+  ;; (use-package solarized-theme
+          ;; :ensure t
+          ;; :defer t
+          ;; :config
+          ;; (load-theme 'solarized-dark t))
 
 #+END_SRC
 
@@ -719,3 +688,38 @@ This bit of code lets me take a paragraph that includes line-breaks and turn int
 # ;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 # #+END_SRC
+
+
+
+* Archived/
+** YAML Mode
+
+I need to write yaml files sometimes and need highlighting for those. The simpliest I have this, [[https://github.com/yoshiki/yaml-mode][yaml-mode]]. I just pulled the default recommended setup so that both =.yaml= and =.yml= files activate yaml-mode. But that broke quarto so I had to delete it.
+
+#+BEGIN_SRC emacs-lisp :results silent
+  ;; (require 'yaml-mode)
+    ;; (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+#+END_SRC
+** "Word Processor
+[[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Howardism]] has the good on setting up Org-Mode to work like a word processor. I've commented out the code because I do not really use org-mode much, but do not want to lose the reference to making the code if I ever go back.
+
+#+BEGIN_SRC emacs-lisp :results silent
+  ;; remove slashes when presenting italice
+  ; (setq org-hide-emphasis-markers t)
+
+  ;; (let* ((variable-tuple (cond ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
+  ;;                              (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+  ;;        (base-font-color     (face-foreground 'default nil 'default))
+  ;;        (headline           `(:inherit default :weight bold :foreground ,base-font-color)))
+
+  ;;   (custom-theme-set-faces 'user
+  ;;                           `(org-level-8 ((t (,@headline ,@variable-tuple))))
+  ;;                           `(org-level-7 ((t (,@headline ,@variable-tuple))))
+  ;;                           `(org-level-6 ((t (,@headline ,@variable-tuple))))
+  ;;                           `(org-level-5 ((t (,@headline ,@variable-tuple))))
+  ;;                           `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
+  ;;                           `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.15))))
+  ;;                           `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.25))))
+  ;;                           `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.35))))
+  ;;                           `(org-document-title ((t (,@headline ,@variable-tuple :height 1.5 :underline nil))))))
+#+END_SRC
