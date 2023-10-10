@@ -36,26 +36,30 @@ Should end with a forward slash.")
 )
 
 (use-package tex-site
-    :ensure auctex
-    :defer t
-    :config
-     (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
-     (setq TeX-auto-save nil
-           Tex-parse-self t
-           reftex-plug-into-AUCTeX t)
-     (add-hook 'LaTeX-mode-hook #'Tex-PDF-mode)
-     (setq TeX-source-correlate-method 'synctex)
-     (setq TeX-source-correlate-mode t)
-     (setq latex-run-command "xelatex"))
+      :ensure auctex
+      :defer t
+      :config
+       (add-hook 'LaTeX-mode-hook #'LaTeX-math-mode)
+       (setq TeX-auto-save nil
+             Tex-parse-self t
+             reftex-plug-into-AUCTeX t)
+       (add-hook 'LaTeX-mode-hook #'Tex-PDF-mode)
+       (setq TeX-source-correlate-method 'synctex)
+       (setq TeX-source-correlate-mode t)
+       (setq latex-run-command "xelatex"))
 
-     ;; (eval-after-load "tex"
-     ;;   '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s"
-     ;;                                     TeX-run-TeX nil t :help "Process file with latexmk")))
-     ;; (eval-after-load "tex"
-     ;;   '(add-to-list 'Tex-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s"
-     ;;                                     Tex-run-Tex nil t :help "Process file with xelatex")))
+(setq auto-mode-alist (cons '("\\.latex$" . latex-mode) auto-mode-alist))
 
-     ;; (add-hook 'Tex-mode-hook (lambda () (setq Tex-command-default "xelatex")))
+       ;; (eval-after-load "tex"
+       ;;   '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s"
+       ;;                                     TeX-run-TeX nil t :help "Process file with latexmk")))
+       ;; (eval-after-load "tex"
+       ;;   '(add-to-list 'Tex-command-list '("xelatexmk" "latexmk -synctex=1 -shell-escape -xelatex %s"
+       ;;                                     Tex-run-Tex nil t :help "Process file with xelatex")))
+
+       ;; (add-hook 'Tex-mode-hook (lambda () (setq Tex-command-default "xelatex")))
+
+(setq bibtex-dialect 'biblatex)
 
 ;; AucTeX
 
@@ -188,8 +192,17 @@ Should end with a forward slash.")
 
   )
 
+(use-package polymode
+  :ensure t
+  :mode
+  ("\\.Snw" . poly-noweb+r-mode)
+  ("\\.Rnw" . poly-noweb+r-mode)
+  ("\\.Rmd" . poly-markdown+r+mode)
+  ("\\.md" . poly-markdown-mode)
+  )
+
 ;; load the library
-;; (require 'quarto-mode)
+(require 'quarto-mode)
 
 ;; This allows us to switch themes as needed
 
@@ -266,6 +279,13 @@ Should end with a forward slash.")
 ;; (ess-eldoc-show-on-symbol t "show eldoc on symbol instead of only inside of parens")
 ;; (ess-use-ido nil "rely on helm instead of ido") 
 ;; (ess-pdf-viewer-pref "emacsclient"))
+
+(use-package eshell-syntax-highlighting
+:after eshell-mode
+:ensure t ;; Install if not already installed.
+:config
+;; Enable in all Eshell buffers.
+(eshell-syntax-highlighting-global-mode +1))
 
 (defun my-eshell-prompt ()
   "Highlight eshell pwd and prompt separately."

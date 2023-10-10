@@ -1,36 +1,3 @@
-ls
-open .
-ls
-ls -l
-ls
-cd elpa
-ls
-cd archives/
-ls
-open .
-ls
-open .
-ls
-make
-touch paper.css
-touch panmarked.sh
-open panmarked.sh 
-make
-make
-make: *** No rule to make target `Perez_Gibson_2023_LIO_electoral.docx', needed by `all'.  Stop.
-make: *** No rule to make target `Perez_Gibson_2023_LIO_electoral.docx', needed by `all'.  Stop.
-make
-make
-make
-make
-make
-ls
-touch lecture_03.qmd
-quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
-quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
-quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
-quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
-quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
 quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
 quarto render lecture_03.qmd && open lecture_03.pdf -a Skim
 open *.pdf -a Skim
@@ -121,3 +88,41 @@ git status
 ls
 x
 exit
+ls
+cp lecture_12.qmd lecture_12.qmd
+cp lecture_12.qmd lecture_13.qmd
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+open lecture_01.pdf 
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+open ../../../.pandoc/csl/chicago-annotated-bibliography.csl -a BBEdit
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim
+quarto render lecture_13.qmd && open lecture_13.pdf -a Skim

@@ -233,7 +233,8 @@ Org-Mode is the primary way that I should be writing. In this section, we need t
 It bears mentioning that if I ever want to check my org-mode verison, I can use =M-x org-version=. 
 
 ** "Word Processor
-[[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Howardism]] has the good on setting up Org-Mode to work like a word processor.
+[[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Howardism]] has the good on setting up Org-Mode to work like a word processor. I've commented out the code because I do not really use org-mode much, but do not want to lose the reference to making the code if I ever go back.
+
 #+BEGIN_SRC emacs-lisp :results silent
   ;; remove slashes when presenting italice
   ; (setq org-hide-emphasis-markers t)
@@ -354,6 +355,15 @@ The point with these hot-keys is to make short-cuts to several org files while I
 
 # #+END_SRC
 
+* YAML Mode
+
+I need to write yaml files sometimes and need highlighting for those. The simpliest I have this, [[https://github.com/yoshiki/yaml-mode][yaml-mode]]. I just pulled the default recommended setup so that both =.yaml= and =.yml= files activate yaml-mode.
+
+#+BEGIN_SRC :results silent
+  (require 'yaml-mode)
+    (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+#+END_SRC
+
 * Markdown files
 Although Markdown Mode is not as powerful as Org Mode, it has the benefit of being /the/ standard for plain text co-authoring, R coding, and interoperability with =pandoc=. Nearly anything I write begins as a Markdown file unless I need more power while editing (in which case, I use =LaTeX= or =org-mode=.
 
@@ -391,24 +401,24 @@ We also want to use =Polymode= so that emacs can edit Rmarkdown type files that 
 
 *This is temporary commented out because it seems to be giving emacs issues when loading.*
 
-# # #+BEGIN_SRC emacs-lisp
-# #   (use-package polymode
-# #     :ensure t
-# #     :mode
-# #     ("\\.Snw" . poly-noweb+r-mode)
-# #     ("\\.Rnw" . poly-noweb+r-mode)
-# #     ("\\.Rmd" . poly-markdown+r+mode)
-# #     ("\\.md" . poly-markdown-mode)
-# #     )
+#+BEGIN_SRC emacs-lisp
+    (use-package polymode
+      :ensure t
+      :mode
+      ("\\.Snw" . poly-noweb+r-mode)
+      ("\\.Rnw" . poly-noweb+r-mode)
+      ("\\.Rmd" . poly-markdown+r+mode)
+      ("\\.md" . poly-markdown-mode)
+      )
 
-# # #+END_SRC
+#+END_SRC
 
 * Quarto Mode
 We need to install combatiblity for Quarto as we have for Markdown.
 
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent
   ;; load the library
-  ;; (require 'quarto-mode)
+  (require 'quarto-mode)
 #+end_src
 
 * Themes
@@ -471,11 +481,11 @@ Now we can load out themes.
 
 #+BEGIN_SRC emacs-lisp :results silent
 
-  ;; (use-package solarized-theme
-  ;;         :ensure t
-  ;;         :defer t
-  ;;         :config
-  ;;         (load-theme 'solarized-dark t))
+  (use-package solarized-theme
+          :ensure t
+          :defer t
+          :config
+          (load-theme 'solarized-dark t))
 
 #+END_SRC
 
