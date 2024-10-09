@@ -469,42 +469,56 @@ Now we can load out themes.
 # #+END_SRC
 
 * [Experimental] ESS
-<2023-07-06 Thu 10:48> This code spits a warning about =ess-history-directory= when Emacs loads. I need to re-write this code and clear the error. 
 
+
+<2024-10-07 Mon 09:46> Giving it another go.
 
 #+begin_src emacs-lisp results: silent
-  ;; (use-package ess
-  ;;     :ensure ess
-  ;;     :pin melpa-stable
-  ;;     :diminish eldoc-mode
-  ;;     :defer 2
-  ;;     :bind
-  ;;     (:map ess-mode-map
-  ;;           ("M-p" . jab/add-pipe))
-  ;;     :config
-  ;;     (add-hook 'ess-mode-hook
-  ;;               (lambda ()
-  ;;                 (ess-set-style 'RStudio)))
-  ;;     (defun jab/add-pipe ()
-  ;;       "Adds a pipe operator =|<>= with one space to the left and starts a new line with proper indentation"
-  ;;       (interactive)
-  ;;       (just-one-space 1)
-  ;;       (insert "|<>")
-  ;;       (ess-newline-and-indent))
+(use-package ess
+  :ensure t
+  :init (require 'ess-site))
+#+end_src
 
-  ;;   )
+#+RESULTS:
+: ess
 
-  ;; :custom
-  ;; (ess-history-file nil 
-  ;;  "Don't save .Rhistory files because that's stupid!!")
-  ;; (ess-history-directory nil)
-  ;; (inferior-R-args "--no-restore-data")
-  ;; (ess-nuke-trailing-whitespace-p t)
-  ;; (ess-eval-visibly 'nowait "Don't hog Emacs")
-  ;; (ess-ask-for-ess-directory nil "don't ask for dir when starting a process") 
-  ;; (ess-eldoc-show-on-symbol t "show eldoc on symbol instead of only inside of parens")
-  ;; (ess-use-ido nil "rely on helm instead of ido") 
-  ;; (ess-pdf-viewer-pref "emacsclient"))
+
+  <2023-07-06 Thu 10:48> This code spits a warning about =ess-history-directory= when Emacs loads. I need to re-write this code and clear the error. 
+
+
+  ,#+begin_src emacs-lisp results: silent
+    ;; (use-package ess
+    ;;     :ensure ess
+    ;;     :pin melpa-stable
+    ;;     :diminish eldoc-mode
+    ;;     :defer 2
+    ;;     :bind
+    ;;     (:map ess-mode-map
+    ;;           ("M-p" . jab/add-pipe))
+    ;;     :config
+    ;;     (add-hook 'ess-mode-hook
+    ;;               (lambda ()
+    ;;                 (ess-set-style 'RStudio)))
+    ;;     (defun jab/add-pipe ()
+    ;;       "Adds a pipe operator =|<>= with one space to the left and starts a new line with proper indentation"
+    ;;       (interactive)
+    ;;       (just-one-space 1)
+    ;;       (insert "|<>")
+    ;;       (ess-newline-and-indent))
+
+    ;;   )
+
+    ;; :custom
+    ;; (ess-history-file nil 
+    ;;  "Don't save .Rhistory files because that's stupid!!")
+    ;; (ess-history-directory nil)
+    ;; (inferior-R-args "--no-restore-data")
+    ;; (ess-nuke-trailing-whitespace-p t)
+    ;; (ess-eval-visibly 'nowait "Don't hog Emacs")
+    ;; (ess-ask-for-ess-directory nil "don't ask for dir when starting a process") 
+    ;; (ess-eldoc-show-on-symbol t "show eldoc on symbol instead of only inside of parens")
+    ;; (ess-use-ido nil "rely on helm instead of ido") 
+    ;; (ess-pdf-viewer-pref "emacsclient"))
 
 
 #+end_src

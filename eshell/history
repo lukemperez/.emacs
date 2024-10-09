@@ -8,10 +8,6 @@ quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
 quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
 quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
 quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
 ls
 quarto render --to pdf outlineSamuel.qmd 
 open outlineSamuel.pdf -a Skim
@@ -126,3 +122,7 @@ quarto render readinglist.qmd --to pdf
 quarto render readinglist.qmd --to pdf
 quarto render readinglist.qmd --template=readinglist.latex --to pdf
 quarto render prompt_Genesis2.qmd --to pdf
+pwd
+quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
+quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
+quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 

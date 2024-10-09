@@ -227,38 +227,9 @@ Should end with a forward slash.")
         ;; :config
         ;; (load-theme 'solarized-dark t))
 
-;; (use-package ess
-;;     :ensure ess
-;;     :pin melpa-stable
-;;     :diminish eldoc-mode
-;;     :defer 2
-;;     :bind
-;;     (:map ess-mode-map
-;;           ("M-p" . jab/add-pipe))
-;;     :config
-;;     (add-hook 'ess-mode-hook
-;;               (lambda ()
-;;                 (ess-set-style 'RStudio)))
-;;     (defun jab/add-pipe ()
-;;       "Adds a pipe operator =|<>= with one space to the left and starts a new line with proper indentation"
-;;       (interactive)
-;;       (just-one-space 1)
-;;       (insert "|<>")
-;;       (ess-newline-and-indent))
-
-;;   )
-
-;; :custom
-;; (ess-history-file nil 
-;;  "Don't save .Rhistory files because that's stupid!!")
-;; (ess-history-directory nil)
-;; (inferior-R-args "--no-restore-data")
-;; (ess-nuke-trailing-whitespace-p t)
-;; (ess-eval-visibly 'nowait "Don't hog Emacs")
-;; (ess-ask-for-ess-directory nil "don't ask for dir when starting a process") 
-;; (ess-eldoc-show-on-symbol t "show eldoc on symbol instead of only inside of parens")
-;; (ess-use-ido nil "rely on helm instead of ido") 
-;; (ess-pdf-viewer-pref "emacsclient"))
+(use-package ess
+  :ensure t
+  :init (require 'ess-site))
 
 (use-package eshell-syntax-highlighting
 :after eshell-mode
