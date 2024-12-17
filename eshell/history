@@ -1,40 +1,3 @@
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-quarto render Perez_2024_Jul_Civics.qmd --to pdf && open *.pdf -a Skim
-ls
-quarto render --to pdf outlineSamuel.qmd 
-open outlineSamuel.pdf -a Skim
-open outlineSamuel.pdf -a Skim
-quarto render outlineSamuel.qmd --to pdf
-open outlineSamuel.pdf -a Skim
-open outlineSamuel.pdf -a Skim
-quarto render outlineSamuel.qmd --to pdf
-cd ../Syllabus/
-ls
-open *.pdf -a Skim
-open .
-make
-make
-make
-make
-open Adams1781.md.pdf Jefferson1785.md.pdf -a Skim
-make
-quarto render
-quarto render SCETL_2024_briefROTC.qmd 
-quarto render SCETL_2024_briefROTC.qmd 
-quarto render SCETL_2024_briefROTC.qmd 
-open *.pdf -a Skim
-quarto render SCETL_2024_briefROTC.qmd 
-quarto render SCETL_2024_briefROTC.qmd 
-quarto render SCETL_2024_briefROTC.qmd 
-quarto render SCETL_2024_briefROTC.qmd 
 clear
 quarto render Samuel.qmd --to pdf && open Samuel.pdf -a Skim
 quarto render Samuel.qmd --to pdf && open Samuel.pdf -a Skim
@@ -126,3 +89,40 @@ pwd
 quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
 quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
 quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
+quarto render 475.qmd --to pdf
+ls
+open out/4.1_NewTestament.pdf 
+quarto render prompt_NewTest.qmd --to pdf
+open prompt_NewTest.pdf 
+open prompt_NewTest.pdf 
+quarto render promt_Thomas_Piety.qmd --to pdf
+open promt_Thomas_Piety.pdf 
+open .
+ls
+quarto render NT_ethics.qmd --to pdf
+open NT_ethics.pdf 
+open .
+open lecture_18.pdf 
+touch Euthyphro.qmd
+quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
+quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
+quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
+quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
+quarto render promot_Euthyphro.qmd --to pdf
+open promot_Euthyphro.pdf 
+open . 
+quarto render prompt_apology.qmd --to pdf
+open .
+quarto render exam2.qmd --to pdf
+open *.pdf
+quarto render exam2.qmd --to pdf
+quarto render exam2.qmd --to pdf
+quarto render exam2.qmd --to pdf
+quarto render exam2.qmd --to pdf
+quarto render CEL200_Syllabus.qmd --to pdf
+ls
+open .
+quarto render CEL200_Syllabus.qmd --to pdf 
+open ls -l
+ls
+clear
