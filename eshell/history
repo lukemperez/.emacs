@@ -1,121 +1,3 @@
-clear
-quarto render Samuel.qmd --to pdf && open Samuel.pdf -a Skim
-quarto render Samuel.qmd --to pdf && open Samuel.pdf -a Skim
-quarto render Samuel.qmd --to pdf && open Samuel.pdf -a Skim
-quarto render Samuel.qmd --to pdf && open Samuel.pdf -a Skim
-quarto render Samuel.qmd --to pdf && open Samuel.pdf -a Skim
-ls
-touch Aquinas_Kingship.qmd
-quarto render Aquinas_Kingship.qmd --to pdf && open Aquinas_Kingship.pdf -a Skim
-quarto render Aquinas_Kingship.qmd --to pdf && open Aquinas_Kingship.pdf -a Skim
-quarto render Aquinas_Kingship.qmd --to pdf && open Aquinas_Kingship.pdf -a Skim
-quarto render Aquinas_Kingship.qmd --to pdf && open Aquinas_Kingship.pdf -a Skim
-quarto render Aquinas_Kingship.qmd --to pdf && open Aquinas_Kingship.pdf -a Skim
-ls
-quarto render 2.2_Aquinas_Kingship.qmd --to pdf && open 2.2_Aquinas_Kingship.pdf -a Skim
-ls
-open out/2.2_Aquinas_Kingship.pdf -a Skim
-open out/3.1_Genesis.pdf -a Skim
-quarto render 3.1_Genesis.qmd --to pdf
-cp 3.1_Genesis.qmd 3.2_Genesis.qmd
-quarto render 3.1_Genesis.qmd --to pdf
-quarto render 3.1_Genesis.qmd --to pdf
-quarto render 3.1_Genesis.qmd --to pdf
-quarto render 3.1_Genesis.qmd --to pdf
-quarto render 3.1_Genesis.qmd --to pdf
-quarto render 3.1_Genesis.qmd --to pdf
-cd ../../Notes/
-ls
-open .
-ls
-quarto render 3.2_Genesis.qmd --to pdf && open out/3.2_Genesis.pdf -a Skim
-ls
-mv 3.2_Ruth_Jonah.qmd 3.3_Ruth_Jonah.qmd
-ls
-cd out/
-ls
-cd ..
-quarto render 3.2_Genesis.qmd --to pdf && open out/3.2_Genesis.pdf -a Skim
-quarto render 3.2_Genesis.qmd --to pdf && open out/3.2_Genesis.pdf -a Skim
-quarto render 3.2_Genesis.qmd --to pdf && open out/3.2_Genesis.pdf -a Skim
-quarto render 3.3_Ruth_Jonah.qmd --to pdf && open out/3.3_Ruth_Jonah.pdf -a Skim
-quarto render 3.3_Ruth_Jonah.qmd --to pdf
-open out/3.3_Ruth_Jonah.pdf -a Skim
-ls
-pandoc CEL100_New_Testament.md --pdf-engine=xelatex -o CEL100_New_Testament.md.pdf -a Skim
-pandoc CEL100_New_Testament.md --pdf-engine=xelatex -o CEL100_New_Testament.md.pdf && open CEL100_New_Testament.md.pdf -a Skim
-quarto render 4.1_NewTestament.qmd 4.2_Euthyphro.qmd --to pdf
-open out/4.1_NewTestament.pdf out/4.2_Euthyphro.pdf -a Skim
-quarto render 4.3_Aquinas_Piety.qmd --to pdf && open out/4.3_Aquinas_Piety.pdf -a Skim
-cd ..
-open .
-cd 2024A_lectures/
-quarto render 5.1_Apologies.qmd --to pdf
-open out/5.1_Apologies.pdf -a Skim
-quarto render 5.1_Apologies.qmd --to pdf && open out/5.1_Apologies.pdf -a Skim
-quarto render 5.1_Apologies.qmd --to pdf && open out/5.1_Apologies.pdf -a Skim
-quarto render 5.1_Apologies.qmd --to pdf && open out/5.1_Apologies.pdf -a Skim
-ls
-quarto render 475.qmd --to pdf
-open CEL475_Syllabus.pdf -a Skim
-open CEL475_Syllabus.pdf -a Skim
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf
-quarto render 475.qmd --to pdf 
-quarto render 475.qmd --to pdf 
-quarto render 475.qmd --to pdf 
-quarto render 475.qmd --to pdf 
-quarto render 475.qmd --to pdf 
-quarto render 475.qmd --to pdf 
-quarto render 475.qmd --to pdf 
-ls
-quarto render readinglist.qmd --to pdf
-quarto render readinglist.qmd --to pdf
-quarto render readinglist.qmd --to pdf
-quarto render readinglist.qmd --to pdf
-quarto render readinglist.qmd --to pdf
-quarto render readinglist.qmd --to pdf
-quarto render readinglist.qmd --template=readinglist.latex --to pdf
-quarto render prompt_Genesis2.qmd --to pdf
-pwd
-quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
-quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
-quarto render exam1_studyguide.qmd --to pdf && open exam1_studyguide.pdf 
-quarto render 475.qmd --to pdf
-ls
-open out/4.1_NewTestament.pdf 
-quarto render prompt_NewTest.qmd --to pdf
-open prompt_NewTest.pdf 
-open prompt_NewTest.pdf 
-quarto render promt_Thomas_Piety.qmd --to pdf
-open promt_Thomas_Piety.pdf 
-open .
-ls
-quarto render NT_ethics.qmd --to pdf
-open NT_ethics.pdf 
-open .
-open lecture_18.pdf 
-touch Euthyphro.qmd
-quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
-quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
-quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
-quarto render Euthyphro.qmd --to pdf && open Euthyphro.pdf
-quarto render promot_Euthyphro.qmd --to pdf
-open promot_Euthyphro.pdf 
-open . 
-quarto render prompt_apology.qmd --to pdf
-open .
-quarto render exam2.qmd --to pdf
-open *.pdf
-quarto render exam2.qmd --to pdf
 quarto render exam2.qmd --to pdf
 quarto render exam2.qmd --to pdf
 quarto render exam2.qmd --to pdf
@@ -126,3 +8,121 @@ quarto render CEL200_Syllabus.qmd --to pdf
 open ls -l
 ls
 clear
+quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
+quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
+quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
+quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
+quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
+pandoc render CEL200_Syllabus.qmd --to pdf
+quarto render CEL200_Syllabus.qmd --to pdf
+ls
+open .
+cp 02_AmericanTradition_ii.qmd 03_AmericanTradition_iii.qmd
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+open *.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
+ls
+cp 04_AmericanTradition_iv.qmd 05_ConstitutionalStructures_i.qmd
+mv *.pdf /out
+mv *.pdf out/
+ls
+open _quarto.yml 
+make
+which pandoc
+pandoc --help
+which pandoc
+$PATH
+which pandoc
+echo $path | pandoc bin
+clear
+addpath (/opt/homebrew/bin/pandoc)
+which git
+ls
+mv 06_ConstitutionalStructures_ii\ copy.qmd 07_ConstitutionalStructures_iii.qmd
+which quarto
+quarto render 07_ConstitutionalStructures_iii.qmd --to pdf
+open out/07_ConstitutionalStructures_iii.pdf 
+open out/07_ConstitutionalStructures_iii.pdf 
+quarto render 07_ConstitutionalStructures_iii.qmd --to pdf
+quarto render 07_ConstitutionalStructures_iii.qmd --to pdf
+quarto render 07_ConstitutionalStructures_iii.qmd --to pdf
+quarto render 07_ConstitutionalStructures_iii.qmd --to pdf
+quarto render 07_ConstitutionalStructures_iii.qmd --to pdf
+make
+which pandoc
+/opt/homebrew/bin/pandoc make
+cd ../Packet/
+make
+quarto render --to pdf 09_Federalism_i.qmd && open out/09_Federalism_i.pdf
+quarto render 09_Federalism_i.qmd  --to pdf && open out/09_Federalism_i.pdf
+quarto render 09_Federalism_i.qmd  --to pdf && open out/09_Federalism_i.pdf
+quarto render 09_Federalism_i.qmd  --to pdf && open out/09_Federalism_i.pdf
+ls
+rm -rf lecture_01.qmd 
+ls
+cp 09_Federalism_i.qmd 10_Federalism_ii.qmd
+quarto render 10_Federalism_ii.qmd && open out/10_Federalism_ii.pdf
+quarto render 10_Federalism_ii.qmd && open out/10_Federalism_ii.pdf
+quarto render 10_Federalism_ii.qmd && open out/10_Federalism_ii.pdf
+quarto render 10_Federalism_ii.qmd && open out/10_Federalism_ii.pdf
+quarto render 10_Federalism_ii.qmd && open out/10_Federalism_ii.pdf
+quarto render 11_Parties_Legislature_i.qmd --to pdf && open out/11_Parties_Legislature_i.pdf
+quarto render 11_Parties_Legislature_i.qmd --to pdf && open out/11_Parties_Legislature_i.pdf
+quarto render 11_Parties_Legislature_i.qmd --to pdf && open out/11_Parties_Legislature_i.pdf
+quarto render 11_Parties_Legislature_i.qmd --to pdf && open out/11_Parties_Legislature_i.pdf
+quarto render 11_Parties_Legislature_i.qmd --to pdf && open out/11_Parties_Legislature_i.pdf
+quarto render 11_Parties_Legislature_i.qmd --to pdf && open out/11_Parties_Legislature_i.pdf
+pandoc render 12_Parties_Legislature_ii.qmd -to pdf && open out/12_Parties_Legislature_ii.pdf
+quarto render 12_Parties_Legislature_ii.qmd -to pdf && open out/12_Parties_Legislature_ii.pdf
+ls
+quarto render 12_Parties_Legislature_ii.qmd --to pdf && open out/12_Parties_Legislature_ii.pdf
+quarto render 12_Parties_Legislature_ii.qmd --to pdf && open out/12_Parties_Legislature_ii.pdf
+quarto render 12_Parties_Legislature_ii.qmd --to pdf && open out/12_Parties_Legislature_ii.pdf
+quarto render 12_Parties_Legislature_ii.qmd --to pdf && open out/12_Parties_Legislature_ii.pdf
+quarto render 12_Parties_Legislature_ii.qmd --to pdf && open out/12_Parties_Legislature_ii.pdf
+quarto render --to pdf 15_EconPolicy.qmd 
+open out/15_EconPolicy.pdf 
+quarto 15_EconPolicy.qmd render --to pdf
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 17_ForeignPolicy.qmd && open out/17_ForeignPolicy.pdf 
+quarto render 18_ForeignPolicy_iii.qmd --to pdf
+open out/18_ForeignPolicy_iii.pdf 
+pandoc Perez_2025_classProposals.md --pdf-engine=xelatex Perez_2025_classProposals.md.pdf && open *.pdf
+pandoc Perez_2025_classProposals.md --pdf-engine=xelatex Perez_2025_classProposals.md.pdf
+which pandoc
+quarto render Perez_2025_classProposals.md --to pdf && open *.pdf
+quarto render Perez_2025_classProposals.md --to pdf && open *.pdf
+cd ..
+ls
+cp George_SCETL_MA/ George_MA_FinAid/
+ls
+open .
+cd _claireDocs/
+open .
+make
+make
+ls
+quarto render 598.qmd --to pdf && open *.pdf
