@@ -112,3 +112,14 @@
 
 ;; Set default directory
 (setq default-directory "/Users/lmp/")
+
+;; load paths for pandoc and quarto
+;; use-package style:
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  ;; On macOS and Linux GUI sessions this copies PATH and other env vars from your shell
+  (when (memq window-system '(mac ns x))
+    (exec-path-from-shell-initialize)
+    ;; copy specific vars if you use them
+    (exec-path-from-shell-copy-envs '("PATH" "MANPATH" "HOME"))))

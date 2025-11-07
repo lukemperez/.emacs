@@ -1,17 +1,3 @@
-quarto render exam2.qmd --to pdf
-quarto render exam2.qmd --to pdf
-quarto render exam2.qmd --to pdf
-quarto render CEL200_Syllabus.qmd --to pdf
-ls
-open .
-quarto render CEL200_Syllabus.qmd --to pdf 
-open ls -l
-ls
-clear
-quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
-quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
-quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
-quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
 quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
 pandoc render CEL200_Syllabus.qmd --to pdf
 quarto render CEL200_Syllabus.qmd --to pdf
@@ -126,3 +112,17 @@ make
 make
 ls
 quarto render 598.qmd --to pdf && open *.pdf
+ls
+which pandoc
+open .
+echo path
+ls
+ls
+open .
+open .
+cd Desktop/
+ls
+pandoc albertoperez.md -t tmp.pdf
+pandoc albertoperez.md -o tmp.pdf
+open tmp.pdf 
+rm -rf tmp.pdf 
