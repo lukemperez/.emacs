@@ -2,8 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/lmp/Teaching/2025F_CEL200/Quizzes/" . "07_LibertyEquality/")
- ("/Users/lmp/Teaching/2025F_CEL200/" . "Quizzes/")
+ ("/Users/lmp/Service/RecLetters/Humrich_PhDs/" . "Humrich_Texas/")
+ ("/Users/lmp/Teaching/2025F_CEL200/" . "lectures/")
  ("/Users/lmp/01_Projects/ChaseCenter/2025_AssistProf_application/" . "Packet/")
  ("/Users/lmp/01_Projects/ChaseCenter/" . "2025_AssistProf_application/")
  ("/Users/lmp/01_Projects/" . "ChaseCenter/")
@@ -36,8 +36,8 @@
  ("/Users/lmp/Teaching/2023F_CEL100/Study Guides/" . "Piety/")
  ("/Users/lmp/Research/_TenureAnnualRev/probationaryReview/" . "CoverLetter/")
  ("/Users/lmp/Research/_TenureAnnualRev/" . "probationaryReview/")
- ("/Users/lmp/Service/RecLetters/" . "Humrich/")
- ("/Users/lmp/Service/" . "ROTC_Brief/")
+ ("/Users/lmp/Service/RecLetters/" . "Humrich_PhDs/")
+ ("/Users/lmp/Service/" . "RecLetters/")
  ("/Users/lmp/Teaching/Spring2024/2024S_CEL475/Syllabus/qmd/" . "bib/")
  ("/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/Nadine Edits 100623/" . "Draft100623_NadineEdits/")
  ("/Users/lmp/Research/CES_LIO/Paper/10_7_Draft_Nadine/" . "Nadine Edits 100623/")
@@ -80,14 +80,13 @@
  ("/Users/lmp/.emacs.d/elpa/archives/" . "melpa/")
  ("/Users/lmp/.emacs.d/elpa/" . "markdown-mode-20231002.721/")
  ("/Users/lmp/.emacs.d/" . "elpa/")
- ("/Users/lmp/" . ".emacs.d/")
+ ("/Users/lmp/" . "Service/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/lmp/.emacs.d/"
+ "/Users/lmp/Service/RecLetters/Humrich_PhDs/Humrich_Texas/"
  "/Users/lmp/Teaching/2025F_CEL200/lectures/"
- "/Users/lmp/Teaching/2025F_CEL200/Quizzes/07_LibertyEquality/"
  "/Users/lmp/Teaching/2025S_CEL475/notes/"
  "/Users/lmp/Teaching/2025S_CEL200/lectures/"
  "/Users/lmp/Service/civicVirtuesMontessori/"
@@ -109,6 +108,7 @@
  "/Users/lmp/Teaching/2025S_CEL475/agsReader/"
  "/Users/lmp/Library/Mobile Documents/com~apple~CloudDocs/Teaching/2024F_CEL100C/Notes/"
  "/Users/lmp/Desktop/"
+ "/Users/lmp/.emacs.d/"
  "/Users/lmp/.emacs.d/elpa/markdown-mode-20231002.721/"
  "/Users/lmp/1_Projects/blogDrafts/"
  "/Users/lmp/Teaching/2025S_CEL475/Syllabus/Scratch/ReadingList/ref_readinglist/"
@@ -139,39 +139,43 @@
 
 ;; ----- ido-work-file-list -----
 (
- "init.el"
- "config.el"
- "18_Freedom_iv.qmd"
- "dredscott_bank.md"
- "16_Freedom_ii.qmd"
- "17_Freedom_iii.qmd"
+ "Perez_2025_Humrich_Recommendation.md"
+ "24_Republic_ifKept.qmd"
+ "23_ForeignPolicy_iii.qmd"
+ "22_ForeignPolicy_ii.qmd"
  "Adams 1821 Comments.qmd"
  "12_Parties_Legislature_ii.qmd"
  "11_Parties_Legislature_i.qmd"
  "10_Federalism_ii.qmd"
+ "lecture_01.qmd"
+ "09_Federalism_i.qmd"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lmp/.emacs.d/" (26888 63401 274284 669000) ".cache/" ".git/" "org-persist/" "elpa/" ".gitignore" "init.el" "config.el" "config.org" "abbrev_defs" "eshell/" ".DS_Store" "ido.last" "../" "./")
+ ("/Users/lmp/Service/RecLetters/Humrich_PhDs/Humrich_Texas/" (26935 41897 444461 465000) "Perez_2025_Humrich_Recommendation.md" "makefile" "../" "./")
 
- ("/Users/lmp/" (26893 20956 779721 523000) "tmp-website/" ".zsh_sessions/" ".viminfo" ".bash_history" ".gitconfig" "lmp-website/" ".zcompdump-Luke’s MacBook Pro-5.9" "Downloads/" ".oh-my-zsh/" "Service/" "Documents/" ".Trash/" "Applications/" ".bibs/" "Movies/" "Teaching/" ".dropbox/" "Public/" ".zcompdump-Lukes-MacBook-Pro-5.9" "04_Archive/" "_process2025/" "PDFs_articles/" "equity.soulver" "01_Projects/" ".cups/" "PDFs_chapters/" ".emacs.d/" "Zotero/" "OneDrive - Arizona State University/" ".zcompdump-Lukes-MacBook-Pro-5.9.zwc" "Library/" "Desktop/" ".zsh_history" "PDFs_books/" "Pictures/" "_DEVONthink/" ".local/" "OneDrive/" "ASU Dropbox/" ".zshrc" ".CFUserTextEncoding" "tmp-hugo/" ".pandoc/" ".DS_Store" "Databases/" "02_Areas/" "03_Reference/" "Dropbox (Personal)/" "Music/" ".config/" ".Rhistory" "Research/" "../" "./")
+ ("/Users/lmp/Service/RecLetters/Humrich_PhDs/" (26935 41940 971220 563000) "_resources/" "Humrich_OhioState/" "Humrich_Texas/" ".DS_Store" "../" "./")
 
- ("/Users/lmp/Teaching/2025F_CEL200/lectures/" (26888 8009 89466 671000) "07_ConstitutionalStructures_iii.qmd" "09_Federalism_ii.qmd" ".quarto/" "10_Parties_Legislature_i.qmd" "_old_07_ConstitutionalStructures_iii.qmd" "04_AmericanTradition_iv.qmd" "08_Federalism_i.qmd" "18_Freedom_iv.qmd" "06_ConstitutionalStructures_ii.qmd" "05_ConstitutionalStructures_i.qmd" "02_AmericanTradition_ii.qmd" "20_EconPolicy.qmd" "01_AmericanTradition_i.qmd" "cel200.bib" "12_Executive.qmd" "11_Parties_Legislature_ii.qmd" "14_Judicary_ii.qmd" "19_Freedom_v.qmd" "03_AmericanTradition_iii.qmd" "out/" "16_Freedom_ii.qmd" "15_Freedom_i.qmd" ".DS_Store" "_quarto.yml" "17_Freedom_iii.qmd" "13_Judicary_i.qmd" "../" "./")
+ ("/Users/lmp/Service/RecLetters/" (26924 35988 309322 719000) "Sethi_FinAid/" "OSU_Sample_Testing/" "George_FinAid_MA/" "ArmstongLetter/" "Humrich_PhDs/" "Gross_LOS/" "_archivedLetters/" ".DS_Store" "Gaffney_SCETL_MA/" "George_SCETL_MA/" "../" "./")
 
- ("/Users/lmp/Teaching/2025F_CEL200/Quizzes/07_LibertyEquality/" (26874 48940 267719 941000) "questions/" "questions_civilwar.md" ".DS_Store" "../" "./")
+ ("/Users/lmp/Service/" (26905 62897 643625 565000) "Mentoring/" "Reviews/" "SCETL_resignLetter/" "Evans_Liz_Dis/" "civicVirtuesMontessori/" "BloombergReview/" "OpenRank/" "PSR Review Aristotle World Order/" "IWP_Talk/" "RecLetters/" ".DS_Store" "BYLAWS SCETL ASU - Revised to match SPGS.docx" "../" "./")
 
- ("/Users/lmp/Teaching/2025F_CEL200/Quizzes/" (26874 47615 868343 49000) "03_Federalism/" "06_Judicial/" "01_AmTradition/" "04_LegParties/" "07_LibertyEquality/" "05_Executive/" "02_ConstStruct/" "_inClassQuizzes/" ".DS_Store" "../" "./")
+ ("/Users/lmp/" (26937 65004 540534 124000) "tmp-website/" ".zsh_sessions/" ".viminfo" ".bash_history" ".gitconfig" "lmp-website/" ".zcompdump-Luke’s MacBook Pro-5.9" "Downloads/" ".oh-my-zsh/" "Service/" "Documents/" ".Trash/" "Applications/" ".bibs/" "Movies/" "Teaching/" ".dropbox/" "Public/" ".zcompdump-Lukes-MacBook-Pro-5.9" "carrd.md" "04_Archive/" "_process2025/" "PDFs_articles/" "equity.soulver" "01_Projects/" ".cups/" "PDFs_chapters/" ".emacs.d/" "Zotero/" "OneDrive - Arizona State University/" ".zcompdump-Lukes-MacBook-Pro-5.9.zwc" "Library/" "Desktop/" ".zsh_history" "PDFs_books/" "Pictures/" "_DEVONthink/" ".local/" "OneDrive/" "ASU Dropbox/" ".zshrc" ".CFUserTextEncoding" "tmp-hugo/" ".pandoc/" ".DS_Store" "Databases/" "02_Areas/" "03_Reference/" "Dropbox (Personal)/" "Music/" ".config/" ".Rhistory" "Research/" "../" "./")
 
- ("/Users/lmp/Desktop/" (26883 52784 462005 159000) "America in the World - Grand Strategy Course.docx" "signal/" "Simple is Efficient.docx" "Bishop 1990.pdf" "Midterm - Modernity.pdf" "IMG_1769.jpeg" "~$25_8_12_Minor Proposal v2.docx" "Acton Cook and Ugalde 2025 Polarized Colleges ai25-1280.pdf" "bjj-self-defense.mov" "IMG_1547.JPG" "Augustine_as_a_Reader_of_Cicero.pdf" ".localized" "Perez_2025_Lyft_DCA_to_Hotel.pdf" "_capture.md" "Gelman and Katz 2007.pdf" ".DS_Store" "IMG_0255.jpeg" "Perez_2025_Lyft_Home_to_PHX.pdf" "RPReplay_Final1761746693.mov" "../" "./")
+ ("/Users/lmp/Teaching/2025F_CEL200/lectures/" (26925 54039 837201 416000) "07_ConstitutionalStructures_iii.qmd" "09_Federalism_ii.qmd" ".quarto/" "19_Freedom_iv.qmd" "10_Parties_Legislature_i.qmd" "22_ForeignPolicy_ii.qmd" "_old_07_ConstitutionalStructures_iii.qmd" "23_ForeignPolicy_iii.qmd" "04_AmericanTradition_iv.qmd" "08_Federalism_i.qmd" "18_Freedom_iv.qmd" "06_ConstitutionalStructures_ii.qmd" "05_ConstitutionalStructures_i.qmd" "02_AmericanTradition_ii.qmd" "21_ForeignPolicy_i.qmd" "20_EconPolicy.qmd" "01_AmericanTradition_i.qmd" "24_Republic_ifKept.qmd" "cel200.bib" "12_Executive.qmd" "11_Parties_Legislature_ii.qmd" "14_Judicary_ii.qmd" "03_AmericanTradition_iii.qmd" "out/" "16_Freedom_ii.qmd" "15_Freedom_i.qmd" ".DS_Store" "_quarto.yml" "17_Freedom_iii.qmd" "13_Judicary_i.qmd" "../" "./")
+
+ ("/Users/lmp/.emacs.d/" (26910 7902 917702 329000) ".cache/" ".git/" "org-persist/" "elpa/" ".gitignore" "init.el" "config.el" "config.org" "abbrev_defs" "eshell/" ".DS_Store" "ido.last" "../" "./")
+
+ ("/Users/lmp/Desktop/" (26915 26747 954629 417000) "20251123-essayist-offer.png" "~$25_8_12_Minor Proposal v2.docx" "1password-doubles.png" "_weekly.md" ".localized" "_capture.md" ".DS_Store" "../" "./")
+
+ ("/Users/lmp/Teaching/2025F_CEL200/" (26874 48910 984676 185000) "Essay Assignment.docx" "Quizzes/" "lectures/" "miscDocs/" "ex1_handScored.soulver" "exams/" "_resources/" "CEL-200 Civic Literacy Pre-Test (F. 2024).docx" "syllabus/" "slides/" "Civic Literacy Quiz Canvas CEL 200.zip" ".DS_Store" "canvasPages/" "Civic Literacy Quiz Canvas CEL 200/" "reader/" "../" "./")
+
+ ("/Users/lmp/Teaching/" (26895 41755 102904 203000) "2026S_Leadership/" "2026s_leaders/" "Mukai_Thesis/" "Cain_Thesis/" "2025F_CEL200/" "IndependentStudy/" ".DS_Store" "2025F_CEL598/" "_ReferencePrePost/" "../" "./")
 
  ("/Users/lmp/.pandoc/md/" (26655 25425 305679 743000) "statement.tex" "syllabus.latex" "tmp.latex" "workingpaper.latex" "manuscript.tex" "memorandum.latex" "gradereport.latex" "syllabus.tex" "ASUletter.latex" "vita.tex" "cmos.tex" "statement.latex" "../" "./")
 
  ("/Users/lmp/Service/civicVirtuesMontessori/" (26542 22698 905827 262000) "Perez_2025_civicVirtues.qmd" ".quarto/" "_quarto.yaml" "Perez_2025_civicVirtues.pdf" "../" "./")
-
- ("/Users/lmp/Teaching/2025F_CEL200/" (26874 48910 984676 185000) "Essay Assignment.docx" "Quizzes/" "lectures/" "miscDocs/" "ex1_handScored.soulver" "exams/" "_resources/" "CEL-200 Civic Literacy Pre-Test (F. 2024).docx" "syllabus/" "slides/" "Civic Literacy Quiz Canvas CEL 200.zip" ".DS_Store" "canvasPages/" "Civic Literacy Quiz Canvas CEL 200/" "reader/" "../" "./")
-
- ("/Users/lmp/Teaching/" (26879 34408 415036 458000) "2026S_Leadership/" "2026s_leaders/" "Cain_Thesis/" "2025F_CEL200/" ".DS_Store" "2025F_CEL598/" "_ReferencePrePost/" "../" "./")
 
  ("/Users/lmp/Teaching/2025S_CEL475/notes/" (26558 2470 153244 502000) ".quarto/" "ShortPaper_examples/" "Adams 1821 Comments.qmd" "2025_AGS_books.md" "Clausewitz.md.pdf" "Clausewitz.md" "Washington_FarewellAddress.md" "Washington_FarewellAddress.md.pdf" ".DS_Store" "_quarto.yml" "../" "./")
 
@@ -265,8 +269,6 @@
 
  ("/Users/lmp/Service/ROTC_Brief/" (26310 46635 537955 211000) "SCETL_2024_briefROTC.qmd" "SCETL_2024_AFROTC.pdf" "SCETL_2024_briefROTC.rtf" "ROTC_2024_BriefingNotes.md" "SCETL_2024_briefROTC.pdf" "SCETL - ROTC Fall 24.pptx" "SCETL_2024_briefROTC.md" ".DS_Store" "ROTC_2024_BriefingNotes.md.pdf" ".Rhistory" "../" "./")
 
- ("/Users/lmp/Service/" (26310 10472 18748 227000) "Mentoring/" "GOPTalk/" "ROTC_Brief/" "RecLetters/" ".DS_Store" "BYLAWS SCETL ASU - Revised to match SPGS.docx" "AEI_Future_Univ/" "../" "./")
-
  ("/Users/lmp/Documents/01_Projects/Rstats/" (26187 43324 722694 880000) "rstats.html" "stochastic.png" "RefManageR.pdf" "rstats.Rmd" "rstats.pdf" "makefile" "LetsDeal.R" ".DS_Store" "rstats.qmd" "rstats_files/" ".Rhistory" "../" "./")
 
  ("/Users/lmp/Research/liberatingFaith/mssDraft/2024_Working_Drafts/" (26142 44083 819873 22000) "01_Theory/" ".DS_Store" "06_IRFA/" "../" "./")
@@ -290,8 +292,6 @@
  ("/Users/lmp/Teaching/2024S_CEL475/strategyReading/" (26159 49738 263442 215000) ".quarto/" "strategyReading.qmd" "Strategy Reading List.pdf" "_quarto.yml" "../" "./")
 
  ("/Users/lmp/Documents/01_Projects/SD+/IHS Grant Application/" (26162 54595 776118 25000) "Perez_2024_IHScourseRelease.pdf" "Perez_2024_IHScourseRelease.md" "makefile" ".DS_Store" "../" "./")
-
- ("/Users/lmp/Service/RecLetters/" (26106 6614 690777 488000) "Nolan/" "Kumi/" "Stack/" "Lowe/" "Lerma/" "Anisorac/" "Berdeski/" "Hollister/" "Smith/" "Ross_RhoadesScholarship/" "OrozcoGradSchool/" "Arvizu/" "Morken/" "Humrich/" "Kapur/" ".DS_Store" "AbrahamLodmell/" "Cooley/" "../" "./")
 
  ("/Users/lmp/Documents/01_Projects/SD+/" (26162 35542 419764 196000) "IHS Grant Application/" "Application/" "proposalASU/" "LeaveRequest/" ".DS_Store" "../" "./")
 

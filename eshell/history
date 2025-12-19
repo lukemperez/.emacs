@@ -1,28 +1,3 @@
-quarto render 01_AmericanTradition.qmd --to pdf && open 01_AmericanTradition.pdf 
-pandoc render CEL200_Syllabus.qmd --to pdf
-quarto render CEL200_Syllabus.qmd --to pdf
-ls
-open .
-cp 02_AmericanTradition_ii.qmd 03_AmericanTradition_iii.qmd
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-open *.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-pandoc Perez_2025_WhatNext.md --pdf-engine=xelatex -o Perez_2025_WhatNext.pdf
-ls
-cp 04_AmericanTradition_iv.qmd 05_ConstitutionalStructures_i.qmd
-mv *.pdf /out
 mv *.pdf out/
 ls
 open _quarto.yml 
@@ -126,3 +101,28 @@ pandoc albertoperez.md -t tmp.pdf
 pandoc albertoperez.md -o tmp.pdf
 open tmp.pdf 
 rm -rf tmp.pdf 
+ls
+cp 22_ForeignPolicy_ii.qmd 23_ForeignPolicy_iii.qmd 
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+open out/23_ForeignPolicy_iii.pdf 
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+quarto render 23_ForeignPolicy_iii.qmd --to pdf
+open .
+make
+make
+make
+make
+make
+make
